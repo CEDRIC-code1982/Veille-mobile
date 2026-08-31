@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Veille technologique mobile : React Native, TypeScript, iOS et Android. Rien n'est bloquant sans preuve retrouvée dans la source officielle.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#10131a" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Veille">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Veille mobile</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <h1>Veille mobile</h1>
+    <p class="tagline">
+      React Native, TypeScript, iOS, Android. Aucun item n'est bloquant sans une citation
+      retrouvée dans sa source officielle.
+    </p>
+    <dl class="stats" id="stats" aria-live="polite"></dl>
+  </header>
+
+  <form class="filters" id="filters" role="search" autocomplete="off">
+    <p class="field">
+      <label class="visually-hidden" for="search">Rechercher</label>
+      <input
+        type="search"
+        id="search"
+        name="search"
+        placeholder="Rechercher un titre, un résumé, une source…"
+        enterkeyhint="search"
+      >
+    </p>
+    <fieldset class="chips" id="category-fieldset">
+      <legend>Plateformes</legend>
+      <div class="chip-row" id="category-chips"></div>
+    </fieldset>
+    <fieldset class="chips" id="tag-fieldset">
+      <legend>Tags</legend>
+      <div class="chip-row" id="tag-chips"></div>
+    </fieldset>
+    <p class="filter-actions">
+      <label class="toggle">
+        <input type="checkbox" id="only-unverified" name="only-unverified">
+        <span>Non vérifiés seulement</span>
+      </label>
+      <button type="reset" id="reset">Réinitialiser</button>
+    </p>
+  </form>
+
+  <main id="content">
+    <p class="status" id="status" role="status">Chargement des données…</p>
+
+    <section class="section section--blocking" id="section-blocking" hidden>
+      <h2>
+        <span class="badge badge--blocking">Bloquant</span>
+        <span class="count" id="count-blocking"></span>
+      </h2>
+      <p class="section-note">
+        Contrainte externe avec échéance, source de première partie, citation vérifiée.
+      </p>
+      <div class="items" id="items-blocking"></div>
+    </section>
+
+    <details class="section section--impacting" id="section-impacting" open hidden>
+      <summary>
+        <span class="badge badge--impacting">Impactant</span>
+        <span class="count" id="count-impacting"></span>
+      </summary>
+      <div class="items" id="items-impacting"></div>
+    </details>
+
+    <details class="section section--background" id="section-background" hidden>
+      <summary>
+        <span class="badge badge--background">Veille</span>
+        <span class="count" id="count-background"></span>
+      </summary>
+      <div class="items" id="items-background"></div>
+    </details>
+
+    <p class="status" id="empty" hidden>Aucun item ne correspond à ces filtres.</p>
+  </main>
+
+  <footer class="page-footer">
+    <p id="footer-note"></p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

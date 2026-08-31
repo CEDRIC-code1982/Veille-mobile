@@ -12,6 +12,8 @@
     "verify": "tsx src/scripts/verify.ts",
     "publish": "tsx src/scripts/publish.ts",
     "icons": "tsx src/tools/generateIcons.ts",
+    "site:build": "tsx src/tools/buildSite.ts",
+    "site:serve": "npm run site:build && tsx src/tools/serveSite.ts",
     "check:privacy": "tsx src/tools/checkPrivacy.ts",
     "check:feeds": "tsx src/tools/checkFeeds.ts",
     "lint": "eslint .",

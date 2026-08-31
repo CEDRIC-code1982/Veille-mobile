@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "veille-site",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "site:serve"
+      ],
+      "port": 8099
+    }
+  ]
+}
