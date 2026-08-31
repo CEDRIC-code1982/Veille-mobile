@@ -1,0 +1,19 @@
+{
+  "_comment": "First-party whitelist. Only a source listed here may ever carry a blocking criticality, and only when its evidence quote is found again in the refetched page. A third-party blog can never produce a blocking item, whatever it claims. pathPrefixes narrows a host that also serves third-party content.",
+  "domains": [
+    { "domain": "developer.apple.com" },
+    { "domain": "developer.android.com" },
+    { "domain": "support.google.com" },
+    { "domain": "android-developers.googleblog.com" },
+    { "domain": "reactnative.dev" },
+    { "domain": "devblogs.microsoft.com" },
+    { "domain": "expo.dev" },
+    {
+      "domain": "github.com",
+      "pathPrefixes": [
+        "/facebook/react-native/releases",
+        "/microsoft/TypeScript/releases"
+      ]
+    }
+  ]
+}

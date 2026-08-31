@@ -1,0 +1,143 @@
+# Source of truth for every watched source.
+#
+# `official` says the publisher is first-party for its own product; it drives
+# duplicate resolution. It is NOT what authorises a blocking item: that is
+# decided only by config/official-domains.json.
+#
+# `maxAgeDays` is the silence threshold. For rss and atom sources it applies to
+# the newest published entry; for scrape sources it applies to the last
+# successful read, because a documentation page that does not change is normal.
+#
+# Run `npm run check:feeds` after any edit: a URL that does not answer must be
+# removed, never replaced by a plausible guess.
+feeds:
+  - name: React Native Blog
+    url: https://reactnative.dev/blog/rss.xml
+    type: rss
+    domain: reactnative.dev
+    categories: [react-native]
+    official: true
+    maxAgeDays: 90
+
+  - name: React Native Releases
+    url: https://github.com/facebook/react-native/releases.atom
+    type: atom
+    domain: github.com
+    categories: [react-native]
+    official: true
+    maxAgeDays: 60
+
+  # github.com/expo/expo/releases.atom answers but carries no entry: Expo tags
+  # its releases without publishing GitHub releases. The changelog page is the
+  # real source, so it is scraped.
+  - name: Expo Changelog
+    url: https://expo.dev/changelog
+    type: scrape
+    domain: expo.dev
+    categories: [react-native, tooling]
+    official: true
+    maxAgeDays: 14
+
+  - name: This Week in React
+    url: https://thisweekinreact.com/newsletter/rss.xml
+    type: rss
+    domain: thisweekinreact.com
+    categories: [react-native, typescript]
+    official: false
+    maxAgeDays: 21
+
+  - name: TypeScript Dev Blog
+    url: https://devblogs.microsoft.com/typescript/feed/
+    type: rss
+    domain: devblogs.microsoft.com
+    categories: [typescript]
+    official: true
+    maxAgeDays: 90
+
+  - name: TypeScript Releases
+    url: https://github.com/microsoft/TypeScript/releases.atom
+    type: atom
+    domain: github.com
+    categories: [typescript]
+    official: true
+    maxAgeDays: 90
+
+  - name: Apple Developer News
+    url: https://developer.apple.com/news/rss/news.rss
+    type: rss
+    domain: developer.apple.com
+    categories: [ios, policy]
+    official: true
+    maxAgeDays: 21
+
+  - name: App Store Review Guidelines
+    url: https://developer.apple.com/app-store/review/guidelines/
+    type: scrape
+    domain: developer.apple.com
+    categories: [ios, policy]
+    official: true
+    maxAgeDays: 7
+
+  - name: Apple Newsroom
+    url: https://www.apple.com/newsroom/rss-feed.rss
+    type: rss
+    domain: apple.com
+    categories: [hardware, ios]
+    official: true
+    maxAgeDays: 21
+
+  - name: Android Developers Blog
+    url: https://android-developers.googleblog.com/feeds/posts/default
+    type: atom
+    domain: android-developers.googleblog.com
+    categories: [android, policy]
+    official: true
+    maxAgeDays: 21
+
+  - name: Android Target API Level Requirements
+    url: https://developer.android.com/google/play/requirements/target-sdk
+    type: scrape
+    domain: developer.android.com
+    categories: [android, policy, background]
+    official: true
+    maxAgeDays: 7
+
+  - name: Android Platform Versions
+    url: https://developer.android.com/about/versions
+    type: scrape
+    domain: developer.android.com
+    categories: [android, background]
+    official: true
+    maxAgeDays: 7
+
+  - name: Android Studio Releases
+    url: https://developer.android.com/studio/releases
+    type: scrape
+    domain: developer.android.com
+    categories: [android, tooling]
+    official: true
+    maxAgeDays: 7
+
+  - name: Play Console Policy Updates
+    url: https://support.google.com/googleplay/android-developer/answer/9934569
+    type: scrape
+    domain: support.google.com
+    categories: [android, policy]
+    official: true
+    maxAgeDays: 7
+
+  - name: Android and Pixel Blog
+    url: https://blog.google/products/android/rss/
+    type: rss
+    domain: blog.google
+    categories: [android, hardware]
+    official: true
+    maxAgeDays: 21
+
+  - name: Don't Kill My App
+    url: https://dontkillmyapp.com/
+    type: scrape
+    domain: dontkillmyapp.com
+    categories: [android, background]
+    official: false
+    maxAgeDays: 14

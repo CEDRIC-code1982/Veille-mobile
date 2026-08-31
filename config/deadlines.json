@@ -1,0 +1,4 @@
+{
+  "_comment": "Recurring external deadlines, maintained by hand. Nothing here is ever written by the pipeline, and nothing is pre-filled: an empty list is the correct state until a real deadline is read from a first-party source. Shape of an entry: { code, label, dueDate (YYYY-MM-DD), categories, sourceUrl, note? }.",
+  "deadlines": []
+}

@@ -13,6 +13,7 @@
     "publish": "tsx src/scripts/publish.ts",
     "icons": "tsx src/tools/generateIcons.ts",
     "check:privacy": "tsx src/tools/checkPrivacy.ts",
+    "check:feeds": "tsx src/tools/checkFeeds.ts",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",

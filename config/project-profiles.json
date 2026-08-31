@@ -1,0 +1,4 @@
+{
+  "_comment": "Maps opaque project codes to the categories and tags that project cares about, so impactedProjects is computed deterministically instead of being guessed by the model. Only opaque codes belong here: the code to label mapping lives in projects.local.json, which is gitignored. Shape of an entry: { code: \"proj-a\", categories: [...], tags?: [...] }.",
+  "profiles": []
+}

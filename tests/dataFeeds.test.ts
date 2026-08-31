@@ -26,16 +26,18 @@ describe('parseFeedXml on RSS', () => {
   const entries = parseFeedXml(RSS_XML);
 
   it('keeps only the entries carrying both a title and a link', () => {
-    expect(entries).toHaveLength(3);
+    expect(entries).toHaveLength(4);
     expect(entries.map((entry) => entry.title)).toEqual([
       'First   synthetic entry',
       'Second synthetic entry',
-      'Entry without any link',
+      'Entry whose guid is not fetchable',
+      'Entry whose guid is a permalink',
     ]);
   });
 
   it('falls back to the guid when no link element is present', () => {
     expect(entries[2]?.url).toBe('tag:example.invalid,2020:missing');
+    expect(entries[3]?.url).toBe('https://example.invalid/blog/permalink');
   });
 
   it('decodes entities and strips HTML out of the excerpt', () => {
@@ -102,7 +104,7 @@ describe('createRssFeedReader', () => {
       createFakeFetcher({ responses: { [feed.url]: RSS_XML } }),
     );
 
-    await expect(reader.read(feed)).resolves.toHaveLength(3);
+    await expect(reader.read(feed)).resolves.toHaveLength(4);
   });
 
   it('rejects when the source cannot be fetched, so the caller can record it', async () => {
