@@ -29,4 +29,22 @@ const buildFingerprintSource = (title: string, publishedAt: string): string => {
   return `${normalizeText(title)}|${toDayStamp(publishedAt)}`;
 };
 
-export { buildFingerprintSource, buildIdSource, toDayStamp };
+/**
+ * Identity of a page with no publication date: the canonical URL plus the hash
+ * of its content, so a changed page becomes a new item.
+ */
+const buildContentIdSource = (sourceUrl: string, contentHash: string): string => {
+  return `${canonicalizeUrl(sourceUrl)}|${contentHash}`;
+};
+
+const buildContentFingerprintSource = (title: string, contentHash: string): string => {
+  return `${normalizeText(title)}|${contentHash}`;
+};
+
+export {
+  buildContentFingerprintSource,
+  buildContentIdSource,
+  buildFingerprintSource,
+  buildIdSource,
+  toDayStamp,
+};

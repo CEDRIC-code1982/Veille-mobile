@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Synthetic Test Feed</title>
+    <link>https://example.invalid/blog</link>
+    <description>Fixture used by the tests only.</description>
+    <item>
+      <title>First   synthetic entry</title>
+      <link>https://example.invalid/blog/first?utm_source=rss</link>
+      <pubDate>Thu, 02 Jan 2020 10:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Short &amp;amp; sweet description.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Second synthetic entry</title>
+      <link>/blog/second</link>
+      <pubDate>Fri, 03 Jan 2020 10:00:00 GMT</pubDate>
+      <description>Ignored when full content is present.</description>
+      <content:encoded>&lt;div&gt;&lt;script&gt;var a=1;&lt;/script&gt;&lt;p&gt;Full content here.&lt;/p&gt;&lt;/div&gt;</content:encoded>
+    </item>
+    <item>
+      <link>https://example.invalid/blog/no-title</link>
+      <pubDate>Sat, 04 Jan 2020 10:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Entry without any link</title>
+      <guid>tag:example.invalid,2020:missing</guid>
+      <pubDate>Sun, 05 Jan 2020 10:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

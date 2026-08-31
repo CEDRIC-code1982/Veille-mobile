@@ -23,12 +23,19 @@ interface Feed {
   maxAgeDays: number;
 }
 
-/** One entry as read from a feed or a scraped page, before any normalisation. */
+/**
+ * One entry as read from a feed or a scraped page, before any normalisation.
+ *
+ * `contentHash` is only set by the scraper: a documentation page carries no
+ * publication date, so its identity is the hash of its own text. That is what
+ * makes a new item appear when, and only when, the page actually changes.
+ */
 interface FeedEntry {
   title: string;
   url: string;
   excerpt: string;
   publishedAt?: string;
+  contentHash?: string;
 }
 
 export { FeedType };

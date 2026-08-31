@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Synthetic Atom Feed</title>
+  <updated>2020-02-01T00:00:00Z</updated>
+  <entry>
+    <title>Atom entry with several links</title>
+    <link rel="edit" href="https://example.invalid/edit/1"/>
+    <link rel="alternate" href="https://example.invalid/atom/1"/>
+    <id>tag:example.invalid,2020:1</id>
+    <published>2020-02-02T08:30:00Z</published>
+    <updated>2020-02-03T08:30:00Z</updated>
+    <summary type="html">&lt;p&gt;Atom summary text.&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Atom entry falling back to updated</title>
+    <link href="https://example.invalid/atom/2"/>
+    <id>tag:example.invalid,2020:2</id>
+    <updated>2020-02-04T09:00:00Z</updated>
+    <content type="html">&lt;p&gt;Atom content wins over summary.&lt;/p&gt;</content>
+    <summary>Should not be used.</summary>
+  </entry>
+</feed>
