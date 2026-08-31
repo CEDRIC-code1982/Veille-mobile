@@ -18,7 +18,7 @@ const CRITICALITY_HEADINGS: Record<Criticality, string> = {
 
 const TRUST_LABELS: Record<TrustLevel, string> = {
   [TrustLevel.VERIFIED]: 'vérifié',
-  [TrustLevel.REPORTED]: 'rapporté, citation non retrouvée',
+  [TrustLevel.REPORTED]: 'source officielle, citation non vérifiée',
   [TrustLevel.UNVERIFIED]: 'non vérifié',
 };
 

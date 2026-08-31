@@ -69,6 +69,14 @@ describe('stripHtml', () => {
     expect(stripHtml(html)).toBe('Kept');
   });
 
+  it('drops site chrome, so boilerplate can never pass as evidence', () => {
+    const html =
+      '<nav>Menu everywhere</nav><aside>Sidebar</aside><p>Real content</p>' +
+      '<footer>Footer everywhere</footer>';
+
+    expect(stripHtml(html)).toBe('Real content');
+  });
+
   it('turns block ends and line breaks into newlines', () => {
     expect(stripHtml('<p>One</p><p>Two<br>Three</p>')).toBe('One\nTwo\nThree');
   });

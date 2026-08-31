@@ -25,7 +25,10 @@ const MAIN_REGION_PATTERNS = [
   /<body\b[^>]*>([\s\S]*?)<\/body>/i,
 ];
 
-const TITLE_PATTERNS = [/<h1\b[^>]*>([\s\S]*?)<\/h1>/i, /<title\b[^>]*>([\s\S]*?)<\/title>/i];
+const HEADING_PATTERN = /<h1\b[^>]*>([\s\S]*?)<\/h1>/i;
+const DOCUMENT_TITLE_PATTERN = /<title\b[^>]*>([\s\S]*?)<\/title>/i;
+const SITE_NAME_SEPARATOR_PATTERN = /\s+[|\u00b7\u2013\u2014]\s+/;
+const MAX_TITLE_LENGTH = 160;
 
 /** Narrows a page down to its main region, falling back to the whole document. */
 const extractMainRegion = (html: string): string => {
@@ -41,23 +44,44 @@ const extractMainRegion = (html: string): string => {
   return html;
 };
 
-const extractTitle = (html: string, fallback: string): string => {
-  for (const pattern of TITLE_PATTERNS) {
-    const match = pattern.exec(html);
-    const rawTitle = match?.[1];
+/**
+ * First non-empty line of a heading.
+ *
+ * Documentation sites bury widgets inside the heading itself, on their own
+ * block: keeping only the first line drops them, where collapsing all the
+ * whitespace would have glued them to the real title.
+ */
+const readFirstLine = (html: string): string | undefined => {
+  for (const line of stripHtml(html).split('\n')) {
+    const trimmed = line.trim();
 
-    if (rawTitle === undefined) {
-      continue;
-    }
-
-    const title = stripHtml(rawTitle).replace(/\s+/g, ' ').trim();
-
-    if (title.length > 0) {
-      return title;
+    if (trimmed.length > 0) {
+      return truncateText(trimmed, MAX_TITLE_LENGTH);
     }
   }
 
-  return fallback;
+  return undefined;
+};
+
+const extractTitle = (html: string, fallback: string): string => {
+  const headingMatch = HEADING_PATTERN.exec(html);
+  const heading = headingMatch?.[1] === undefined ? undefined : readFirstLine(headingMatch[1]);
+
+  if (heading !== undefined) {
+    return heading;
+  }
+
+  const titleMatch = DOCUMENT_TITLE_PATTERN.exec(html);
+  const documentTitle = titleMatch?.[1] === undefined ? undefined : readFirstLine(titleMatch[1]);
+
+  if (documentTitle === undefined) {
+    return fallback;
+  }
+
+  // A document title is conventionally "Page | Site": keep the page part only.
+  const pagePart = documentTitle.split(SITE_NAME_SEPARATOR_PATTERN)[0]?.trim();
+
+  return pagePart !== undefined && pagePart.length > 0 ? pagePart : documentTitle;
 };
 
 const createScrapeFeedReader = (fetcher: SourceFetcher): FeedReader => {

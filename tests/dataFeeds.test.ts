@@ -6,7 +6,7 @@ import { describe, expect, it } from 'vitest';
 import { FeedType } from '../src/domain/entities/Feed';
 import type { FeedEntry } from '../src/domain/entities/Feed';
 import { createRssFeedReader } from '../src/data/feeds/RssFeedReader';
-import { createScrapeFeedReader } from '../src/data/feeds/ScrapeFeedReader';
+import { createScrapeFeedReader, extractTitle } from '../src/data/feeds/ScrapeFeedReader';
 import { parseFeedXml } from '../src/data/feeds/parseFeedXml';
 import { toCollectedItem, toIsoTimestamp } from '../src/data/mappers/toCollectedItem';
 import { buildFeed } from './helpers/factories';
@@ -173,6 +173,38 @@ describe('createScrapeFeedReader', () => {
     );
 
     await expect(reader.read(feed)).rejects.toThrow('no readable content');
+  });
+});
+
+describe('extractTitle', () => {
+  it('keeps only the first line of a heading, dropping the widgets buried in it', () => {
+    const html =
+      '<h1>Android Studio release notes<div>Stay organized with collections</div>' +
+      '<div>Save and categorize content based on your preferences.</div></h1>';
+
+    expect(extractTitle(html, 'fallback')).toBe('Android Studio release notes');
+  });
+
+  it('falls back to the document title and drops the site name suffix', () => {
+    const html = '<title>Android Releases | Platform | Android Developers</title><body></body>';
+
+    expect(extractTitle(html, 'fallback')).toBe('Android Releases');
+  });
+
+  it('handles a dash separator in a document title', () => {
+    const html = '<title>Changelog \u2014 Expo</title>';
+
+    expect(extractTitle(html, 'fallback')).toBe('Changelog');
+  });
+
+  it('caps an unreasonably long heading', () => {
+    const html = `<h1>${'word '.repeat(100)}</h1>`;
+
+    expect(extractTitle(html, 'fallback').length).toBeLessThanOrEqual(160);
+  });
+
+  it('falls back to the feed name when the page carries no title at all', () => {
+    expect(extractTitle('<body><p>text</p></body>', 'Feed Name')).toBe('Feed Name');
   });
 });
 
