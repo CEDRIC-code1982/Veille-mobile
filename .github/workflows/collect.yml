@@ -1,0 +1,75 @@
+# Daily watch pipeline.
+#
+# The four stages are four separate steps on purpose: when something breaks, the
+# GitHub UI has to say which one.
+name: collect
+
+on:
+  schedule:
+    # 04:37 UTC: off-peak, and deliberately away from the start of the hour,
+    # which GitHub documents as the most delayed and most dropped slot.
+    - cron: '37 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: veille-pipeline
+  cancel-in-progress: false
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Collect
+        run: npm run collect
+        env:
+          VEILLE_USER_AGENT: veille-mobile-bot (+${{ github.server_url }}/${{ github.repository }})
+
+      - name: Classify
+        run: npm run classify
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Verify
+        run: npm run verify
+        env:
+          VEILLE_USER_AGENT: veille-mobile-bot (+${{ github.server_url }}/${{ github.repository }})
+
+      - name: Publish
+        run: npm run publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Screening happens before the data is committed, not after: on a public
+      # repository, a forbidden term pushed once is public forever.
+      - name: Privacy check before committing
+        run: npm run check:privacy -- --require-terms
+        env:
+          FORBIDDEN_TERMS: ${{ secrets.FORBIDDEN_TERMS }}
+
+      - name: Commit the data
+        run: |
+          git config user.name 'veille-bot'
+          git config user.email 'veille-bot@users.noreply.github.com'
+          git add data/items data/index.json digest
+          git diff --staged --quiet || git commit -m 'data: daily watch update'
+          git push
+        env:
+          FORBIDDEN_TERMS: ${{ secrets.FORBIDDEN_TERMS }}
