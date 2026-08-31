@@ -1,0 +1,12 @@
+# Copy this file to forbidden-terms.local.txt, which is gitignored, and put the
+# real terms there. One term per line. Lines starting with # are ignored.
+#
+# Matching is case-insensitive and tolerant to separators: a single line
+# "ExampleEmployer" also catches "example-employer", "example_employer" and
+# "Example Employer".
+#
+# The values below are placeholders. Replace them, never commit real ones.
+ExampleEmployer
+Example Client Sarl
+example-internal-codename
+intranet.example.invalid

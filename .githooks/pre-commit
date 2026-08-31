@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+# Refuses a commit that would introduce a forbidden term. See
+# src/tools/checkPrivacy.ts and forbidden-terms.local.txt.example.
+#
+set -e
+
+npm run --silent check:privacy
