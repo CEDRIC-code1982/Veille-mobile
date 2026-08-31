@@ -16,7 +16,12 @@ source et confronte ta citation au contenu réel. Un déclassement n'est pas un
 
 ## Étapes, dans cet ordre
 
-1. `git pull --ff-only`
+1. Synchronise, si et seulement si un dépôt distant est configuré :
+   ```bash
+   git remote get-url origin >/dev/null 2>&1 && git pull --ff-only || true
+   ```
+   Pas de remote, ou remote injoignable : ce n'est pas une erreur, continue en
+   local. Le commit partira au prochain run.
 2. `npm run collect`
 3. `npm run classify:request`
    Le log indique le chemin du fichier d'instructions écrit et celui du fichier
@@ -27,11 +32,11 @@ source et confronte ta citation au contenu réel. Un déclassement n'est pas un
 5. `npm run classify:file`
 6. `npm run verify`
 7. `npm run publish`
-8. Commit et push :
+8. Commit, puis push seulement si un remote existe :
    ```bash
    git add data/items data/index.json digest
    git diff --staged --quiet || git commit -m 'data: daily watch update'
-   git push
+   git remote get-url origin >/dev/null 2>&1 && git push || true
    ```
 
 ## Règles impératives
@@ -51,7 +56,8 @@ source et confronte ta citation au contenu réel. Un déclassement n'est pas un
 - **N'ajoute jamais `data/raw/` au commit.** Il est ignoré par git, et c'est
   volontaire : les extraits d'articles n'ont rien à faire dans le dépôt.
 - Si une étape échoue, **arrête-toi et rapporte l'erreur**. Ne contourne pas, ne
-  bricole pas de solution de repli.
+  bricole pas de solution de repli. Deux exceptions explicites, et seulement
+  celles-là : l'absence de dépôt distant aux étapes 1 et 8 n'est pas une erreur.
 
 ## Compte rendu attendu
 
