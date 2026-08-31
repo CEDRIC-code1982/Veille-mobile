@@ -22,11 +22,18 @@ import { ClassificationStatus } from '../domain/ports/LlmClassifier';
 import type { ClassificationRun, LlmClassifier, LlmUsage } from '../domain/ports/LlmClassifier';
 import { classifyItem } from '../domain/useCases/classifyItem';
 import { createAnthropicLlmClassifier } from '../data/llm/AnthropicLlmClassifier';
+import { buildClassificationRequest } from '../data/llm/buildClassificationRequest';
+import { createFileProposalsClassifier } from '../data/llm/FileProposalsClassifier';
 import { loadProjectProfiles } from '../shared/config';
 import { readIntegerEnv, readOptionalEnv, readRequiredEnv } from '../shared/env';
-import { readRequiredJsonFile, writeJsonFile } from '../shared/jsonStore';
+import { readRequiredJsonFile, writeJsonFile, writeTextFile } from '../shared/jsonStore';
 import { createLogger } from '../shared/logger';
-import { buildClassificationPath, buildRawCollectionPath } from '../shared/paths';
+import {
+  buildClassificationPath,
+  buildClassificationRequestPath,
+  buildProposalsPath,
+  buildRawCollectionPath,
+} from '../shared/paths';
 import { classificationFileSchema, rawCollectionSchema } from '../shared/schemas/pipeline';
 import { systemClock } from '../shared/systemClock';
 import { findNewestCollectedDay, resolveRequestedDay } from './pipelineDay';
@@ -41,6 +48,10 @@ const logger = createLogger(import.meta.url);
 const DEFAULT_MODEL = 'claude-haiku-4-5-20251001';
 const DEFAULT_MAX_ITEMS_PER_RUN = 60;
 const DEFAULT_BATCH_SIZE = 10;
+
+const EMIT_REQUEST_FLAG = '--emit-request';
+const FROM_PROPOSALS_FLAG = '--from-proposals';
+const ROUTINE_MODEL_NAME = 'scheduled-routine';
 
 interface ClassificationFailure {
   itemId: string;
@@ -209,6 +220,21 @@ const runClassify = async (
   };
 };
 
+/** Reads the optional path attached to `--from-proposals=<path>`. */
+const readProposalsFlag = (argv: readonly string[]): string | undefined => {
+  for (const argument of argv) {
+    if (argument === FROM_PROPOSALS_FLAG) {
+      return '';
+    }
+
+    if (argument.startsWith(`${FROM_PROPOSALS_FLAG}=`)) {
+      return argument.slice(FROM_PROPOSALS_FLAG.length + 1);
+    }
+  }
+
+  return undefined;
+};
+
 const main = async (): Promise<void> => {
   const requestedDay = resolveRequestedDay(process.argv, systemClock);
   const dayLabel = existsSync(buildRawCollectionPath(requestedDay))
@@ -230,21 +256,59 @@ const main = async (): Promise<void> => {
   }
 
   const collection = readRequiredJsonFile(buildRawCollectionPath(dayLabel), rawCollectionSchema);
-  const model = readOptionalEnv('ANTHROPIC_MODEL') ?? DEFAULT_MODEL;
+  const maxItemsPerRun = readIntegerEnv('MAX_ITEMS_PER_RUN', DEFAULT_MAX_ITEMS_PER_RUN);
 
-  logger.info(`classifying ${collection.items.length} item(s) from ${dayLabel} with ${model}`);
+  // The routine asks for its instructions first, classifies, then comes back.
+  if (process.argv.includes(EMIT_REQUEST_FLAG)) {
+    const selected = prioritizeItems(collection.items).slice(0, Math.max(0, maxItemsPerRun));
+    const proposalsPath = buildProposalsPath(dayLabel);
+    const requestPath = buildClassificationRequestPath(dayLabel);
+
+    writeTextFile(
+      requestPath,
+      buildClassificationRequest({ dayLabel, items: selected, proposalsPath }),
+    );
+    logger.info(`wrote instructions for ${selected.length} item(s) to ${requestPath}`);
+    logger.info(`the proposals are expected at ${proposalsPath}`);
+
+    return;
+  }
+
+  const proposalsFlag = readProposalsFlag(process.argv);
+  const usesProposalsFile = proposalsFlag !== undefined;
+  const proposalsPath =
+    proposalsFlag === undefined || proposalsFlag.length === 0
+      ? buildProposalsPath(dayLabel)
+      : proposalsFlag;
+
+  const model = usesProposalsFile
+    ? ROUTINE_MODEL_NAME
+    : readOptionalEnv('ANTHROPIC_MODEL') ?? DEFAULT_MODEL;
+
+  logger.info(
+    usesProposalsFile
+      ? `classifying ${collection.items.length} item(s) from ${dayLabel} using ${proposalsPath}`
+      : `classifying ${collection.items.length} item(s) from ${dayLabel} with ${model}`,
+  );
+
+  const classifier = usesProposalsFile
+    ? createFileProposalsClassifier(proposalsPath)
+    : createAnthropicLlmClassifier({
+        apiKey: readRequiredEnv('ANTHROPIC_API_KEY'),
+        model,
+      });
 
   const result = await runClassify({
     items: collection.items,
-    classifier: createAnthropicLlmClassifier({
-      apiKey: readRequiredEnv('ANTHROPIC_API_KEY'),
-      model,
-    }),
+    classifier,
     profiles: loadProjectProfiles(),
     clock: systemClock,
     model,
-    maxItemsPerRun: readIntegerEnv('MAX_ITEMS_PER_RUN', DEFAULT_MAX_ITEMS_PER_RUN),
-    batchSize: readIntegerEnv('VEILLE_LLM_BATCH_SIZE', DEFAULT_BATCH_SIZE),
+    maxItemsPerRun,
+    // One batch when reading a file: there is nothing to spread over calls.
+    batchSize: usesProposalsFile
+      ? Math.max(1, collection.items.length)
+      : readIntegerEnv('VEILLE_LLM_BATCH_SIZE', DEFAULT_BATCH_SIZE),
   });
 
   const validated = classificationFileSchema.safeParse(result);

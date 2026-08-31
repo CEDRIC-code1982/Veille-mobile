@@ -29,6 +29,16 @@ const buildClassificationPath = (dayLabel: string): string => {
   return join(PATHS.rawDirectory, `${dayLabel}.classified.json`);
 };
 
+/** Instructions handed to the scheduled routine for one day. */
+const buildClassificationRequestPath = (dayLabel: string): string => {
+  return join(PATHS.rawDirectory, `${dayLabel}.request.md`);
+};
+
+/** Proposals the routine writes back, validated like any external input. */
+const buildProposalsPath = (dayLabel: string): string => {
+  return join(PATHS.rawDirectory, `${dayLabel}.proposals.json`);
+};
+
 const buildVerificationPath = (dayLabel: string): string => {
   return join(PATHS.rawDirectory, `${dayLabel}.verified.json`);
 };
@@ -43,8 +53,10 @@ const buildDigestPath = (weekLabel: string): string => {
 
 export {
   buildClassificationPath,
+  buildClassificationRequestPath,
   buildDigestPath,
   buildMonthItemsPath,
+  buildProposalsPath,
   buildRawCollectionPath,
   buildVerificationPath,
   PATHS,

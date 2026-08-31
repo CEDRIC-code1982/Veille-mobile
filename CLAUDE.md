@@ -61,6 +61,13 @@ TypeScript strict, `strict: true` et `noUncheckedIndexedAccess: true`. La CI
 - `verify.ts` ne fait jamais confiance à la sortie du LLM : il refetche la
   source et confronte la citation au contenu réel.
 - `publish.ts` n'appelle jamais le LLM.
+- La classification a **deux implémentations** derrière le même port
+  `LlmClassifier`, et elles doivent rester interchangeables :
+  `AnthropicLlmClassifier` (API Messages) et `FileProposalsClassifier` (fichier
+  de propositions écrit par la routine planifiée). Le fichier de propositions
+  n'a **aucun** crédit supplémentaire : même schéma Zod, même dégradation, même
+  passage par `verify`. Les règles envoyées dans les deux cas viennent de
+  `buildSystemPrompt()`, unique source, pour qu'elles ne puissent pas diverger.
 - Toute donnée externe (flux, réponse du modèle, fichier JSON, YAML) est validée
   par un schéma Zod avant d'entrer dans le domaine.
 - Le site est en HTML, CSS et JS vanilla. **Ne pas proposer React, Vue ou

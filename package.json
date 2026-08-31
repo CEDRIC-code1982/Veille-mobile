@@ -9,6 +9,8 @@
   "scripts": {
     "collect": "tsx src/scripts/collect.ts",
     "classify": "tsx src/scripts/classify.ts",
+    "classify:request": "tsx src/scripts/classify.ts --emit-request",
+    "classify:file": "tsx src/scripts/classify.ts --from-proposals",
     "verify": "tsx src/scripts/verify.ts",
     "publish": "tsx src/scripts/publish.ts",
     "icons": "tsx src/tools/generateIcons.ts",
@@ -16,6 +18,7 @@
     "site:serve": "npm run site:build && tsx src/tools/serveSite.ts",
     "check:privacy": "tsx src/tools/checkPrivacy.ts",
     "check:feeds": "tsx src/tools/checkFeeds.ts",
+    "check:heartbeat": "tsx src/tools/checkHeartbeat.ts",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",

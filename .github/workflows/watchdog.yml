@@ -1,0 +1,45 @@
+# Watchdog over the pipeline itself.
+#
+# The daily run is driven by a scheduled routine on a personal machine. If that
+# machine stays off or the routine breaks, nothing else would notice: this job
+# reads data/index.json and opens an issue when the last collection gets old.
+#
+# It collects nothing, publishes nothing, and needs no API key.
+name: watchdog
+
+on:
+  schedule:
+    # 18:23 UTC, off-peak and away from the start of the hour.
+    - cron: '23 18 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: veille-watchdog
+  cancel-in-progress: false
+
+jobs:
+  heartbeat:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check the pipeline heartbeat
+        run: npm run check:heartbeat
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

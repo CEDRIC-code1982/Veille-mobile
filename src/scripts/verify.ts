@@ -107,6 +107,29 @@ const checkEvidence = async (
   return QUOTE_LOOKUP_TO_CHECK[findQuoteInText(quote, stripHtml(fetched.text))];
 };
 
+/**
+ * Wording of the note shown on the site.
+ *
+ * An item that claimed nothing has nothing to prove: saying "source not
+ * refetched" there would read as a failure, when it is simply the absence of a
+ * claim.
+ */
+const buildNote = (
+  evidenceCheck: EvidenceCheck,
+  hasQuote: boolean,
+  isDowngraded: boolean,
+): string => {
+  if (isDowngraded) {
+    return `rétrogradé : ${CHECK_NOTES[evidenceCheck]}`;
+  }
+
+  if (evidenceCheck === EvidenceCheck.NOT_CHECKED && !hasQuote) {
+    return 'aucune citation à vérifier';
+  }
+
+  return CHECK_NOTES[evidenceCheck];
+};
+
 const verifyOne = async (
   item: VeilleItem,
   officialDomains: readonly OfficialDomain[],
@@ -121,10 +144,9 @@ const verifyOne = async (
     ...(item.evidenceQuote !== undefined ? { evidenceQuote: item.evidenceQuote } : {}),
   });
 
+  const hasQuote = (item.evidenceQuote ?? '').trim().length > 0;
   const shouldExplain = verdict.downgraded || verdict.trustLevel !== TrustLevel.VERIFIED;
-  const note = verdict.downgraded
-    ? `rétrogradé : ${CHECK_NOTES[evidenceCheck]}`
-    : CHECK_NOTES[evidenceCheck];
+  const note = buildNote(evidenceCheck, hasQuote, verdict.downgraded);
 
   const verified: VeilleItem = {
     ...item,

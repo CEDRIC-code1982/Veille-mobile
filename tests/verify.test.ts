@@ -191,6 +191,15 @@ describe('runVerify, notes and bookkeeping', () => {
     );
   });
 
+  it('says nothing was claimed, rather than reporting a failed refetch', async () => {
+    const result = await verifyWith([
+      buildVeilleItem({ criticality: Criticality.BACKGROUND, sourceUrl: OFFICIAL_URL }),
+    ]);
+
+    expect(result.items[0]?.trustLevel).toBe(TrustLevel.REPORTED);
+    expect(result.items[0]?.verificationNote).toBe('aucune citation à vérifier');
+  });
+
   it('keeps a note left by an earlier stage rather than overwriting it', async () => {
     const result = await verifyWith([
       buildVeilleItem({

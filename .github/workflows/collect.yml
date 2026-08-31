@@ -1,15 +1,28 @@
-# Daily watch pipeline.
+# Watch pipeline, manual fallback.
+#
+# The daily run is driven by a scheduled routine, which is also what performs the
+# classification: see the README. This workflow stays as a manual fallback, for
+# instance to force a collection from a phone, and it is what proves the pipeline
+# still works end to end.
+#
+# It has no cron on purpose: two drivers would fight over the same data. Silent
+# failure is watched by watchdog.yml instead.
+#
+# Without ANTHROPIC_API_KEY the classify step degrades every item to
+# background/unverified rather than failing, so this fallback works with no
+# credential at all.
 #
 # The four stages are four separate steps on purpose: when something breaks, the
 # GitHub UI has to say which one.
 name: collect
 
 on:
-  schedule:
-    # 04:37 UTC: off-peak, and deliberately away from the start of the hour,
-    # which GitHub documents as the most delayed and most dropped slot.
-    - cron: '37 4 * * *'
   workflow_dispatch:
+    inputs:
+      classify:
+        description: 'Run the classification step (needs ANTHROPIC_API_KEY)'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -43,9 +56,16 @@ jobs:
           VEILLE_USER_AGENT: veille-mobile-bot (+${{ github.server_url }}/${{ github.repository }})
 
       - name: Classify
+        if: ${{ inputs.classify }}
         run: npm run classify
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      # Without a classification step there is no proposals file, so every item
+      # degrades to background/unverified. That is a deliberate, honest fallback.
+      - name: Classify without a model
+        if: ${{ !inputs.classify }}
+        run: npm run classify:file
 
       - name: Verify
         run: npm run verify
