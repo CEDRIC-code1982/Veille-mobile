@@ -9,6 +9,9 @@ consultable depuis un téléphone.
 Aucune relecture humaine dans la boucle. C'est précisément pour ça que la règle
 de confiance ci-dessous existe.
 
+**Site : https://cedric-code1982.github.io/Veille-mobile/** — installable en PWA
+et consultable hors ligne.
+
 ## Le principe : rien n'est bloquant sans preuve
 
 Un item ne peut porter `criticality: "blocking"` que si les **trois** conditions
