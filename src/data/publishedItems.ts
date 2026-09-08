@@ -45,12 +45,24 @@ const readAllPublishedItems = (): VeilleItem[] => {
   return items;
 };
 
-/** Builds the identifier sets used to reject an item that is already online. */
-const readKnownItems = (): KnownItems => {
+/**
+ * Builds the identifier sets used to reject an item that is already online.
+ *
+ * An item published without a summary was never really classified: the model
+ * failed, the run had no model at all, or it was skipped for budget. Such an
+ * item is deliberately left out of the known set, so it is collected again and
+ * gets another chance; the publish stage then replaces the stored version. That
+ * is what keeps a degraded item from staying degraded forever.
+ */
+const buildKnownItems = (items: readonly VeilleItem[]): KnownItems => {
   const ids = new Set<string>();
   const fingerprints = new Set<string>();
 
-  for (const item of readAllPublishedItems()) {
+  for (const item of items) {
+    if (item.summary.trim().length === 0) {
+      continue;
+    }
+
     ids.add(item.id);
     fingerprints.add(item.fingerprint);
   }
@@ -58,4 +70,14 @@ const readKnownItems = (): KnownItems => {
   return { ids, fingerprints };
 };
 
-export { listPublishedMonths, readAllPublishedItems, readKnownItems, readMonthItems };
+const readKnownItems = (): KnownItems => {
+  return buildKnownItems(readAllPublishedItems());
+};
+
+export {
+  buildKnownItems,
+  listPublishedMonths,
+  readAllPublishedItems,
+  readKnownItems,
+  readMonthItems,
+};

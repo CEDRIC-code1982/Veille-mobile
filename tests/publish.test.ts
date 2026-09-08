@@ -3,6 +3,7 @@ import { describe, expect, it } from 'vitest';
 import { Criticality, TrustLevel } from '../src/domain/entities/VeilleItem';
 import type { VeilleItem } from '../src/domain/entities/VeilleItem';
 import { buildNotifications } from '../src/domain/useCases/buildNotifications';
+import { buildKnownItems } from '../src/data/publishedItems';
 import { resolveMonth, runPublish } from '../src/scripts/publish';
 import { buildFeed, buildVeilleItem } from './helpers/factories';
 
@@ -31,6 +32,27 @@ const buildRecentItem = (overrides: Partial<VeilleItem> = {}): VeilleItem => {
     ...overrides,
   });
 };
+
+describe('buildKnownItems', () => {
+  it('remembers an item that carries a summary', () => {
+    const known = buildKnownItems([
+      buildVeilleItem({ id: 'classified', fingerprint: 'fp-1', summary: 'Un résumé.' }),
+    ]);
+
+    expect(known.ids.has('classified')).toBe(true);
+    expect(known.fingerprints.has('fp-1')).toBe(true);
+  });
+
+  it('forgets an item published without a summary, so it gets another chance', () => {
+    const known = buildKnownItems([
+      buildVeilleItem({ id: 'degraded', fingerprint: 'fp-2', summary: '' }),
+      buildVeilleItem({ id: 'blank', fingerprint: 'fp-3', summary: '   ' }),
+    ]);
+
+    expect(known.ids.size).toBe(0);
+    expect(known.fingerprints.size).toBe(0);
+  });
+});
 
 describe('resolveMonth', () => {
   it('uses the publication month', () => {

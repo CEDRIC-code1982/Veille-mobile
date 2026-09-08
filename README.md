@@ -283,6 +283,12 @@ Le dépôt est public. Aucun contexte professionnel n'y apparaît.
 Les items écartés par `MAX_ITEMS_PER_RUN` sont simplement recollectés le
 lendemain : le retard se résorbe seul.
 
+Même mécanisme pour la qualité : un item publié **sans résumé** n'a jamais été
+réellement classé (modèle en échec, run sans modèle, ou plafond atteint). Il est
+volontairement exclu du jeu des items connus, donc recollecté et reclassé au run
+suivant, et la version améliorée remplace la version stockée. Un item dégradé ne
+reste pas dégradé.
+
 ## Format de log
 
 Tous les scripts, sans exception :
