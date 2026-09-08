@@ -225,6 +225,18 @@ GitHub recommande par ailleurs d'éviter le début d'heure pour les `cron`, les
 files d'attente y étant saturées et des jobs pouvant être abandonnés. Le
 workflow tourne donc à `37 4 * * *`.
 
+### Le piège du push par GITHUB_TOKEN
+
+GitHub documente qu'un **événement déclenché avec le `GITHUB_TOKEN` ne crée
+aucun run de workflow**, pour éviter les récursions. Autrement dit, le commit de
+données poussé par `collect.yml` ne déclenche pas `deploy.yml`, alors que le même
+commit poussé par la routine depuis ta machine, avec ta clé, le déclenche
+normalement.
+
+`collect.yml` termine donc par un `gh workflow run deploy.yml` explicite, et
+seulement s'il a réellement poussé quelque chose : `workflow_dispatch` est la
+seule exception documentée à cette règle et fonctionne avec le jeton par défaut.
+
 ## Secrets de dépôt
 
 | Secret | Rôle | Sans lui |

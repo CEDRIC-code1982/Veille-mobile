@@ -27,6 +27,9 @@ on:
 permissions:
   contents: write
   issues: write
+  # Needed to dispatch deploy.yml: a push made with GITHUB_TOKEN never triggers
+  # a workflow, but workflow_dispatch is documented as always creating a run.
+  actions: write
 
 concurrency:
   group: veille-pipeline
@@ -85,11 +88,28 @@ jobs:
           FORBIDDEN_TERMS: ${{ secrets.FORBIDDEN_TERMS }}
 
       - name: Commit the data
+        id: commit
         run: |
           git config user.name 'veille-bot'
           git config user.email 'veille-bot@users.noreply.github.com'
           git add data/items data/index.json digest
-          git diff --staged --quiet || git commit -m 'data: daily watch update'
-          git push
+          if git diff --staged --quiet; then
+            echo 'pushed=false' >> "$GITHUB_OUTPUT"
+            echo 'no data change, nothing to commit'
+          else
+            git commit -m 'data: daily watch update'
+            git push
+            echo 'pushed=true' >> "$GITHUB_OUTPUT"
+          fi
         env:
           FORBIDDEN_TERMS: ${{ secrets.FORBIDDEN_TERMS }}
+
+      # This push was made with GITHUB_TOKEN, so it triggers nothing by itself.
+      # A push from the scheduled routine uses a personal key and does trigger
+      # the deployment; this step is what makes the manual fallback behave the
+      # same way.
+      - name: Deploy the site when the data changed
+        if: steps.commit.outputs.pushed == 'true'
+        run: gh workflow run deploy.yml --repo "$GITHUB_REPOSITORY"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
