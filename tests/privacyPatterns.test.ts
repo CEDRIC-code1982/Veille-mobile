@@ -57,6 +57,31 @@ describe('buildTermPattern', () => {
     expect(pattern?.test('react native background modes')).toBe(false);
   });
 
+  it('anchors a short term, so an acronym stays usable', () => {
+    const pattern = buildTermPattern('ZQL');
+
+    expect(pattern?.test('ZQL')).toBe(true);
+    expect(pattern?.test('la société ZQL, à Exempleville')).toBe(true);
+    expect(pattern?.test('zql-access')).toBe(true);
+    expect(pattern?.test('my_zql_thing')).toBe(true);
+    expect(pattern?.test('ZQL.ACCESS')).toBe(true);
+  });
+
+  it('keeps a short term from matching inside a word or a hash', () => {
+    const pattern = buildTermPattern('ZQL');
+
+    expect(pattern?.test('sha512-Abzqlxyzqw==')).toBe(false);
+    expect(pattern?.test('prozqligious')).toBe(false);
+    expect(pattern?.test('zqly')).toBe(false);
+    expect(pattern?.test('xzql')).toBe(false);
+  });
+
+  it('still matches a long term inside a longer word', () => {
+    const pattern = buildTermPattern('Contoso');
+
+    expect(pattern?.test('MyContosoThing')).toBe(true);
+  });
+
   it('returns undefined for a term without any alphanumeric character', () => {
     expect(buildTermPattern('---')).toBeUndefined();
     expect(buildTermPattern('   ')).toBeUndefined();

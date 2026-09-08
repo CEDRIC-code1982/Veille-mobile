@@ -13,6 +13,15 @@
 const SEPARATOR_PATTERN = '[-_\\s.]*';
 const COMMENT_PREFIX = '#';
 
+/**
+ * A term this short is anchored instead of being matched as a substring.
+ *
+ * A three-letter company acronym is exactly the kind of term worth blocking,
+ * but unanchored it also matches inside integrity hashes and English words, and
+ * would block every commit for nothing. Anchoring keeps it usable.
+ */
+const SHORT_TERM_MAX_LENGTH = 4;
+
 interface PrivacyViolation {
   location: string;
   patternIndex: number;
@@ -62,7 +71,15 @@ const buildTermPattern = (term: string): RegExp | undefined => {
     return undefined;
   }
 
-  return new RegExp(chunks.join(SEPARATOR_PATTERN), 'i');
+  const body = chunks.join(SEPARATOR_PATTERN);
+
+  if (chunks.join('').length > SHORT_TERM_MAX_LENGTH) {
+    return new RegExp(body, 'i');
+  }
+
+  // Letters and digits break the match, but hyphens, underscores, dots and
+  // spaces do not: "ZQL" still catches "ZQL Access" and "my_zql_thing".
+  return new RegExp(`(?<![a-z0-9])${body}(?![a-z0-9])`, 'i');
 };
 
 /** Compiles every usable term into a pattern, keeping the term order. */
@@ -114,5 +131,11 @@ const findViolationsInText = (
   return violations;
 };
 
-export { buildTermPattern, buildTermPatterns, findViolationsInText, parseForbiddenTerms };
+export {
+  buildTermPattern,
+  buildTermPatterns,
+  findViolationsInText,
+  parseForbiddenTerms,
+  SHORT_TERM_MAX_LENGTH,
+};
 export type { PrivacyViolation };
