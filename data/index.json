@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-09-08T08:50:02.890Z",
+  "months": [
+    {
+      "month": "2026-08",
+      "itemCount": 36,
+      "blockingCount": 0
+    },
+    {
+      "month": "2026-09",
+      "itemCount": 13,
+      "blockingCount": 0
+    }
+  ],
+  "counts": {
+    "total": 49,
+    "blocking": 0,
+    "impacting": 0,
+    "background": 49,
+    "unverified": 19
+  },
+  "feedCount": 16,
+  "lastCollectedAt": "2026-09-08T08:50:00.279Z"
+}
