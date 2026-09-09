@@ -1,7 +1,218 @@
 {
   "month": "2026-09",
-  "updatedAt": "2026-09-08T08:50:02.890Z",
+  "updatedAt": "2026-09-09T16:01:52.567Z",
   "items": [
+    {
+      "id": "5eec7539f2f29bdb",
+      "title": "Don’t kill my app!",
+      "summary": "Le site recense les constructeurs Android qui privilégient l'autonomie au détriment du bon fonctionnement des applications en arrière-plan, Huawei, Xiaomi et OnePlus arrivant en tête du classement. Il signale aussi un modèle IssueTracker permettant de remonter directement à Google les problèmes propres à un appareil.",
+      "sourceUrl": "https://dontkillmyapp.com/",
+      "sourceName": "Don't Kill My App",
+      "publishedAt": "2026-09-09T15:55:13.198Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "android",
+        "background"
+      ],
+      "tags": [
+        "battery",
+        "background",
+        "oem",
+        "dkma"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "a7ce293506c1aa4c",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "694ab40a9d511b65",
+      "title": "Changelog",
+      "summary": "Expo annonce une intégration de PostHog en une seule commande, couvrant l'analytique, le replay de session et le suivi d'erreurs. Chaque événement peut être rattaché à la mise à jour EAS dont il provient.",
+      "sourceUrl": "https://expo.dev/changelog",
+      "sourceName": "Expo Changelog",
+      "publishedAt": "2026-09-09T15:55:13.198Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "react-native",
+        "tooling"
+      ],
+      "tags": [
+        "expo",
+        "posthog",
+        "analytics",
+        "eas"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "c7ea688a4daed478",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "747d8fa9983503e1",
+      "title": "App Review Guidelines",
+      "summary": "La page des règles de revue de l'App Store rappelle le cadre général d'examen et les principes de curation d'Apple, ainsi que l'existence de la notarisation et des marketplaces alternatives. L'extrait ne contient que l'introduction du document, sans changement identifiable.",
+      "sourceUrl": "https://developer.apple.com/app-store/review/guidelines",
+      "sourceName": "App Store Review Guidelines",
+      "publishedAt": "2026-09-09T15:55:13.198Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "policy"
+      ],
+      "tags": [
+        "app-store",
+        "review",
+        "notarization"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "5150cceb89703712",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "7f3bb5b40981ba0e",
+      "title": "Policy Deadlines",
+      "summary": "La page des échéances de politique Google Play liste les prochaines obligations, dont l'enregistrement des applications dans la Play Console et de nouvelles règles encadrant l'accès large aux contacts et à la localisation précise. Les échéances annoncées s'étalent du 30 septembre 2026 au 27 janvier 2027.",
+      "sourceUrl": "https://support.google.com/googleplay/android-developer/answer/9934569",
+      "sourceName": "Play Console Policy Updates",
+      "publishedAt": "2026-09-09T15:55:13.198Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
+      "criticality": "blocking",
+      "trustLevel": "verified",
+      "categories": [
+        "android",
+        "policy"
+      ],
+      "tags": [
+        "play-console",
+        "permissions",
+        "deadline",
+        "registration"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "855a570e2ed4f7f3",
+      "evidenceQuote": "To meet Android developer verification requirements and Play Console requirements , you must register your Play apps in Play Console.",
+      "deadline": "2026-09-30"
+    },
+    {
+      "id": "92ae55ac7032810a",
+      "title": "Android Releases",
+      "summary": "La page de synthèse des versions de plateforme Android récapitule les apports d'Android 16 et des versions antérieures, orientés vie privée, sécurité, médias et grands écrans. Aucune nouveauté datée n'apparaît dans l'extrait.",
+      "sourceUrl": "https://developer.android.com/about/versions",
+      "sourceName": "Android Platform Versions",
+      "publishedAt": "2026-09-09T15:55:13.198Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android"
+      ],
+      "tags": [
+        "android-16",
+        "platform",
+        "versions"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "eaeba556b1c82d3d",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "a06f13dc67371cf3",
+      "title": "Android Studio Quail 4",
+      "summary": "Android Studio Quail 4, numéroté 2026.1.4, est la version stable courante, installable depuis la mise à jour intégrée ou en téléchargement direct. La page recense les nouveautés et améliorations de ce canal stable.",
+      "sourceUrl": "https://developer.android.com/studio/releases",
+      "sourceName": "Android Studio Releases",
+      "publishedAt": "2026-09-09T15:55:13.198Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "tooling"
+      ],
+      "tags": [
+        "android-studio",
+        "ide",
+        "release"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "4e22d71a96dc3310",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "c6c163bf77fd7b0b",
+      "title": "Meet Google Play's target API level requirement",
+      "summary": "Google Play exige de cibler Android 16 (API 36) pour toute nouvelle application ou mise à jour soumise, avec des seuils plus bas pour Wear OS, Automotive, TV et XR. Les applications existantes doivent viser au moins Android 15 (API 35) pour rester diffusées aux nouveaux utilisateurs, une demande de délai restant possible jusqu'au 1er novembre 2026.",
+      "sourceUrl": "https://developer.android.com/google/play/requirements/target-sdk",
+      "sourceName": "Android Target API Level Requirements",
+      "publishedAt": "2026-09-09T15:55:13.198Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
+      "criticality": "blocking",
+      "trustLevel": "verified",
+      "categories": [
+        "android",
+        "policy"
+      ],
+      "tags": [
+        "target-sdk",
+        "api-36",
+        "google-play",
+        "deadline"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "e2a2dd2392afe6ef",
+      "evidenceQuote": "Starting August 31 2026: New apps and app updates must target Android 16 (API level 36) or higher to be submitted to Google Play; except for Wear OS and Android Automotive OS apps, which must target Android 15 (API level 35) or higher, and Android TV and Android XR apps, which must target Android",
+      "deadline": "2026-08-31"
+    },
+    {
+      "id": "8a0b2f391d1d76fd",
+      "title": "0.88.0-rc.0",
+      "summary": "La première release candidate de React Native 0.88 retire l'export racine Touchable et déprécie le point d'entrée InitializeCore au profit de setup-env. Côté natif, elle ajoute des en-têtes parapluie C++ publics et RCTArrayBuffer pour les TurboModules iOS, avec un contrat explicite de propriété des octets.",
+      "sourceUrl": "https://github.com/react/react-native/releases/tag/v0.88.0-rc.0",
+      "sourceName": "React Native Releases",
+      "publishedAt": "2026-09-08T17:26:59.000Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
+      "criticality": "impacting",
+      "trustLevel": "unverified",
+      "categories": [
+        "react-native",
+        "ios"
+      ],
+      "tags": [
+        "0.88",
+        "rc",
+        "breaking",
+        "turbomodules"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "492fed5f7cfa37e7",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "e3ca44bcfb128a3e",
+      "title": "The internet’s favorite cat comes to Apple Arcade with Pusheen’s Place",
+      "summary": "Apple Arcade accueille au 1er octobre une nouvelle série de jeux, dont un titre autour du chat Pusheen. Annonce grand public, sans incidence technique.",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/09/the-internets-favorite-cat-comes-to-apple-arcade-with-pusheens-place",
+      "sourceName": "Apple Newsroom",
+      "publishedAt": "2026-09-08T13:59:40.685Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ios"
+      ],
+      "tags": [
+        "apple-arcade",
+        "games"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "473eaf7cbddc3737",
+      "verificationNote": "aucune citation à vérifier"
+    },
     {
       "id": "2f33a6a13390f367",
       "title": "Changelog",
@@ -22,233 +233,140 @@
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
-      "id": "5eec7539f2f29bdb",
-      "title": "Don’t kill my app!",
-      "summary": "",
-      "sourceUrl": "https://dontkillmyapp.com/",
-      "sourceName": "Don't Kill My App",
-      "publishedAt": "2026-09-08T08:50:00.279Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "android",
-        "background"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "a7ce293506c1aa4c",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "747d8fa9983503e1",
-      "title": "App Review Guidelines",
-      "summary": "",
-      "sourceUrl": "https://developer.apple.com/app-store/review/guidelines",
-      "sourceName": "App Store Review Guidelines",
-      "publishedAt": "2026-09-08T08:50:00.279Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "ios",
-        "policy"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "5150cceb89703712",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "7f3bb5b40981ba0e",
-      "title": "Policy Deadlines",
-      "summary": "",
-      "sourceUrl": "https://support.google.com/googleplay/android-developer/answer/9934569",
-      "sourceName": "Play Console Policy Updates",
-      "publishedAt": "2026-09-08T08:50:00.279Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "android",
-        "policy"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "855a570e2ed4f7f3",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "92ae55ac7032810a",
-      "title": "Android Releases",
-      "summary": "",
-      "sourceUrl": "https://developer.android.com/about/versions",
-      "sourceName": "Android Platform Versions",
-      "publishedAt": "2026-09-08T08:50:00.279Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "android",
-        "background"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "eaeba556b1c82d3d",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "a06f13dc67371cf3",
-      "title": "Android Studio Quail 4",
-      "summary": "",
-      "sourceUrl": "https://developer.android.com/studio/releases",
-      "sourceName": "Android Studio Releases",
-      "publishedAt": "2026-09-08T08:50:00.279Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "android",
-        "tooling"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "4e22d71a96dc3310",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "c6c163bf77fd7b0b",
-      "title": "Meet Google Play's target API level requirement",
-      "summary": "",
-      "sourceUrl": "https://developer.android.com/google/play/requirements/target-sdk",
-      "sourceName": "Android Target API Level Requirements",
-      "publishedAt": "2026-09-08T08:50:00.279Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "android",
-        "policy",
-        "background"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "e2a2dd2392afe6ef",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
       "id": "ef1493c6ec643a29",
       "title": "Hello Developer: September 2026",
-      "summary": "",
+      "summary": "L'édition de septembre de Hello Developer annonce un événement Apple, met en avant les statistiques d'App Store Connect et ouvre des inscriptions à des sessions à Cupertino. Contenu éditorial, sans exigence technique.",
       "sourceUrl": "https://developer.apple.com/news?id=ote61lrx",
       "sourceName": "Apple Developer News",
       "publishedAt": "2026-09-02T15:00:02.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
-        "ios",
-        "policy"
+        "ios"
       ],
-      "tags": [],
+      "tags": [
+        "hello-developer",
+        "app-store-connect",
+        "events"
+      ],
       "impactedProjects": [],
       "fingerprint": "107db4f0e16f6db5",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "594816747e8543e4",
       "title": "This Week In React #295: StyleX, browser(), Next.js, React Compiler, Vite, Bun, Astryx, Formisch, React-Aria, TanStack | C++ API, Margelo, Observe, Reanimated, Teleport, Nitro, Screen Transitions | Zod, pnpm, vgpu, Remix, Rspack, Webpack",
-      "summary": "",
+      "summary": "La newsletter couvre deux semaines d'actualité : React 19.3 se rapproche, le compilateur React écrit en Rust est disponible dans Vite et Bun, et le CSS-in-JS revient au premier plan. Côté mobile, React Native continue d'affiner sa surface d'API publique en route vers la 1.0, et Callstack a racheté Margelo.",
       "sourceUrl": "https://thisweekinreact.com/newsletter/295",
       "sourceName": "This Week in React",
       "publishedAt": "2026-09-02T00:00:00.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
         "react-native",
         "typescript"
       ],
-      "tags": [],
+      "tags": [
+        "newsletter",
+        "react",
+        "react-native",
+        "tooling"
+      ],
       "impactedProjects": [],
       "fingerprint": "1caa61f65752c2bc",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "3fdf4518b03bff2e",
       "title": "September Android Drop: Remember where you put things, ease motion sickness, and more",
-      "summary": "",
+      "summary": "La livraison de fonctionnalités Android de septembre apporte du suivi d'objets, une atténuation du mal des transports en voiture et la création de notes depuis les conversations. Ce sont des fonctions utilisateur, pas des API à intégrer.",
       "sourceUrl": "https://blog.google/products-and-platforms/platforms/android/android-drop-september-2026",
       "sourceName": "Android and Pixel Blog",
       "publishedAt": "2026-09-01T18:00:00.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "android",
-        "hardware"
+        "android"
       ],
-      "tags": [],
+      "tags": [
+        "android-drop",
+        "features"
+      ],
       "impactedProjects": [],
       "fingerprint": "9da082c0f2aa6b9e",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "e567618c65fa8a43",
       "title": "Upcoming changes to Rosetta support for Intel-based macOS apps",
-      "summary": "",
+      "summary": "Apple met fin à la transition Rosetta : à partir de macOS 26.4 les utilisateurs recevront une notification au lancement d'applications qui en dépendent, et macOS 27 sera la dernière version à la prendre en charge. Les applications macOS uniquement Intel doivent être portées en binaire universel ou en natif Apple silicon dès maintenant.",
       "sourceUrl": "https://developer.apple.com/news?id=w5ngl9k2",
       "sourceName": "Apple Developer News",
       "publishedAt": "2026-09-01T15:00:41.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
-      "criticality": "background",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
+      "criticality": "impacting",
       "trustLevel": "reported",
       "categories": [
         "ios",
-        "policy"
+        "tooling"
       ],
-      "tags": [],
+      "tags": [
+        "rosetta",
+        "apple-silicon",
+        "macos"
+      ],
       "impactedProjects": [],
       "fingerprint": "177f762a5749f87e",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "a8cd06df28457612",
       "title": "Leverage Android skills and Gemma 4 in Android Studio Quail 4",
-      "summary": "",
+      "summary": "Android Studio Quail 4 est stable et embarque des « Android skills » préchargés, des instructions modulaires curatées par l'équipe Android pour guider les agents sur des API et des migrations qui évoluent vite. C'est la dernière version stable de la lignée Quail, et l'IDE sélectionne automatiquement le skill pertinent selon la demande.",
       "sourceUrl": "https://android-developers.googleblog.com/2026/09/leverage-gemma-4-android-studio-quail.html",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-09-01T15:00:00.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
         "android",
-        "policy"
+        "tooling"
       ],
-      "tags": [],
+      "tags": [
+        "android-studio",
+        "gemma",
+        "skills",
+        "ai"
+      ],
       "impactedProjects": [],
       "fingerprint": "c4dc96296d8e17e4",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "b840ed03baa92a9e",
       "title": "“The impact was the biggest surprise“: Swiggy’s transition to native pays off",
-      "summary": "",
+      "summary": "Retour d'expérience de l'équipe iOS de Swiggy sur le passage de parcours hybrides à des écrans natifs en Swift et SwiftUI, décidé début 2024 face aux limites de performance et de stabilité. La migration a visé d'abord les parcours à fort trafic plutôt qu'une réécriture complète.",
       "sourceUrl": "https://developer.apple.com/news?id=o5spbekm",
       "sourceName": "Apple Developer News",
       "publishedAt": "2026-09-01T13:00:01.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
-        "ios",
-        "policy"
+        "ios"
       ],
-      "tags": [],
+      "tags": [
+        "swift",
+        "swiftui",
+        "case-study"
+      ],
       "impactedProjects": [],
       "fingerprint": "d1c85830a87c6fb3",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     }
   ]
 }

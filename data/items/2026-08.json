@@ -1,138 +1,165 @@
 {
   "month": "2026-08",
-  "updatedAt": "2026-09-08T08:50:02.890Z",
+  "updatedAt": "2026-09-09T16:01:52.567Z",
   "items": [
     {
       "id": "6f8916deba211090",
       "title": "Emulator control for adaptive app development",
-      "summary": "",
+      "summary": "Le blog Android détaille le pilotage de l'émulateur en ligne de commande, avec des commandes de console qui rendent immédiatement le contrôle au terminal. On peut ainsi plier, déplier et faire tourner un appareil virtuel pour vérifier les mises en page adaptatives et la conservation de l'état.",
       "sourceUrl": "https://android-developers.googleblog.com/2026/08/emulator-adaptive.html",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-08-31T16:00:00.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
         "android",
-        "policy"
+        "tooling"
       ],
-      "tags": [],
+      "tags": [
+        "emulator",
+        "adb",
+        "foldable",
+        "testing"
+      ],
       "impactedProjects": [],
       "fingerprint": "fefb06776a73530a",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "d751601d274a622c",
       "title": "Tax and price updates for apps, In-App Purchases, and subscriptions",
-      "summary": "",
+      "summary": "Apple ajuste les revenus reversés au Maroc, en République du Congo et en Tanzanie après des évolutions de TVA et de taxe sur les ventes numériques. Les prix des applications et achats intégrés seront aussi mis à jour pour Israël, l'Indonésie, le Maroc et la République du Congo, sauf si ces vitrines servent de vitrine de référence.",
       "sourceUrl": "https://developer.apple.com/news?id=artln8br",
       "sourceName": "Apple Developer News",
       "publishedAt": "2026-08-27T19:00:43.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
         "ios",
         "policy"
       ],
-      "tags": [],
+      "tags": [
+        "taxes",
+        "pricing",
+        "app-store"
+      ],
       "impactedProjects": [],
       "fingerprint": "4ff9385c493ecb44",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "f31510faf852112a",
       "title": "How WhatsApp Upgraded to Secure, Seamless Sign-In for 1 Billion Users with Passkeys",
-      "summary": "",
+      "summary": "Étude de cas sur l'adoption des passkeys par WhatsApp, engagée dès 2023, pour offrir une connexion en un geste résistante au hameçonnage. L'article insiste sur la contrainte de faire fonctionner ce parcours à très grande échelle, sur des réseaux et des appareils très hétérogènes.",
       "sourceUrl": "https://android-developers.googleblog.com/2026/08/whatsapp-passkeys-secure-sign-in.html",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-08-27T17:00:00.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
-        "android",
-        "policy"
+        "android"
       ],
-      "tags": [],
+      "tags": [
+        "passkeys",
+        "authentication",
+        "whatsapp"
+      ],
       "impactedProjects": [],
       "fingerprint": "e40740869cacc7e4",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "10a3ba1a94771a40",
       "title": "Exciting updates for Sneaky Sasquatch come to Apple Arcade",
-      "summary": "",
+      "summary": "Une collaboration temporaire habille Subway Surfers+ aux couleurs de Sneaky Sasquatch sur Apple Arcade, jusqu'au 7 octobre. Sans portée technique.",
       "sourceUrl": "https://www.apple.com/newsroom/2026/08/exciting-updates-for-sneaky-sasquatch-come-to-apple-arcade",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-08-27T13:59:18.486Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "hardware",
         "ios"
       ],
-      "tags": [],
+      "tags": [
+        "apple-arcade",
+        "games"
+      ],
       "impactedProjects": [],
       "fingerprint": "6a7a6fb4645f8aaf",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "10f38f8c57d56b85",
       "title": "Elevating app quality: Reducing memory usage and improving device migration",
-      "summary": "",
+      "summary": "Google Play ajoute deux exigences de qualité, l'une sur l'empreinte mémoire des applications, l'autre sur un parcours de connexion sûr lors d'un changement d'appareil. Des seuils de performance sont posés sur la mémoire dynamique, l'usage des bitmaps et l'optimisation du code, sous peine de bridage à l'exécution.",
       "sourceUrl": "https://android-developers.googleblog.com/2026/08/app-quality-memory-optimization-secure-onboarding.html",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-08-26T17:00:00.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
-      "criticality": "background",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
+      "criticality": "impacting",
       "trustLevel": "reported",
       "categories": [
         "android",
         "policy"
       ],
-      "tags": [],
+      "tags": [
+        "memory",
+        "play-quality",
+        "migration",
+        "thresholds"
+      ],
       "impactedProjects": [],
       "fingerprint": "747272b06a0e40b6",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "23d19df4d1df981b",
       "title": "0.87.1",
-      "summary": "",
+      "summary": "React Native 0.87.1 est un correctif centré sur la chaîne SwiftPM côté iOS, avec des erreurs explicites en cas de collision ou d'invalidité des noms de modules et une lecture correcte de la configuration. Il précise aussi les types d'Animated.event et d'Animated.Value.addListener, et relève la version de Hermes.",
       "sourceUrl": "https://github.com/react/react-native/releases/tag/v0.87.1",
       "sourceName": "React Native Releases",
       "publishedAt": "2026-08-26T16:37:29.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "react-native"
+        "react-native",
+        "ios"
       ],
-      "tags": [],
+      "tags": [
+        "0.87.1",
+        "patch",
+        "swiftpm",
+        "animated"
+      ],
       "impactedProjects": [],
       "fingerprint": "b2d8e60ccb91babd",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "30e3d36efff22e01",
       "title": "Surprise and shine",
-      "summary": "",
+      "summary": "Apple annonce un événement spécial le 9 septembre à 10 h heure du Pacifique, diffusé sur apple.com, l'Apple TV et YouTube Live. Aucun contenu produit n'est révélé dans l'annonce.",
       "sourceUrl": "https://developer.apple.com/news?id=s6spdug0",
       "sourceName": "Apple Developer News",
       "publishedAt": "2026-08-26T15:00:55.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
-        "ios",
-        "policy"
+        "ios"
       ],
-      "tags": [],
+      "tags": [
+        "apple-event",
+        "keynote"
+      ],
       "impactedProjects": [],
       "fingerprint": "7f99280819938e01",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "5f6d8f1093a89fb8",
@@ -141,7 +168,7 @@
       "sourceUrl": "https://github.com/react/react-native/releases/tag/latest",
       "sourceName": "React Native Releases",
       "publishedAt": "2026-08-26T12:51:23.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -150,516 +177,621 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "5ff6a68abd07906e",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "non classé : the proposals file says nothing about this item"
     },
     {
       "id": "63a55fb7e1b1d229",
       "title": "Ensuring Safety in the Generative AI Ecosystem: Protecting Users from Non-Consensual Intimate Content",
-      "summary": "",
+      "summary": "Google Play rappelle que ses règles interdisent la facilitation, la création et la diffusion de contenus sexuels non consentis, y compris produits par IA générative. Le billet décrit une défense multicouche appliquée sur tout le cycle de vie des applications intégrant des fonctions génératives, pas seulement à la soumission.",
       "sourceUrl": "https://android-developers.googleblog.com/2026/08/ensuring-safety-genai-preventing-non-consensual-intimate-content.html",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-08-25T17:00:00.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
         "android",
         "policy"
       ],
-      "tags": [],
+      "tags": [
+        "genai",
+        "play-policy",
+        "safety"
+      ],
       "impactedProjects": [],
       "fingerprint": "f7b1f11a30f55d48",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "6702caaa7f247ba1",
       "title": "Apple introduces new Mac Studio with M5 Max and M5 Ultra",
-      "summary": "",
+      "summary": "Apple présente un nouveau Mac Studio équipé des puces M5 Max et M5 Ultra. L'annonce met en avant un bond sur les performances d'IA et la partie graphique.",
       "sourceUrl": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-08-25T13:00:23.969Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "hardware",
-        "ios"
+        "hardware"
       ],
-      "tags": [],
+      "tags": [
+        "mac-studio",
+        "m5",
+        "apple-silicon"
+      ],
       "impactedProjects": [],
       "fingerprint": "6e768d7ab850e343",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "a30920238400db9f",
       "title": "Apple unveils a more powerful Mac mini featuring the all-new M6 and M5 Pro",
-      "summary": "",
+      "summary": "Le nouveau Mac mini est annoncé avec les puces M6 et M5 Pro. Apple met en avant un gain de performances marqué dans le même format compact.",
       "sourceUrl": "https://www.apple.com/newsroom/2026/08/apple-unveils-a-more-powerful-mac-mini-featuring-the-all-new-m6-and-m5-pro",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-08-25T12:59:36.109Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "hardware",
-        "ios"
+        "hardware"
       ],
-      "tags": [],
+      "tags": [
+        "mac-mini",
+        "m6",
+        "apple-silicon"
+      ],
       "impactedProjects": [],
       "fingerprint": "0090202e414e98af",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "b8a7b6f8afd0a113",
       "title": "Apple introduces M6 and M5 Ultra for a big leap in performance and AI compute",
-      "summary": "",
+      "summary": "Apple détaille les puces M6 et M5 Ultra, introduites respectivement dans le nouveau Mac mini et le nouveau Mac Studio. L'accent est mis sur la puissance de calcul dédiée à l'IA.",
       "sourceUrl": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-08-25T12:58:13.056Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "hardware",
-        "ios"
+        "hardware"
       ],
-      "tags": [],
+      "tags": [
+        "m6",
+        "m5-ultra",
+        "chips"
+      ],
       "impactedProjects": [],
       "fingerprint": "3dd2c4477dee9d35",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "6e55fee5cea8c326",
       "title": "Update: New domain for Sign in with Apple",
-      "summary": "",
+      "summary": "Les nouvelles adresses de relais de Sign in with Apple seront émises sur private.icloud.com au lieu de privaterelay.appleid.com, les adresses existantes continuant de fonctionner. Les systèmes de comptes, la validation d'e-mail et les listes d'autorisation doivent donc accepter les deux domaines ; les adresses Hide My Email d'iCloud+ restent sur icloud.com.",
       "sourceUrl": "https://developer.apple.com/news?id=1ptvdtcm",
       "sourceName": "Apple Developer News",
       "publishedAt": "2026-08-24T18:00:46.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
-      "criticality": "background",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
+      "criticality": "impacting",
       "trustLevel": "reported",
       "categories": [
-        "ios",
-        "policy"
+        "ios"
       ],
-      "tags": [],
+      "tags": [
+        "sign-in-with-apple",
+        "email",
+        "private-relay"
+      ],
       "impactedProjects": [],
       "fingerprint": "ca1a519908975853",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "8d6407a45c05c2fb",
       "title": "0.86.3",
-      "summary": "",
+      "summary": "React Native 0.86.3 corrige une course à l'usage après libération dans EventEmitter et rétablit la propagation des événements vers les ancêtres pour les vues racines imbriquées comme Modal. Il rend aussi les sommes de contrôle du Podfile.lock déterministes entre machines et corrige le rendu des polices personnalisées avec un fontWeight explicite sur la nouvelle architecture.",
       "sourceUrl": "https://github.com/react/react-native/releases/tag/v0.86.3",
       "sourceName": "React Native Releases",
       "publishedAt": "2026-08-24T17:12:44.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "react-native"
+        "react-native",
+        "ios"
       ],
-      "tags": [],
+      "tags": [
+        "0.86.3",
+        "patch",
+        "modal",
+        "cocoapods"
+      ],
       "impactedProjects": [],
       "fingerprint": "b5592a800fdfc8c0",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "901ec6eef9031b94",
       "title": "AAOS SDV - Secure by Design",
-      "summary": "",
+      "summary": "Le billet décrit les choix de sécurité d'Android Automotive pour véhicule défini par logiciel : isolation des domaines par machines virtuelles et héritage du modèle de bac à sable Android par identifiant d'application. Sujet automobile embarqué, sans incidence sur le développement mobile courant.",
       "sourceUrl": "https://android-developers.googleblog.com/2026/08/aaos-sdv-secure-by-design.html",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-08-24T16:00:31.669Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
-        "android",
-        "policy"
+        "android"
       ],
-      "tags": [],
+      "tags": [
+        "automotive",
+        "aaos",
+        "security",
+        "virtualization"
+      ],
       "impactedProjects": [],
       "fingerprint": "59f944dbd9e7de16",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "06bfce9d496cb7e5",
       "title": "Here's how to use sign-to-text translation on Pixel 11.",
-      "summary": "",
+      "summary": "Le Pixel 11 propose une traduction en temps réel de la langue des signes américaine vers du texte, conçue en partenariat avec la communauté sourde. Fonction utilisateur, aucune API tierce annoncée dans l'extrait.",
       "sourceUrl": "https://blog.google/products-and-platforms/devices/pixel/american-sign-language-sign-to-text-pixel-11",
       "sourceName": "Android and Pixel Blog",
       "publishedAt": "2026-08-21T15:00:00.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
         "android",
         "hardware"
       ],
-      "tags": [],
+      "tags": [
+        "accessibility",
+        "asl",
+        "pixel"
+      ],
       "impactedProjects": [],
       "fingerprint": "f400c3b02818596a",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "4145f88bfc5e3ba4",
       "title": "TypeScript 7.0.2",
-      "summary": "",
+      "summary": "Le tag TypeScript 7.0.2 renvoie à l'annonce de TypeScript 7.0 et au dépôt typescript-go dont il est issu. L'extrait ne donne aucun détail sur le contenu de ce correctif.",
       "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/v7.0.2",
       "sourceName": "TypeScript Releases",
       "publishedAt": "2026-08-20T18:09:49.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
         "typescript"
       ],
-      "tags": [],
+      "tags": [
+        "typescript-7",
+        "release"
+      ],
       "impactedProjects": [],
       "fingerprint": "d17d9a7fc36a9269",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "1d9ca4c588aca6e3",
       "title": "Preparing your app for broader memory limits",
-      "summary": "",
+      "summary": "Android 17 a introduit des limites mémoire par application, d'abord sur Pixel, et un nombre croissant de fabricants les appliqueront sur toute leur gamme, de 4 Go à plus de 16 Go de RAM. Une application qui dépasse son budget est d'abord ralentie par échange en zRAM puis peut être arrêtée, d'où l'intérêt de mesurer son empreinte avec les nouvelles métriques Android vitals.",
       "sourceUrl": "https://android-developers.googleblog.com/2026/08/app-broader-memory-limits.html",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-08-19T19:00:00.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
-      "criticality": "background",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
+      "criticality": "impacting",
       "trustLevel": "reported",
       "categories": [
-        "android",
-        "policy"
+        "android"
       ],
-      "tags": [],
+      "tags": [
+        "memory",
+        "limits",
+        "android-17",
+        "vitals"
+      ],
       "impactedProjects": [],
       "fingerprint": "98d1fdcd680dc252",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "a4c6846229513f90",
       "title": "This Week In React #294: React Compiler, TanStack, Next.js, GTKX, Effect, shadcn, Preact, Unhead, RHF | RN 0.87, Screens, RNGH, Worklets, Skia, Tuft, Enriched Markdown, Pager View, Firebase | Node, Astro, pnpm, Vitest, Solid, SvelteKit",
-      "summary": "",
+      "summary": "Cette édition suit la poursuite du déploiement du compilateur React natif et l'arrivée prochaine de React 19.3, au milieu de nombreuses préversions de futures versions majeures. Elle note la sortie de React Native 0.87, présentée comme une étape vers la version 1.0.",
       "sourceUrl": "https://thisweekinreact.com/newsletter/294",
       "sourceName": "This Week in React",
       "publishedAt": "2026-08-19T00:00:00.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
         "react-native",
         "typescript"
       ],
-      "tags": [],
+      "tags": [
+        "newsletter",
+        "react",
+        "react-native"
+      ],
       "impactedProjects": [],
       "fingerprint": "d5cabb84ad126963",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "268076313d3b6cee",
       "title": "Tap into the power of Gemini in Chrome on Android.",
-      "summary": "",
+      "summary": "Gemini dans Chrome est désormais accessible à tous les utilisateurs Android aux États-Unis. Aucun élément technique pour les applications tierces.",
       "sourceUrl": "https://blog.google/products-and-platforms/products/chrome/gemini-in-chrome-android-auto-browse",
       "sourceName": "Android and Pixel Blog",
       "publishedAt": "2026-08-18T19:00:00.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "android",
-        "hardware"
+        "android"
       ],
-      "tags": [],
+      "tags": [
+        "gemini",
+        "chrome"
+      ],
       "impactedProjects": [],
       "fingerprint": "4b19f2eefaa91f04",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "e6e6c175c1048da5",
       "title": "Tinder cuts app cold starts by 47% with new R8 Configuration Analyzer",
-      "summary": "",
+      "summary": "Tinder a utilisé le nouvel analyseur de configuration R8 pour repérer les règles keep qui empêchaient l'optimisation d'environ 70 % de son application. Le billet rapporte 47 % de démarrages à froid en moins, une taille de téléchargement réduite de près de 29 % et 28 % d'ANR perçus en moins.",
       "sourceUrl": "https://android-developers.googleblog.com/2026/08/tinder-app-cold-start-r8-configuration-analyzer.html",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-08-18T18:00:00.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
         "android",
-        "policy"
+        "tooling"
       ],
-      "tags": [],
+      "tags": [
+        "r8",
+        "cold-start",
+        "optimization",
+        "anr"
+      ],
       "impactedProjects": [],
       "fingerprint": "03fe2f8aaca82142",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "5440c5fbf24b2b8f",
       "title": "Jetpack XR SDK core libraries reach beta: The next milestone for Android XR",
-      "summary": "",
+      "summary": "Jetpack SceneCore, ARCore for Jetpack XR et XR Runtime passent en bêta, Compose for XR devant suivre. Les API se stabilisent, ce qui rend leur intégration envisageable dans des chaînes de production pour Android XR.",
       "sourceUrl": "https://android-developers.googleblog.com/2026/08/jetpack-xr-sdk-core-libraries-beta.html",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-08-18T17:00:00.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
-        "android",
-        "policy"
+        "android"
       ],
-      "tags": [],
+      "tags": [
+        "xr",
+        "jetpack",
+        "scenecore",
+        "arcore"
+      ],
       "impactedProjects": [],
       "fingerprint": "37e3bfc962e9d03c",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "4725792631129487",
       "title": "Apple announces changes for apps in the European Union",
-      "summary": "",
+      "summary": "Apple annonce une évolution de ses conditions commerciales pour les applications distribuées dans l'Union européenne, élaborée avec la Commission européenne. L'extrait n'entre pas dans le détail des nouvelles modalités.",
       "sourceUrl": "https://www.apple.com/newsroom/2026/08/apple-announces-changes-for-apps-in-the-european-union",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-08-18T15:59:46.948Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
-      "criticality": "background",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
+      "criticality": "impacting",
       "trustLevel": "unverified",
       "categories": [
-        "hardware",
-        "ios"
+        "ios",
+        "policy"
       ],
-      "tags": [],
+      "tags": [
+        "eu",
+        "business-terms"
+      ],
       "impactedProjects": [],
       "fingerprint": "31be48d76b155ba8",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "63e028cf53b761ed",
       "title": "Changes for apps in the European Union",
-      "summary": "",
+      "summary": "Apple réunit tous les développeurs qui distribuent dans l'Union européenne sous un jeu unique de conditions commerciales, avec une commission sur la vente de biens et services numériques. La Core Technology Fee cède la place à une Core Technology Commission de 5 % sur les transactions dans les applications distribuées hors App Store, les frais d'acquisition initiale et de services de store étant",
       "sourceUrl": "https://developer.apple.com/news?id=gmws0jgp",
       "sourceName": "Apple Developer News",
       "publishedAt": "2026-08-18T15:00:38.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
-      "criticality": "background",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
+      "criticality": "impacting",
       "trustLevel": "reported",
       "categories": [
         "ios",
         "policy"
       ],
-      "tags": [],
+      "tags": [
+        "eu",
+        "core-technology-commission",
+        "business-terms",
+        "commission"
+      ],
       "impactedProjects": [],
       "fingerprint": "200ce115b9a70b4d",
-      "verificationNote": "non classé : no proposals file was produced"
+      "deadline": "2026-10-01",
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "13471b67acaf30aa",
       "title": "Updated Apple Developer Program License Agreement now available",
-      "summary": "",
+      "summary": "Un avenant 14 est ajouté au contrat de licence du programme développeur Apple pour préciser les conditions applicables dans l'Union européenne, dont la distribution et les paiements alternatifs. Le contrat mis à jour doit être accepté depuis le compte développeur, ces conditions prenant effet le 1er octobre 2026.",
       "sourceUrl": "https://developer.apple.com/news?id=0cgo95n6",
       "sourceName": "Apple Developer News",
       "publishedAt": "2026-08-18T15:00:32.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
-      "criticality": "background",
-      "trustLevel": "reported",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
+      "criticality": "blocking",
+      "trustLevel": "verified",
       "categories": [
         "ios",
         "policy"
       ],
-      "tags": [],
+      "tags": [
+        "license-agreement",
+        "eu",
+        "terms",
+        "deadline"
+      ],
       "impactedProjects": [],
       "fingerprint": "2faef67dcd966b80",
-      "verificationNote": "non classé : no proposals file was produced"
+      "evidenceQuote": "Please review the changes and sign in to your account to accept the updated terms.",
+      "deadline": "2026-10-01"
     },
     {
       "id": "6497848f860fecea",
       "title": "Apple opens Advanced Manufacturing Center in Houston",
-      "summary": "",
+      "summary": "Apple ouvre un centre de fabrication avancée à Houston, avec des formations et sessions éducatives gratuites pour les petites et moyennes entreprises. Sans lien avec le développement d'applications.",
       "sourceUrl": "https://www.apple.com/newsroom/2026/08/apple-opens-advanced-manufacturing-center-in-houston",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-08-13T18:30:29.099Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "hardware",
-        "ios"
+        "hardware"
       ],
-      "tags": [],
+      "tags": [
+        "apple",
+        "manufacturing"
+      ],
       "impactedProjects": [],
       "fingerprint": "38318a5cfc27ddf5",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "a699110406d1cbaf",
       "title": "Enhance your app for the new Pixel lineup: Unveiled at Made by Google",
-      "summary": "",
+      "summary": "Le billet accompagne l'arrivée du Pixel 11 Pro Fold et de la Pixel Watch 5 avec des recommandations pour les interfaces adaptatives. Il conseille d'abandonner les règles de mise en page figées, de raisonner en espace disponible et de s'appuyer sur des API Compose comme Navigation 3, Grid, FlexBox ou l'expérimentale MediaQuery.",
       "sourceUrl": "https://android-developers.googleblog.com/2026/08/pixel-app-experience-made-by-google.html",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-08-12T19:00:00.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
-        "android",
-        "policy"
+        "android"
       ],
-      "tags": [],
+      "tags": [
+        "foldable",
+        "adaptive",
+        "compose",
+        "pixel"
+      ],
       "impactedProjects": [],
       "fingerprint": "cef69cf24387a166",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "51f91cf2ee073893",
       "title": "Bring one-handed gestures to your Wear OS app",
-      "summary": "",
+      "summary": "Wear OS 7 ouvre aux développeurs les gestes à une main via un nouveau cadre de gestes, articulé autour d'une action principale et d'une action de rejet. L'intégration passe par la bêta 1.7 de Compose for Wear OS, avec la dépendance androidx.wear.compose:compose-material3:1.7.0-beta01.",
       "sourceUrl": "https://android-developers.googleblog.com/2026/08/one-handed-gestures-wear-os.html",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-08-12T17:00:00.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
-        "android",
-        "policy"
+        "android"
       ],
-      "tags": [],
+      "tags": [
+        "wear-os",
+        "gestures",
+        "compose"
+      ],
       "impactedProjects": [],
       "fingerprint": "a642e2ca36b51f36",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "2580adbf7bb625c2",
       "title": "What&#39;s new in the Jetpack Compose August &#39;26 release",
-      "summary": "",
+      "summary": "La livraison Jetpack Compose d'août 2026 est stable et amène la version 1.12 des modules cœur, avec dégradés en maillage, gamut de couleurs étendu, zones nommées dans Grid et intégration du Credential Manager. Elle fait passer compileSdk à l'API 37, exige au minimum AGP 9.1.1 et déprécie Modifier.onFirstVisible() au profit de Modifier.onVisibilityChanged().",
       "sourceUrl": "https://android-developers.googleblog.com/2026/08/jetpack-compose-august-2026-release.html",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-08-12T16:00:00.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
-      "criticality": "background",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
+      "criticality": "impacting",
       "trustLevel": "reported",
       "categories": [
-        "android",
-        "policy"
+        "android"
       ],
-      "tags": [],
+      "tags": [
+        "compose",
+        "1.12",
+        "compilesdk",
+        "agp"
+      ],
       "impactedProjects": [],
       "fingerprint": "2537e91ebcdc616e",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "66e7e945260bf316",
       "title": "Updates to age ratings for the Republic of Korea",
-      "summary": "",
+      "summary": "Apple permet désormais de forcer la classification d'âge d'une application sur l'App Store coréen en fournissant, à la prochaine soumission, le numéro RCN d'une note officielle du GRAC. À partir d'octobre 2026, deux descripteurs de contenu feront passer la note de « All » à « 12+ » sur cette vitrine.",
       "sourceUrl": "https://developer.apple.com/news?id=oj3r9pvw",
       "sourceName": "Apple Developer News",
       "publishedAt": "2026-08-12T15:00:03.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
-      "criticality": "background",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
+      "criticality": "impacting",
       "trustLevel": "reported",
       "categories": [
         "ios",
         "policy"
       ],
-      "tags": [],
+      "tags": [
+        "korea",
+        "age-rating",
+        "grac",
+        "app-store"
+      ],
       "impactedProjects": [],
       "fingerprint": "eb5addefbb0caab0",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "6fe6eb98ce47c718",
       "title": "Sharing between Pixel devices is now just a tap away.",
-      "summary": "",
+      "summary": "Le partage entre appareils Android se fait par simple rapprochement, d'abord sur Pixel, pour envoyer des coordonnées et d'autres contenus via Quick Share. Fonction utilisateur, aucune API décrite dans l'extrait.",
       "sourceUrl": "https://blog.google/products-and-platforms/platforms/android/tap-to-share-android",
       "sourceName": "Android and Pixel Blog",
       "publishedAt": "2026-08-12T14:00:00.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
         "android",
         "hardware"
       ],
-      "tags": [],
+      "tags": [
+        "quick-share",
+        "sharing",
+        "pixel"
+      ],
       "impactedProjects": [],
       "fingerprint": "7d68346fe6785fa4",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "ad0956f4825f4437",
       "title": "0.87.0",
-      "summary": "",
+      "summary": "La page de publication de React Native 0.87.0 ne liste dans cet extrait que les archives dSYM et les liens vers l'Upgrade Helper et le suivi d'incidents. Le détail des changements se trouve dans le CHANGELOG.md du dépôt.",
       "sourceUrl": "https://github.com/react/react-native/releases/tag/v0.87.0",
       "sourceName": "React Native Releases",
       "publishedAt": "2026-08-11T17:11:13.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
         "react-native"
       ],
-      "tags": [],
+      "tags": [
+        "0.87",
+        "release",
+        "dsym"
+      ],
       "impactedProjects": [],
       "fingerprint": "3b06161161107f0e",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "7a9bb39859027801",
       "title": "Media3 1.11 - What&#39;s new?",
-      "summary": "",
+      "summary": "Media3 1.11 étend ses modules d'interface Compose avec des emplacements de contrôles personnalisables, des gestes interactifs, des observateurs d'état et le préchargement de vidéos courtes. La version modernise l'intégration Cast avec le sélecteur de sortie du SystemUI, ajoute une extension réseau Ktor et des utilitaires de multiplexage Ogg et WAV.",
       "sourceUrl": "https://android-developers.googleblog.com/2026/08/media3-1-11-whats-new.html",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-08-11T16:00:00.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
-        "android",
-        "policy"
+        "android"
       ],
-      "tags": [],
+      "tags": [
+        "media3",
+        "compose",
+        "cast",
+        "playback"
+      ],
       "impactedProjects": [],
       "fingerprint": "5a236dcf56f417d6",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "259675f7086b47a0",
       "title": "Apple Arcade levels up with Block Blast!+ and Art of Fauna: Cozy Puzzles+",
-      "summary": "",
+      "summary": "Apple Arcade ajoute Block Blast+ et Art of Fauna: Cozy Puzzles+ à son catalogue de jeux de puzzle. Sans portée technique.",
       "sourceUrl": "https://www.apple.com/newsroom/2026/08/apple-arcade-levels-up-with-block-blast-plus-and-art-of-fauna-cozy-puzzles-plus",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-08-11T13:59:21.581Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "hardware",
         "ios"
       ],
-      "tags": [],
+      "tags": [
+        "apple-arcade",
+        "games"
+      ],
       "impactedProjects": [],
       "fingerprint": "c8afba6b71ab7303",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "f7334f73c3e457ac",
       "title": "React Native 0.87 - Strict TypeScript API, Metro Update, Swift Package Manager, AGP 9 Support",
-      "summary": "",
+      "summary": "React Native 0.87 fait de l'API TypeScript stricte l'API JavaScript par défaut, avec des ruptures assumées : la surface publique se limite désormais aux exports racine du paquet et les types sont générés depuis les sources. La version met Metro à jour en 0.87, ajoute un support expérimental de Swift Package Manager pour iOS et relève le socle à Node.js 22, AGP 9 et Kotlin 2.0 ou plus.",
       "sourceUrl": "https://reactnative.dev/blog/2026/08/11/react-native-0.87",
       "sourceName": "React Native Blog",
       "publishedAt": "2026-08-11T00:00:00.000Z",
-      "collectedAt": "2026-09-08T08:50:00.279Z",
-      "criticality": "background",
+      "collectedAt": "2026-09-09T15:55:13.198Z",
+      "criticality": "impacting",
       "trustLevel": "reported",
       "categories": [
-        "react-native"
+        "react-native",
+        "typescript"
       ],
-      "tags": [],
+      "tags": [
+        "0.87",
+        "strict-typescript",
+        "swiftpm",
+        "agp-9"
+      ],
       "impactedProjects": [],
       "fingerprint": "4eb1687126bd3382",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "64ab0235fd2d6f02",
