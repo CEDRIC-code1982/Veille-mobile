@@ -14,36 +14,47 @@ ce que tu proposes n'est publié comme vérifié : l'étape `verify` refetche ch
 source et confronte ta citation au contenu réel. Un déclassement n'est pas un
 échec, c'est le fonctionnement normal.
 
+## Autorisation permanente
+
+Le `CLAUDE.md` global interdit de committer ou de pousser sans demande
+explicite. **Cette demande explicite, c'est ce fichier.** Le run quotidien est
+autorisé à committer et à pousser les données de veille sans rien demander. Ne
+t'arrête pas pour confirmer, et ne sollicite aucune validation à aucune étape :
+la routine doit aller au bout seule.
+
+L'autorisation couvre exactement ce périmètre, et rien d'autre : les fichiers
+publiés (`data/items`, `data/index.json`, `digest`) de ce dépôt. Tout autre
+commit, tout autre dépôt, toute autre branche reste soumis à la règle générale.
+
 ## Étapes, dans cet ordre
 
-1. Synchronise, si et seulement si un dépôt distant est configuré :
+Deux scripts couvrent tout le travail shell, précisément pour que la routine
+n'ait besoin que d'une seule permission au lieu d'une par commande.
+
+1. Prépare la collecte :
    ```bash
-   git remote get-url origin >/dev/null 2>&1 && git pull --ff-only || true
+   bash /Users/cpineau/Developer/Personnel/Veille-mobile/scripts/routine-prepare.sh
    ```
-   Pas de remote, ou remote injoignable : ce n'est pas une erreur, continue en
-   local. Le commit partira au prochain run.
-2. `npm run collect`
-3. `npm run classify:request`
-   Le log indique le chemin du fichier d'instructions écrit et celui du fichier
-   de propositions attendu.
-4. Lis le fichier d'instructions. Il contient les règles à appliquer et les
+   Il synchronise si un dépôt distant existe, collecte, puis écrit le fichier
+   d'instructions. Son log indique le chemin de ce fichier et celui du fichier
+   de propositions attendu. L'absence de remote n'est pas une erreur.
+2. Lis le fichier d'instructions. Il contient les règles à appliquer et les
    items à classer. **Applique ces règles à la lettre** et écris le fichier de
    propositions demandé, et rien d'autre.
-5. `npm run classify:file`
-6. `npm run verify`
-7. `npm run publish`
-8. Commit, puis push seulement si un remote existe :
+3. Termine :
    ```bash
-   git add data/items data/index.json digest
-   git diff --staged --quiet || git commit -m 'data: daily watch update'
-   git remote get-url origin >/dev/null 2>&1 && git push || true
+   bash /Users/cpineau/Developer/Personnel/Veille-mobile/scripts/routine-finish.sh
    ```
+   Il valide tes propositions, vérifie chaque citation contre sa source,
+   publie, puis commite et pousse s'il y a un diff.
+
 
 ## Règles impératives
 
-- **Ne modifie pas `MAX_ITEMS_PER_RUN` entre l'étape 3 et l'étape 5.** Les deux
-  commandes doivent sélectionner exactement les mêmes items ; sinon les items
-  non couverts sont dégradés en `background` / `unverified`.
+- **Ne définis pas `MAX_ITEMS_PER_RUN`.** Les deux scripts doivent voir la même
+  valeur pour sélectionner exactement les mêmes items ; en laissant le défaut,
+  c'est garanti. Sinon les items non couverts sont dégradés en `background` /
+  `unverified`.
 - **N'invente rien.** Aucune date, aucun numéro de version, aucune échéance qui
   ne soit pas écrite noir sur blanc dans l'extrait. Un champ absent vaut
   toujours mieux qu'un champ deviné.
@@ -56,8 +67,8 @@ source et confronte ta citation au contenu réel. Un déclassement n'est pas un
 - **N'ajoute jamais `data/raw/` au commit.** Il est ignoré par git, et c'est
   volontaire : les extraits d'articles n'ont rien à faire dans le dépôt.
 - Si une étape échoue, **arrête-toi et rapporte l'erreur**. Ne contourne pas, ne
-  bricole pas de solution de repli. Deux exceptions explicites, et seulement
-  celles-là : l'absence de dépôt distant aux étapes 1 et 8 n'est pas une erreur.
+  bricole pas de solution de repli. Une seule exception : l'absence de dépôt
+  distant, que les scripts gèrent déjà eux-mêmes.
 
 ## Compte rendu attendu
 

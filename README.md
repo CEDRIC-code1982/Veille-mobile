@@ -133,6 +133,21 @@ Le prompt de la routine vit dans `docs/routine-prompt.md`, versionné et scanné
 comme le reste du dépôt. La tâche planifiée ne fait que pointer vers ce fichier,
 donc elle ne peut pas dériver du code.
 
+Tout le travail shell est regroupé dans `scripts/routine-prepare.sh` et
+`scripts/routine-finish.sh`. Ce n'est pas cosmétique : une routine qui tourne
+sans surveillance ne doit demander **aucune** autorisation, et deux scripts
+demandent une permission au lieu d'une par commande. Pour qu'elle tourne
+réellement sans interaction, il faut une règle dans `~/.claude/settings.json` :
+
+```json
+"Bash(bash /chemin/vers/Veille-mobile/scripts/*)",
+"Read(//chemin/vers/Veille-mobile/**)"
+```
+
+plus le dépôt dans `permissions.additionalDirectories`, sans quoi la lecture du
+fichier d'instructions déclenche une demande, la session planifiée n'ayant pas
+ce dépôt pour répertoire de travail.
+
 Limite à connaître : **une tâche planifiée ne tourne que si l'application est
 ouverte**. Si elle était fermée à l'heure prévue, le run part au lancement
 suivant. C'est précisément ce que le watchdog ci-dessous surveille.
