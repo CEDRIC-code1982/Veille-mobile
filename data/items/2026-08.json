@@ -635,7 +635,7 @@
     },
     {
       "id": "2580adbf7bb625c2",
-      "title": "What&#39;s new in the Jetpack Compose August &#39;26 release",
+      "title": "What's new in the Jetpack Compose August '26 release",
       "summary": "La livraison Jetpack Compose d'août 2026 est stable et amène la version 1.12 des modules cœur, avec dégradés en maillage, gamut de couleurs étendu, zones nommées dans Grid et intégration du Credential Manager. Elle fait passer compileSdk à l'API 37, exige au minimum AGP 9.1.1 et déprécie Modifier.onFirstVisible() au profit de Modifier.onVisibilityChanged().",
       "sourceUrl": "https://android-developers.googleblog.com/2026/08/jetpack-compose-august-2026-release.html",
       "sourceName": "Android Developers Blog",
@@ -727,7 +727,7 @@
     },
     {
       "id": "7a9bb39859027801",
-      "title": "Media3 1.11 - What&#39;s new?",
+      "title": "Media3 1.11 - What's new?",
       "summary": "Media3 1.11 étend ses modules d'interface Compose avec des emplacements de contrôles personnalisables, des gestes interactifs, des observateurs d'état et le préchargement de vidéos courtes. La version modernise l'intégration Cast avec le sélecteur de sortie du SystemUI, ajoute une extension réseau Ktor et des utilitaires de multiplexage Ogg et WAV.",
       "sourceUrl": "https://android-developers.googleblog.com/2026/08/media3-1-11-whats-new.html",
       "sourceName": "Android Developers Blog",

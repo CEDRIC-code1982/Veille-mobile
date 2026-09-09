@@ -26,6 +26,8 @@
 
   --radius: 12px;
   --gap: 16px;
+  --content-width: 780px;
+  --card-min-width: 320px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -55,7 +57,8 @@
 
 body {
   margin: 0;
-  padding: 0 var(--gap) calc(var(--gap) * 3);
+  padding: 0 max(var(--gap), env(safe-area-inset-right)) calc(var(--gap) * 3)
+    max(var(--gap), env(safe-area-inset-left));
   background: var(--surface);
   color: var(--text);
   font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
@@ -77,7 +80,7 @@ body {
 /* ---------- header ---------- */
 
 .page-header {
-  max-width: 780px;
+  max-width: var(--content-width);
   margin: 0 auto;
   padding: calc(var(--gap) * 1.5) 0 var(--gap);
 }
@@ -123,7 +126,7 @@ body {
 /* ---------- filters ---------- */
 
 .filters {
-  max-width: 780px;
+  max-width: var(--content-width);
   margin: 0 auto var(--gap);
   padding: var(--gap);
   border: 1px solid var(--border);
@@ -174,7 +177,10 @@ button:focus-visible {
 }
 
 .chip {
-  padding: 6px 11px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 6px 13px;
   border: 1px solid var(--border);
   border-radius: 999px;
   background: var(--surface);
@@ -206,7 +212,8 @@ button:focus-visible {
 }
 
 button {
-  padding: 8px 14px;
+  min-height: 36px;
+  padding: 8px 16px;
   border: 1px solid var(--border);
   border-radius: 999px;
   background: var(--surface);
@@ -218,7 +225,7 @@ button {
 /* ---------- sections ---------- */
 
 main {
-  max-width: 780px;
+  max-width: var(--content-width);
   margin: 0 auto;
 }
 
@@ -268,10 +275,22 @@ main {
 }
 
 .items {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  /* min() keeps the track from exceeding the container on a narrow phone:
+     a bare minmax minimum overflows below 352px. */
+  grid-template-columns: repeat(auto-fill, minmax(min(var(--card-min-width), 100%), 1fr));
+  align-items: start;
   gap: var(--gap);
   margin-top: var(--gap);
+}
+
+/*
+ * The blocking section keeps a single full-width column whatever the screen:
+ * it is the one section that must read as an alert, and a lone blocking item
+ * squeezed into a third of the width would read as a detail.
+ */
+.section--blocking .items {
+  grid-template-columns: 1fr;
 }
 
 /* ---------- cards ---------- */
@@ -417,19 +436,103 @@ main {
 /* ---------- footer ---------- */
 
 .page-footer {
-  max-width: 780px;
+  max-width: var(--content-width);
   margin: calc(var(--gap) * 2) auto 0;
   color: var(--text-muted);
   font-size: 0.78rem;
   text-align: center;
 }
 
+/* Touch screens have no hover, and need targets Apple sizes at 44px. */
+@media (hover: none) and (pointer: coarse) {
+  .chip,
+  button {
+    min-height: 44px;
+  }
+
+  .toggle input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Tablet portrait and large phones in landscape: two columns of cards. */
 @media (min-width: 700px) {
+  :root {
+    --content-width: 820px;
+  }
+
   .page-header h1 {
     font-size: 1.9rem;
   }
 
   .card h3 {
     font-size: 1.1rem;
+  }
+
+  .filters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+    align-items: start;
+  }
+
+  .field,
+  .filter-actions {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Small laptops: the container earns real width. */
+@media (min-width: 1000px) {
+  :root {
+    --content-width: 1080px;
+  }
+
+  .filters {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .field {
+    grid-column: 1 / -1;
+  }
+
+  .filter-actions {
+    grid-column: 1 / -1;
+  }
+}
+
+/*
+ * Desktop: a ceiling on the container, and wider cards. Left alone, auto-fill
+ * would pack four narrow columns into this width, which reads badly for cards
+ * that are mostly text.
+ */
+@media (min-width: 1400px) {
+  :root {
+    --content-width: 1440px;
+    --card-min-width: 400px;
+  }
+}
+
+/* Short viewports, typically a phone in landscape: reclaim vertical space. */
+@media (max-height: 480px) and (orientation: landscape) {
+  .page-header {
+    padding-top: var(--gap);
+  }
+
+  .tagline {
+    display: none;
+  }
+}
+
+/*
+ * Respect a reduced-motion preference. The site animates little, but the
+ * details disclosure and smooth scrolling both honour it.
+ */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

@@ -234,6 +234,16 @@ describe('toCollectedItem', () => {
     expect(item?.sourceDomain).toBe('example.invalid');
   });
 
+  it('decodes HTML entities in the title', () => {
+    const item = toCollectedItem(
+      feed,
+      { title: 'What&#39;s new &amp; noteworthy', url: '/x', excerpt: '' },
+      collectedAt,
+    );
+
+    expect(item?.title).toBe("What's new & noteworthy");
+  });
+
   it('drops tracking parameters from the stored URL', () => {
     const item = toCollectedItem(
       feed,

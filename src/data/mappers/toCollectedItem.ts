@@ -7,7 +7,7 @@ import {
   buildFingerprintSource,
   buildIdSource,
 } from '../../domain/support/identifiers';
-import { truncateText } from '../../domain/support/normalizeText';
+import { decodeHtmlEntities, truncateText } from '../../domain/support/normalizeText';
 import { computeStableHash } from '../../shared/hash';
 import { MAX_EXCERPT_LENGTH } from '../feeds/parseFeedXml';
 
@@ -54,7 +54,9 @@ const toCollectedItem = (
   entry: FeedEntry,
   collectedAt: string,
 ): CollectedItem | undefined => {
-  const title = entry.title.replace(/\s+/g, ' ').trim();
+  // Feed titles arrive encoded, sometimes doubly so: "What&#39;s new" has to
+  // become "What's new" before it ever reaches the site.
+  const title = decodeHtmlEntities(entry.title).replace(/\s+/g, ' ').trim();
   const sourceUrl = resolveUrl(entry.url, feed.url);
 
   if (title.length === 0 || sourceUrl === undefined) {
