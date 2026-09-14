@@ -36,7 +36,8 @@
     ble: 'Bluetooth / BLE',
     hardware: 'Matériel',
     tooling: 'Outillage',
-    policy: 'Règles de store'
+    policy: 'Règles de store',
+    'os-release': 'Systèmes'
   };
 
   const DENSITY_KEY = 'veille-density';
