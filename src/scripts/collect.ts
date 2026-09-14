@@ -24,6 +24,7 @@ import { deduplicateItems, rejectKnownItems } from '../domain/useCases/deduplica
 import type { KnownItems } from '../domain/useCases/deduplicateItems';
 import type { FeedActivity } from '../domain/useCases/detectStaleFeeds';
 import { filterRecentItems } from '../domain/useCases/filterRecentItems';
+import { filterEntriesByTitle } from '../domain/support/filterEntriesByTitle';
 import { toIsoDayLabel } from '../domain/support/isoWeek';
 import { createRssFeedReader } from '../data/feeds/RssFeedReader';
 import { createScrapeFeedReader } from '../data/feeds/ScrapeFeedReader';
@@ -124,7 +125,15 @@ const collectFeed = async (
   }
 
   try {
-    const entries = await reader.read(feed);
+    const readEntries = await reader.read(feed);
+    const entries = filterEntriesByTitle(readEntries, feed.titlePattern);
+
+    if (entries.length !== readEntries.length) {
+      logger.debug(
+        `${feed.name}: ${readEntries.length - entries.length} entry(ies) filtered out by title`,
+      );
+    }
+
     const items: CollectedItem[] = [];
 
     for (const entry of entries) {

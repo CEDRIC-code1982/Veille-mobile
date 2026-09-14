@@ -181,13 +181,52 @@ Précisions sur les champs :
 
 - `categories` doit utiliser les valeurs de `src/domain/entities/Category.ts` :
   `react-native`, `typescript`, `ios`, `android`, `background`, `ble`,
-  `hardware`, `tooling`, `policy`.
+  `hardware`, `tooling`, `policy`, `os-release`.
 - `maxAgeDays` s'applique à **l'entrée la plus récente** pour `rss`/`atom`, et
   à **la dernière lecture réussie** pour `scrape` : une page de documentation
   qui ne change pas est normale, un flux figé ne l'est pas.
 - `type: scrape` est destiné aux pages sans flux. Leur identité est le hash de
   leur zone principale : un nouvel item apparaît quand, et seulement quand, le
   contenu change réellement.
+- `titlePattern` (optionnel) ne garde que les entrées dont le titre correspond.
+  Certains flux officiels annoncent toutes les plateformes de l'éditeur ; sans
+  ce filtre elles noient le signal et consomment le budget de classification.
+  Un motif illisible ne vide pas la source : il est ignoré.
+- `follow` (optionnel, sur un `scrape`) lit une page d'index, y découvre des
+  clés de version, garde les plus élevées et scrape leurs pages :
+
+  ```yaml
+    follow:
+      linkPattern: '^/about/versions/(\d+)$'   # une seule capture, numérique
+      urlTemplate: /about/versions/{key}/behavior-changes-all
+      limit: 2
+  ```
+
+  C'est ce qui évite d'écrire un numéro de version en dur, lequel ferait
+  silencieusement surveiller une version périmée.
+
+## Versions d'OS et comparatif
+
+La section « Systèmes » du site regroupe les items portant la catégorie
+`os-release` : les dernières versions publiées et les pages de changements de
+comportement. Les mêmes items restent dans leur section de criticité, cette vue
+n'est qu'un index.
+
+Le comparatif avec la version remplacée vient du mécanisme `follow` : la source
+« Android Behavior Changes » découvre les deux versions les plus récentes depuis
+l'index officiel et scrape leurs deux pages. On obtient donc en permanence la
+version courante **et** celle qu'elle remplace, sans qu'aucun numéro ne soit
+écrit nulle part. Quand une nouvelle version sort, le suivi bascule tout seul.
+
+Côté Apple, il n'existe pas d'équivalent exploitable : les pages
+`developer.apple.com/documentation/*` sont des applications JavaScript qui ne
+rendent rien à un client HTTP, ce qui a été vérifié avant d'y renoncer. Le suivi
+repose donc sur le flux des releases développeur, dont la charge utile est le
+titre (version et build), et sur la page des mises à jour de sécurité.
+
+Le prompt impose au modèle, pour tout item `os-release`, de dire ce que la
+version change **par rapport à celle qu'elle remplace**, et uniquement si
+l'extrait l'énonce : jamais de comparaison reconstruite.
 
 ## Détection de panne silencieuse
 

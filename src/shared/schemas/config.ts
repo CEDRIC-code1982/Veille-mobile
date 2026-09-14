@@ -16,6 +16,12 @@ import {
  * feed, it is a bug, not an expected outcome.
  */
 
+const feedFollowSchema = z.strictObject({
+  linkPattern: nonEmptyStringSchema,
+  urlTemplate: nonEmptyStringSchema,
+  limit: z.number().int().positive().max(5),
+});
+
 const feedSchema = z.strictObject({
   name: nonEmptyStringSchema,
   url: httpUrlSchema,
@@ -24,6 +30,8 @@ const feedSchema = z.strictObject({
   categories: z.array(categorySchema).min(1),
   official: z.boolean(),
   maxAgeDays: z.number().int().positive(),
+  follow: feedFollowSchema.optional(),
+  titlePattern: nonEmptyStringSchema.optional(),
 });
 
 const feedsConfigSchema = z.strictObject({

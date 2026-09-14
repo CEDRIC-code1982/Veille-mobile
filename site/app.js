@@ -13,6 +13,7 @@
   const MAX_TAG_CHIPS = 20;
 
   const CRITICALITIES = ['blocking', 'impacting', 'background'];
+  const OS_CATEGORY = 'os-release';
 
   const CRITICALITY_LABELS = {
     blocking: 'Bloquant',
@@ -315,11 +316,57 @@
       total += items.length;
     }
 
+    renderOsIndex(visible);
     byId('empty').hidden = total > 0 || state.items.length === 0;
     byId('match-count').textContent =
       total === state.items.length
         ? total + ' item(s)'
         : total + ' sur ' + state.items.length + ' item(s)';
+  }
+
+  /**
+   * Compact index of the operating-system items: the point is to see at a
+   * glance which release is current and which one it replaces. The full cards
+   * stay in their criticality section, so nothing is hidden behind this view.
+   */
+  function renderOsIndex(visible) {
+    const section = byId('section-os');
+    const list = byId('items-os');
+    const items = visible.filter(function (item) {
+      return (item.categories || []).indexOf(OS_CATEGORY) >= 0;
+    });
+
+    list.textContent = '';
+
+    for (let index = 0; index < items.length; index += 1) {
+      const item = items[index];
+      const row = createElement('li', 'os-row');
+
+      row.appendChild(
+        createBadge('badge--' + item.criticality, CRITICALITY_LABELS[item.criticality] || item.criticality)
+      );
+
+      if (isSafeUrl(item.sourceUrl)) {
+        const link = createElement('a', null, item.title);
+        link.href = item.sourceUrl;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        row.appendChild(link);
+      } else {
+        row.appendChild(createElement('span', null, item.title));
+      }
+
+      const published = formatDate(item.publishedAt);
+
+      if (published) {
+        row.appendChild(createElement('span', 'os-date', published));
+      }
+
+      list.appendChild(row);
+    }
+
+    byId('count-os').textContent = items.length + (items.length === 1 ? ' item' : ' items');
+    section.hidden = items.length === 0;
   }
 
   function renderStats() {

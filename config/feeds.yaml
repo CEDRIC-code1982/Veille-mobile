@@ -134,6 +134,58 @@ feeds:
     official: true
     maxAgeDays: 21
 
+  # Discovers the two most recent platform versions from the index, then scrapes
+  # their behaviour-change pages. No version number is written down anywhere:
+  # keeping two of them is what gives the current release and the one it
+  # replaces, side by side.
+  - name: Android Behavior Changes
+    url: https://developer.android.com/about/versions
+    type: scrape
+    domain: developer.android.com
+    categories: [android, os-release, background]
+    official: true
+    maxAgeDays: 30
+    follow:
+      linkPattern: '^/about/versions/(\d+)$'
+      urlTemplate: /about/versions/{key}/behavior-changes-all
+      limit: 2
+
+  # This feed announces every platform Apple ships, and most entries carry no
+  # text at all beyond "View downloads": the payload is the title. Narrowed to
+  # the platforms this watch is about, so the rest does not drown the signal.
+  - name: Apple Developer Releases
+    url: https://developer.apple.com/news/releases/rss/releases.rss
+    type: rss
+    domain: developer.apple.com
+    categories: [ios, os-release, tooling]
+    official: true
+    maxAgeDays: 14
+    titlePattern: '^(iOS|iPadOS|Xcode|App Store Connect|TestFlight)\b'
+
+  - name: Apple Security Releases
+    url: https://support.apple.com/en-us/100100
+    type: scrape
+    domain: support.apple.com
+    categories: [ios, os-release]
+    official: true
+    maxAgeDays: 30
+
+  - name: Play Services Releases
+    url: https://developers.google.com/android/guides/releases
+    type: scrape
+    domain: developers.google.com
+    categories: [android, tooling]
+    official: true
+    maxAgeDays: 30
+
+  - name: Bluetooth SIG Blog
+    url: https://www.bluetooth.com/blog/feed/
+    type: rss
+    domain: bluetooth.com
+    categories: [ble, hardware]
+    official: false
+    maxAgeDays: 45
+
   - name: Don't Kill My App
     url: https://dontkillmyapp.com/
     type: scrape

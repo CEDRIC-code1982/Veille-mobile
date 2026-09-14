@@ -6,7 +6,11 @@ import { describe, expect, it } from 'vitest';
 import { FeedType } from '../src/domain/entities/Feed';
 import type { FeedEntry } from '../src/domain/entities/Feed';
 import { createRssFeedReader } from '../src/data/feeds/RssFeedReader';
-import { createScrapeFeedReader, extractTitle } from '../src/data/feeds/ScrapeFeedReader';
+import {
+  createScrapeFeedReader,
+  discoverKeys,
+  extractTitle,
+} from '../src/data/feeds/ScrapeFeedReader';
 import { parseFeedXml } from '../src/data/feeds/parseFeedXml';
 import { toCollectedItem, toIsoTimestamp } from '../src/data/mappers/toCollectedItem';
 import { buildFeed } from './helpers/factories';
@@ -173,6 +177,117 @@ describe('createScrapeFeedReader', () => {
     );
 
     await expect(reader.read(feed)).rejects.toThrow('no readable content');
+  });
+});
+
+describe('discoverKeys', () => {
+  const html = [
+    '<a href="/about/versions/9">9</a>',
+    '<a href="/about/versions/10">10</a>',
+    '<a href="/about/versions/17">17</a>',
+    '<a href="/about/versions/17">duplicate</a>',
+    '<a href="/about/versions/17/qpr1">not a bare version</a>',
+    '<a href="/about/versions/beta">not a number</a>',
+    '<a href="/elsewhere/42">wrong section</a>',
+  ].join('');
+  const pattern = '^/about/versions/(\\d+)$';
+
+  it('sorts version keys numerically, not as strings', () => {
+    expect(discoverKeys(html, pattern, 3)).toEqual(['17', '10', '9']);
+  });
+
+  it('keeps only as many keys as the limit allows', () => {
+    expect(discoverKeys(html, pattern, 2)).toEqual(['17', '10']);
+  });
+
+  it('ignores a key that is not a number rather than guessing at it', () => {
+    expect(discoverKeys(html, pattern, 10)).not.toContain('beta');
+  });
+
+  it('ignores links outside the pattern, and deduplicates', () => {
+    expect(discoverKeys(html, pattern, 10)).toEqual(['17', '10', '9']);
+  });
+
+  it('returns nothing when the index exposes no usable link', () => {
+    expect(discoverKeys('<a href="/other">x</a>', pattern, 2)).toEqual([]);
+  });
+});
+
+describe('createScrapeFeedReader following an index', () => {
+  const INDEX_URL = 'https://example.invalid/about/versions';
+  const followFeed = buildFeed({
+    name: 'Fixture Index',
+    url: INDEX_URL,
+    type: FeedType.SCRAPE,
+    follow: {
+      linkPattern: '^/about/versions/(\\d+)$',
+      urlTemplate: '/about/versions/{key}/changes',
+      limit: 2,
+    },
+  });
+
+  const indexHtml = [
+    '<main><a href="/about/versions/16">16</a><a href="/about/versions/17">17</a></main>',
+  ].join('');
+  const pageFor = (version: string): string =>
+    `<html><head><title>Changes</title></head><body><main><h1>Behaviour changes</h1>` +
+    `<p>The ${version} platform changes background execution.</p></main></body></html>`;
+
+  const responses = {
+    [INDEX_URL]: indexHtml,
+    'https://example.invalid/about/versions/17/changes': pageFor('seventeen'),
+    'https://example.invalid/about/versions/16/changes': pageFor('sixteen'),
+  };
+
+  it('produces one entry per followed version, newest first', async () => {
+    const entries = await createScrapeFeedReader(createFakeFetcher({ responses })).read(followFeed);
+
+    expect(entries.map((entry) => entry.url)).toEqual([
+      'https://example.invalid/about/versions/17/changes',
+      'https://example.invalid/about/versions/16/changes',
+    ]);
+  });
+
+  it('distinguishes the entries by the URL segment, without naming a product', async () => {
+    const entries = await createScrapeFeedReader(createFakeFetcher({ responses })).read(followFeed);
+
+    expect(entries[0]?.title).toBe('Behaviour changes — 17');
+    expect(entries[1]?.title).toBe('Behaviour changes — 16');
+  });
+
+  it('gives the two versions different content hashes, so both are published', async () => {
+    const entries = await createScrapeFeedReader(createFakeFetcher({ responses })).read(followFeed);
+
+    expect(entries[0]?.contentHash).not.toBe(entries[1]?.contentHash);
+  });
+
+  it('keeps the readable versions when one page is unreachable', async () => {
+    const fetcher = createFakeFetcher({
+      responses,
+      failures: {
+        'https://example.invalid/about/versions/16/changes': { status: 404, reason: 'HTTP 404' },
+      },
+    });
+    const entries = await createScrapeFeedReader(fetcher).read(followFeed);
+
+    expect(entries).toHaveLength(1);
+    expect(entries[0]?.title).toBe('Behaviour changes — 17');
+  });
+
+  it('fails when the index exposes no usable link at all', async () => {
+    const fetcher = createFakeFetcher({ responses: { [INDEX_URL]: '<main>nothing</main>' } });
+
+    await expect(createScrapeFeedReader(fetcher).read(followFeed)).rejects.toThrow(
+      'no usable link',
+    );
+  });
+
+  it('fails when every followed page is unreachable', async () => {
+    const fetcher = createFakeFetcher({ responses: { [INDEX_URL]: indexHtml } });
+
+    await expect(createScrapeFeedReader(fetcher).read(followFeed)).rejects.toThrow(
+      'no followed page was readable',
+    );
   });
 });
 

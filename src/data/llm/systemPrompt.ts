@@ -1,4 +1,4 @@
-import { ALL_CATEGORIES } from '../../domain/entities/Category';
+import { ALL_CATEGORIES, Category } from '../../domain/entities/Category';
 import { Criticality } from '../../domain/entities/VeilleItem';
 
 /**
@@ -49,7 +49,14 @@ const buildSystemPrompt = (): string => {
     `6. "categories" are taken from this closed list: ${ALL_CATEGORIES.join(', ')}.`,
     `   "tags" are at most ${MAX_TAGS_PER_ITEM} short lower-case keywords.`,
     '',
-    '7. Answer with one entry per input item, keeping the id unchanged. Output raw JSON only:',
+    `7. When an item carries the "${Category.OS_RELEASE}" category, it describes an operating`,
+    '   system release or its behaviour changes. Its summary must say what this release changes',
+    '   for an application developer **compared with the version it replaces**, and strictly',
+    '   what the excerpt states. If the excerpt does not compare anything, describe what the',
+    '   release changes and say nothing about the previous version: never reconstruct a',
+    '   comparison you cannot read.',
+    '',
+    '8. Answer with one entry per input item, keeping the id unchanged. Output raw JSON only:',
     '   no markdown fence, no comment, no text before or after the JSON.',
   ].join('\n');
 };

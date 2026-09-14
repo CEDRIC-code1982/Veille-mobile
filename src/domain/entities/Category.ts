@@ -13,6 +13,7 @@ const Category = {
   HARDWARE: 'hardware',
   TOOLING: 'tooling',
   POLICY: 'policy',
+  OS_RELEASE: 'os-release',
 } as const;
 type Category = typeof Category[keyof typeof Category];
 

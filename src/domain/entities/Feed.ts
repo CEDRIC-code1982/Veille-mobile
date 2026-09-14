@@ -13,6 +13,23 @@ type FeedType = typeof FeedType[keyof typeof FeedType];
  * `maxAgeDays` is the silence threshold: past that, `detectStaleFeeds`
  * considers the feed mute and the pipeline opens an issue.
  */
+/**
+ * Turns one index page into several scraped pages.
+ *
+ * Documentation sites bury the interesting page behind a version number, and
+ * hard-coding that number would make the watch silently track an obsolete
+ * release. Instead the index is read, the version keys are discovered from the
+ * links it exposes, the highest ones are kept, and their pages are scraped.
+ *
+ * Keeping two of them is what produces the comparison: the current release and
+ * the one it replaces, side by side, without either being declared by hand.
+ */
+interface FeedFollow {
+  linkPattern: string;
+  urlTemplate: string;
+  limit: number;
+}
+
 interface Feed {
   name: string;
   url: string;
@@ -21,6 +38,8 @@ interface Feed {
   categories: Category[];
   official: boolean;
   maxAgeDays: number;
+  follow?: FeedFollow;
+  titlePattern?: string;
 }
 
 /**
@@ -39,4 +58,4 @@ interface FeedEntry {
 }
 
 export { FeedType };
-export type { Feed, FeedEntry };
+export type { Feed, FeedEntry, FeedFollow };

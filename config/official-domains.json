@@ -4,6 +4,8 @@
     { "domain": "developer.apple.com" },
     { "domain": "developer.android.com" },
     { "domain": "support.google.com" },
+    { "domain": "support.apple.com" },
+    { "domain": "developers.google.com" },
     { "domain": "android-developers.googleblog.com" },
     { "domain": "reactnative.dev" },
     { "domain": "devblogs.microsoft.com" },

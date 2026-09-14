@@ -7,6 +7,7 @@ import { Category } from '../src/domain/entities/Category';
 import { FeedType } from '../src/domain/entities/Feed';
 import type { FeedReader } from '../src/domain/ports/FeedReader';
 import { filterRecentItems } from '../src/domain/useCases/filterRecentItems';
+import { filterEntriesByTitle } from '../src/domain/support/filterEntriesByTitle';
 import { createRssFeedReader } from '../src/data/feeds/RssFeedReader';
 import { createScrapeFeedReader } from '../src/data/feeds/ScrapeFeedReader';
 import { runCollect } from '../src/scripts/collect';
@@ -71,6 +72,33 @@ describe('filterRecentItems', () => {
     });
 
     expect(result.recent.map((item) => item.id)).toEqual(['undated']);
+  });
+});
+
+describe('filterEntriesByTitle', () => {
+  const entries = [
+    { title: 'iOS 1.0 RC', url: 'https://example.invalid/a', excerpt: '' },
+    { title: 'watchOS 1.0 RC', url: 'https://example.invalid/b', excerpt: '' },
+    { title: 'Xcode 1 RC', url: 'https://example.invalid/c', excerpt: '' },
+  ];
+
+  it('keeps only the titles matching the pattern', () => {
+    const kept = filterEntriesByTitle(entries, '^(iOS|Xcode)\\b');
+
+    expect(kept.map((entry) => entry.title)).toEqual(['iOS 1.0 RC', 'Xcode 1 RC']);
+  });
+
+  it('matches without regard to case', () => {
+    expect(filterEntriesByTitle(entries, '^ios')).toHaveLength(1);
+  });
+
+  it('keeps everything when no pattern is configured', () => {
+    expect(filterEntriesByTitle(entries, undefined)).toHaveLength(3);
+    expect(filterEntriesByTitle(entries, '   ')).toHaveLength(3);
+  });
+
+  it('keeps everything when the pattern is unusable, rather than emptying the source', () => {
+    expect(filterEntriesByTitle(entries, '([unclosed')).toHaveLength(3);
   });
 });
 
