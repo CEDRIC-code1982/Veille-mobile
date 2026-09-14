@@ -1,7 +1,97 @@
 {
   "month": "2026-09",
-  "updatedAt": "2026-09-14T06:32:57.168Z",
+  "updatedAt": "2026-09-14T06:49:07.755Z",
   "items": [
+    {
+      "id": "18aeced84946c1dd",
+      "title": "Apple security releases",
+      "summary": "Page officielle recensant les mises à jour de sécurité de tous les logiciels Apple, avec leur version et leur date. Elle sert de référence pour savoir quelle version d'OS est effectivement diffusée.",
+      "sourceUrl": "https://support.apple.com/en-us/100100",
+      "sourceName": "Apple Security Releases",
+      "publishedAt": "2026-09-14T06:48:09.927Z",
+      "collectedAt": "2026-09-14T06:48:09.927Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "os-release"
+      ],
+      "tags": [
+        "securite",
+        "versions"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "bfe865e0c4cb4d84",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "2abb0669346b95ab",
+      "title": "Release Notes",
+      "summary": "Les notes de version des services Google Play récapitulent les évolutions des SDK Android et Firebase. Elles concernent directement les dépendances embarquées par une application.",
+      "sourceUrl": "https://developers.google.com/android/guides/releases",
+      "sourceName": "Play Services Releases",
+      "publishedAt": "2026-09-14T06:48:09.927Z",
+      "collectedAt": "2026-09-14T06:48:09.927Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "tooling"
+      ],
+      "tags": [
+        "play-services",
+        "sdk"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "07321388a390a1e7",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "ab1243b37df5fc56",
+      "title": "Behavior changes: all apps — 16",
+      "summary": "Même page de référence pour la version précédente de la plateforme, utile comme point de comparaison. Les changements y sont également indépendants du niveau d'API ciblé.",
+      "sourceUrl": "https://developer.android.com/about/versions/16/behavior-changes-all",
+      "sourceName": "Android Behavior Changes",
+      "publishedAt": "2026-09-14T06:48:09.927Z",
+      "collectedAt": "2026-09-14T06:48:09.927Z",
+      "criticality": "impacting",
+      "trustLevel": "verified",
+      "categories": [
+        "android",
+        "os-release",
+        "background"
+      ],
+      "tags": [
+        "behavior-changes",
+        "targetsdk"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "8f714d8b3e152e54",
+      "evidenceQuote": "behavior changes apply to all apps when they run on Android 16, regardless of targetSdkVersion"
+    },
+    {
+      "id": "fda70ef3e3998848",
+      "title": "Behavior changes: all apps — 17",
+      "summary": "La page officielle des changements de comportement recense ce que la dernière plateforme Android modifie pour toutes les applications. Ces changements s'appliquent dès que l'appareil tourne sous cette version, indépendamment du niveau d'API ciblé.",
+      "sourceUrl": "https://developer.android.com/about/versions/17/behavior-changes-all",
+      "sourceName": "Android Behavior Changes",
+      "publishedAt": "2026-09-14T06:48:09.927Z",
+      "collectedAt": "2026-09-14T06:48:09.927Z",
+      "criticality": "impacting",
+      "trustLevel": "verified",
+      "categories": [
+        "android",
+        "os-release",
+        "background"
+      ],
+      "tags": [
+        "behavior-changes",
+        "targetsdk"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "853591074636f3da",
+      "evidenceQuote": "behavior changes apply to all apps when they run on Android 17, regardless of targetSdkVersion"
+    },
     {
       "id": "35e89cae344b58b0",
       "title": "Android Studio Quail 4",
@@ -115,6 +205,27 @@
       "impactedProjects": [],
       "fingerprint": "bcbcc0ee14023ef0",
       "evidenceQuote": "If your app or game includes social media capabilities, you’ll need to indicate them in App Store Connect."
+    },
+    {
+      "id": "ddd7e313980a2d4d",
+      "title": "App Store Connect Update",
+      "summary": "Apple a mis à jour App Store Connect. L'extrait renvoie aux notes de version sans en détailler le contenu.",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=09092026i",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-09-09T22:00:00.000Z",
+      "collectedAt": "2026-09-14T06:48:09.927Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "tooling"
+      ],
+      "tags": [
+        "app-store-connect"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "68551d7cd8b1b37a",
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "104c533298b3fe15",
@@ -247,6 +358,94 @@
       ],
       "impactedProjects": [],
       "fingerprint": "c25d46d57160d3f6",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "0e33b06a0fac17ac",
+      "title": "iPadOS 27.0 RC (24A435)",
+      "summary": "Apple a publié la version candidate d'iPadOS 27.0, avec la même build que la version iPhone. À utiliser pour valider le rendu sur tablette.",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=09092026b",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-09-09T17:00:00.000Z",
+      "collectedAt": "2026-09-14T06:48:09.927Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "os-release"
+      ],
+      "tags": [
+        "ipados",
+        "rc"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "a7033034599bafae",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "60cf315741fd1ae1",
+      "title": "iPadOS 26.7 (23H24)",
+      "summary": "Apple a publié iPadOS 26.7. L'extrait ne précise pas ce que cette version apporte.",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=09092026g",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-09-09T17:00:00.000Z",
+      "collectedAt": "2026-09-14T06:48:09.927Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "os-release"
+      ],
+      "tags": [
+        "ipados"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "4e123ce2a3649b02",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "78691e33026ccf3c",
+      "title": "iOS 27.0 RC (24A435)",
+      "summary": "Apple a publié la version candidate d'iOS 27.0. C'est la build sur laquelle valider une application avant la diffusion publique.",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=09092026a",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-09-09T17:00:00.000Z",
+      "collectedAt": "2026-09-14T06:48:09.927Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "os-release"
+      ],
+      "tags": [
+        "ios",
+        "rc"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "e8c6764aa4cf64b1",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "a9971df97c710bba",
+      "title": "Xcode 27 RC (27A266a)",
+      "summary": "Apple a publié la version candidate de Xcode 27. C'est la chaîne de compilation à prévoir pour les soumissions à venir.",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=09092026h",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-09-09T17:00:00.000Z",
+      "collectedAt": "2026-09-14T06:48:09.927Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "tooling",
+        "os-release"
+      ],
+      "tags": [
+        "xcode",
+        "rc"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "0665b8faf092a951",
       "verificationNote": "aucune citation à vérifier"
     },
     {
@@ -486,6 +685,50 @@
       "verificationNote": "aucune citation à vérifier"
     },
     {
+      "id": "3b88524ce9b087af",
+      "title": "iOS 26.6.2 (23G90)",
+      "summary": "Apple a publié une mise à jour corrective d'iOS 26.6.2. L'extrait ne détaille pas son contenu.",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=09082026a",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-09-08T17:00:00.000Z",
+      "collectedAt": "2026-09-14T06:48:09.927Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "os-release"
+      ],
+      "tags": [
+        "ios",
+        "correctif"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "290ade3cc488b8ce",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "b2ca55e2bdcc302e",
+      "title": "iPadOS 26.6.2 (23G90)",
+      "summary": "Mise à jour corrective d'iPadOS 26.6.2, publiée avec la même build que la version iPhone. L'extrait ne détaille pas son contenu.",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=09082026b",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-09-08T17:00:00.000Z",
+      "collectedAt": "2026-09-14T06:48:09.927Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "os-release"
+      ],
+      "tags": [
+        "ipados",
+        "correctif"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "4a6e4cb7628d9b1b",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
       "id": "e3ca44bcfb128a3e",
       "title": "The internet’s favorite cat comes to Apple Arcade with Pusheen’s Place",
       "summary": "Apple Arcade accueille au 1er octobre une nouvelle série de jeux, dont un titre autour du chat Pusheen. Annonce grand public, sans incidence technique.",
@@ -524,6 +767,26 @@
       "impactedProjects": [],
       "fingerprint": "19b6a3b018758b5b",
       "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "01b5750702506aae",
+      "title": "The Bluetooth SIG reinforces global commitment with the establishment of Japan entity",
+      "summary": "Le Bluetooth SIG a créé une entité au Japon pour accompagner ses membres en Asie-Pacifique. Aucune incidence technique sur les spécifications.",
+      "sourceUrl": "https://www.bluetooth.com/blog/the-bluetooth-sig-reinforces-global-commitment-with-the-establishment-of-japan-entity",
+      "sourceName": "Bluetooth SIG Blog",
+      "publishedAt": "2026-09-04T19:28:42.000Z",
+      "collectedAt": "2026-09-14T06:48:09.927Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ble"
+      ],
+      "tags": [
+        "bluetooth-sig"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "a3be864846c8437a",
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "ef1493c6ec643a29",
@@ -569,6 +832,26 @@
       ],
       "impactedProjects": [],
       "fingerprint": "1caa61f65752c2bc",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "48aea0fcfa9b5828",
+      "title": "Tackling energy, waste, and environmental challenges with Bluetooth® driven innovation",
+      "summary": "Article d'analyse sur la contribution du Bluetooth aux enjeux énergétiques et environnementaux. Contenu de veille générale, sans portée technique immédiate.",
+      "sourceUrl": "https://www.bluetooth.com/blog/tackling-energy-waste-and-environmental-challenges-with-bluetooth-driven-innovation",
+      "sourceName": "Bluetooth SIG Blog",
+      "publishedAt": "2026-09-01T18:25:27.000Z",
+      "collectedAt": "2026-09-14T06:48:09.927Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ble"
+      ],
+      "tags": [
+        "bluetooth-sig"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "27b50d0267c003be",
       "verificationNote": "aucune citation à vérifier"
     },
     {

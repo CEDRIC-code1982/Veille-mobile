@@ -1,6 +1,6 @@
 {
   "month": "2026-08",
-  "updatedAt": "2026-09-14T06:32:57.168Z",
+  "updatedAt": "2026-09-14T06:49:07.755Z",
   "items": [
     {
       "id": "6f8916deba211090",
@@ -24,6 +24,28 @@
       ],
       "impactedProjects": [],
       "fingerprint": "fefb06776a73530a",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "22538c142a54d467",
+      "title": "Bluetooth® Networked Lighting Control and HVAC integration are advancing sustainability in commercial spaces",
+      "summary": "Article sur l'usage du Bluetooth pour le pilotage de l'éclairage et de la ventilation dans les bâtiments tertiaires. Contenu sectoriel, sans changement de spécification.",
+      "sourceUrl": "https://www.bluetooth.com/blog/bluetooth-networked-lighting-control-and-hvac-integration-are-advancing-sustainability-in-commercial-spaces",
+      "sourceName": "Bluetooth SIG Blog",
+      "publishedAt": "2026-08-27T20:13:11.000Z",
+      "collectedAt": "2026-09-14T06:48:09.927Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ble",
+        "hardware"
+      ],
+      "tags": [
+        "bluetooth-sig",
+        "batiment"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "30d825c5e81726de",
       "verificationNote": "aucune citation à vérifier"
     },
     {
@@ -168,7 +190,7 @@
       "sourceUrl": "https://github.com/react/react-native/releases/tag/latest",
       "sourceName": "React Native Releases",
       "publishedAt": "2026-08-26T12:51:23.000Z",
-      "collectedAt": "2026-09-14T06:31:48.543Z",
+      "collectedAt": "2026-09-14T06:48:09.927Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -178,6 +200,27 @@
       "impactedProjects": [],
       "fingerprint": "5ff6a68abd07906e",
       "verificationNote": "non classé : the proposals file says nothing about this item"
+    },
+    {
+      "id": "e43933c58571d027",
+      "title": "TestFlight Update",
+      "summary": "Apple a mis à jour TestFlight. L'extrait renvoie aux notes de version sans en détailler le contenu.",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=08252026a",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-08-25T21:00:00.000Z",
+      "collectedAt": "2026-09-14T06:48:09.927Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "tooling"
+      ],
+      "tags": [
+        "testflight"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "d7b351f26305216a",
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "63a55fb7e1b1d229",
@@ -566,6 +609,50 @@
       "fingerprint": "2faef67dcd966b80",
       "evidenceQuote": "Please review the changes and sign in to your account to accept the updated terms.",
       "deadline": "2026-10-01"
+    },
+    {
+      "id": "0173a17535255938",
+      "title": "iOS 18.7.10 (22H374)",
+      "summary": "Apple a publié iOS 18.7.10, une mise à jour de la branche précédente encore maintenue. Utile si une partie du parc reste sur cette branche.",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=08172026k",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-08-17T17:00:00.000Z",
+      "collectedAt": "2026-09-14T06:48:09.927Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "os-release"
+      ],
+      "tags": [
+        "ios",
+        "maintenance"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "33b0da006d98ba05",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "d86e59b6ff65bfe8",
+      "title": "iPadOS 18.7.10 (22H374)",
+      "summary": "Apple a publié iPadOS 18.7.10, pendant tablette de la mise à jour de la branche précédente.",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=08172026l",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-08-17T17:00:00.000Z",
+      "collectedAt": "2026-09-14T06:48:09.927Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "os-release"
+      ],
+      "tags": [
+        "ipados",
+        "maintenance"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "2a55104cb9d3624a",
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "6497848f860fecea",
