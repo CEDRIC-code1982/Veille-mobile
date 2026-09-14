@@ -38,6 +38,10 @@
     policy: 'Règles de store'
   };
 
+  const DENSITY_KEY = 'veille-density';
+  const DENSITY_COMPACT = 'compact';
+  const DENSITY_DETAIL = 'detail';
+
   const state = {
     items: [],
     index: null,
@@ -45,8 +49,32 @@
     query: '',
     categories: new Set(),
     tags: new Set(),
-    onlyUnverified: false
+    onlyUnverified: false,
+    density: DENSITY_COMPACT
   };
+
+  /**
+   * Reading a stored preference must never break the page. Detail is the
+   * default: hiding the summaries from a first visitor would hide the point of
+   * the site, and compact stays one click away.
+   */
+  function readStoredDensity() {
+    try {
+      return localStorage.getItem(DENSITY_KEY) === DENSITY_COMPACT
+        ? DENSITY_COMPACT
+        : DENSITY_DETAIL;
+    } catch {
+      return DENSITY_DETAIL;
+    }
+  }
+
+  function storeDensity(density) {
+    try {
+      localStorage.setItem(DENSITY_KEY, density);
+    } catch {
+      // A private window refuses storage; the preference is simply not kept.
+    }
+  }
 
   /* ---------- helpers ---------- */
 
@@ -119,8 +147,15 @@
 
   /* ---------- rendering ---------- */
 
+  let cardSequence = 0;
+
   function createCard(item) {
     const card = createElement('article', 'card card--' + item.criticality);
+    const accent = createElement('div', 'card-accent');
+    accent.setAttribute('aria-hidden', 'true');
+    card.appendChild(accent);
+
+    const main = createElement('div', 'card-main');
     const badges = createElement('div', 'card-badges');
 
     badges.appendChild(
@@ -134,7 +169,7 @@
       badges.appendChild(createBadge('badge--deadline', 'Échéance ' + item.deadline));
     }
 
-    card.appendChild(badges);
+    main.appendChild(badges);
 
     const heading = createElement('h3');
 
@@ -148,18 +183,22 @@
       heading.textContent = item.title;
     }
 
-    card.appendChild(heading);
+    main.appendChild(heading);
+
+    const body = createElement('div', 'card-body');
+    cardSequence += 1;
+    body.id = 'card-body-' + cardSequence;
 
     if (item.summary) {
-      card.appendChild(createElement('p', 'summary', item.summary));
+      body.appendChild(createElement('p', 'summary', item.summary));
     }
 
     if (item.evidenceQuote && item.trustLevel === 'verified') {
-      card.appendChild(createElement('blockquote', 'evidence', '« ' + item.evidenceQuote + ' »'));
+      body.appendChild(createElement('blockquote', 'evidence', '« ' + item.evidenceQuote + ' »'));
     }
 
     if (item.verificationNote) {
-      card.appendChild(createElement('p', 'note', item.verificationNote));
+      body.appendChild(createElement('p', 'note', item.verificationNote));
     }
 
     const meta = createElement('ul', 'meta');
@@ -175,10 +214,10 @@
       meta.appendChild(createElement('li', null, item.categories.map(categoryLabel).join(' · ')));
     }
 
-    card.appendChild(meta);
+    body.appendChild(meta);
 
     if (item.tags && item.tags.length > 0) {
-      card.appendChild(
+      body.appendChild(
         createPillList(item.tags, function (tag) {
           return '#' + tag;
         })
@@ -186,8 +225,25 @@
     }
 
     if (item.impactedProjects && item.impactedProjects.length > 0) {
-      card.appendChild(createPillList(item.impactedProjects, projectLabel));
+      body.appendChild(createPillList(item.impactedProjects, projectLabel));
     }
+
+    main.appendChild(body);
+
+    const toggle = createElement('button', 'card-toggle', 'Détails');
+    toggle.type = 'button';
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-controls', body.id);
+
+    toggle.addEventListener('click', function () {
+      const opened = card.getAttribute('data-open') === '1';
+      card.setAttribute('data-open', opened ? '0' : '1');
+      toggle.setAttribute('aria-expanded', String(!opened));
+      toggle.textContent = opened ? 'Détails' : 'Replier';
+    });
+
+    main.appendChild(toggle);
+    card.appendChild(main);
 
     return card;
   }
@@ -254,11 +310,16 @@
       }
 
       counter.textContent = items.length + (items.length === 1 ? ' item' : ' items');
+      container.setAttribute('data-density', state.density);
       section.hidden = items.length === 0;
       total += items.length;
     }
 
     byId('empty').hidden = total > 0 || state.items.length === 0;
+    byId('match-count').textContent =
+      total === state.items.length
+        ? total + ' item(s)'
+        : total + ' sur ' + state.items.length + ' item(s)';
   }
 
   function renderStats() {
@@ -302,23 +363,45 @@
 
   /* ---------- filter chips ---------- */
 
+  const chipRegistry = [];
+
+  /** Re-reads every chip's pressed state from the filters themselves. */
+  function syncChips() {
+    for (let index = 0; index < chipRegistry.length; index += 1) {
+      const entry = chipRegistry[index];
+      const pressed = entry.value === null ? entry.bucket.size === 0 : entry.bucket.has(entry.value);
+      entry.chip.setAttribute('aria-pressed', String(pressed));
+    }
+  }
+
+  /**
+   * A chip with a null value is the "all" chip: it clears its group. It exists
+   * because the default state was otherwise only deducible from the absence of
+   * any active chip.
+   */
   function buildChip(row, value, label, bucket) {
     const chip = createElement('button', 'chip', label);
     chip.type = 'button';
     chip.setAttribute('aria-pressed', 'false');
 
+    if (value === null) {
+      chip.classList.add('chip-all');
+    }
+
     chip.addEventListener('click', function () {
-      if (bucket.has(value)) {
+      if (value === null) {
+        bucket.clear();
+      } else if (bucket.has(value)) {
         bucket.delete(value);
-        chip.setAttribute('aria-pressed', 'false');
       } else {
         bucket.add(value);
-        chip.setAttribute('aria-pressed', 'true');
       }
 
+      syncChips();
       render();
     });
 
+    chipRegistry.push({ chip: chip, value: value, bucket: bucket });
     row.appendChild(chip);
   }
 
@@ -344,6 +427,10 @@
     const tagRow = byId('tag-chips');
     categoryRow.textContent = '';
     tagRow.textContent = '';
+    chipRegistry.length = 0;
+
+    buildChip(categoryRow, null, 'Toutes', state.categories);
+    buildChip(tagRow, null, 'Tous', state.tags);
 
     const categories = countValues(function (item) {
       return item.categories;
@@ -363,6 +450,7 @@
 
     byId('category-fieldset').hidden = categories.length === 0;
     byId('tag-fieldset').hidden = tags.length === 0;
+    syncChips();
   }
 
   /* ---------- data loading ---------- */
@@ -472,9 +560,24 @@
 
   /* ---------- wiring ---------- */
 
+  function applyDensityToToggle() {
+    const toggle = byId('density-toggle');
+    const detailed = state.density === DENSITY_DETAIL;
+    toggle.setAttribute('aria-pressed', String(detailed));
+    toggle.textContent = detailed ? 'Cartes dépliées' : 'Cartes repliées';
+  }
+
   function wireFilters() {
     const search = byId('search');
     const onlyUnverified = byId('only-unverified');
+    const density = byId('density-toggle');
+
+    density.addEventListener('click', function () {
+      state.density = state.density === DENSITY_DETAIL ? DENSITY_COMPACT : DENSITY_DETAIL;
+      storeDensity(state.density);
+      applyDensityToToggle();
+      render();
+    });
 
     search.addEventListener('input', function () {
       state.query = fold(search.value.trim());
@@ -498,6 +601,7 @@
         chips[index].setAttribute('aria-pressed', 'false');
       }
 
+      syncChips();
       window.setTimeout(render, 0);
     });
   }
@@ -514,7 +618,9 @@
     });
   }
 
+  state.density = readStoredDensity();
   wireFilters();
+  applyDensityToToggle();
   registerServiceWorker();
   load();
 })();

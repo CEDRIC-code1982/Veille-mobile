@@ -1,69 +1,107 @@
 /*
- * Mobile-first stylesheet, no framework and no build step.
- * Colours come from a single set of custom properties, swapped by
- * prefers-color-scheme so the site follows the phone's own setting.
+ * Design system aligned on the companion watch site: semantic colour tokens
+ * with soft variants, a prose width and a wide width, a sticky filter bar on
+ * large screens only, density-aware cards, and a print stylesheet.
+ *
+ * No framework, no build step, no external font: the site has to stay readable
+ * offline, so the typefaces are declared as stacks that degrade to the system
+ * families rather than fetched from a font CDN.
  */
 
 :root {
   color-scheme: light dark;
 
-  --surface: #ffffff;
-  --surface-raised: #f5f6f8;
-  --surface-sunken: #eceef2;
-  --border: #d8dbe2;
-  --text: #16181d;
-  --text-muted: #5c6270;
-  --accent: #2f5fd0;
+  --paper: #f3f6f6;
+  --card: #ffffff;
+  --ink: #17282e;
+  --muted: #5a6b70;
+  --line: #dce4e4;
 
-  --blocking: #c0272d;
-  --blocking-surface: #fdeceb;
-  --impacting: #9a5a00;
-  --impacting-surface: #fdf3e2;
-  --background-level: #2f5fd0;
-  --background-surface: #eaf0fd;
-  --unverified: #7a4bbd;
-  --unverified-surface: #f2ebfc;
+  --teal: #0f766e;
+  --teal-soft: #e2f0ee;
+  --amber: #b07d2b;
+  --amber-soft: #f6edda;
+  --red: #a8534b;
+  --red-soft: #f5e4e2;
+  --grey: #64748b;
+  --grey-soft: #e8ecf1;
 
-  --radius: 12px;
-  --gap: 16px;
-  --content-width: 780px;
-  --card-min-width: 320px;
+  /* Criticality reuses the palette: red blocks, amber weighs, teal informs. */
+  --blocking: var(--red);
+  --blocking-soft: var(--red-soft);
+  --impacting: var(--amber);
+  --impacting-soft: var(--amber-soft);
+  --background-level: var(--teal);
+  --background-soft: var(--teal-soft);
+
+  /* Widths: card text stays readable, the list spreads into a grid. */
+  --prose: 920px;
+  --wide: 1520px;
+
+  --card-min: 420px;
+  --card-min-compact: 330px;
+
+  --font-body: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  --font-display: "Spectral", Georgia, "Times New Roman", serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --radius: 10px;
+  --gap: 14px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --surface: #10131a;
-    --surface-raised: #171b24;
-    --surface-sunken: #1e232e;
-    --border: #2b313d;
-    --text: #e8eaf0;
-    --text-muted: #a0a7b8;
-    --accent: #7ba2ff;
+    --paper: #0e1618;
+    --card: #172227;
+    --ink: #e7edec;
+    --muted: #9fb0b3;
+    --line: #2a383c;
 
-    --blocking: #ff8a8a;
-    --blocking-surface: #2c1719;
-    --impacting: #ffc766;
-    --impacting-surface: #2a2113;
-    --background-level: #8fb0ff;
-    --background-surface: #171e2e;
-    --unverified: #c6a4ff;
-    --unverified-surface: #221a30;
+    --teal: #5cc0b4;
+    --teal-soft: #10312e;
+    --amber: #d8a657;
+    --amber-soft: #322813;
+    --red: #e0938b;
+    --red-soft: #331e1b;
+    --grey: #93a3b4;
+    --grey-soft: #222e36;
   }
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: var(--paper);
 }
 
 body {
-  margin: 0;
-  padding: 0 max(var(--gap), env(safe-area-inset-right)) calc(var(--gap) * 3)
-    max(var(--gap), env(safe-area-inset-left));
-  background: var(--surface);
-  color: var(--text);
-  font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, sans-serif;
+  max-width: var(--wide);
+  margin: 0 auto;
+  padding: 40px max(20px, env(safe-area-inset-right)) 80px
+    max(20px, env(safe-area-inset-left));
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.55;
   -webkit-text-size-adjust: 100%;
+}
+
+a {
+  color: var(--teal);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
 }
 
 .visually-hidden {
@@ -71,37 +109,40 @@ body {
   width: 1px;
   height: 1px;
   margin: -1px;
-  padding: 0;
   overflow: hidden;
   clip-path: inset(50%);
   white-space: nowrap;
 }
 
-/* ---------- header ---------- */
+/* ---------- Header ---------- */
 
-.page-header {
-  max-width: var(--content-width);
-  margin: 0 auto;
-  padding: calc(var(--gap) * 1.5) 0 var(--gap);
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal);
 }
 
 .page-header h1 {
-  margin: 0;
-  font-size: 1.55rem;
-  letter-spacing: -0.01em;
+  margin: 6px 0 10px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(28px, 5vw, 42px);
+  line-height: 1.15;
 }
 
 .tagline {
-  margin: 6px 0 0;
-  color: var(--text-muted);
-  font-size: 0.9rem;
+  max-width: var(--prose);
+  color: var(--muted);
+  font-size: 0.95rem;
 }
 
 .stats {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 18px;
-  margin: var(--gap) 0 0;
+  gap: 8px 26px;
+  margin: 20px 0 24px;
 }
 
 .stats div {
@@ -110,142 +151,148 @@ body {
 }
 
 .stats dt {
-  color: var(--text-muted);
-  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  color: var(--muted);
 }
 
 .stats dd {
-  margin: 0;
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   font-variant-numeric: tabular-nums;
-  font-weight: 600;
+  font-weight: 700;
 }
 
-/* ---------- filters ---------- */
+/* ---------- Filters ---------- */
 
 .filters {
-  max-width: var(--content-width);
-  margin: 0 auto var(--gap);
-  padding: var(--gap);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--surface-raised);
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
 }
 
 .field {
-  margin: 0;
+  margin-bottom: 14px;
 }
 
 .filters input[type="search"] {
   width: 100%;
-  padding: 11px 12px;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  background: var(--surface);
-  color: var(--text);
+  max-width: 520px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--card);
+  color: var(--ink);
+  font-family: inherit;
   font-size: 1rem;
 }
 
-.filters input[type="search"]:focus-visible,
-.chip:focus-visible,
-button:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-}
-
 .chips {
-  margin: var(--gap) 0 0;
-  padding: 0;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 4px 12px;
+  align-items: start;
+  margin-bottom: 10px;
   border: 0;
 }
 
 .chips legend {
-  padding: 0;
-  color: var(--text-muted);
-  font-size: 0.72rem;
+  display: contents;
+}
+
+.chips legend span,
+.group-label {
+  padding-top: 7px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  color: var(--muted);
 }
 
 .chip-row {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-top: 8px;
+  align-items: center;
 }
 
 .chip {
   display: inline-flex;
   align-items: center;
-  min-height: 36px;
-  padding: 6px 13px;
-  border: 1px solid var(--border);
+  min-height: 34px;
+  padding: 5px 12px;
+  border: 1px solid var(--line);
   border-radius: 999px;
-  background: var(--surface);
-  color: var(--text);
-  font-size: 0.83rem;
+  background: var(--card);
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 0.85rem;
   cursor: pointer;
 }
 
 .chip[aria-pressed="true"] {
-  border-color: var(--accent);
-  background: var(--accent);
-  color: var(--surface);
+  border-color: var(--teal);
+  background: var(--teal);
+  color: var(--paper);
+}
+
+/*
+ * The "all" chip makes the default state visible: without it, "no filter" was
+ * only deducible from the absence of an active chip.
+ */
+.chip-all {
+  border-style: dashed;
+}
+
+.chip-all[aria-pressed="true"] {
+  border-style: solid;
 }
 
 .filter-actions {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  margin: var(--gap) 0 0;
+  gap: 10px 16px;
+  margin-top: 12px;
 }
 
 .toggle {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.88rem;
+  font-size: 0.9rem;
 }
 
 button {
-  min-height: 36px;
-  padding: 8px 16px;
-  border: 1px solid var(--border);
+  min-height: 34px;
+  padding: 6px 14px;
+  border: 1px solid var(--line);
   border-radius: 999px;
-  background: var(--surface);
-  color: var(--text);
+  background: var(--card);
+  color: var(--ink);
+  font-family: inherit;
   font-size: 0.85rem;
   cursor: pointer;
 }
 
-/* ---------- sections ---------- */
-
-main {
-  max-width: var(--content-width);
-  margin: 0 auto;
+.match-count {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
 }
 
+/* ---------- Sections ---------- */
+
 .status {
-  margin: calc(var(--gap) * 2) 0;
-  color: var(--text-muted);
+  margin: 48px 0;
+  color: var(--muted);
   text-align: center;
 }
 
 .section {
-  margin: 0 0 calc(var(--gap) * 1.5);
-  padding: var(--gap);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--surface-raised);
-}
-
-.section--blocking {
-  border-color: var(--blocking);
-  background: var(--blocking-surface);
+  margin-bottom: 32px;
 }
 
 .section h2,
@@ -253,200 +300,322 @@ main {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin: 0;
-  font-size: 1rem;
+  margin-bottom: 4px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.15rem;
 }
 
 .section summary {
   cursor: pointer;
+  list-style: none;
+}
+
+.section summary::-webkit-details-marker {
+  display: none;
+}
+
+.section summary::before {
+  content: "▸";
+  color: var(--muted);
+  font-family: var(--font-body);
+}
+
+.section[open] summary::before {
+  content: "▾";
 }
 
 .section-note {
-  margin: 8px 0 0;
-  color: var(--text-muted);
-  font-size: 0.8rem;
+  max-width: var(--prose);
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-size: 0.85rem;
 }
 
 .count {
-  color: var(--text-muted);
-  font-size: 0.85rem;
-  font-variant-numeric: tabular-nums;
+  font-family: var(--font-mono);
+  font-size: 12px;
   font-weight: 400;
+  color: var(--muted);
 }
 
 .items {
   display: grid;
-  /* min() keeps the track from exceeding the container on a narrow phone:
-     a bare minmax minimum overflows below 352px. */
-  grid-template-columns: repeat(auto-fill, minmax(min(var(--card-min-width), 100%), 1fr));
-  align-items: start;
   gap: var(--gap);
-  margin-top: var(--gap);
+  margin-top: 14px;
+  /* min() keeps a track from overflowing a container narrower than the card. */
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--card-min)), 1fr));
+  align-items: start;
 }
 
 /*
- * The blocking section keeps a single full-width column whatever the screen:
- * it is the one section that must read as an alert, and a lone blocking item
- * squeezed into a third of the width would read as a detail.
+ * Compact density: only the heading and the badges stay visible, and a card
+ * opens on demand. Narrower tracks fit more of them across the screen.
+ */
+.items[data-density="compact"] {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--card-min-compact)), 1fr));
+}
+
+.items[data-density="compact"] .card-body {
+  display: none;
+}
+
+.items[data-density="compact"] .card[data-open="1"] .card-body {
+  display: block;
+}
+
+/*
+ * The blocking section keeps one full-width column whatever the screen: it has
+ * to read as an alert, not as a third of a row.
  */
 .section--blocking .items {
   grid-template-columns: 1fr;
 }
 
-/* ---------- cards ---------- */
+/* ---------- Cards ---------- */
 
 .card {
-  padding: var(--gap);
-  border: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 14px 1fr;
+  gap: 16px;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: var(--surface);
+  background: var(--card);
+}
+
+/* The left rail carries the criticality, so it reads before any text. */
+.card-accent {
+  border-radius: 4px;
+  background: var(--grey);
+}
+
+.card--blocking .card-accent {
+  background: var(--blocking);
+}
+
+.card--impacting .card-accent {
+  background: var(--impacting);
+}
+
+.card--background .card-accent {
+  background: var(--background-level);
+}
+
+.card-main {
+  min-width: 0;
 }
 
 .card-badges {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .badge {
-  padding: 3px 9px;
+  padding: 2px 9px;
   border: 1px solid currentcolor;
   border-radius: 999px;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.03em;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   white-space: nowrap;
 }
 
 .badge--blocking {
-  border-color: var(--blocking);
-  background: var(--blocking-surface);
+  background: var(--blocking-soft);
   color: var(--blocking);
 }
 
 .badge--impacting {
-  border-color: var(--impacting);
-  background: var(--impacting-surface);
+  background: var(--impacting-soft);
   color: var(--impacting);
 }
 
 .badge--background {
-  border-color: var(--background-level);
-  background: var(--background-surface);
+  background: var(--background-soft);
   color: var(--background-level);
 }
 
-.badge--verified {
-  border-color: var(--border);
-  background: var(--surface-sunken);
-  color: var(--text-muted);
-}
-
+.badge--verified,
 .badge--reported {
-  border-color: var(--border);
-  background: var(--surface-sunken);
-  color: var(--text-muted);
+  border-color: var(--line);
+  background: var(--grey-soft);
+  color: var(--muted);
 }
 
-/* The unverified badge is deliberately the loudest trust marker on the page. */
+/*
+ * Unverified is the loudest trust marker on the page, and the only dashed one:
+ * filled means a level, dashed means a doubt.
+ */
 .badge--unverified {
-  border-color: var(--unverified);
   border-style: dashed;
-  border-width: 2px;
-  background: var(--unverified-surface);
-  color: var(--unverified);
+  border-color: var(--red);
+  background: transparent;
+  color: var(--red);
 }
 
 .badge--deadline {
   border-color: var(--blocking);
   background: transparent;
   color: var(--blocking);
-  text-transform: none;
   font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+  text-transform: none;
 }
 
 .card h3 {
-  margin: 0;
-  font-size: 1.02rem;
-  line-height: 1.35;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.05rem;
+  line-height: 1.3;
 }
 
 .card h3 a {
-  color: var(--text);
-  text-decoration-color: var(--border);
+  color: var(--ink);
+  text-decoration-color: var(--line);
   text-underline-offset: 3px;
 }
 
 .card h3 a:hover,
 .card h3 a:focus-visible {
-  text-decoration-color: var(--accent);
+  text-decoration-color: var(--teal);
 }
 
 .summary {
-  margin: 8px 0 0;
+  max-width: 68ch;
+  margin-top: 8px;
 }
 
 .evidence {
-  margin: 12px 0 0;
+  max-width: 68ch;
+  margin-top: 12px;
   padding: 8px 12px;
-  border-left: 3px solid var(--accent);
-  background: var(--surface-sunken);
+  border-left: 3px solid var(--teal);
   border-radius: 0 8px 8px 0;
-  color: var(--text-muted);
-  font-size: 0.88rem;
+  background: var(--teal-soft);
+  font-size: 0.9rem;
   font-style: italic;
 }
 
 .note {
-  margin: 10px 0 0;
-  color: var(--text-muted);
-  font-size: 0.82rem;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.83rem;
 }
 
 .meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px 12px;
-  margin: 12px 0 0;
-  padding: 0;
+  gap: 4px 14px;
+  margin-top: 12px;
   list-style: none;
-  color: var(--text-muted);
-  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--muted);
 }
 
 .pills {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
-  margin: 10px 0 0;
-  padding: 0;
+  margin-top: 10px;
   list-style: none;
 }
 
 .pills li {
   padding: 2px 8px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--line);
   border-radius: 999px;
-  color: var(--text-muted);
+  color: var(--muted);
   font-size: 0.75rem;
 }
 
-/* ---------- footer ---------- */
-
-.page-footer {
-  max-width: var(--content-width);
-  margin: calc(var(--gap) * 2) auto 0;
-  color: var(--text-muted);
-  font-size: 0.78rem;
-  text-align: center;
+.card-toggle {
+  margin-top: 10px;
+  padding: 2px 0;
+  border: 0;
+  background: none;
+  color: var(--teal);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  min-height: 0;
 }
 
-/* Touch screens have no hover, and need targets Apple sizes at 44px. */
+.items[data-density="detail"] .card-toggle {
+  display: none;
+}
+
+/* ---------- Footer ---------- */
+
+.page-footer {
+  max-width: var(--prose);
+  margin-top: 48px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+/* ---------- Breakpoints ---------- */
+
+/*
+ * The filter bar sticks to the top on a large screen only: on a phone it eats
+ * too much height to stay visible, and the max-height guard keeps it from
+ * swallowing a short window.
+ */
+@media (min-width: 900px) {
+  .filters {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    max-height: 72vh;
+    overflow-y: auto;
+    margin-right: -20px;
+    margin-left: -20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background: var(--paper);
+  }
+}
+
+@media (max-width: 700px) {
+  .chips {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .chips legend span,
+  .group-label {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  body {
+    padding: 24px 14px 60px;
+  }
+
+  .card {
+    grid-template-columns: 10px 1fr;
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .stats {
+    gap: 8px 18px;
+  }
+}
+
+/* Touch screens have no hover and need targets sized for a finger. */
 @media (hover: none) and (pointer: coarse) {
   .chip,
-  button {
+  button:not(.card-toggle) {
     min-height: 44px;
   }
 
@@ -456,68 +625,9 @@ main {
   }
 }
 
-/* Tablet portrait and large phones in landscape: two columns of cards. */
-@media (min-width: 700px) {
-  :root {
-    --content-width: 820px;
-  }
-
-  .page-header h1 {
-    font-size: 1.9rem;
-  }
-
-  .card h3 {
-    font-size: 1.1rem;
-  }
-
-  .filters {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--gap);
-    align-items: start;
-  }
-
-  .field,
-  .filter-actions {
-    grid-column: 1 / -1;
-  }
-}
-
-/* Small laptops: the container earns real width. */
-@media (min-width: 1000px) {
-  :root {
-    --content-width: 1080px;
-  }
-
-  .filters {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .field {
-    grid-column: 1 / -1;
-  }
-
-  .filter-actions {
-    grid-column: 1 / -1;
-  }
-}
-
-/*
- * Desktop: a ceiling on the container, and wider cards. Left alone, auto-fill
- * would pack four narrow columns into this width, which reads badly for cards
- * that are mostly text.
- */
-@media (min-width: 1400px) {
-  :root {
-    --content-width: 1440px;
-    --card-min-width: 400px;
-  }
-}
-
-/* Short viewports, typically a phone in landscape: reclaim vertical space. */
 @media (max-height: 480px) and (orientation: landscape) {
-  .page-header {
-    padding-top: var(--gap);
+  body {
+    padding-top: 16px;
   }
 
   .tagline {
@@ -525,14 +635,52 @@ main {
   }
 }
 
-/*
- * Respect a reduced-motion preference. The site animates little, but the
- * details disclosure and smooth scrolling both honour it.
- */
 @media (prefers-reduced-motion: reduce) {
   * {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
+    transition: none !important;
+    animation: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* ---------- Print: get a clean sheet out ---------- */
+
+@media print {
+  .filters,
+  .card-toggle,
+  .page-footer {
+    display: none !important;
+  }
+
+  html,
+  body {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #000;
+  }
+
+  .items,
+  .items[data-density="compact"] {
+    display: block !important;
+  }
+
+  .items[data-density="compact"] .card-body {
+    display: block !important;
+  }
+
+  .section[hidden] {
+    display: none !important;
+  }
+
+  .card {
+    margin-bottom: 12px;
+    break-inside: avoid;
+  }
+
+  a {
+    color: #000;
+    text-decoration: underline;
   }
 }

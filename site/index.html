@@ -18,6 +18,7 @@
 </head>
 <body>
   <header class="page-header">
+    <p class="eyebrow">React Native · TypeScript · iOS · Android</p>
     <h1>Veille mobile</h1>
     <p class="tagline">
       React Native, TypeScript, iOS, Android. Aucun item n'est bloquant sans une citation
@@ -38,11 +39,11 @@
       >
     </p>
     <fieldset class="chips" id="category-fieldset">
-      <legend>Plateformes</legend>
+      <legend><span>Plateformes</span></legend>
       <div class="chip-row" id="category-chips"></div>
     </fieldset>
     <fieldset class="chips" id="tag-fieldset">
-      <legend>Tags</legend>
+      <legend><span>Tags</span></legend>
       <div class="chip-row" id="tag-chips"></div>
     </fieldset>
     <p class="filter-actions">
@@ -50,7 +51,15 @@
         <input type="checkbox" id="only-unverified" name="only-unverified">
         <span>Non vérifiés seulement</span>
       </label>
+      <button
+        type="button"
+        class="chip"
+        id="density-toggle"
+        aria-pressed="false"
+        title="Afficher d'emblée le résumé et les détails de toutes les cartes"
+      >Cartes dépliées</button>
       <button type="reset" id="reset">Réinitialiser</button>
+      <span class="match-count" id="match-count" role="status" aria-live="polite"></span>
     </p>
   </form>
 
