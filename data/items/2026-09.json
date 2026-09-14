@@ -1,7 +1,277 @@
 {
   "month": "2026-09",
-  "updatedAt": "2026-09-09T16:01:52.567Z",
+  "updatedAt": "2026-09-14T06:32:57.168Z",
   "items": [
+    {
+      "id": "35e89cae344b58b0",
+      "title": "Android Studio Quail 4",
+      "summary": "Android Studio Quail 4, numérotée 2026.1.4, devient la version du canal stable. La mise à jour se fait depuis l'IDE via la vérification des mises à jour ou par téléchargement direct.",
+      "sourceUrl": "https://developer.android.com/studio/releases",
+      "sourceName": "Android Studio Releases",
+      "publishedAt": "2026-09-14T06:31:48.543Z",
+      "collectedAt": "2026-09-14T06:31:48.543Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "tooling"
+      ],
+      "tags": [
+        "android-studio",
+        "ide",
+        "release"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "6565b535201f1229",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "7a0d44f3996e8f3f",
+      "title": "Get ready to experience iPhone 18 Pro, the new Apple Watch lineup, and AirPods 5",
+      "summary": "Apple ouvre les précommandes de l'iPhone 18 Pro et de l'iPhone 18 Pro Max à partir du samedi 12 septembre. La nouvelle gamme Apple Watch et les AirPods 5 sont concernés par la même vague de disponibilité.",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/09/get-ready-to-experience-iphone-18-pro-the-new-apple-watch-lineup-and-airpods-5",
+      "sourceName": "Apple Newsroom",
+      "publishedAt": "2026-09-11T16:00:08.631Z",
+      "collectedAt": "2026-09-14T06:31:48.543Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "hardware",
+        "ios"
+      ],
+      "tags": [
+        "iphone",
+        "apple-watch",
+        "airpods"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "9d87ef80ef233d03",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "2907f6d4a873de8d",
+      "title": "Switching password managers is easy and safe on Android",
+      "summary": "Android intègre un mécanisme de transfert sécurisé des mots de passe et des passkeys entre gestionnaires. L'objectif est de permettre de changer d'outil sans perdre ses identifiants.",
+      "sourceUrl": "https://blog.google/products-and-platforms/platforms/android/switch-password-managers",
+      "sourceName": "Android and Pixel Blog",
+      "publishedAt": "2026-09-10T16:00:00.000Z",
+      "collectedAt": "2026-09-14T06:31:48.543Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "android"
+      ],
+      "tags": [
+        "passkeys",
+        "credentials",
+        "security"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "53228ba024b62b4e",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "ad0a0e83a511759d",
+      "title": "Get ready for iPhone Duo",
+      "summary": "Apple invite les développeurs à préparer dès maintenant leurs applications pour l'iPhone Duo. Des vidéos, des Group Labs et des sessions de questions-réponses sur les forums développeurs accompagnent cette préparation.",
+      "sourceUrl": "https://developer.apple.com/news?id=vn8abkxx",
+      "sourceName": "Apple Developer News",
+      "publishedAt": "2026-09-09T23:05:23.000Z",
+      "collectedAt": "2026-09-14T06:31:48.543Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios"
+      ],
+      "tags": [
+        "iphone-duo",
+        "foldable",
+        "developer-resources"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "85696602437b135e",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "a287d4ec02b32f4c",
+      "title": "App Store submissions now open for the latest OS releases",
+      "summary": "Les soumissions à l'App Store sont ouvertes pour la génération 27 des systèmes Apple, avec la Release Candidate de Xcode 27 disponible pour compiler contre les nouveaux SDK. Apple demande par ailleurs de déclarer les capacités de réseau social dans App Store Connect et annonce que macOS 27 ne visera plus que les Mac Apple silicon.",
+      "sourceUrl": "https://developer.apple.com/news?id=k1mtkt1k",
+      "sourceName": "Apple Developer News",
+      "publishedAt": "2026-09-09T23:00:38.000Z",
+      "collectedAt": "2026-09-14T06:31:48.543Z",
+      "criticality": "blocking",
+      "trustLevel": "verified",
+      "categories": [
+        "ios",
+        "policy"
+      ],
+      "tags": [
+        "app-store",
+        "xcode",
+        "ios-27",
+        "submission"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "bcbcc0ee14023ef0",
+      "evidenceQuote": "If your app or game includes social media capabilities, you’ll need to indicate them in App Store Connect."
+    },
+    {
+      "id": "104c533298b3fe15",
+      "title": "Apple unveils iPhone Duo",
+      "summary": "Apple dévoile l'iPhone Duo, son premier modèle pliable. C'est un nouveau format d'écran à prendre en compte côté mise en page.",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo",
+      "sourceName": "Apple Newsroom",
+      "publishedAt": "2026-09-09T18:15:40.996Z",
+      "collectedAt": "2026-09-14T06:31:48.543Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "hardware",
+        "ios"
+      ],
+      "tags": [
+        "iphone-duo",
+        "foldable"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "7b6f2801c74e37fb",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "93d0a643110a985c",
+      "title": "Apple advances health and fitness capabilities using Apple Intelligence",
+      "summary": "Apple étend ses fonctions de santé et de forme physique en s'appuyant sur Apple Intelligence. L'Apple Watch et l'iPhone sont positionnés comme des outils de suivi personnel adossés à une démarche scientifique.",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/09/apple-advances-health-and-fitness-capabilities-using-apple-intelligence",
+      "sourceName": "Apple Newsroom",
+      "publishedAt": "2026-09-09T17:52:05.481Z",
+      "collectedAt": "2026-09-14T06:31:48.543Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "hardware",
+        "ios"
+      ],
+      "tags": [
+        "healthkit",
+        "apple-intelligence",
+        "wearables"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "f0ebcbfc586bbc7c",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "e856ffb97986aec5",
+      "title": "Apple unveils Apple Watch Ultra 4",
+      "summary": "Apple présente l'Apple Watch Ultra 4, orientée sport et aventure. Elle apporte de nouvelles capacités de santé, de forme physique et d'audio.",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/09/apple-unveils-apple-watch-ultra-4",
+      "sourceName": "Apple Newsroom",
+      "publishedAt": "2026-09-09T17:51:18.631Z",
+      "collectedAt": "2026-09-14T06:31:48.543Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "hardware",
+        "ios"
+      ],
+      "tags": [
+        "apple-watch",
+        "wearables"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "ddd109373692d8e0",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "aca5bab48984ebc0",
+      "title": "Introducing Apple Watch Series 12, with the all-new Health Sensing System",
+      "summary": "Apple annonce l'Apple Watch Series 12 et son nouveau système de capteurs de santé. Le constructeur met en avant la précision de la mesure de fréquence cardiaque.",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/09/introducing-apple-watch-series-12-with-the-all-new-health-sensing-system",
+      "sourceName": "Apple Newsroom",
+      "publishedAt": "2026-09-09T17:50:47.609Z",
+      "collectedAt": "2026-09-14T06:31:48.543Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "hardware",
+        "ios"
+      ],
+      "tags": [
+        "apple-watch",
+        "sensors",
+        "heart-rate"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "dc7356ba07aa9a24",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "1029162212c66bbe",
+      "title": "Apple introduces AirPods 5 with best-in-class open-ear Active Noise Cancellation",
+      "summary": "Apple lance les AirPods 5 avec une réduction de bruit active dans un format ouvert. La qualité sonore est également revue à la hausse.",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/09/apple-introduces-airpods-5-with-best-in-class-open-ear-active-noise-cancellation",
+      "sourceName": "Apple Newsroom",
+      "publishedAt": "2026-09-09T17:34:55.485Z",
+      "collectedAt": "2026-09-14T06:31:48.543Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "hardware"
+      ],
+      "tags": [
+        "airpods",
+        "audio"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "a5c646b854ef15d8",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "f0de3af1a83e220a",
+      "title": "Apple debuts iPhone 18 Pro and iPhone 18 Pro Max",
+      "summary": "Apple présente l'iPhone 18 Pro et l'iPhone 18 Pro Max. Ces modèles mettent en avant un système photo professionnel ainsi que des gains d'autonomie et de performance.",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max",
+      "sourceName": "Apple Newsroom",
+      "publishedAt": "2026-09-09T17:30:06.059Z",
+      "collectedAt": "2026-09-14T06:31:48.543Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "hardware",
+        "ios"
+      ],
+      "tags": [
+        "iphone",
+        "hardware"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "c25d46d57160d3f6",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "eedca4dd005239a3",
+      "title": "Introducing Fast and Reliable Wireless Debugging with Android Debug Bridge (ADB) Wi-Fi 2.0",
+      "summary": "Google refond la pile de débogage sans fil d'Android avec ADB Wi-Fi 2.0, en retravaillant le serveur adb, le démon adbd et l'intégration dans Android Studio. Les connexions résistent mieux aux changements de réseau et l'appairage devient visible directement dans le Device Manager.",
+      "sourceUrl": "https://android-developers.googleblog.com/2026/09/wireless-debugging-adb-wifi-2.html",
+      "sourceName": "Android Developers Blog",
+      "publishedAt": "2026-09-09T16:00:00.000Z",
+      "collectedAt": "2026-09-14T06:31:48.543Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "tooling"
+      ],
+      "tags": [
+        "adb",
+        "debugging",
+        "android-studio"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "7e86688673d7acb6",
+      "verificationNote": "aucune citation à vérifier"
+    },
     {
       "id": "5eec7539f2f29bdb",
       "title": "Don’t kill my app!",
@@ -167,6 +437,29 @@
       "fingerprint": "e2a2dd2392afe6ef",
       "evidenceQuote": "Starting August 31 2026: New apps and app updates must target Android 16 (API level 36) or higher to be submitted to Google Play; except for Wear OS and Android Automotive OS apps, which must target Android 15 (API level 35) or higher, and Android TV and Android XR apps, which must target Android",
       "deadline": "2026-08-31"
+    },
+    {
+      "id": "f9786a49ea971b3f",
+      "title": "This Week In React #296: React 19.3, DevTools, Next.js, cn, Maps, Effective-RSC, Vidact, uf | 0.88 RC, Expo Modules, Navigation Benchmarks, QuickJS, Goldie, ContinuedTask | Rslib, Vitest, gpu-lexer, Ata, Interop",
+      "summary": "La newsletter annonce la sortie de React 19.3, qui stabilise les View Transitions et les Fragment Refs, ainsi que de nouveaux DevTools à venir. Elle donne aussi un aperçu de React Native 0.88 en release candidate et d'Expo Modules 2.0.",
+      "sourceUrl": "https://thisweekinreact.com/newsletter/296",
+      "sourceName": "This Week in React",
+      "publishedAt": "2026-09-09T00:00:00.000Z",
+      "collectedAt": "2026-09-14T06:31:48.543Z",
+      "criticality": "impacting",
+      "trustLevel": "unverified",
+      "categories": [
+        "react-native",
+        "typescript"
+      ],
+      "tags": [
+        "react-19",
+        "react-native-088",
+        "expo-modules"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "fc41bc5e6b408174",
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "8a0b2f391d1d76fd",
