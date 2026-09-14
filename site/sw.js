@@ -8,7 +8,14 @@
 
 'use strict';
 
-const CACHE_NAME = 'veille-mobile-v1';
+/*
+ * The version is stamped at assembly time from the hash of the site files.
+ *
+ * This is what makes an update happen at all: a browser only installs a new
+ * worker when the bytes of this file change. With a frozen name the precached
+ * shell would survive every deployment, and the site would never update.
+ */
+const CACHE_NAME = 'veille-mobile-__CACHE_VERSION__';
 
 const SHELL_ASSETS = [
   './',
@@ -114,6 +121,7 @@ self.addEventListener('fetch', function (event) {
     return;
   }
 
-  const isData = url.pathname.indexOf('/data/') >= 0 || /\.json$/.test(url.pathname);
-  event.respondWith(cacheFirst(request, isData));
+  // Everything is revalidated in the background, not only the data: a shell
+  // served from cache without refresh would stay one deployment behind.
+  event.respondWith(cacheFirst(request, true));
 });
