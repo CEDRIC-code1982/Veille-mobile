@@ -1,7 +1,1017 @@
 {
   "month": "2026-09",
-  "updatedAt": "2026-09-14T06:49:07.755Z",
+  "updatedAt": "2026-09-24T08:40:25.922Z",
   "items": [
+    {
+      "id": "222bf6dc26cbbc48",
+      "title": "Apple security releases",
+      "summary": "Page officielle des mises à jour de sécurité Apple, avec pour chaque version les appareils pris en charge et la date de diffusion. C'est la source la plus fiable pour savoir quelle version tourne sur quel matériel.",
+      "sourceUrl": "https://support.apple.com/en-us/100100",
+      "sourceName": "Apple Security Releases",
+      "publishedAt": "2026-09-24T08:37:59.632Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "os-release"
+      ],
+      "tags": [
+        "securite",
+        "versions"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "d695f2e92465f266",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "57ebc3cb060c4ee7",
+      "title": "Behavior changes: all apps — 17",
+      "summary": "La dernière plateforme Android introduit des limites de mémoire par application, calculées sur la RAM totale de l'appareil. Ces changements s'appliquent dès que l'appareil tourne sous cette version, quel que soit le niveau d'API ciblé.",
+      "sourceUrl": "https://developer.android.com/about/versions/17/behavior-changes-all",
+      "sourceName": "Android Behavior Changes",
+      "publishedAt": "2026-09-24T08:37:59.632Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "impacting",
+      "trustLevel": "verified",
+      "categories": [
+        "android",
+        "os-release",
+        "background"
+      ],
+      "tags": [
+        "memoire",
+        "behavior-changes"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "70d75037d388ea77",
+      "evidenceQuote": "Android 17 introduces app memory limits based on the device's total RAM"
+    },
+    {
+      "id": "6006ca2e566a3554",
+      "title": "Features and APIs — 16",
+      "summary": "Même page de nouveautés pour la version précédente, utile pour mesurer l'écart entre les deux plateformes. Elle liste les API introduites à l'époque.",
+      "sourceUrl": "https://developer.android.com/about/versions/16/features",
+      "sourceName": "Android Platform Features",
+      "publishedAt": "2026-09-24T08:37:59.632Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "os-release"
+      ],
+      "tags": [
+        "api"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "bc9410e2fb116bbe",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "7cca3a982922fba0",
+      "title": "Changelog",
+      "summary": "La bêta de la prochaine version majeure du SDK Expo est disponible. À évaluer avant de planifier une montée de version.",
+      "sourceUrl": "https://expo.dev/changelog",
+      "sourceName": "Expo Changelog",
+      "publishedAt": "2026-09-24T08:37:59.632Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "react-native",
+        "tooling"
+      ],
+      "tags": [
+        "expo",
+        "sdk"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "68babf3753cf7b49",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "89d0b75df672dec5",
+      "title": "Explore what’s new",
+      "summary": "Page officielle recensant les technologies et capacités nouvellement offertes aux applications sur les plateformes Apple. Point d'entrée à relire à chaque cycle de version.",
+      "sourceUrl": "https://developer.apple.com/whats-new",
+      "sourceName": "Apple Developer What's New",
+      "publishedAt": "2026-09-24T08:37:59.632Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "os-release",
+        "tooling"
+      ],
+      "tags": [
+        "nouveautes"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "ea1b4f2c7669ebb2",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "8a9d1a64fd9f3f9f",
+      "title": "Meet Google Play's target API level requirement",
+      "summary": "Google Play impose un niveau d'API cible minimum pour toute soumission, avec des seuils distincts selon la forme d'appareil. Les applications déjà publiées ont leur propre seuil pour rester distribuées aux nouveaux utilisateurs.",
+      "sourceUrl": "https://developer.android.com/google/play/requirements/target-sdk",
+      "sourceName": "Android Target API Level Requirements",
+      "publishedAt": "2026-09-24T08:37:59.632Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "blocking",
+      "trustLevel": "verified",
+      "categories": [
+        "android",
+        "policy",
+        "background"
+      ],
+      "tags": [
+        "play-store",
+        "target-api"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "820ed5d4bd998927",
+      "evidenceQuote": "New apps and app updates must target Android 16 (API level 36) or higher to be submitted to Google Play",
+      "deadline": "2026-08-31"
+    },
+    {
+      "id": "91f0e07c06b162c1",
+      "title": "iOS 27",
+      "summary": "La page produit de la version courante d'iOS met en avant un assistant repensé, l'édition de photos assistée, la recherche visuelle depuis l'appareil photo et de nouvelles protections pour les enfants. Elle annonce aussi un ensemble d'améliorations transverses du système.",
+      "sourceUrl": "https://www.apple.com/ios",
+      "sourceName": "Apple iOS Features",
+      "publishedAt": "2026-09-24T08:37:59.632Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ios",
+        "os-release"
+      ],
+      "tags": [
+        "ios",
+        "nouveautes"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "532a1c62a1b24059",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "ae471b99c7b0ef38",
+      "title": "Android Studio Quail 4",
+      "summary": "La page des notes de version d'Android Studio décrit la version stable courante. Elle sert de référence pour décider d'une mise à jour de l'environnement de développement.",
+      "sourceUrl": "https://developer.android.com/studio/releases",
+      "sourceName": "Android Studio Releases",
+      "publishedAt": "2026-09-24T08:37:59.632Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "tooling"
+      ],
+      "tags": [
+        "android-studio"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "dcfcccf37994a4ab",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "ccbdef07c57146f5",
+      "title": "iPhone",
+      "summary": "La page de la gamme iPhone présente les modèles actuellement commercialisés. Elle sert de référence pour la matrice d'appareils à prendre en charge.",
+      "sourceUrl": "https://www.apple.com/iphone",
+      "sourceName": "Apple iPhone Lineup",
+      "publishedAt": "2026-09-24T08:37:59.632Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ios",
+        "hardware"
+      ],
+      "tags": [
+        "iphone",
+        "gamme"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "bed4e59b772da8b0",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "db5d8d7b38308871",
+      "title": "Release Notes",
+      "summary": "Les notes de version des services Google Play récapitulent les évolutions des SDK Android et Firebase. Elles concernent directement les dépendances embarquées par une application.",
+      "sourceUrl": "https://developers.google.com/android/guides/releases",
+      "sourceName": "Play Services Releases",
+      "publishedAt": "2026-09-24T08:37:59.632Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "tooling"
+      ],
+      "tags": [
+        "play-services",
+        "sdk"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "2b0081ffaab1e0a9",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "e907c600c4304a00",
+      "title": "Behavior changes: all apps — 16",
+      "summary": "Page de référence des changements de comportement de la version précédente, conservée comme point de comparaison. Les changements y sont également indépendants du niveau d'API ciblé.",
+      "sourceUrl": "https://developer.android.com/about/versions/16/behavior-changes-all",
+      "sourceName": "Android Behavior Changes",
+      "publishedAt": "2026-09-24T08:37:59.632Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "impacting",
+      "trustLevel": "verified",
+      "categories": [
+        "android",
+        "os-release",
+        "background"
+      ],
+      "tags": [
+        "behavior-changes"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "3fda832a8ac35559",
+      "evidenceQuote": "behavior changes apply to all apps when they run on Android 16, regardless of targetSdkVersion"
+    },
+    {
+      "id": "f67f3b5559c8ced2",
+      "title": "Features and APIs — 17",
+      "summary": "La page des nouveautés de la dernière plateforme Android recense les API ajoutées, dont de nouveaux déclencheurs de profilage pour instrumenter les problèmes de performance. Elle renvoie au rapport de différences d'API pour le détail exhaustif.",
+      "sourceUrl": "https://developer.android.com/about/versions/17/features",
+      "sourceName": "Android Platform Features",
+      "publishedAt": "2026-09-24T08:37:59.632Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "impacting",
+      "trustLevel": "verified",
+      "categories": [
+        "android",
+        "os-release"
+      ],
+      "tags": [
+        "api",
+        "profiling"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "dd4602d3389f5d41",
+      "evidenceQuote": "Android 17 adds several new system triggers to ProfilingManager"
+    },
+    {
+      "id": "17b7bbd157b00889",
+      "title": "How battery-free Bluetooth® tags help advance sustainability initiatives",
+      "summary": "Article sur les étiquettes Bluetooth sans pile et leur intérêt pour la traçabilité. Contenu sectoriel, sans changement de spécification.",
+      "sourceUrl": "https://www.bluetooth.com/blog/how-battery-free-bluetooth-tags-help-advance-sustainability-initiatives",
+      "sourceName": "Bluetooth SIG Blog",
+      "publishedAt": "2026-09-23T20:13:54.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ble"
+      ],
+      "tags": [
+        "bluetooth-sig"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "f3b4441054dae9c7",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "7ecf428bd7f65d68",
+      "title": "This Week In React #298: Astro, Redux, img, Hotkeys, R3F, Next.js, AI, Redact | Reanimated, Worklets, Helix, Screens, SecondaryRuntime, Arrangement View, View Shot | TC39, Node, pnpm, Turborepo, jsdom, responsive iframes",
+      "summary": "Cette édition de la newsletter couvre l'intégration React d'Astro, des travaux de performance sur Redux et plusieurs bibliothèques de l'écosystème. Semaine calme côté web.",
+      "sourceUrl": "https://thisweekinreact.com/newsletter/298",
+      "sourceName": "This Week in React",
+      "publishedAt": "2026-09-23T00:00:00.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "react-native",
+        "typescript"
+      ],
+      "tags": [
+        "newsletter"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "76b81e9d2aca27fb",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "2ddfe7300da48d4c",
+      "title": "App Store Connect API 4.5",
+      "summary": "Nouvelle version de l'API App Store Connect. Concerne l'automatisation des livraisons et la publication.",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=09222026a",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-09-22T23:00:00.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "tooling"
+      ],
+      "tags": [
+        "app-store-connect",
+        "api"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "b97e19fc07bbe445",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "20aa3dc2a3b765ed",
+      "title": "Land your apps on Googlebook with adaptive development",
+      "summary": "Google annonce une nouvelle catégorie d'ordinateurs portables bâtis sur une base Android commune. Le développement adaptatif devient le moyen d'y porter une application existante.",
+      "sourceUrl": "https://android-developers.googleblog.com/2026/09/adaptive-development-scale-app-googlebook.html",
+      "sourceName": "Android Developers Blog",
+      "publishedAt": "2026-09-22T17:00:00.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "hardware"
+      ],
+      "tags": [
+        "adaptatif",
+        "grand-ecran"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "27b88a1b0bb2cf4b",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "2fee6e4b8b4802db",
+      "title": "The new Mac mini and Mac Studio are available today",
+      "summary": "Les nouveaux Mac mini et Mac Studio sont disponibles à la vente. Concerne le poste de développement plus que les applications mobiles.",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/09/the-new-mac-mini-and-mac-studio-are-available-today",
+      "sourceName": "Apple Newsroom",
+      "publishedAt": "2026-09-22T12:59:21.039Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "hardware"
+      ],
+      "tags": [
+        "mac"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "39d1c52d654d0684",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "5907dabb07e148d9",
+      "title": "0.88.0-rc.2",
+      "summary": "Cette préversion de React Native relève la version minimale de Metro pour aligner les projets existants sur les projets neufs, et annule une modification des TurboModules. À lire avant une montée de version.",
+      "sourceUrl": "https://github.com/react/react-native/releases/tag/v0.88.0-rc.2",
+      "sourceName": "React Native Releases",
+      "publishedAt": "2026-09-22T08:52:19.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "impacting",
+      "trustLevel": "unverified",
+      "categories": [
+        "react-native"
+      ],
+      "tags": [
+        "metro",
+        "turbomodules"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "4cd44d35e0879b5c",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "1c9ef9081782ccc3",
+      "title": "Apple opens Apple Music Hall, a state-of-the-art live music venue in London",
+      "summary": "Apple a ouvert une salle de concert à Londres. Actualité institutionnelle sans rapport avec le développement d'applications.",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/09/apple-opens-apple-music-hall-a-state-of-the-art-live-music-venue-in-london",
+      "sourceName": "Apple Newsroom",
+      "publishedAt": "2026-09-22T05:59:58.127Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "hardware"
+      ],
+      "tags": [
+        "institutionnel"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "a4a82905e5e9fa50",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "26923c5dc0465705",
+      "title": "Beyond energy savings: The hidden sustainability benefits of Bluetooth® Networked Lighting Control",
+      "summary": "Article sur les bénéfices annexes de l'éclairage connecté en Bluetooth dans les bâtiments tertiaires. Contenu sectoriel, sans portée technique.",
+      "sourceUrl": "https://www.bluetooth.com/blog/beyond-energy-savings-the-hidden-sustainability-benefits-of-bluetooth-nlc",
+      "sourceName": "Bluetooth SIG Blog",
+      "publishedAt": "2026-09-21T23:50:47.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ble"
+      ],
+      "tags": [
+        "bluetooth-sig"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "6678a6b3a15d22f5",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "69dd2c384114e662",
+      "title": "iOS 27.2 beta 2 (24B5089g)",
+      "summary": "Deuxième bêta de la prochaine version mineure d'iOS. À utiliser pour valider en amont les évolutions annoncées.",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=09212026a",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-09-21T17:00:00.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "os-release"
+      ],
+      "tags": [
+        "ios",
+        "beta"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "835e30c407571e85",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "efec4a3f49d189f6",
+      "title": "iPadOS 27.2 beta 2 (24B5089g)",
+      "summary": "Deuxième bêta de la prochaine version mineure d'iPadOS, avec la même build que la version iPhone.",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=09212026b",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-09-21T17:00:00.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "os-release"
+      ],
+      "tags": [
+        "ipados",
+        "beta"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "be12782a62a41300",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "09096535ee7708a2",
+      "title": "Bring your Android game to the car screen today",
+      "summary": "La catégorie jeux devient officiellement disponible pour l'écran de voiture, sur Android Auto et sur les véhicules équipés d'Android Automotive. Concerne les applications ciblant l'automobile.",
+      "sourceUrl": "https://android-developers.googleblog.com/2026/09/bring-android-game-to-car-screen.html",
+      "sourceName": "Android Developers Blog",
+      "publishedAt": "2026-09-21T16:00:48.045Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "hardware"
+      ],
+      "tags": [
+        "automobile"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "b447ae551661355c",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "ada60c53d1953868",
+      "title": "TestFlight Update",
+      "summary": "Mise à jour de TestFlight. L'extrait renvoie aux notes de version sans en détailler le contenu.",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=09182026b",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-09-18T21:00:00.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "tooling"
+      ],
+      "tags": [
+        "testflight"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "92d393cc1d64773b",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "fdf275c616bab38c",
+      "title": "Build for iPhone Duo with new resources",
+      "summary": "Apple publie des ressources pour adapter les applications au nouveau format d'iPhone, dont une bêta de Xcode et des gabarits de maquettage. À prévoir si l'interface doit s'adapter à ce format.",
+      "sourceUrl": "https://developer.apple.com/news?id=nyuppv9r",
+      "sourceName": "Apple Developer News",
+      "publishedAt": "2026-09-18T17:00:57.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "hardware",
+        "tooling"
+      ],
+      "tags": [
+        "iphone-duo",
+        "design"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "b96f2ae1925dfb1c",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "cf0c1c98efe0e259",
+      "title": "Xcode 27.1 beta (27A9269)",
+      "summary": "Bêta de la version mineure suivante de Xcode. À installer pour compiler contre les bêtas des systèmes.",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=09182026a",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-09-18T17:00:00.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "tooling"
+      ],
+      "tags": [
+        "xcode",
+        "beta"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "754e728be23f8675",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "383e813de160ce0d",
+      "title": "The latest iPhone, Apple Watch, and AirPods lineups arrive in stores worldwide",
+      "summary": "Les dernières gammes d'iPhone, d'Apple Watch et d'AirPods sont arrivées en boutique. Ces modèles élargissent la matrice d'appareils à prendre en charge.",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/09/the-latest-iphone-apple-watch-and-airpods-lineups-arrive-in-stores-worldwide",
+      "sourceName": "Apple Newsroom",
+      "publishedAt": "2026-09-18T05:02:14.780Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ios",
+        "hardware"
+      ],
+      "tags": [
+        "iphone",
+        "watch",
+        "airpods"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "2008871379b83816",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "c23c1f248651df56",
+      "title": "Introducing the AndroidX Security State Libraries: A Unified View of Device Security",
+      "summary": "Google publie des bibliothèques AndroidX offrant une vue unifiée de l'état de sécurité d'un appareil. Utile pour conditionner des fonctionnalités au niveau de correctif du terminal.",
+      "sourceUrl": "https://android-developers.googleblog.com/2026/09/introducing-androidx-security-state-libraries.html",
+      "sourceName": "Android Developers Blog",
+      "publishedAt": "2026-09-17T19:00:00.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "policy"
+      ],
+      "tags": [
+        "androidx",
+        "securite"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "92845a0dceb10ed7",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "d612efd5f16d3975",
+      "title": "Bring greater visibility to sustainable resource management",
+      "summary": "Article sur la visibilité des ressources apportée par les capteurs Bluetooth. Contenu sectoriel, sans portée technique.",
+      "sourceUrl": "https://www.bluetooth.com/blog/bring-greater-visibility-to-sustainable-resource-management",
+      "sourceName": "Bluetooth SIG Blog",
+      "publishedAt": "2026-09-17T17:50:36.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ble"
+      ],
+      "tags": [
+        "bluetooth-sig"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "eed7889c9af668ac",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "c6e0349fc991205d",
+      "title": "Android Bench 2.0: Pushing the frontier with challenging long-horizon tasks",
+      "summary": "Google présente une nouvelle version de son banc d'évaluation des modèles de langage sur des tâches longues. Contenu de culture technique, sans incidence sur une application.",
+      "sourceUrl": "https://android-developers.googleblog.com/2026/09/android-bench-2-long-horizon-tasks.html",
+      "sourceName": "Android Developers Blog",
+      "publishedAt": "2026-09-17T14:06:00.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "tooling"
+      ],
+      "tags": [
+        "benchmark"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "b792621c7a3401d8",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "d6920d2a566e5c2f",
+      "title": "TestFlight Update",
+      "summary": "Nouvelle mise à jour de TestFlight. L'extrait renvoie aux notes de version sans en détailler le contenu.",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=09162026h",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-09-16T21:00:00.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "tooling"
+      ],
+      "tags": [
+        "testflight"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "5fbe1a60ee39f3bf",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "390f0eb8db25ff10",
+      "title": "Get ready with the latest beta releases",
+      "summary": "Les bêtas des prochaines versions mineures de toutes les plateformes Apple sont disponibles. Apple invite à vérifier le bon fonctionnement des applications sur ces versions.",
+      "sourceUrl": "https://developer.apple.com/news?id=rfb1rooi",
+      "sourceName": "Apple Developer News",
+      "publishedAt": "2026-09-16T17:03:39.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "os-release"
+      ],
+      "tags": [
+        "beta"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "e6c56d9c7c550a16",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "a88a55c793a8aa83",
+      "title": "Get your subscriptions ready for iOS 27",
+      "summary": "Apple détaille les évolutions des abonnements pour la version courante d'iOS. La préparation passe par l'utilisation de StoreKit 2 pour les achats intégrés.",
+      "sourceUrl": "https://developer.apple.com/news?id=likeohx4",
+      "sourceName": "Apple Developer News",
+      "publishedAt": "2026-09-16T17:02:58.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "policy"
+      ],
+      "tags": [
+        "storekit",
+        "abonnements"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "a9a7d8146687cc7d",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "d50371f66cd4ef1d",
+      "title": "Updates to App Tracking Transparency in the European Union",
+      "summary": "Apple modifie App Tracking Transparency dans l'Union européenne à la suite d'accords avec des autorités de concurrence. Dans cinq pays dont la France, seule la version alternative de l'invite système est disponible.",
+      "sourceUrl": "https://developer.apple.com/news?id=idsft9ai",
+      "sourceName": "Apple Developer News",
+      "publishedAt": "2026-09-16T17:00:11.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "blocking",
+      "trustLevel": "verified",
+      "categories": [
+        "ios",
+        "policy"
+      ],
+      "tags": [
+        "att",
+        "ue",
+        "confidentialite"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "9cb61625a052d5ac",
+      "evidenceQuote": "only the alternative version of the system prompt is available for apps distributed in Germany, France, Italy, Poland, and Romania"
+    },
+    {
+      "id": "5f9d8d342238a957",
+      "title": "Xcode 27.2 beta (27B5019j)",
+      "summary": "Bêta suivante de Xcode, alignée sur les bêtas des versions mineures des systèmes.",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=09162026g",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-09-16T17:00:00.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "tooling"
+      ],
+      "tags": [
+        "xcode",
+        "beta"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "0687d3cbd6e8c32d",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "15ac471a52f568e3",
+      "title": "Celebrating “What Holds Us” on iPhone 18 Pro",
+      "summary": "Exposition photographique mettant en avant le système de caméra du dernier iPhone professionnel. Communication produit, sans portée technique.",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/09/celebrating-what-holds-us-on-iphone-18-pro",
+      "sourceName": "Apple Newsroom",
+      "publishedAt": "2026-09-16T13:59:28.902Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ios",
+        "hardware"
+      ],
+      "tags": [
+        "photo"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "685e15a86fec6cb6",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "d30359c19353c9fb",
+      "title": "0.88.0-rc.1",
+      "summary": "Cette préversion de React Native active l'API impérative EventTarget sur les références de vues natives, en canari. Évolution à surveiller pour la gestion d'événements natifs.",
+      "sourceUrl": "https://github.com/react/react-native/releases/tag/v0.88.0-rc.1",
+      "sourceName": "React Native Releases",
+      "publishedAt": "2026-09-16T09:35:40.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "impacting",
+      "trustLevel": "unverified",
+      "categories": [
+        "react-native"
+      ],
+      "tags": [
+        "eventtarget"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "ee1f4b65a20b0b95",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "38c7a610095fc17a",
+      "title": "This Week In React #297: DevTools, Motion, Apollo, React Router, Hook Form, shadcn lint | Shopify, Expo 58 beta, ExecuTorch, Screenmap, Voltra, SPM, Stim, Lynx, Metro, AI | pnpm, oj, Zod, Devframe, Safari, Webpack",
+      "summary": "Cette édition revient sur la publication des DevTools v8 après la dernière version de React, et sur des optimisations de rendu dans plusieurs bibliothèques. Lecture de veille hebdomadaire.",
+      "sourceUrl": "https://thisweekinreact.com/newsletter/297",
+      "sourceName": "This Week in React",
+      "publishedAt": "2026-09-16T00:00:00.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "react-native",
+        "typescript"
+      ],
+      "tags": [
+        "newsletter",
+        "devtools"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "586908cfd18691b7",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "8bbb42bb8a92c709",
+      "title": "Why connected lighting is becoming a strategic sustainability tool",
+      "summary": "Article sur l'éclairage connecté comme levier de sobriété dans les bâtiments. Contenu sectoriel, sans portée technique.",
+      "sourceUrl": "https://www.bluetooth.com/blog/why-connected-lighting-is-becoming-a-strategic-sustainability-tool",
+      "sourceName": "Bluetooth SIG Blog",
+      "publishedAt": "2026-09-15T16:22:16.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ble"
+      ],
+      "tags": [
+        "bluetooth-sig"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "122c2ef98b5d2099",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "e37ae1c1b4df88c3",
+      "title": "Widow’s Bay triumphs as most decorated freshman comedy in Emmy history",
+      "summary": "Les productions du service de télévision d'Apple ont été primées lors d'une cérémonie. Actualité institutionnelle sans portée technique.",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/09/widows-bay-triumphs-as-most-decorated-freshman-comedy-in-emmy-history",
+      "sourceName": "Apple Newsroom",
+      "publishedAt": "2026-09-15T10:02:42.356Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "hardware"
+      ],
+      "tags": [
+        "institutionnel"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "2036186a7ef58b0a",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "7436e248c69c445e",
+      "title": "App Store Connect Update",
+      "summary": "Mise à jour d'App Store Connect. L'extrait renvoie aux notes de version sans en détailler le contenu.",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=09142026i",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-09-14T18:30:00.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "tooling"
+      ],
+      "tags": [
+        "app-store-connect"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "d22870ef54ad5067",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "fac46a005f782f52",
+      "title": "Major updates for Apple’s software platforms are now available",
+      "summary": "Les mises à jour majeures des plateformes logicielles Apple sont disponibles. Elles introduisent le nouvel assistant et les fonctionnalités d'intelligence associées.",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/09/major-updates-for-apples-software-platforms-are-now-available",
+      "sourceName": "Apple Newsroom",
+      "publishedAt": "2026-09-14T17:10:12.527Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ios",
+        "os-release"
+      ],
+      "tags": [
+        "mise-a-jour"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "ff2fa2a46d243d80",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "738305061bec7af6",
+      "title": "Siri AI, a profoundly more capable and personal assistant, is here",
+      "summary": "Apple a publié la nouvelle génération de son assistant intelligent. Annonce produit, sans exigence technique énoncée pour les applications tierces.",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here",
+      "sourceName": "Apple Newsroom",
+      "publishedAt": "2026-09-14T17:09:41.324Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ios"
+      ],
+      "tags": [
+        "assistant"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "f25f4f603a0554fa",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "725f4e91cadd223a",
+      "title": "Apple’s new child safety features now available",
+      "summary": "Les nouvelles fonctionnalités de sécurité pour les enfants sont disponibles sur l'ensemble des plateformes Apple. À connaître si l'application s'adresse à un public mineur.",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/09/apples-new-child-safety-features-now-available",
+      "sourceName": "Apple Newsroom",
+      "publishedAt": "2026-09-14T17:08:48.789Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ios",
+        "policy"
+      ],
+      "tags": [
+        "securite-enfants"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "cf3bc8b750358723",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "5f6f32f4bf921a2b",
+      "title": "Xcode 27 (27A266a)",
+      "summary": "Apple a publié la version finale de Xcode 27. C'est la chaîne de compilation de référence pour les soumissions.",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=09142026h",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-09-14T17:00:00.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "tooling",
+        "os-release"
+      ],
+      "tags": [
+        "xcode",
+        "release"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "245846d3b1fb5c00",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "70db327bc706bcfc",
+      "title": "iPadOS 27.0 (24A437)",
+      "summary": "Apple a publié la version finale d'iPadOS 27, avec la même build que la version iPhone. C'est la version désormais diffusée au public.",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=09142026b",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-09-14T17:00:00.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "os-release"
+      ],
+      "tags": [
+        "ipados",
+        "release"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "000b1ab98479910a",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "fd3423fb54d02e8e",
+      "title": "iOS 27.0 (24A437)",
+      "summary": "Apple a publié la version finale d'iOS 27. C'est la version désormais diffusée au public.",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=09142026a",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-09-14T17:00:00.000Z",
+      "collectedAt": "2026-09-24T08:37:59.632Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "os-release"
+      ],
+      "tags": [
+        "ios",
+        "release"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "c7110afaa8dd22a0",
+      "verificationNote": "aucune citation à vérifier"
+    },
     {
       "id": "18aeced84946c1dd",
       "title": "Apple security releases",
