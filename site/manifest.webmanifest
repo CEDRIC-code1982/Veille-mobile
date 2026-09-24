@@ -1,7 +1,7 @@
 {
   "name": "Veille mobile",
   "short_name": "Veille",
-  "description": "Veille technologique mobile : React Native, TypeScript, iOS et Android.",
+  "description": "Veille technologique mobile : React Native, TypeScript, iOS, Android et IA embarquée.",
   "lang": "fr",
   "start_url": "./",
   "scope": "./",

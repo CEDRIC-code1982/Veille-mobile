@@ -146,7 +146,8 @@
     tooling: 'Outillage',
     policy: 'Règles de store',
     'os-release': 'Systèmes',
-    nfc: 'NFC'
+    nfc: 'NFC',
+    ai: 'IA'
   };
 
   const DENSITY_KEY = 'veille-density';
