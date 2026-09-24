@@ -1,7 +1,116 @@
 {
   "month": "2026-09",
-  "updatedAt": "2026-09-24T08:41:16.430Z",
+  "updatedAt": "2026-09-24T08:53:23.284Z",
   "items": [
+    {
+      "id": "a6989e30c2add416",
+      "title": "Core Specification 6.3 Adopted",
+      "summary": "Une nouvelle version de la spécification Core Bluetooth est adoptée ; elle définit les technologies nécessaires à l'interopérabilité des appareils. Une mise à jour de spécification est rendue obligatoire pour revendiquer la conformité.",
+      "sourceUrl": "https://www.bluetooth.com/specifications/bluetooth-core-specification",
+      "sourceName": "Bluetooth Core Specification",
+      "publishedAt": "2026-09-24T08:52:52.676Z",
+      "collectedAt": "2026-09-24T08:52:52.676Z",
+      "criticality": "impacting",
+      "trustLevel": "verified",
+      "categories": [
+        "ble",
+        "hardware"
+      ],
+      "tags": [
+        "core-spec",
+        "conformite"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "85af2fbef06080a3",
+      "evidenceQuote": "Specification Update 29015 is mandatory when claiming compliance"
+    },
+    {
+      "id": "b67cee5a9fc4a666",
+      "title": "Bluetooth Low Energy",
+      "summary": "Documentation de référence sur la prise en charge native du Bluetooth basse consommation par la plateforme Android. Point d'entrée des API de scan et de connexion.",
+      "sourceUrl": "https://developer.android.com/develop/connectivity/bluetooth/ble/ble-overview",
+      "sourceName": "Android Bluetooth Low Energy",
+      "publishedAt": "2026-09-24T08:52:52.676Z",
+      "collectedAt": "2026-09-24T08:52:52.676Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "ble"
+      ],
+      "tags": [
+        "ble",
+        "reference"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "5fa2f808e1d68337",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "be067ab0cea88cd6",
+      "title": "Near field communication (NFC) overview",
+      "summary": "Documentation de référence sur la communication en champ proche sur Android, et sur les modes d'échange qu'elle autorise. Point d'entrée des API NFC de la plateforme.",
+      "sourceUrl": "https://developer.android.com/develop/connectivity/nfc",
+      "sourceName": "Android NFC Overview",
+      "publishedAt": "2026-09-24T08:52:52.676Z",
+      "collectedAt": "2026-09-24T08:52:52.676Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "nfc"
+      ],
+      "tags": [
+        "nfc",
+        "reference"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "6ca4e3c6c496520b",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "d5b41c02ea0b61c7",
+      "title": "Host-based card emulation overview",
+      "summary": "Documentation de référence sur l'émulation de carte côté hôte, qui permet à une application de se comporter comme une carte sans contact. C'est le mécanisme central pour du contrôle d'accès en NFC.",
+      "sourceUrl": "https://developer.android.com/develop/connectivity/nfc/hce",
+      "sourceName": "Android Host Card Emulation",
+      "publishedAt": "2026-09-24T08:52:52.676Z",
+      "collectedAt": "2026-09-24T08:52:52.676Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "nfc"
+      ],
+      "tags": [
+        "hce",
+        "reference"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "a58cf4f0ef592874",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "fefc63ac469eb556",
+      "title": "The Building Blocks of Contactless",
+      "summary": "Page de référence des spécifications du NFC Forum, qui harmonisent les standards sans contact entre les différents modes de fonctionnement. Source normative côté NFC.",
+      "sourceUrl": "https://nfc-forum.org/build/specifications",
+      "sourceName": "NFC Forum Specifications",
+      "publishedAt": "2026-09-24T08:52:52.676Z",
+      "collectedAt": "2026-09-24T08:52:52.676Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "nfc"
+      ],
+      "tags": [
+        "specifications",
+        "reference"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "35b5bbf742bccf1a",
+      "verificationNote": "aucune citation à vérifier"
+    },
     {
       "id": "222bf6dc26cbbc48",
       "title": "Apple security releases",
@@ -496,6 +605,29 @@
       ],
       "impactedProjects": [],
       "fingerprint": "b447ae551661355c",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "6bc35d5946d41f58",
+      "title": "v.12.5.3",
+      "summary": "Cette version de la bibliothèque BLE corrige la remontée du statut GATT lors d'une déconnexion initiée par l'appareil distant, côté Android. Correctif utile pour distinguer une coupure normale d'une erreur.",
+      "sourceUrl": "https://github.com/innoveit/react-native-ble-manager/releases/tag/v.12.5.3",
+      "sourceName": "BLE Manager Releases",
+      "publishedAt": "2026-09-21T09:30:07.000Z",
+      "collectedAt": "2026-09-24T08:52:52.676Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "react-native",
+        "ble"
+      ],
+      "tags": [
+        "gatt",
+        "android",
+        "correctif"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "491347155c359252",
       "verificationNote": "aucune citation à vérifier"
     },
     {
@@ -1777,6 +1909,29 @@
       "impactedProjects": [],
       "fingerprint": "19b6a3b018758b5b",
       "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "a872fac7eebbef3f",
+      "title": "v.12.5.2",
+      "summary": "Cette version de la bibliothèque BLE évite d'appliquer le greffon Kotlin quand le plugin Android l'a déjà enregistré. Corrige un échec de compilation sur les configurations récentes.",
+      "sourceUrl": "https://github.com/innoveit/react-native-ble-manager/releases/tag/v.12.5.2",
+      "sourceName": "BLE Manager Releases",
+      "publishedAt": "2026-09-07T14:38:35.000Z",
+      "collectedAt": "2026-09-24T08:52:52.676Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "react-native",
+        "ble"
+      ],
+      "tags": [
+        "build",
+        "kotlin",
+        "agp"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "ccc36080368fc024",
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "01b5750702506aae",
