@@ -5,8 +5,13 @@
 # instance to force a collection from a phone, and it is what proves the pipeline
 # still works end to end.
 #
-# It has no cron on purpose: two drivers would fight over the same data. Silent
-# failure is watched by watchdog.yml instead.
+# It also runs on a daily cron, late enough in the day that the routine has
+# normally already done the work: when it has, this run finds nothing new and
+# commits nothing. When it has not — a scheduled task only fires while the app
+# is open, and a ten-day outage proved that happens — this run keeps the watch
+# collecting. The items it publishes carry no summary, and the next routine run
+# reclassifies them, because an item without a summary is deliberately left out
+# of the deduplication set.
 #
 # Without ANTHROPIC_API_KEY the classify step degrades every item to
 # background/unverified rather than failing, so this fallback works with no
@@ -17,6 +22,10 @@
 name: collect
 
 on:
+  schedule:
+    # 12:17 UTC: well after the routine's morning window, and away from the
+    # start of the hour that GitHub documents as the most delayed slot.
+    - cron: '17 12 * * *'
   workflow_dispatch:
     inputs:
       classify:

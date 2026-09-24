@@ -13,6 +13,17 @@ export PATH="$HOME/.volta/bin:/opt/homebrew/bin:/usr/local/bin:$PATH"
 
 npm run classify:file || exit 1
 npm run verify || exit 1
+
+# Issue notifications are the only thing allowed to interrupt, and they need a
+# repository token. Running from a personal machine there is none in the
+# environment, so the existing gh session provides one. Without gh the run still
+# succeeds: the notifier simply stays inert, as it does on any machine.
+if command -v gh >/dev/null 2>&1 && gh auth status >/dev/null 2>&1; then
+  GITHUB_TOKEN="$(gh auth token 2>/dev/null)"
+  GITHUB_REPOSITORY="$(gh repo view --json nameWithOwner -q .nameWithOwner 2>/dev/null)"
+  export GITHUB_TOKEN GITHUB_REPOSITORY
+fi
+
 npm run publish || exit 1
 
 git add data/items data/index.json digest || exit 1

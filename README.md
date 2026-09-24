@@ -152,10 +152,20 @@ Limite à connaître : **une tâche planifiée ne tourne que si l'application es
 ouverte**. Si elle était fermée à l'heure prévue, le run part au lancement
 suivant. C'est précisément ce que le watchdog ci-dessous surveille.
 
-`collect.yml` reste en `workflow_dispatch` comme repli manuel, sans cron : deux
-moteurs se disputeraient les mêmes données. Sans clé API, son étape de
-classification dégrade honnêtement tous les items en `background` /
-`unverified` au lieu d'échouer.
+`collect.yml` sert de filet. Il tourne chaque jour à 12:17 UTC, après la fenêtre
+du matin de la routine : si celle-ci a fait le travail, ce run ne trouve rien de
+neuf et ne committe rien. Sinon il collecte quand même, en publiant des items
+sans résumé, que la routine reclassera au passage suivant puisqu'un item sans
+résumé est volontairement exclu du jeu des items connus.
+
+Ce filet n'est pas théorique : une tâche planifiée ne s'exécute que si
+l'application est ouverte, et une interruption de dix jours l'a démontré. Le
+watchdog l'a bien signalée, mais la veille était à l'arrêt pendant ce temps.
+
+Les notifications d'issue ont besoin d'un jeton de dépôt. Sur une machine
+personnelle il n'y en a pas dans l'environnement, donc `routine-finish.sh` en
+demande un à la session `gh` existante. Sans `gh`, le run réussit quand même :
+le notifieur reste simplement inerte.
 
 ## Ajouter une source
 
