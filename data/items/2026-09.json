@@ -1,7 +1,178 @@
 {
   "month": "2026-09",
-  "updatedAt": "2026-09-24T08:53:23.284Z",
+  "updatedAt": "2026-09-24T13:19:07.039Z",
   "items": [
+    {
+      "id": "1e157350b5f2cb4d",
+      "title": "Apple Intelligence",
+      "summary": "Apple décrit comment une application se branche sur son système d'intelligence : exposition des contenus et des actions à Siri via App Intents, et génération embarquée par le framework Foundation Models. Ce dernier accepte des invites multimodales et n'importe quel modèle conforme au protocole Language Model, avec des profils dynamiques pour changer de modèle en cours de session.",
+      "sourceUrl": "https://developer.apple.com/apple-intelligence",
+      "sourceName": "Apple Intelligence for Developers",
+      "publishedAt": "2026-09-24T13:16:39.177Z",
+      "collectedAt": "2026-09-24T13:16:39.177Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "ai"
+      ],
+      "tags": [
+        "apple-intelligence",
+        "foundation-models",
+        "app-intents",
+        "siri"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "516f76bc08e7bf6f",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "575c3b641927d7e6",
+      "title": "Apple Foundation Models",
+      "summary": "Le framework donne accès depuis Swift aux modèles d'Apple, embarqués ou exécutés dans Private Cloud Compute, pour du résumé, de l'extraction ou de la compréhension d'image. La macro @Generable garantit que la sortie prend la forme d'une structure Swift déclarée, et le protocole Tool laisse le modèle appeler du code de l'application.",
+      "sourceUrl": "https://developer.apple.com/documentation/foundationmodels.md",
+      "sourceName": "Apple Foundation Models",
+      "publishedAt": "2026-09-24T13:16:39.177Z",
+      "collectedAt": "2026-09-24T13:16:39.177Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "ai"
+      ],
+      "tags": [
+        "foundation-models",
+        "swift",
+        "on-device",
+        "llm"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "04c20a0977536b84",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "a6a9a0b844d9067f",
+      "title": "Release notes",
+      "summary": "La page de notes de version liste les versions courantes des bibliothèques ML Kit pour Android et iOS, avec leur date de mise à jour. Les évolutions récentes citées portent sur la prise en charge des pages de 16 Ko côté Android et sur des relèvements de versions minimales de Xcode et d'iOS.",
+      "sourceUrl": "https://developers.google.com/ml-kit/release-notes",
+      "sourceName": "ML Kit Release Notes",
+      "publishedAt": "2026-09-24T13:16:39.177Z",
+      "collectedAt": "2026-09-24T13:16:39.177Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "ios",
+        "ai",
+        "tooling"
+      ],
+      "tags": [
+        "ml-kit",
+        "releases",
+        "16kb",
+        "xcode"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "3b19bfda41521e6c",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "ad90b080436a7698",
+      "title": "Gemini Nano",
+      "summary": "Gemini Nano exécute un modèle génératif sur l'appareil, sans réseau ni envoi de données vers le nuage, via le service système AICore. Les API GenAI de ML Kit s'appuient dessus et couvrent l'invite libre, le résumé, la correction, la réécriture, la description d'image et la reconnaissance vocale.",
+      "sourceUrl": "https://developer.android.com/ai/gemini-nano",
+      "sourceName": "Gemini Nano on Android",
+      "publishedAt": "2026-09-24T13:16:39.177Z",
+      "collectedAt": "2026-09-24T13:16:39.177Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "ai"
+      ],
+      "tags": [
+        "gemini-nano",
+        "aicore",
+        "ml-kit",
+        "on-device"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "42ea6eaa0337ac68",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "e9f5c9551a69cbb0",
+      "title": "AI on Android",
+      "summary": "Google présente les chemins d'intégration d'une application au système d'intelligence d'Android : exposition des fonctions de l'application aux agents, IA embarquée avec Gemini Nano, ou modèles distants via Firebase AI Logic. La page annonce AppFunctions, une interface qui fait se comporter l'application comme un serveur MCP local dont les fonctions deviennent des outils pour les agents.",
+      "sourceUrl": "https://developer.android.com/ai",
+      "sourceName": "Android AI Overview",
+      "publishedAt": "2026-09-24T13:16:39.177Z",
+      "collectedAt": "2026-09-24T13:16:39.177Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "ai"
+      ],
+      "tags": [
+        "appfunctions",
+        "gemini-nano",
+        "mcp",
+        "agents"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "f2b30f37c446e574",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "65d8471dc1503d54",
+      "title": "v0.10.5-libs",
+      "summary": "Cette publication de bibliothèques natives ajoute le moteur Qualcomm QNN pour NPU Hexagon en arm64, les autres artefacts étant repris tels quels de la version précédente. Le moteur d'exécution Qualcomm n'est pas embarqué : la bibliothèque le récupère depuis Maven.",
+      "sourceUrl": "https://github.com/software-mansion/react-native-executorch/releases/tag/v0.10.5-libs",
+      "sourceName": "React Native ExecuTorch Releases",
+      "publishedAt": "2026-09-24T11:09:57.000Z",
+      "collectedAt": "2026-09-24T13:16:39.177Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "react-native",
+        "ai",
+        "hardware"
+      ],
+      "tags": [
+        "executorch",
+        "qualcomm",
+        "npu",
+        "libs"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "ca4cff327438c8df",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "b8fff8e9f614b40c",
+      "title": "v0.10.4-libs",
+      "summary": "Reconstruction des moteurs Vulkan et MLX et du cœur : correction d'un chargement impossible pour les modèles entièrement délégués, et bornage du graphe paresseux MLX qui gardait tous les intermédiaires vivants en même temps. Les mesures citées font état d'un pic mémoire nettement réduit sur une transcription audio, à sortie identique.",
+      "sourceUrl": "https://github.com/software-mansion/react-native-executorch/releases/tag/v0.10.4-libs",
+      "sourceName": "React Native ExecuTorch Releases",
+      "publishedAt": "2026-09-24T11:09:52.000Z",
+      "collectedAt": "2026-09-24T13:16:39.177Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "react-native",
+        "ai"
+      ],
+      "tags": [
+        "executorch",
+        "vulkan",
+        "mlx",
+        "memory"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "454e98619de088c9",
+      "verificationNote": "aucune citation à vérifier"
+    },
     {
       "id": "a6989e30c2add416",
       "title": "Core Specification 6.3 Adopted",
@@ -418,6 +589,29 @@
       "verificationNote": "aucune citation à vérifier"
     },
     {
+      "id": "bf21d00c6281a233",
+      "title": "How to Guide Your Language Flow",
+      "summary": "Des chercheurs d'Apple proposent de guider les modèles de flow matching à partir des états internes gelés d'un modèle de diffusion existant, sans passe de calcul supplémentaire à l'inférence. La méthode est évaluée sur des modèles de langage à diffusion continue, où les auteurs rapportent le meilleur résultat connu en génération inconditionnelle.",
+      "sourceUrl": "https://machinelearning.apple.com/research/guide-language-flow",
+      "sourceName": "Apple Machine Learning Research",
+      "publishedAt": "2026-09-23T00:00:00.000Z",
+      "collectedAt": "2026-09-24T13:16:39.177Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai"
+      ],
+      "tags": [
+        "research",
+        "flow-matching",
+        "guidance",
+        "llm"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "83aa18e1fe1f55b1",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
       "id": "2ddfe7300da48d4c",
       "title": "App Store Connect API 4.5",
       "summary": "Nouvelle version de l'API App Store Connect. Concerne l'automatisation des livraisons et la publication.",
@@ -720,6 +914,29 @@
       "verificationNote": "aucune citation à vérifier"
     },
     {
+      "id": "ec00b4db1e4d25b1",
+      "title": "Dynamically Scaled Activation Steering",
+      "summary": "Le pilotage par activation dégrade les performances quand il s'applique uniformément à toutes les entrées. Les auteurs proposent d'en moduler dynamiquement l'intensité selon la couche et l'entrée, pour n'intervenir fortement que lorsqu'un comportement indésirable est détecté.",
+      "sourceUrl": "https://machinelearning.apple.com/research/dynamically-scaled-activation-steering",
+      "sourceName": "Apple Machine Learning Research",
+      "publishedAt": "2026-09-18T00:00:00.000Z",
+      "collectedAt": "2026-09-24T13:16:39.177Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai"
+      ],
+      "tags": [
+        "research",
+        "steering",
+        "llm",
+        "safety"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "517e2f32926318c5",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
       "id": "c23c1f248651df56",
       "title": "Introducing the AndroidX Security State Libraries: A Unified View of Device Security",
       "summary": "Google publie des bibliothèques AndroidX offrant une vue unifiée de l'état de sécurité d'un appareil. Utile pour conditionner des fonctionnalités au niveau de correctif du terminal.",
@@ -780,6 +997,29 @@
       ],
       "impactedProjects": [],
       "fingerprint": "b792621c7a3401d8",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "50ae7c32754eac77",
+      "title": "REVERSAL-BENCH: A Reversibility Axis and Reset Oracle for Measuring the Reset-Free RL Cliff",
+      "summary": "L'apprentissage par renforcement sans réinitialisation suppose un environnement réversible, ce que la manipulation d'objets réels n'est pas. Ce banc d'essai fait varier la réversibilité par un paramètre continu et fournit un oracle de vérification sur huit situations réparties dans cinq moteurs physiques.",
+      "sourceUrl": "https://machinelearning.apple.com/research/reversal-bench-rl-cliff",
+      "sourceName": "Apple Machine Learning Research",
+      "publishedAt": "2026-09-17T00:00:00.000Z",
+      "collectedAt": "2026-09-24T13:16:39.177Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai"
+      ],
+      "tags": [
+        "research",
+        "rl",
+        "benchmark",
+        "robotics"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "1acbcd590d8338f6",
       "verificationNote": "aucune citation à vérifier"
     },
     {
@@ -933,6 +1173,29 @@
       "verificationNote": "aucune citation à vérifier"
     },
     {
+      "id": "1562b9a478adb2d9",
+      "title": "Shared Selective Persistent Memory for Agentic LLM Systems",
+      "summary": "Les systèmes d'agents qui génèrent du code repartent de zéro à chaque session et perdent les contraintes, schémas et conventions déjà établis. Les auteurs proposent une mémoire persistante sélective qui ne retient que quelques catégories de contexte réutilisable, plutôt que l'historique complet des conversations.",
+      "sourceUrl": "https://machinelearning.apple.com/research/shared-selective-persistent-memory",
+      "sourceName": "Apple Machine Learning Research",
+      "publishedAt": "2026-09-16T00:00:00.000Z",
+      "collectedAt": "2026-09-24T13:16:39.177Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai"
+      ],
+      "tags": [
+        "research",
+        "agents",
+        "memory",
+        "llm"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "e2e9853384869260",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
       "id": "38c7a610095fc17a",
       "title": "This Week In React #297: DevTools, Motion, Apollo, React Router, Hook Form, shadcn lint | Shopify, Expo 58 beta, ExecuTorch, Screenmap, Voltra, SPM, Stim, Lynx, Metro, AI | pnpm, oj, Zod, Devframe, Safari, Webpack",
       "summary": "Cette édition revient sur la publication des DevTools v8 après la dernière version de React, et sur des optimisations de rendu dans plusieurs bibliothèques. Lecture de veille hebdomadaire.",
@@ -952,6 +1215,98 @@
       ],
       "impactedProjects": [],
       "fingerprint": "586908cfd18691b7",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "41131ac1902ed4f3",
+      "title": "Trajectory as the Teacher: Few-Step Discrete Flow Matching via Energy-Navigated Distillation",
+      "summary": "En distillation de modèles de flow matching discret, la faiblesse de l'élève est habituellement imputée à sa capacité. Les auteurs soutiennent l'inverse : c'est la trajectoire d'entraînement, faite de sauts aléatoires jamais évalués, qui constitue le goulot d'étranglement.",
+      "sourceUrl": "https://machinelearning.apple.com/research/trajectory-teacher-flow-matching",
+      "sourceName": "Apple Machine Learning Research",
+      "publishedAt": "2026-09-16T00:00:00.000Z",
+      "collectedAt": "2026-09-24T13:16:39.177Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai"
+      ],
+      "tags": [
+        "research",
+        "distillation",
+        "flow-matching",
+        "llm"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "3cc73ee377032b0f",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "5f9e60a4c6999657",
+      "title": "Glyph: A Multi-Strategy Agentic System for Column Description and Sensitivity-Ontology Tagging of Enterprise Data Catalogs",
+      "summary": "Les entrepôts de données accumulent des tables plus vite que leurs colonnes ne sont documentées et étiquetées. Glyph traite la description des colonnes et leur classification comme deux problèmes couplés, confiés à des agents coopérants qui s'appuient sur le code du pipeline produisant chaque colonne.",
+      "sourceUrl": "https://machinelearning.apple.com/research/glyph-column-description-tagging",
+      "sourceName": "Apple Machine Learning Research",
+      "publishedAt": "2026-09-16T00:00:00.000Z",
+      "collectedAt": "2026-09-24T13:16:39.177Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai"
+      ],
+      "tags": [
+        "research",
+        "agents",
+        "data",
+        "llm"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "a0bf541b110a366c",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "89f08439e44b9219",
+      "title": "How Value Induction Reshapes LLM Behaviour",
+      "summary": "Les modèles conversationnels sont entraînés à exprimer des traits et des valeurs comme la curiosité ou l'inoffensivité. L'étude relève que ces valeurs s'influencent mutuellement, et qu'en induire certaines peut rendre le modèle plus flatteur ou plus captif.",
+      "sourceUrl": "https://machinelearning.apple.com/research/value-induction-llm-behaviour",
+      "sourceName": "Apple Machine Learning Research",
+      "publishedAt": "2026-09-16T00:00:00.000Z",
+      "collectedAt": "2026-09-24T13:16:39.177Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai"
+      ],
+      "tags": [
+        "research",
+        "alignment",
+        "llm",
+        "behaviour"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "96bfff073437d99a",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "c66ed5d68a420ac4",
+      "title": "DACA-GRPO: Denoising-Aware Credit Assignment for Reinforcement Learning in Diffusion Language Models",
+      "summary": "Les méthodes d'apprentissage par renforcement pour modèles de langage à diffusion traitent toutes les étapes de débruitage comme équivalentes et s'appuient sur des estimations de vraisemblance biaisées. Les auteurs proposent une attribution de crédit tenant compte de l'étape de débruitage, greffable sur les entraîneurs de type GRPO.",
+      "sourceUrl": "https://machinelearning.apple.com/research/denoising-aware-credit-assignment",
+      "sourceName": "Apple Machine Learning Research",
+      "publishedAt": "2026-09-16T00:00:00.000Z",
+      "collectedAt": "2026-09-24T13:16:39.177Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai"
+      ],
+      "tags": [
+        "research",
+        "rl",
+        "diffusion",
+        "llm"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "498a8870e8bb8778",
       "verificationNote": "aucune citation à vérifier"
     },
     {
@@ -1258,6 +1613,54 @@
       "verificationNote": "aucune citation à vérifier"
     },
     {
+      "id": "600ba4ff6c55106e",
+      "title": "v0.10.3-libs",
+      "summary": "Reconstruction du moteur XNNPACK pour corriger une lecture de mémoire déjà libérée : le cache de poids libérait des constantes que certaines couches continuaient de lire pendant toute la vie de l'exécution. Le défaut touchait toutes les bibliothèques XNNPACK publiées et se manifestait par des sorties invalides.",
+      "sourceUrl": "https://github.com/software-mansion/react-native-executorch/releases/tag/v0.10.3-libs",
+      "sourceName": "React Native ExecuTorch Releases",
+      "publishedAt": "2026-09-13T09:39:15.000Z",
+      "collectedAt": "2026-09-24T13:16:39.177Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "react-native",
+        "ai"
+      ],
+      "tags": [
+        "executorch",
+        "xnnpack",
+        "bugfix",
+        "libs"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "891ebdc0c5ddf2a4",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "d185fbf08c4329b1",
+      "title": "v0.10.2",
+      "summary": "Version corrective sans changement d'interface. Elle répare un échec de compilation quand on renonce à une bibliothèque native, et une erreur de modèle de langage que son propre retour arrière masquait.",
+      "sourceUrl": "https://github.com/software-mansion/react-native-executorch/releases/tag/v0.10.2",
+      "sourceName": "React Native ExecuTorch Releases",
+      "publishedAt": "2026-09-11T19:46:25.000Z",
+      "collectedAt": "2026-09-24T13:16:39.177Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "react-native",
+        "ai"
+      ],
+      "tags": [
+        "executorch",
+        "patch",
+        "build",
+        "llm"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "fedf503c5cfe1b4b",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
       "id": "7a0d44f3996e8f3f",
       "title": "Get ready to experience iPhone 18 Pro, the new Apple Watch lineup, and AirPods 5",
       "summary": "Apple ouvre les précommandes de l'iPhone 18 Pro et de l'iPhone 18 Pro Max à partir du samedi 12 septembre. La nouvelle gamme Apple Watch et les AirPods 5 sont concernés par la même vague de disponibilité.",
@@ -1278,6 +1681,101 @@
       ],
       "impactedProjects": [],
       "fingerprint": "9d87ef80ef233d03",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "5b890de9d73ba3cd",
+      "title": "v0.10.2-libs",
+      "summary": "Les bibliothèques Android sont recompilées contre la bibliothèque C++ partagée du NDK au lieu d'en embarquer chacune sa copie. Elles déclarent désormais une dépendance à libc++_shared, déjà empaquetée par React Native, et occupent sensiblement moins de place.",
+      "sourceUrl": "https://github.com/software-mansion/react-native-executorch/releases/tag/v0.10.2-libs",
+      "sourceName": "React Native ExecuTorch Releases",
+      "publishedAt": "2026-09-11T11:57:54.000Z",
+      "collectedAt": "2026-09-24T13:16:39.177Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "react-native",
+        "ai",
+        "android"
+      ],
+      "tags": [
+        "executorch",
+        "ndk",
+        "android",
+        "libs"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "07b2c9207c4b78a2",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "52373881d815ad02",
+      "title": "v0.10.1-libs",
+      "summary": "Republication sans recompilation : les artefacts « core » n'embarquent plus tous les moteurs d'exécution, ce qui réduit fortement leur taille. Les archives que plus rien ne référençait ont été retirées, et le moteur MPS n'est plus livré.",
+      "sourceUrl": "https://github.com/software-mansion/react-native-executorch/releases/tag/v0.10.1-libs",
+      "sourceName": "React Native ExecuTorch Releases",
+      "publishedAt": "2026-09-11T09:41:51.000Z",
+      "collectedAt": "2026-09-24T13:16:39.177Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "react-native",
+        "ai"
+      ],
+      "tags": [
+        "executorch",
+        "artifacts",
+        "size",
+        "libs"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "175db87a0eb2d562",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "371498512643a2e7",
+      "title": "DiscoSign: Discourse-Aware Text to Sign Language Gloss Translation",
+      "summary": "Les systèmes de traitement de la langue des signes travaillent phrase par phrase et ignorent les phénomènes de discours. DiscoSign traite la traduction du texte vers la glose avec un cadre modulaire fondé sur un modèle de langage, en s'attaquant notamment à la référence spatiale et aux structures question-réponse.",
+      "sourceUrl": "https://machinelearning.apple.com/research/discosign-gloss-translation",
+      "sourceName": "Apple Machine Learning Research",
+      "publishedAt": "2026-09-11T00:00:00.000Z",
+      "collectedAt": "2026-09-24T13:16:39.177Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai"
+      ],
+      "tags": [
+        "research",
+        "sign-language",
+        "translation",
+        "llm"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "c655ef9f65ef7d2b",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "761b7236f25c2d22",
+      "title": "Putting Captions to the Test: Evaluating Video Caption Quality through Multiple-Choice Question Answering",
+      "summary": "L'évaluation des descriptions de vidéo repose sur la comparaison à une référence, ce qui pénalise des descriptions justes mais formulées autrement. Les auteurs redéfinissent la qualité comme une fidélité informationnelle, mesurée par des questions à choix multiples.",
+      "sourceUrl": "https://machinelearning.apple.com/research/video-caption-quality",
+      "sourceName": "Apple Machine Learning Research",
+      "publishedAt": "2026-09-11T00:00:00.000Z",
+      "collectedAt": "2026-09-24T13:16:39.177Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai"
+      ],
+      "tags": [
+        "research",
+        "video",
+        "evaluation",
+        "llm"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "cc164f1b39e0a48a",
       "verificationNote": "aucune citation à vérifier"
     },
     {
@@ -1389,6 +1887,30 @@
       ],
       "impactedProjects": [],
       "fingerprint": "7b6f2801c74e37fb",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "c2e08d32d4fe2d7d",
+      "title": "v0.10.1",
+      "summary": "Version corrective sans changement d'interface, qui répond aux échecs d'installation signalés sur iOS et Android. Elle restreint les en-têtes publics du podspec, encadre la dépendance à react-native-worklets et fait remonter la cause d'une configuration invalide au lieu d'échouer en silence.",
+      "sourceUrl": "https://github.com/software-mansion/react-native-executorch/releases/tag/v0.10.1",
+      "sourceName": "React Native ExecuTorch Releases",
+      "publishedAt": "2026-09-09T18:11:38.000Z",
+      "collectedAt": "2026-09-24T13:16:39.177Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "react-native",
+        "ai"
+      ],
+      "tags": [
+        "executorch",
+        "patch",
+        "ios",
+        "build"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "03265f962a8a8bf9",
       "verificationNote": "aucune citation à vérifier"
     },
     {
@@ -1892,6 +2414,30 @@
       "verificationNote": "aucune citation à vérifier"
     },
     {
+      "id": "9d723561d6520ba7",
+      "title": "v0.10.0",
+      "summary": "Réécriture complète de la bibliothèque : les modules natifs monolithiques laissent place à des chaînes de traitement TypeScript inspectables, avec accélération matérielle sur les principaux processeurs mobiles et intégration de react-native-worklets. La parité fonctionnelle est annoncée, avec un module de compatibilité pour migrer progressivement.",
+      "sourceUrl": "https://github.com/software-mansion/react-native-executorch/releases/tag/v0.10.0",
+      "sourceName": "React Native ExecuTorch Releases",
+      "publishedAt": "2026-09-08T09:41:54.000Z",
+      "collectedAt": "2026-09-24T13:16:39.177Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "react-native",
+        "ai"
+      ],
+      "tags": [
+        "executorch",
+        "rewrite",
+        "migration",
+        "worklets"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "6f7e1adb871c6cd3",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
       "id": "2f33a6a13390f367",
       "title": "Changelog",
       "summary": "",
@@ -1973,6 +2519,30 @@
       ],
       "impactedProjects": [],
       "fingerprint": "107db4f0e16f6db5",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "b8dec10c66574a91",
+      "title": "v0.10.0-libs-1.4.1 (ExecuTorch 1.4.1)",
+      "summary": "Pré-publication des bibliothèques natives construites contre une version plus récente d'ExecuTorch, destinée à comparer les deux surfaces natives côte à côte. Elle n'est pas résolue par défaut : il faut pointer explicitement le téléchargeur dessus et lui donner un répertoire de cache distinct.",
+      "sourceUrl": "https://github.com/software-mansion/react-native-executorch/releases/tag/v0.10.0-libs-1.4.1",
+      "sourceName": "React Native ExecuTorch Releases",
+      "publishedAt": "2026-09-02T07:16:47.000Z",
+      "collectedAt": "2026-09-24T13:16:39.177Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "react-native",
+        "ai"
+      ],
+      "tags": [
+        "executorch",
+        "prerelease",
+        "libs",
+        "cache"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "1983967e7e0ec49a",
       "verificationNote": "aucune citation à vérifier"
     },
     {

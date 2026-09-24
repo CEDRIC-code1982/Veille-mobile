@@ -1,6 +1,6 @@
 {
   "month": "2026-08",
-  "updatedAt": "2026-09-24T08:53:23.284Z",
+  "updatedAt": "2026-09-24T13:19:07.039Z",
   "items": [
     {
       "id": "6f8916deba211090",
@@ -190,7 +190,7 @@
       "sourceUrl": "https://github.com/react/react-native/releases/tag/latest",
       "sourceName": "React Native Releases",
       "publishedAt": "2026-08-26T12:51:23.000Z",
-      "collectedAt": "2026-09-24T08:52:52.676Z",
+      "collectedAt": "2026-09-24T13:16:39.177Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
