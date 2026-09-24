@@ -27,7 +27,9 @@
     <dl class="stats" id="stats" aria-live="polite"></dl>
   </header>
 
-  <form class="filters" id="filters" role="search" autocomplete="off">
+  <nav class="breadcrumb" id="breadcrumb" aria-label="Fil d'Ariane" hidden></nav>
+
+  <form class="filters" id="filters" role="search" autocomplete="off" hidden>
     <p class="field">
       <label class="visually-hidden" for="search">Rechercher</label>
       <input
@@ -66,17 +68,17 @@
   <main id="content">
     <p class="status" id="status" role="status">Chargement des données…</p>
 
-    <section class="section section--os" id="section-os" hidden>
-      <h2>
-        <span class="badge badge--os">Systèmes</span>
-        <span class="count" id="count-os"></span>
-      </h2>
-      <p class="section-note">
-        Dernières versions d'OS et changements de comportement, la plus récente et celle
-        qu'elle remplace. Ces items restent aussi dans leur section de criticité.
-      </p>
-      <ul class="os-list" id="items-os"></ul>
+    <section id="home" hidden aria-labelledby="home-title">
+      <h2 id="home-title" class="visually-hidden">Choisir un domaine</h2>
+      <div class="deck" id="home-deck"></div>
     </section>
+
+    <section id="facets" hidden aria-labelledby="facets-title">
+      <h2 id="facets-title"></h2>
+      <div class="deck" id="facets-deck"></div>
+    </section>
+
+    <div id="list-view" hidden>
 
     <section class="section section--blocking" id="section-blocking" hidden>
       <h2>
@@ -105,7 +107,8 @@
       <div class="items" id="items-background"></div>
     </details>
 
-    <p class="status" id="empty" hidden>Aucun item ne correspond à ces filtres.</p>
+      <p class="status" id="empty" hidden>Aucun item ne correspond à ces filtres.</p>
+    </div>
   </main>
 
   <footer class="page-footer">

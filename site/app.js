@@ -13,7 +13,24 @@
   const MAX_TAG_CHIPS = 20;
 
   const CRITICALITIES = ['blocking', 'impacting', 'background'];
-  const OS_CATEGORY = 'os-release';
+
+  /**
+   * First navigation level. A scope with facets asks a second question before
+   * showing anything; the others go straight to their items.
+   */
+  const SCOPES = [
+    { key: 'ios', label: 'iOS', category: 'ios', faceted: true },
+    { key: 'android', label: 'Android', category: 'android', faceted: true },
+    { key: 'react-native', label: 'React Native', category: 'react-native', faceted: false },
+    { key: 'typescript', label: 'TypeScript', category: 'typescript', faceted: false },
+    { key: 'all', label: 'Tout', category: null, faceted: false }
+  ];
+
+  const FACETS = [
+    { key: 'os', label: 'Système', category: 'os-release' },
+    { key: 'devices', label: 'Appareils', category: 'hardware' },
+    { key: 'all', label: 'Tout', category: null }
+  ];
 
   const CRITICALITY_LABELS = {
     blocking: 'Bloquant',
@@ -52,7 +69,9 @@
     categories: new Set(),
     tags: new Set(),
     onlyUnverified: false,
-    density: DENSITY_COMPACT
+    density: DENSITY_COMPACT,
+    scope: null,
+    facet: null
   };
 
   /**
@@ -293,7 +312,8 @@
   }
 
   function render() {
-    const visible = state.items.filter(matchesFilters);
+    const scoped = state.scope === null ? [] : itemsIn(state.scope, state.facet);
+    const visible = scoped.filter(matchesFilters);
     let total = 0;
 
     for (let index = 0; index < CRITICALITIES.length; index += 1) {
@@ -317,57 +337,163 @@
       total += items.length;
     }
 
-    renderOsIndex(visible);
-    byId('empty').hidden = total > 0 || state.items.length === 0;
+    byId('empty').hidden = total > 0 || scoped.length === 0;
     byId('match-count').textContent =
-      total === state.items.length
-        ? total + ' item(s)'
-        : total + ' sur ' + state.items.length + ' item(s)';
+      total === scoped.length ? total + ' item(s)' : total + ' sur ' + scoped.length + ' item(s)';
   }
 
-  /**
-   * Compact index of the operating-system items: the point is to see at a
-   * glance which release is current and which one it replaces. The full cards
-   * stay in their criticality section, so nothing is hidden behind this view.
-   */
-  function renderOsIndex(visible) {
-    const section = byId('section-os');
-    const list = byId('items-os');
-    const items = visible.filter(function (item) {
-      return (item.categories || []).indexOf(OS_CATEGORY) >= 0;
-    });
-
-    list.textContent = '';
-
-    for (let index = 0; index < items.length; index += 1) {
-      const item = items[index];
-      const row = createElement('li', 'os-row');
-
-      row.appendChild(
-        createBadge('badge--' + item.criticality, CRITICALITY_LABELS[item.criticality] || item.criticality)
-      );
-
-      if (isSafeUrl(item.sourceUrl)) {
-        const link = createElement('a', null, item.title);
-        link.href = item.sourceUrl;
-        link.target = '_blank';
-        link.rel = 'noopener noreferrer';
-        row.appendChild(link);
-      } else {
-        row.appendChild(createElement('span', null, item.title));
+  function findScope(key) {
+    for (let index = 0; index < SCOPES.length; index += 1) {
+      if (SCOPES[index].key === key) {
+        return SCOPES[index];
       }
-
-      const published = formatDate(item.publishedAt);
-
-      if (published) {
-        row.appendChild(createElement('span', 'os-date', published));
-      }
-
-      list.appendChild(row);
     }
 
-    byId('count-os').textContent = items.length + (items.length === 1 ? ' item' : ' items');
-    section.hidden = items.length === 0;
+    return null;
+  }
+
+  function findFacet(key) {
+    for (let index = 0; index < FACETS.length; index += 1) {
+      if (FACETS[index].key === key) {
+        return FACETS[index];
+      }
+    }
+
+    return null;
+  }
+
+  function hasCategory(item, category) {
+    return category === null || (item.categories || []).indexOf(category) >= 0;
+  }
+
+  /** Items belonging to a scope, and to a facet of it when one is selected. */
+  function itemsIn(scopeKey, facetKey) {
+    const scope = findScope(scopeKey);
+
+    if (scope === null) {
+      return [];
+    }
+
+    const facet = facetKey === null ? null : findFacet(facetKey);
+
+    return state.items.filter(function (item) {
+      if (!hasCategory(item, scope.category)) {
+        return false;
+      }
+
+      return facet === null || hasCategory(item, facet.category);
+    });
+  }
+
+  function countCriticalities(items) {
+    const counts = { blocking: 0, impacting: 0, background: 0 };
+
+    for (let index = 0; index < items.length; index += 1) {
+      const criticality = items[index].criticality;
+
+      if (counts[criticality] !== undefined) {
+        counts[criticality] += 1;
+      }
+    }
+
+    return counts;
+  }
+
+  /** The three coloured counters carried by every navigation card. */
+  function createDeckBadges(counts) {
+    const wrapper = createElement('span', 'deck-badges');
+
+    for (let index = 0; index < CRITICALITIES.length; index += 1) {
+      const criticality = CRITICALITIES[index];
+      const badge = createElement('span', 'deck-badge deck-badge--' + criticality);
+      badge.appendChild(createElement('span', 'deck-badge-value', counts[criticality]));
+      badge.appendChild(
+        createElement(
+          'span',
+          'visually-hidden',
+          ' ' + (CRITICALITY_LABELS[criticality] || criticality)
+        )
+      );
+      wrapper.appendChild(badge);
+    }
+
+    return wrapper;
+  }
+
+  function createDeckCard(href, label, items, note) {
+    const card = createElement('a', 'deck-card');
+    card.href = href;
+    card.appendChild(createElement('span', 'deck-title', label));
+
+    if (note) {
+      card.appendChild(createElement('span', 'deck-note', note));
+    }
+
+    card.appendChild(createDeckBadges(countCriticalities(items)));
+    card.appendChild(createElement('span', 'deck-total', items.length + ' item(s)'));
+
+    return card;
+  }
+
+  function renderHome() {
+    const deck = byId('home-deck');
+    deck.textContent = '';
+
+    for (let index = 0; index < SCOPES.length; index += 1) {
+      const scope = SCOPES[index];
+      const items = itemsIn(scope.key, null);
+      const note = scope.faceted ? 'Système ou appareils' : null;
+      deck.appendChild(createDeckCard('#/' + scope.key, scope.label, items, note));
+    }
+  }
+
+  function renderFacets(scopeKey) {
+    const scope = findScope(scopeKey);
+    const deck = byId('facets-deck');
+    deck.textContent = '';
+    byId('facets-title').textContent = scope === null ? '' : scope.label;
+
+    for (let index = 0; index < FACETS.length; index += 1) {
+      const facet = FACETS[index];
+      deck.appendChild(
+        createDeckCard(
+          '#/' + scopeKey + '/' + facet.key,
+          facet.label,
+          itemsIn(scopeKey, facet.key),
+          null
+        )
+      );
+    }
+  }
+
+  function renderBreadcrumb() {
+    const nav = byId('breadcrumb');
+    nav.textContent = '';
+
+    if (state.scope === null) {
+      nav.hidden = true;
+
+      return;
+    }
+
+    const home = createElement('a', null, 'Accueil');
+    home.href = '#/';
+    nav.appendChild(home);
+
+    const scope = findScope(state.scope);
+
+    if (scope !== null && state.facet !== null) {
+      nav.appendChild(createElement('span', 'breadcrumb-sep', '/'));
+      const scopeLink = createElement('a', null, scope.label);
+      scopeLink.href = '#/' + scope.key;
+      nav.appendChild(scopeLink);
+    }
+
+    const facet = state.facet === null ? null : findFacet(state.facet);
+    const current = facet !== null ? facet.label : scope === null ? '' : scope.label;
+    nav.appendChild(createElement('span', 'breadcrumb-sep', '/'));
+    nav.appendChild(createElement('span', 'breadcrumb-current', current));
+    nav.hidden = false;
   }
 
   function renderStats() {
@@ -455,9 +581,10 @@
 
   function countValues(getValues) {
     const counts = new Map();
+    const scoped = state.scope === null ? [] : itemsIn(state.scope, state.facet);
 
-    for (let index = 0; index < state.items.length; index += 1) {
-      const values = getValues(state.items[index]) || [];
+    for (let index = 0; index < scoped.length; index += 1) {
+      const values = getValues(scoped[index]) || [];
 
       for (let valueIndex = 0; valueIndex < values.length; valueIndex += 1) {
         const value = values[valueIndex];
@@ -595,8 +722,7 @@
         status.hidden = true;
         renderStats();
         renderFooter();
-        buildChips();
-        render();
+        applyRoute();
       })
       .catch(function (error) {
         status.textContent =
@@ -607,6 +733,64 @@
   }
 
   /* ---------- wiring ---------- */
+
+  /** Reads `#/scope/facet` from the address bar. Anything unknown means home. */
+  function parseHash() {
+    const raw = (location.hash || '').replace(/^#\/?/, '');
+    const parts = raw.split('/').filter(function (part) {
+      return part.length > 0;
+    });
+    const scope = parts.length > 0 ? findScope(parts[0]) : null;
+
+    if (scope === null) {
+      return { scope: null, facet: null };
+    }
+
+    if (!scope.faceted) {
+      return { scope: scope.key, facet: null };
+    }
+
+    const facet = parts.length > 1 ? findFacet(parts[1]) : null;
+
+    return { scope: scope.key, facet: facet === null ? null : facet.key };
+  }
+
+  /**
+   * A faceted scope with no facet chosen shows the second question instead of a
+   * list; every other route goes straight to the items.
+   */
+  function applyRoute() {
+    const route = parseHash();
+    state.scope = route.scope;
+    state.facet = route.facet;
+
+    const scope = state.scope === null ? null : findScope(state.scope);
+    const showHome = scope === null;
+    const showFacets = !showHome && scope.faceted && state.facet === null;
+    const showList = !showHome && !showFacets;
+
+    byId('home').hidden = !showHome;
+    byId('facets').hidden = !showFacets;
+    byId('list-view').hidden = !showList;
+    byId('filters').hidden = !showList;
+
+    renderBreadcrumb();
+
+    if (showHome) {
+      renderHome();
+    } else if (showFacets) {
+      renderFacets(state.scope);
+    } else {
+      state.query = '';
+      byId('search').value = '';
+      state.categories.clear();
+      state.tags.clear();
+      buildChips();
+      render();
+    }
+
+    window.scrollTo(0, 0);
+  }
 
   function applyDensityToToggle() {
     const toggle = byId('density-toggle');
@@ -669,6 +853,7 @@
   state.density = readStoredDensity();
   wireFilters();
   applyDensityToToggle();
+  window.addEventListener('hashchange', applyRoute);
   registerServiceWorker();
   load();
 })();

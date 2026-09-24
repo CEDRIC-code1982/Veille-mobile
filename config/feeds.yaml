@@ -153,6 +153,50 @@ feeds:
   # This feed announces every platform Apple ships, and most entries carry no
   # text at all beyond "View downloads": the payload is the title. Narrowed to
   # the platforms this watch is about, so the rest does not drown the signal.
+  # Ce que la version courante apporte, côté développeur. URL stable : aucune
+  # version n'y figure, la page suit d'elle-même la release du moment.
+  - name: Apple Developer What's New
+    url: https://developer.apple.com/whats-new/
+    type: scrape
+    domain: developer.apple.com
+    categories: [ios, os-release, tooling]
+    official: true
+    maxAgeDays: 45
+
+  # Pendant grand public de la page précédente. À l'essai : c'est une page
+  # marketing, donc susceptible de bouger pour des raisons sans rapport avec une
+  # évolution d'OS. À retirer si elle produit du bruit quotidien.
+  - name: Apple iOS Features
+    url: https://www.apple.com/ios/
+    type: scrape
+    domain: apple.com
+    categories: [ios, os-release]
+    official: true
+    maxAgeDays: 45
+
+  # Gamme actuellement commercialisée. Même réserve : page marketing.
+  - name: Apple iPhone Lineup
+    url: https://www.apple.com/iphone/
+    type: scrape
+    domain: apple.com
+    categories: [ios, hardware]
+    official: true
+    maxAgeDays: 45
+
+  # Pendant fonctionnel des changements de comportement : ce que la version
+  # apporte, et la précédente pour comparer.
+  - name: Android Platform Features
+    url: https://developer.android.com/about/versions
+    type: scrape
+    domain: developer.android.com
+    categories: [android, os-release]
+    official: true
+    maxAgeDays: 30
+    follow:
+      linkPattern: '^/about/versions/(\d+)$'
+      urlTemplate: /about/versions/{key}/features
+      limit: 2
+
   - name: Apple Developer Releases
     url: https://developer.apple.com/news/releases/rss/releases.rss
     type: rss

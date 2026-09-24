@@ -729,3 +729,123 @@ button {
     text-decoration: underline;
   }
 }
+
+/* ---------- Navigation decks ---------- */
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+.breadcrumb-sep {
+  color: var(--line);
+}
+
+.breadcrumb-current {
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.deck {
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+  margin-bottom: 32px;
+}
+
+.deck-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.deck-card:hover,
+.deck-card:focus-visible {
+  border-color: var(--teal);
+}
+
+.deck-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+
+.deck-note {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.deck-badges {
+  display: flex;
+  gap: 8px;
+  margin-top: 2px;
+}
+
+/*
+ * One counter per criticality, always all three and always in the same order,
+ * so a zero is as readable as a number: an empty red badge says "nothing is
+ * blocking here", which is information.
+ */
+.deck-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  padding: 4px 10px;
+  border: 1px solid currentcolor;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+}
+
+.deck-badge--blocking {
+  background: var(--blocking-soft);
+  color: var(--blocking);
+}
+
+.deck-badge--impacting {
+  background: var(--impacting-soft);
+  color: var(--impacting);
+}
+
+.deck-badge--background {
+  background: var(--background-soft);
+  color: var(--background-level);
+}
+
+.deck-total {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+#facets-title {
+  margin-bottom: 14px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .deck-card {
+    padding: 18px;
+  }
+}
