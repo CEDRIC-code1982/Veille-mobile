@@ -14,22 +14,36 @@
 
   const CRITICALITIES = ['blocking', 'impacting', 'background'];
 
-  /**
-   * First navigation level. A scope with facets asks a second question before
-   * showing anything; the others go straight to their items.
+  /*
+   * Navigation. A scope with facets asks a second question before showing
+   * anything; the others go straight to their items. A null category list means
+   * "everything", and the Tout facet exists so the items that belong to neither
+   * side of a scope stay reachable.
    */
-  const SCOPES = [
-    { key: 'ios', label: 'iOS', category: 'ios', faceted: true },
-    { key: 'android', label: 'Android', category: 'android', faceted: true },
-    { key: 'react-native', label: 'React Native', category: 'react-native', faceted: false },
-    { key: 'typescript', label: 'TypeScript', category: 'typescript', faceted: false },
-    { key: 'all', label: 'Tout', category: null, faceted: false }
+  const PLATFORM_FACETS = [
+    { key: 'os', label: 'Système', categories: ['os-release'] },
+    { key: 'devices', label: 'Appareils', categories: ['hardware'] },
+    { key: 'all', label: 'Tout', categories: null }
   ];
 
-  const FACETS = [
-    { key: 'os', label: 'Système', category: 'os-release' },
-    { key: 'devices', label: 'Appareils', category: 'hardware' },
-    { key: 'all', label: 'Tout', category: null }
+  const CONNECTIVITY_FACETS = [
+    { key: 'ble', label: 'Bluetooth / BLE', categories: ['ble'] },
+    { key: 'nfc', label: 'NFC', categories: ['nfc'] },
+    { key: 'all', label: 'Tout', categories: null }
+  ];
+
+  const SCOPES = [
+    { key: 'ios', label: 'iOS', categories: ['ios'], facets: PLATFORM_FACETS },
+    { key: 'android', label: 'Android', categories: ['android'], facets: PLATFORM_FACETS },
+    {
+      key: 'connectivity',
+      label: 'Connectivité',
+      categories: ['ble', 'nfc'],
+      facets: CONNECTIVITY_FACETS
+    },
+    { key: 'react-native', label: 'React Native', categories: ['react-native'], facets: null },
+    { key: 'typescript', label: 'TypeScript', categories: ['typescript'], facets: null },
+    { key: 'all', label: 'Tout', categories: null, facets: null }
   ];
 
   const CRITICALITY_LABELS = {
@@ -54,7 +68,8 @@
     hardware: 'Matériel',
     tooling: 'Outillage',
     policy: 'Règles de store',
-    'os-release': 'Systèmes'
+    'os-release': 'Systèmes',
+    nfc: 'NFC'
   };
 
   const DENSITY_KEY = 'veille-density';
@@ -352,18 +367,35 @@
     return null;
   }
 
-  function findFacet(key) {
-    for (let index = 0; index < FACETS.length; index += 1) {
-      if (FACETS[index].key === key) {
-        return FACETS[index];
+  function findFacet(scope, key) {
+    if (scope === null || scope.facets === null) {
+      return null;
+    }
+
+    for (let index = 0; index < scope.facets.length; index += 1) {
+      if (scope.facets[index].key === key) {
+        return scope.facets[index];
       }
     }
 
     return null;
   }
 
-  function hasCategory(item, category) {
-    return category === null || (item.categories || []).indexOf(category) >= 0;
+  /** A null list matches everything; otherwise any one category is enough. */
+  function hasAnyCategory(item, categories) {
+    if (categories === null) {
+      return true;
+    }
+
+    const own = item.categories || [];
+
+    for (let index = 0; index < categories.length; index += 1) {
+      if (own.indexOf(categories[index]) >= 0) {
+        return true;
+      }
+    }
+
+    return false;
   }
 
   /** Items belonging to a scope, and to a facet of it when one is selected. */
@@ -374,14 +406,14 @@
       return [];
     }
 
-    const facet = facetKey === null ? null : findFacet(facetKey);
+    const facet = facetKey === null ? null : findFacet(scope, facetKey);
 
     return state.items.filter(function (item) {
-      if (!hasCategory(item, scope.category)) {
+      if (!hasAnyCategory(item, scope.categories)) {
         return false;
       }
 
-      return facet === null || hasCategory(item, facet.category);
+      return facet === null || hasAnyCategory(item, facet.categories);
     });
   }
 
@@ -442,7 +474,15 @@
     for (let index = 0; index < SCOPES.length; index += 1) {
       const scope = SCOPES[index];
       const items = itemsIn(scope.key, null);
-      const note = scope.faceted ? 'Système ou appareils' : null;
+      const note =
+        scope.facets === null
+          ? null
+          : scope.facets
+              .slice(0, 2)
+              .map(function (facet) {
+                return facet.label;
+              })
+              .join(' ou ');
       deck.appendChild(createDeckCard('#/' + scope.key, scope.label, items, note));
     }
   }
@@ -453,8 +493,12 @@
     deck.textContent = '';
     byId('facets-title').textContent = scope === null ? '' : scope.label;
 
-    for (let index = 0; index < FACETS.length; index += 1) {
-      const facet = FACETS[index];
+    if (scope === null || scope.facets === null) {
+      return;
+    }
+
+    for (let index = 0; index < scope.facets.length; index += 1) {
+      const facet = scope.facets[index];
       deck.appendChild(
         createDeckCard(
           '#/' + scopeKey + '/' + facet.key,
@@ -489,7 +533,7 @@
       nav.appendChild(scopeLink);
     }
 
-    const facet = state.facet === null ? null : findFacet(state.facet);
+    const facet = state.facet === null ? null : findFacet(scope, state.facet);
     const current = facet !== null ? facet.label : scope === null ? '' : scope.label;
     nav.appendChild(createElement('span', 'breadcrumb-sep', '/'));
     nav.appendChild(createElement('span', 'breadcrumb-current', current));
@@ -746,11 +790,11 @@
       return { scope: null, facet: null };
     }
 
-    if (!scope.faceted) {
+    if (scope.facets === null) {
       return { scope: scope.key, facet: null };
     }
 
-    const facet = parts.length > 1 ? findFacet(parts[1]) : null;
+    const facet = parts.length > 1 ? findFacet(scope, parts[1]) : null;
 
     return { scope: scope.key, facet: facet === null ? null : facet.key };
   }
@@ -766,7 +810,7 @@
 
     const scope = state.scope === null ? null : findScope(state.scope);
     const showHome = scope === null;
-    const showFacets = !showHome && scope.faceted && state.facet === null;
+    const showFacets = !showHome && scope.facets !== null && state.facet === null;
     const showList = !showHome && !showFacets;
 
     byId('home').hidden = !showHome;

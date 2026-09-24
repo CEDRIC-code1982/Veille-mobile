@@ -222,13 +222,57 @@ feeds:
     official: true
     maxAgeDays: 30
 
-  - name: Bluetooth SIG Blog
-    url: https://www.bluetooth.com/blog/feed/
-    type: rss
+  # Le blog du SIG a été retiré après essai : cinq articles collectés, cinq sur le
+  # développement durable et l'éclairage tertiaire, aucune portée technique. La
+  # page de spécification le remplace, c'est là que l'évolution matérielle se lit.
+  - name: Bluetooth Core Specification
+    url: https://www.bluetooth.com/specifications/bluetooth-core-specification/
+    type: scrape
     domain: bluetooth.com
     categories: [ble, hardware]
+    official: true
+    maxAgeDays: 180
+
+  - name: BLE Manager Releases
+    url: https://github.com/innoveit/react-native-ble-manager/releases.atom
+    type: atom
+    domain: github.com
+    categories: [react-native, ble]
+    official: true
+    maxAgeDays: 120
+
+  - name: Android Bluetooth Low Energy
+    url: https://developer.android.com/develop/connectivity/bluetooth/ble/ble-overview
+    type: scrape
+    domain: developer.android.com
+    categories: [android, ble]
+    official: true
+    maxAgeDays: 120
+
+  - name: Android NFC Overview
+    url: https://developer.android.com/develop/connectivity/nfc
+    type: scrape
+    domain: developer.android.com
+    categories: [android, nfc]
+    official: true
+    maxAgeDays: 120
+
+  # Émulation de carte côté hôte : le cœur du sujet pour du contrôle d'accès.
+  - name: Android Host Card Emulation
+    url: https://developer.android.com/develop/connectivity/nfc/hce
+    type: scrape
+    domain: developer.android.com
+    categories: [android, nfc]
+    official: true
+    maxAgeDays: 120
+
+  - name: NFC Forum Specifications
+    url: https://nfc-forum.org/build/specifications/
+    type: scrape
+    domain: nfc-forum.org
+    categories: [nfc]
     official: false
-    maxAgeDays: 45
+    maxAgeDays: 180
 
   - name: Don't Kill My App
     url: https://dontkillmyapp.com/

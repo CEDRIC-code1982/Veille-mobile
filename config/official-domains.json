@@ -10,11 +10,13 @@
     { "domain": "reactnative.dev" },
     { "domain": "devblogs.microsoft.com" },
     { "domain": "expo.dev" },
+    { "domain": "bluetooth.com" },
     {
       "domain": "github.com",
       "pathPrefixes": [
         "/facebook/react-native/releases",
-        "/microsoft/TypeScript/releases"
+        "/microsoft/TypeScript/releases",
+        "/innoveit/react-native-ble-manager/releases"
       ]
     }
   ]
