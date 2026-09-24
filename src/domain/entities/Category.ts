@@ -15,6 +15,7 @@ const Category = {
   POLICY: 'policy',
   OS_RELEASE: 'os-release',
   NFC: 'nfc',
+  AI: 'ai',
 } as const;
 type Category = typeof Category[keyof typeof Category];
 

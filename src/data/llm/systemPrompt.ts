@@ -56,7 +56,13 @@ const buildSystemPrompt = (): string => {
     '   release changes and say nothing about the previous version: never reconstruct a',
     '   comparison you cannot read.',
     '',
-    '8. Answer with one entry per input item, keeping the id unchanged. Output raw JSON only:',
+    `8. The "${Category.AI}" category is for artificial intelligence a developer can call:`,
+    '   the generative interfaces a platform exposes to applications, the frameworks that run a',
+    '   model on the device, and the libraries that bind them to React Native. A product',
+    '   announcement that mentions artificial intelligence without any developer-facing',
+    '   interface does not belong to this category.',
+    '',
+    '9. Answer with one entry per input item, keeping the id unchanged. Output raw JSON only:',
     '   no markdown fence, no comment, no text before or after the JSON.',
   ].join('\n');
 };

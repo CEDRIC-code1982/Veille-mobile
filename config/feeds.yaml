@@ -281,3 +281,73 @@ feeds:
     categories: [android, background]
     official: false
     maxAgeDays: 14
+
+  # Intelligence artificielle. Le périmètre est ce qu'un développeur peut
+  # appeler depuis une application : les interfaces génératives que les
+  # plateformes exposent, les moteurs qui font tourner un modèle sur l'appareil,
+  # et ce qui relie les deux à React Native. Une annonce produit qui parle d'IA
+  # sans rien offrir au développeur n'a pas sa place ici.
+  #
+  # Les pages developer.apple.com/documentation/* sont des applications
+  # JavaScript qui ne rendent rien à un client HTTP, mais le suffixe .md renvoie
+  # la même page en markdown, servie telle quelle. Vérifié aussi sur
+  # corebluetooth et corenfc : c'est un mécanisme général du site, pas une
+  # particularité de cette page.
+  - name: Apple Foundation Models
+    url: https://developer.apple.com/documentation/foundationmodels.md
+    type: scrape
+    domain: developer.apple.com
+    categories: [ios, ai]
+    official: true
+    maxAgeDays: 120
+
+  - name: Apple Intelligence for Developers
+    url: https://developer.apple.com/apple-intelligence/
+    type: scrape
+    domain: developer.apple.com
+    categories: [ios, ai]
+    official: true
+    maxAgeDays: 90
+
+  # De la recherche, pas de la documentation : aucune contrainte de livraison
+  # n'en sortira. C'est ce qui arrivera dans les OS plus tard, pour la culture.
+  - name: Apple Machine Learning Research
+    url: https://machinelearning.apple.com/rss.xml
+    type: rss
+    domain: machinelearning.apple.com
+    categories: [ai]
+    official: true
+    maxAgeDays: 90
+
+  - name: Android AI Overview
+    url: https://developer.android.com/ai
+    type: scrape
+    domain: developer.android.com
+    categories: [android, ai]
+    official: true
+    maxAgeDays: 90
+
+  - name: Gemini Nano on Android
+    url: https://developer.android.com/ai/gemini-nano
+    type: scrape
+    domain: developer.android.com
+    categories: [android, ai]
+    official: true
+    maxAgeDays: 120
+
+  - name: ML Kit Release Notes
+    url: https://developers.google.com/ml-kit/release-notes
+    type: scrape
+    domain: developers.google.com
+    categories: [android, ai, tooling]
+    official: true
+    maxAgeDays: 90
+
+  # Inférence sur l'appareil côté React Native, maintenue par Software Mansion.
+  - name: React Native ExecuTorch Releases
+    url: https://github.com/software-mansion/react-native-executorch/releases.atom
+    type: atom
+    domain: github.com
+    categories: [react-native, ai]
+    official: true
+    maxAgeDays: 120

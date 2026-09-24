@@ -191,7 +191,7 @@ Précisions sur les champs :
 
 - `categories` doit utiliser les valeurs de `src/domain/entities/Category.ts` :
   `react-native`, `typescript`, `ios`, `android`, `background`, `ble`,
-  `hardware`, `tooling`, `policy`, `os-release`.
+  `hardware`, `tooling`, `policy`, `os-release`, `nfc`, `ai`.
 - `maxAgeDays` s'applique à **l'entrée la plus récente** pour `rss`/`atom`, et
   à **la dernière lecture réussie** pour `scrape` : une page de documentation
   qui ne change pas est normale, un flux figé ne l'est pas.
@@ -228,15 +228,44 @@ l'index officiel et scrape leurs deux pages. On obtient donc en permanence la
 version courante **et** celle qu'elle remplace, sans qu'aucun numéro ne soit
 écrit nulle part. Quand une nouvelle version sort, le suivi bascule tout seul.
 
-Côté Apple, il n'existe pas d'équivalent exploitable : les pages
-`developer.apple.com/documentation/*` sont des applications JavaScript qui ne
-rendent rien à un client HTTP, ce qui a été vérifié avant d'y renoncer. Le suivi
+Côté Apple, il n'existe pas d'équivalent exploitable : aucune page officielle
+n'indexe les versions de façon à ce qu'on puisse en découvrir les clés. Le suivi
 repose donc sur le flux des releases développeur, dont la charge utile est le
 titre (version et build), et sur la page des mises à jour de sécurité.
+
+Les pages `developer.apple.com/documentation/*` sont des applications
+JavaScript qui ne rendent rien à un client HTTP — mais le suffixe `.md` renvoie
+la même page en markdown, servie telle quelle. Vérifié sur `foundationmodels`,
+`corebluetooth` et `corenfc` : c'est un mécanisme général du site. Toute page de
+documentation Apple est donc collectable, à condition d'ajouter `.md` à son URL.
 
 Le prompt impose au modèle, pour tout item `os-release`, de dire ce que la
 version change **par rapport à celle qu'elle remplace**, et uniquement si
 l'extrait l'énonce : jamais de comparaison reconstruite.
+
+## Intelligence artificielle
+
+La carte « IA » regroupe les items portant la catégorie `ai`. Le périmètre est
+volontairement étroit : **ce qu'un développeur peut appeler depuis une
+application**. Les interfaces génératives que les plateformes exposent, les
+moteurs qui font tourner un modèle sur l'appareil, et ce qui relie les deux à
+React Native. Une annonce produit qui parle d'IA sans rien offrir au
+développeur n'entre pas dans la catégorie, et le prompt de classification le dit
+au modèle explicitement.
+
+Les sources se répartissent en trois familles :
+
+- **Ce qui est appelable aujourd'hui** : le framework Foundation Models d'Apple,
+  Gemini Nano et ML Kit côté Android, avec leurs notes de version.
+- **Ce qui arrive** : la page Apple Intelligence destinée aux développeurs, la
+  page de présentation de l'IA sur Android.
+- **Ce qui arrivera plus tard** : le blog de recherche d'Apple. Aucune contrainte
+  de livraison n'en sortira jamais — c'est de la culture, au même titre que le
+  BLE.
+
+Le pont côté React Native est suivi par les releases de
+`react-native-executorch`, qui fait tourner un modèle local dans une application
+RN.
 
 ## Détection de panne silencieuse
 

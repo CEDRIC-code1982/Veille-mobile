@@ -16,7 +16,8 @@
       "pathPrefixes": [
         "/facebook/react-native/releases",
         "/microsoft/TypeScript/releases",
-        "/innoveit/react-native-ble-manager/releases"
+        "/innoveit/react-native-ble-manager/releases",
+        "/software-mansion/react-native-executorch/releases"
       ]
     }
   ]
