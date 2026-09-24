@@ -20,30 +20,102 @@
    * "everything", and the Tout facet exists so the items that belong to neither
    * side of a scope stay reachable.
    */
+  /*
+   * Original pictograms, deliberately not the official brand marks: the Apple
+   * logo, the Android robot and the TypeScript square are protected, and this
+   * is a public repository. Generic code and device symbols in the canonical
+   * colours read the same at a glance, and cost nothing legally.
+   *
+   * Drawn inline so the site keeps working offline with no external file.
+   */
+  const ICONS = {
+    ios: ['M8 2.5h8a1.5 1.5 0 0 1 1.5 1.5v16a1.5 1.5 0 0 1-1.5 1.5H8A1.5 1.5 0 0 1 6.5 20V4A1.5 1.5 0 0 1 8 2.5z', 'M10.5 5h3'],
+    android: ['M7 8.5h10v9.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 7 18V8.5z', 'M7 8.5a5 5 0 0 1 10 0', 'M9 5.2 7.8 3.4', 'M15 5.2l1.2-1.8', 'M10.2 6.4h.01', 'M13.8 6.4h.01'],
+    'react-native': ['M9.5 7.5 5 12l4.5 4.5', 'M14.5 7.5 19 12l-4.5 4.5'],
+    typescript: ['M10 3.5c-2 0-2 3.2-2 4.8 0 1.6-.6 2.9-2 3.7 1.4.8 2 2.1 2 3.7 0 1.6 0 4.8 2 4.8', 'M14 3.5c2 0 2 3.2 2 4.8 0 1.6.6 2.9 2 3.7-1.4.8-2 2.1-2 3.7 0 1.6 0 4.8-2 4.8'],
+    connectivity: ['M12 18.5h.01', 'M8.8 15.3a4.5 4.5 0 0 1 6.4 0', 'M6 12.1a9 9 0 0 1 12 0', 'M3.4 9a13.5 13.5 0 0 1 17.2 0'],
+    all: ['M4 4.5h6v6H4z', 'M14 4.5h6v6h-6z', 'M4 13.5h6v6H4z', 'M14 13.5h6v6h-6z'],
+    os: ['M8.5 8.5h7v7h-7z', 'M12 3.5v5', 'M12 15.5v5', 'M3.5 12h5', 'M15.5 12h5'],
+    devices: ['M3.5 6.5h10v11h-10z', 'M16 9.5h4.5v8H16z', 'M6 20h5'],
+    nfc: [
+      'M4.5 5.5h6A1.5 1.5 0 0 1 12 7v10a1.5 1.5 0 0 1-1.5 1.5h-6A1.5 1.5 0 0 1 3 17V7a1.5 1.5 0 0 1 1.5-1.5z',
+      'M15.5 9a4.5 4.5 0 0 1 0 6',
+      'M18.5 6.5a8.5 8.5 0 0 1 0 11'
+    ]
+  };
+
+  const SVG_NAMESPACE = 'http://www.w3.org/2000/svg';
+
+  function createIcon(name) {
+    const paths = ICONS[name];
+
+    if (!paths) {
+      return null;
+    }
+
+    const svg = document.createElementNS(SVG_NAMESPACE, 'svg');
+    svg.setAttribute('class', 'deck-icon deck-icon--' + name);
+    svg.setAttribute('viewBox', '0 0 24 24');
+    svg.setAttribute('fill', 'none');
+    svg.setAttribute('stroke', 'currentColor');
+    svg.setAttribute('stroke-width', '1.6');
+    svg.setAttribute('stroke-linecap', 'round');
+    svg.setAttribute('stroke-linejoin', 'round');
+    svg.setAttribute('aria-hidden', 'true');
+    svg.setAttribute('focusable', 'false');
+
+    for (let index = 0; index < paths.length; index += 1) {
+      const node = document.createElementNS(SVG_NAMESPACE, 'path');
+      node.setAttribute('d', paths[index]);
+      svg.appendChild(node);
+    }
+
+    return svg;
+  }
+
   const PLATFORM_FACETS = [
-    { key: 'os', label: 'Système', categories: ['os-release'] },
-    { key: 'devices', label: 'Appareils', categories: ['hardware'] },
-    { key: 'all', label: 'Tout', categories: null }
+    { key: 'os', label: 'Système', categories: ['os-release'], icon: 'os' },
+    { key: 'devices', label: 'Appareils', categories: ['hardware'], icon: 'devices' },
+    { key: 'all', label: 'Tout', categories: null, icon: 'all' }
   ];
 
   const CONNECTIVITY_FACETS = [
-    { key: 'ble', label: 'Bluetooth / BLE', categories: ['ble'] },
-    { key: 'nfc', label: 'NFC', categories: ['nfc'] },
-    { key: 'all', label: 'Tout', categories: null }
+    { key: 'ble', label: 'Bluetooth / BLE', categories: ['ble'], icon: 'connectivity' },
+    { key: 'nfc', label: 'NFC', categories: ['nfc'], icon: 'nfc' },
+    { key: 'all', label: 'Tout', categories: null, icon: 'all' }
   ];
 
   const SCOPES = [
-    { key: 'ios', label: 'iOS', categories: ['ios'], facets: PLATFORM_FACETS },
-    { key: 'android', label: 'Android', categories: ['android'], facets: PLATFORM_FACETS },
+    { key: 'ios', label: 'iOS', categories: ['ios'], facets: PLATFORM_FACETS, icon: 'ios' },
+    {
+      key: 'android',
+      label: 'Android',
+      categories: ['android'],
+      facets: PLATFORM_FACETS,
+      icon: 'android'
+    },
     {
       key: 'connectivity',
       label: 'Connectivité',
       categories: ['ble', 'nfc'],
-      facets: CONNECTIVITY_FACETS
+      facets: CONNECTIVITY_FACETS,
+      icon: 'connectivity'
     },
-    { key: 'react-native', label: 'React Native', categories: ['react-native'], facets: null },
-    { key: 'typescript', label: 'TypeScript', categories: ['typescript'], facets: null },
-    { key: 'all', label: 'Tout', categories: null, facets: null }
+    {
+      key: 'react-native',
+      label: 'React Native',
+      categories: ['react-native'],
+      facets: null,
+      icon: 'react-native'
+    },
+    {
+      key: 'typescript',
+      label: 'TypeScript',
+      categories: ['typescript'],
+      facets: null,
+      icon: 'typescript'
+    },
+    { key: 'all', label: 'Tout', categories: null, facets: null, icon: 'all' }
   ];
 
   const CRITICALITY_LABELS = {
@@ -452,10 +524,19 @@
     return wrapper;
   }
 
-  function createDeckCard(href, label, items, note) {
+  function createDeckCard(href, label, items, note, iconName) {
     const card = createElement('a', 'deck-card');
     card.href = href;
-    card.appendChild(createElement('span', 'deck-title', label));
+
+    const head = createElement('span', 'deck-head');
+    const icon = iconName ? createIcon(iconName) : null;
+
+    if (icon !== null) {
+      head.appendChild(icon);
+    }
+
+    head.appendChild(createElement('span', 'deck-title', label));
+    card.appendChild(head);
 
     if (note) {
       card.appendChild(createElement('span', 'deck-note', note));
@@ -483,7 +564,7 @@
                 return facet.label;
               })
               .join(' ou ');
-      deck.appendChild(createDeckCard('#/' + scope.key, scope.label, items, note));
+      deck.appendChild(createDeckCard('#/' + scope.key, scope.label, items, note, scope.icon));
     }
   }
 
@@ -504,7 +585,8 @@
           '#/' + scopeKey + '/' + facet.key,
           facet.label,
           itemsIn(scopeKey, facet.key),
-          null
+          null,
+          facet.icon
         )
       );
     }

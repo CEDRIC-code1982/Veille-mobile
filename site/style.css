@@ -776,6 +776,59 @@ button {
   border-color: var(--teal);
 }
 
+.deck-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/*
+ * Canonical platform colours. They are what makes a card recognisable at a
+ * glance without reproducing a brand mark, and they are lightened in the dark
+ * theme so they keep their contrast on a near-black card.
+ */
+.deck-icon {
+  flex: 0 0 auto;
+  width: 30px;
+  height: 30px;
+  color: var(--muted);
+}
+
+.deck-icon--ios {
+  color: #5a6b70;
+}
+
+.deck-icon--android {
+  color: #3ddc84;
+}
+
+.deck-icon--react-native {
+  color: #2aa3bd;
+}
+
+.deck-icon--typescript {
+  color: #3178c6;
+}
+
+.deck-icon--connectivity,
+.deck-icon--nfc {
+  color: var(--teal);
+}
+
+@media (prefers-color-scheme: dark) {
+  .deck-icon--ios {
+    color: #9fb0b3;
+  }
+
+  .deck-icon--react-native {
+    color: #61dafb;
+  }
+
+  .deck-icon--typescript {
+    color: #7ba6e8;
+  }
+}
+
 .deck-title {
   font-family: var(--font-display);
   font-weight: 600;
