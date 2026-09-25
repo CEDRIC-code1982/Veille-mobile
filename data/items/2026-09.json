@@ -1,6 +1,6 @@
 {
   "month": "2026-09",
-  "updatedAt": "2026-09-24T17:12:03.924Z",
+  "updatedAt": "2026-09-25T17:11:58.064Z",
   "items": [
     {
       "id": "11192683e1d164e9",
@@ -8,8 +8,8 @@
       "summary": "",
       "sourceUrl": "https://developer.android.com/studio/releases",
       "sourceName": "Android Studio Releases",
-      "publishedAt": "2026-09-24T17:11:59.942Z",
-      "collectedAt": "2026-09-24T17:11:59.942Z",
+      "publishedAt": "2026-09-25T17:11:53.904Z",
+      "collectedAt": "2026-09-25T17:11:53.904Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -22,13 +22,33 @@
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
+      "id": "8caa9461fd2a06d8",
+      "title": "TestFlight 4.4.0",
+      "summary": "",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=09224026a",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-09-24T21:30:00.000Z",
+      "collectedAt": "2026-09-25T17:11:53.904Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "os-release",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "4a5fca6762eedad5",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
       "id": "348919c03d831171",
       "title": "Build your way: Use any AI agent of your choice in Android Studio",
       "summary": "",
       "sourceUrl": "https://android-developers.googleblog.com/2026/09/build-your-way-use-any-ai-agent-in-android-studio.html",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-09-24T15:59:00.000Z",
-      "collectedAt": "2026-09-24T17:11:59.942Z",
+      "collectedAt": "2026-09-25T17:11:53.904Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -592,7 +612,7 @@
       "sourceUrl": "https://machinelearning.apple.com/research/latent-space-distillation",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-09-24T00:00:00.000Z",
-      "collectedAt": "2026-09-24T17:11:59.942Z",
+      "collectedAt": "2026-09-25T17:11:53.904Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -601,6 +621,24 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "81b5beaaa1012728",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "6bd938505802ab3f",
+      "title": "A Practical Recipe for Semi-Supervised Federated ASR: Online Pseudo-Labels with Server Update Stabilization",
+      "summary": "",
+      "sourceUrl": "https://machinelearning.apple.com/research/practical-recipe-federated-asr",
+      "sourceName": "Apple Machine Learning Research",
+      "publishedAt": "2026-09-24T00:00:00.000Z",
+      "collectedAt": "2026-09-25T17:11:53.904Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "c5b418b321096397",
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
@@ -630,7 +668,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=09223026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-09-23T17:00:00.000Z",
-      "collectedAt": "2026-09-24T17:11:59.942Z",
+      "collectedAt": "2026-09-25T17:11:53.904Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
