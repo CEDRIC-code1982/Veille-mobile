@@ -1,6 +1,6 @@
 {
   "month": "2026-09",
-  "updatedAt": "2026-09-25T17:11:58.064Z",
+  "updatedAt": "2026-09-26T16:24:24.436Z",
   "items": [
     {
       "id": "11192683e1d164e9",
@@ -8,8 +8,8 @@
       "summary": "",
       "sourceUrl": "https://developer.android.com/studio/releases",
       "sourceName": "Android Studio Releases",
-      "publishedAt": "2026-09-25T17:11:53.904Z",
-      "collectedAt": "2026-09-25T17:11:53.904Z",
+      "publishedAt": "2026-09-26T16:24:20.827Z",
+      "collectedAt": "2026-09-26T16:24:20.827Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -22,13 +22,71 @@
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
+      "id": "424a4c6206f0e626",
+      "title": "Release notes",
+      "summary": "",
+      "sourceUrl": "https://developers.google.com/ml-kit/release-notes",
+      "sourceName": "ML Kit Release Notes",
+      "publishedAt": "2026-09-26T16:24:20.827Z",
+      "collectedAt": "2026-09-26T16:24:20.827Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "ai",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "d2a5eaaf7dbc50c7",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "f49142ba3af4c3b7",
+      "title": "Release Notes",
+      "summary": "",
+      "sourceUrl": "https://developers.google.com/android/guides/releases",
+      "sourceName": "Play Services Releases",
+      "publishedAt": "2026-09-26T16:24:20.827Z",
+      "collectedAt": "2026-09-26T16:24:20.827Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "bb19cc389f228409",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "209d988374e74573",
+      "title": "v0.10.3",
+      "summary": "",
+      "sourceUrl": "https://github.com/software-mansion/react-native-executorch/releases/tag/v0.10.3",
+      "sourceName": "React Native ExecuTorch Releases",
+      "publishedAt": "2026-09-25T17:49:59.000Z",
+      "collectedAt": "2026-09-26T16:24:20.827Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "react-native",
+        "ai"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "df2ab0d836064611",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
       "id": "8caa9461fd2a06d8",
       "title": "TestFlight 4.4.0",
       "summary": "",
       "sourceUrl": "https://developer.apple.com/news/releases?id=09224026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-09-24T21:30:00.000Z",
-      "collectedAt": "2026-09-25T17:11:53.904Z",
+      "collectedAt": "2026-09-26T16:24:20.827Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -48,7 +106,7 @@
       "sourceUrl": "https://android-developers.googleblog.com/2026/09/build-your-way-use-any-ai-agent-in-android-studio.html",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-09-24T15:59:00.000Z",
-      "collectedAt": "2026-09-25T17:11:53.904Z",
+      "collectedAt": "2026-09-26T16:24:20.827Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -612,7 +670,7 @@
       "sourceUrl": "https://machinelearning.apple.com/research/latent-space-distillation",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-09-24T00:00:00.000Z",
-      "collectedAt": "2026-09-25T17:11:53.904Z",
+      "collectedAt": "2026-09-26T16:24:20.827Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -630,7 +688,7 @@
       "sourceUrl": "https://machinelearning.apple.com/research/practical-recipe-federated-asr",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-09-24T00:00:00.000Z",
-      "collectedAt": "2026-09-25T17:11:53.904Z",
+      "collectedAt": "2026-09-26T16:24:20.827Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -668,7 +726,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=09223026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-09-23T17:00:00.000Z",
-      "collectedAt": "2026-09-25T17:11:53.904Z",
+      "collectedAt": "2026-09-26T16:24:20.827Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
