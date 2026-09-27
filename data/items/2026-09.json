@@ -1,6 +1,6 @@
 {
   "month": "2026-09",
-  "updatedAt": "2026-09-26T16:24:24.436Z",
+  "updatedAt": "2026-09-27T16:58:42.314Z",
   "items": [
     {
       "id": "11192683e1d164e9",
@@ -8,8 +8,8 @@
       "summary": "",
       "sourceUrl": "https://developer.android.com/studio/releases",
       "sourceName": "Android Studio Releases",
-      "publishedAt": "2026-09-26T16:24:20.827Z",
-      "collectedAt": "2026-09-26T16:24:20.827Z",
+      "publishedAt": "2026-09-27T16:58:26.632Z",
+      "collectedAt": "2026-09-27T16:58:26.632Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -27,8 +27,8 @@
       "summary": "",
       "sourceUrl": "https://developers.google.com/ml-kit/release-notes",
       "sourceName": "ML Kit Release Notes",
-      "publishedAt": "2026-09-26T16:24:20.827Z",
-      "collectedAt": "2026-09-26T16:24:20.827Z",
+      "publishedAt": "2026-09-27T16:58:26.632Z",
+      "collectedAt": "2026-09-27T16:58:26.632Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -47,8 +47,8 @@
       "summary": "",
       "sourceUrl": "https://developers.google.com/android/guides/releases",
       "sourceName": "Play Services Releases",
-      "publishedAt": "2026-09-26T16:24:20.827Z",
-      "collectedAt": "2026-09-26T16:24:20.827Z",
+      "publishedAt": "2026-09-27T16:58:26.632Z",
+      "collectedAt": "2026-09-27T16:58:26.632Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -67,7 +67,7 @@
       "sourceUrl": "https://github.com/software-mansion/react-native-executorch/releases/tag/v0.10.3",
       "sourceName": "React Native ExecuTorch Releases",
       "publishedAt": "2026-09-25T17:49:59.000Z",
-      "collectedAt": "2026-09-26T16:24:20.827Z",
+      "collectedAt": "2026-09-27T16:58:26.632Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -86,7 +86,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=09224026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-09-24T21:30:00.000Z",
-      "collectedAt": "2026-09-26T16:24:20.827Z",
+      "collectedAt": "2026-09-27T16:58:26.632Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -106,7 +106,7 @@
       "sourceUrl": "https://android-developers.googleblog.com/2026/09/build-your-way-use-any-ai-agent-in-android-studio.html",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-09-24T15:59:00.000Z",
-      "collectedAt": "2026-09-26T16:24:20.827Z",
+      "collectedAt": "2026-09-27T16:58:26.632Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -670,7 +670,7 @@
       "sourceUrl": "https://machinelearning.apple.com/research/latent-space-distillation",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-09-24T00:00:00.000Z",
-      "collectedAt": "2026-09-26T16:24:20.827Z",
+      "collectedAt": "2026-09-27T16:58:26.632Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -688,7 +688,7 @@
       "sourceUrl": "https://machinelearning.apple.com/research/practical-recipe-federated-asr",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-09-24T00:00:00.000Z",
-      "collectedAt": "2026-09-26T16:24:20.827Z",
+      "collectedAt": "2026-09-27T16:58:26.632Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -726,7 +726,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=09223026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-09-23T17:00:00.000Z",
-      "collectedAt": "2026-09-26T16:24:20.827Z",
+      "collectedAt": "2026-09-27T16:58:26.632Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
