@@ -1,6 +1,6 @@
 {
   "month": "2026-09",
-  "updatedAt": "2026-09-29T18:05:28.632Z",
+  "updatedAt": "2026-09-30T18:00:28.538Z",
   "items": [
     {
       "id": "424a4c6206f0e626",
@@ -8,8 +8,8 @@
       "summary": "",
       "sourceUrl": "https://developers.google.com/ml-kit/release-notes",
       "sourceName": "ML Kit Release Notes",
-      "publishedAt": "2026-09-29T18:05:24.630Z",
-      "collectedAt": "2026-09-29T18:05:24.630Z",
+      "publishedAt": "2026-09-30T18:00:04.603Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -23,13 +23,32 @@
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
+      "id": "de9a14f305cb74b9",
+      "title": "Policy Deadlines",
+      "summary": "",
+      "sourceUrl": "https://support.google.com/googleplay/android-developer/answer/9934569",
+      "sourceName": "Play Console Policy Updates",
+      "publishedAt": "2026-09-30T18:00:04.603Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "policy"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "96d4dfbbbe04cea5",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
       "id": "dffdf40eb4182ece",
       "title": "Apple security releases",
       "summary": "",
       "sourceUrl": "https://support.apple.com/en-us/100100",
       "sourceName": "Apple Security Releases",
-      "publishedAt": "2026-09-29T18:05:24.630Z",
-      "collectedAt": "2026-09-29T18:05:24.630Z",
+      "publishedAt": "2026-09-30T18:00:04.603Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -47,8 +66,8 @@
       "summary": "",
       "sourceUrl": "https://developer.android.com/studio/releases",
       "sourceName": "Android Studio Releases",
-      "publishedAt": "2026-09-29T18:05:24.630Z",
-      "collectedAt": "2026-09-29T18:05:24.630Z",
+      "publishedAt": "2026-09-30T18:00:04.603Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -66,8 +85,8 @@
       "summary": "",
       "sourceUrl": "https://developers.google.com/android/guides/releases",
       "sourceName": "Play Services Releases",
-      "publishedAt": "2026-09-29T18:05:24.630Z",
-      "collectedAt": "2026-09-29T18:05:24.630Z",
+      "publishedAt": "2026-09-30T18:00:04.603Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -80,13 +99,68 @@
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
+      "id": "140bf1c147121e40",
+      "title": "This Week In React #299: Panda, Vinext, Next.js, Preact, Design Systems, RTK | Variable font, Activity Result, Lynx, Lucent, macOS, Plain Text, Navigation, Angular Native, Re.Pack | TC39, Composites, WebSkills, MSW, upm, pnpm",
+      "summary": "",
+      "sourceUrl": "https://thisweekinreact.com/newsletter/299",
+      "sourceName": "This Week in React",
+      "publishedAt": "2026-09-30T00:00:00.000Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "react-native",
+        "typescript"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "7dc0ce3baeadce6c",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "d63fd7904589a452",
+      "title": "On the Effectiveness-Fluency Trade-Off in LLM Conditioning: A Systematic Study",
+      "summary": "",
+      "sourceUrl": "https://machinelearning.apple.com/research/effectiveness-fluency-llm-conditioning",
+      "sourceName": "Apple Machine Learning Research",
+      "publishedAt": "2026-09-30T00:00:00.000Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "19aca1edf5f54052",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "ebed89c376dc2dc6",
+      "title": "vscode-typescript/v1.0.1",
+      "summary": "",
+      "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/vscode-typescript%2Fv1.0.1",
+      "sourceName": "TypeScript Releases",
+      "publishedAt": "2026-09-29T19:31:28.000Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "typescript"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "4acf8b9451ab27ca",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
       "id": "c28018707d6b8411",
       "title": "Final Cut Camera now supports variable aperture on iPhone 18 Pro",
       "summary": "",
       "sourceUrl": "https://www.apple.com/newsroom/2026/09/final-cut-camera-now-supports-variable-aperture-on-iphone-18-pro",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-09-29T17:00:57.163Z",
-      "collectedAt": "2026-09-29T18:05:24.630Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -105,7 +179,7 @@
       "sourceUrl": "https://www.apple.com/newsroom/2026/09/new-updates-coming-to-apple-creator-studio",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-09-29T17:00:02.643Z",
-      "collectedAt": "2026-09-29T18:05:24.630Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -124,7 +198,7 @@
       "sourceUrl": "https://www.apple.com/newsroom/2026/09/apple-releases-new-guide-to-help-families-build-healthy-digital-habits",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-09-29T16:59:08.275Z",
-      "collectedAt": "2026-09-29T18:05:24.630Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -143,7 +217,7 @@
       "sourceUrl": "https://android-developers.googleblog.com/2026/09/unlocking-Google-play-subscription-growth.html",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-09-29T16:00:00.000Z",
-      "collectedAt": "2026-09-29T18:05:24.630Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -162,7 +236,7 @@
       "sourceUrl": "https://machinelearning.apple.com/research/communication-bottleneck-serialization",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-09-29T00:00:00.000Z",
-      "collectedAt": "2026-09-29T18:05:24.630Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -180,7 +254,7 @@
       "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/vscode-typescript%2Fv1.0.0",
       "sourceName": "TypeScript Releases",
       "publishedAt": "2026-09-28T23:22:40.000Z",
-      "collectedAt": "2026-09-29T18:05:24.630Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -198,7 +272,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=09282026h",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-09-28T21:00:00.000Z",
-      "collectedAt": "2026-09-29T18:05:24.630Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -237,7 +311,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=09282026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-09-28T17:00:00.000Z",
-      "collectedAt": "2026-09-29T18:05:24.630Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -257,7 +331,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=09282026b",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-09-28T17:00:00.000Z",
-      "collectedAt": "2026-09-29T18:05:24.630Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -277,7 +351,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=09282026g",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-09-28T17:00:00.000Z",
-      "collectedAt": "2026-09-29T18:05:24.630Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -297,7 +371,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=09282026f",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-09-28T17:00:00.000Z",
-      "collectedAt": "2026-09-29T18:05:24.630Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -317,7 +391,7 @@
       "sourceUrl": "https://android-developers.googleblog.com/2026/09/android-agentic-workflows.html",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-09-28T16:00:00.000Z",
-      "collectedAt": "2026-09-29T18:05:24.630Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -336,7 +410,7 @@
       "sourceUrl": "https://github.com/software-mansion/react-native-executorch/releases/tag/v0.10.4",
       "sourceName": "React Native ExecuTorch Releases",
       "publishedAt": "2026-09-28T15:55:28.000Z",
-      "collectedAt": "2026-09-29T18:05:24.630Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -355,7 +429,7 @@
       "sourceUrl": "https://github.com/react/react-native/releases/tag/v0.88.0-rc.3",
       "sourceName": "React Native Releases",
       "publishedAt": "2026-09-28T13:34:05.000Z",
-      "collectedAt": "2026-09-29T18:05:24.630Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -373,7 +447,7 @@
       "sourceUrl": "https://machinelearning.apple.com/research/federated-variational-inequalities",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-09-28T00:00:00.000Z",
-      "collectedAt": "2026-09-29T18:05:24.630Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -410,7 +484,7 @@
       "sourceUrl": "https://github.com/software-mansion/react-native-executorch/releases/tag/v0.10.3",
       "sourceName": "React Native ExecuTorch Releases",
       "publishedAt": "2026-09-25T17:49:59.000Z",
-      "collectedAt": "2026-09-29T18:05:24.630Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -429,7 +503,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=09224026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-09-24T21:30:00.000Z",
-      "collectedAt": "2026-09-29T18:05:24.630Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -449,7 +523,7 @@
       "sourceUrl": "https://android-developers.googleblog.com/2026/09/build-your-way-use-any-ai-agent-in-android-studio.html",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-09-24T15:59:00.000Z",
-      "collectedAt": "2026-09-29T18:05:24.630Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -1013,7 +1087,7 @@
       "sourceUrl": "https://machinelearning.apple.com/research/latent-space-distillation",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-09-24T00:00:00.000Z",
-      "collectedAt": "2026-09-29T18:05:24.630Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -1031,7 +1105,7 @@
       "sourceUrl": "https://machinelearning.apple.com/research/practical-recipe-federated-asr",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-09-24T00:00:00.000Z",
-      "collectedAt": "2026-09-29T18:05:24.630Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -1069,7 +1143,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=09223026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-09-23T17:00:00.000Z",
-      "collectedAt": "2026-09-29T18:05:24.630Z",
+      "collectedAt": "2026-09-30T18:00:04.603Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
