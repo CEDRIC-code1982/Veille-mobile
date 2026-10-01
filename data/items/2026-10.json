@@ -1,0 +1,149 @@
+{
+  "month": "2026-10",
+  "updatedAt": "2026-10-01T14:24:53.340Z",
+  "items": [
+    {
+      "id": "40b0bbb29273bef4",
+      "title": "Release Notes",
+      "summary": "Le journal des versions de Google Play services et des SDK Firebase recense de nouvelles livraisons, dont play-services-nearby 19.5.1 qui corrige la recherche de précision, et une première bêta de la bibliothèque Media Effect Studio Sound capable d'isoler les composantes d'un flux audio sur l'appareil. Plusieurs modules Firebase, Google Pay, ML Kit et localisation reçoivent aussi des correctifs",
+      "sourceUrl": "https://developers.google.com/android/guides/releases",
+      "sourceName": "Play Services Releases",
+      "publishedAt": "2026-10-01T14:19:08.929Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "tooling"
+      ],
+      "tags": [
+        "play-services",
+        "firebase",
+        "sdk",
+        "release-notes"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "49196a5c0566b719",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "af84e806732531f1",
+      "title": "Release notes",
+      "summary": "Les notes de version de ML Kit annoncent la prise en charge des pages mémoire de 16 Ko sur Android ainsi qu'un relèvement des versions minimales de Xcode et d'iOS. Des tableaux récapitulent les versions courantes des API Android et iOS : lecture de codes-barres, détection de visages, étiquetage d'images, reconnaissance de texte.",
+      "sourceUrl": "https://developers.google.com/ml-kit/release-notes",
+      "sourceName": "ML Kit Release Notes",
+      "publishedAt": "2026-10-01T14:19:08.929Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "ios",
+        "ai",
+        "tooling"
+      ],
+      "tags": [
+        "mlkit",
+        "16kb-pages",
+        "xcode",
+        "version-minimale"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "22d493d0c3dc0f5c",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "b8ca77ccd2458fbd",
+      "title": "Android Studio Rabbit 1",
+      "summary": "Android Studio Rabbit 1, numéroté 2026.2.1, est la version proposée sur le canal stable et la page en recense les nouveautés. La mise à jour se fait depuis l'IDE par la recherche de mises à jour ou par téléchargement direct.",
+      "sourceUrl": "https://developer.android.com/studio/releases",
+      "sourceName": "Android Studio Releases",
+      "publishedAt": "2026-10-01T14:19:08.929Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "tooling"
+      ],
+      "tags": [
+        "android-studio",
+        "ide",
+        "canal-stable"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "f0fbca0f4200275a",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "de9a14f305cb74b9",
+      "title": "Policy Deadlines",
+      "summary": "Google Play fixe au 27 janvier 2027 trois évolutions de ses règles sur les permissions sensibles : l'accès large aux contacts devra passer par le sélecteur de contacts Android, le bouton de localisation devient la portée minimale recommandée pour la position précise, et la vérification de compte par appel téléphonique ne sera plus un usage admis de READ_CALL_LOG. Ces changements ont été annoncés",
+      "sourceUrl": "https://support.google.com/googleplay/android-developer/answer/9934569",
+      "sourceName": "Play Console Policy Updates",
+      "publishedAt": "2026-10-01T14:19:08.929Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
+      "criticality": "blocking",
+      "trustLevel": "verified",
+      "categories": [
+        "android",
+        "policy"
+      ],
+      "tags": [
+        "play-store",
+        "permissions",
+        "contacts",
+        "read-call-log"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "96d4dfbbbe04cea5",
+      "evidenceQuote": "Our SMS and Call Log Permissions policy will no longer permit account verification via phone call as a use case for the READ_CALL_LOG permission.",
+      "deadline": "2027-01-27"
+    },
+    {
+      "id": "dffdf40eb4182ece",
+      "title": "Apple security releases",
+      "summary": "La page Apple des mises à jour de sécurité indique les versions actuellement diffusées : iOS et iPadOS 27.0.1, macOS 27.0.1, tvOS 27, watchOS 27.0.1 et visionOS 27.0.1. Apple rappelle qu'une faille n'est documentée, avec ses identifiants CVE, qu'une fois le correctif disponible.",
+      "sourceUrl": "https://support.apple.com/en-us/100100",
+      "sourceName": "Apple Security Releases",
+      "publishedAt": "2026-10-01T14:19:08.929Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "os-release"
+      ],
+      "tags": [
+        "securite",
+        "cve",
+        "mises-a-jour"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "c280273035b36434",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "d64d271c1ab9f5d8",
+      "title": "How Much of a Harness Does a Strong Agent Need for Autonomous ML Engineering?",
+      "summary": "Des chercheurs d'Apple confrontent les agents d'ingénierie en apprentissage automatique bâtis sur des machineries élaborées, orchestrateurs multi-agents et sous-agents de recherche documentaire, aux agents de code plus rudimentaires disposant d'un accès direct à l'environnement d'exécution. Le travail souligne que cette seconde approche, pourtant renforcée par les progrès des modèles, reste peu",
+      "sourceUrl": "https://machinelearning.apple.com/research/harness-autonomous-ml-engineering",
+      "sourceName": "Apple Machine Learning Research",
+      "publishedAt": "2026-10-01T00:00:00.000Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai"
+      ],
+      "tags": [
+        "recherche",
+        "agents",
+        "llm"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "983d2f2281199395",
+      "verificationNote": "aucune citation à vérifier"
+    }
+  ]
+}

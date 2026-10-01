@@ -1,7 +1,53 @@
 {
   "month": "2026-09",
-  "updatedAt": "2026-09-30T18:00:28.538Z",
+  "updatedAt": "2026-10-01T14:24:53.340Z",
   "items": [
+    {
+      "id": "ebed89c376dc2dc6",
+      "title": "vscode-typescript/v1.0.1",
+      "summary": "L'extension vscode-typescript publie sa version 1.0.1, qui embarque TypeScript 7.0.2.",
+      "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/vscode-typescript%2Fv1.0.1",
+      "sourceName": "TypeScript Releases",
+      "publishedAt": "2026-09-30T19:10:17.000Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "typescript",
+        "tooling"
+      ],
+      "tags": [
+        "typescript",
+        "vscode",
+        "release"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "e1a69f4860a96a2a",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "31df3b8cafad7290",
+      "title": "How Instagram Direct engineers built AI-native UI architecture with Jetpack Compose and reduced token cost per agent session by 33%",
+      "summary": "Meta et Google détaillent la bascule d'Instagram Direct vers Jetpack Compose, qui aboutit à une base de code deux fois plus petite que l'implémentation d'origine. L'équipe revendique aussi 35 % de temps d'exécution en moins pour les agents d'IA, 32 % d'échanges en moins entre ingénieurs et agents et 33 % de coût en jetons économisé.",
+      "sourceUrl": "https://android-developers.googleblog.com/2026/09/jetpack-compose-ai-native-ui-instagram-direct.html",
+      "sourceName": "Android Developers Blog",
+      "publishedAt": "2026-09-30T19:00:00.000Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android"
+      ],
+      "tags": [
+        "jetpack-compose",
+        "ui",
+        "migration",
+        "performance"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "62c5b13a34d2ccf0",
+      "verificationNote": "aucune citation à vérifier"
+    },
     {
       "id": "424a4c6206f0e626",
       "title": "Release notes",
@@ -20,44 +66,6 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "d2a5eaaf7dbc50c7",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "de9a14f305cb74b9",
-      "title": "Policy Deadlines",
-      "summary": "",
-      "sourceUrl": "https://support.google.com/googleplay/android-developer/answer/9934569",
-      "sourceName": "Play Console Policy Updates",
-      "publishedAt": "2026-09-30T18:00:04.603Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "android",
-        "policy"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "96d4dfbbbe04cea5",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "dffdf40eb4182ece",
-      "title": "Apple security releases",
-      "summary": "",
-      "sourceUrl": "https://support.apple.com/en-us/100100",
-      "sourceName": "Apple Security Releases",
-      "publishedAt": "2026-09-30T18:00:04.603Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "ios",
-        "os-release"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "c280273035b36434",
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
@@ -101,189 +109,226 @@
     {
       "id": "140bf1c147121e40",
       "title": "This Week In React #299: Panda, Vinext, Next.js, Preact, Design Systems, RTK | Variable font, Activity Result, Lynx, Lucent, macOS, Plain Text, Navigation, Angular Native, Re.Pack | TC39, Composites, WebSkills, MSW, upm, pnpm",
-      "summary": "",
+      "summary": "La lettre hebdomadaire React revient sur deux sorties majeures de l'écosystème, Panda CSS 2.0 et Vinext 1, ainsi que sur Lynx 4 et Lucent, une nouvelle manière d'écrire des modules natifs. Côté mobile, React Native gagne la prise en charge des polices variables et de l'Activity Result Android, et la proposition Composites est passée en phase 2 lors de la réunion TC39 en cours.",
       "sourceUrl": "https://thisweekinreact.com/newsletter/299",
       "sourceName": "This Week in React",
       "publishedAt": "2026-09-30T00:00:00.000Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
         "react-native",
         "typescript"
       ],
-      "tags": [],
+      "tags": [
+        "newsletter",
+        "react",
+        "ecosysteme"
+      ],
       "impactedProjects": [],
       "fingerprint": "7dc0ce3baeadce6c",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "d63fd7904589a452",
       "title": "On the Effectiveness-Fluency Trade-Off in LLM Conditioning: A Systematic Study",
-      "summary": "",
+      "summary": "Une étude d'Apple passe en revue les méthodes de conditionnement des grands modèles de langage, aussi bien pour injecter un concept cible que pour l'en retirer. Elle constate que les techniques de pilotage les plus efficaces se paient d'une forte dégradation de la fluidité du texte produit.",
       "sourceUrl": "https://machinelearning.apple.com/research/effectiveness-fluency-llm-conditioning",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-09-30T00:00:00.000Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
         "ai"
       ],
-      "tags": [],
+      "tags": [
+        "recherche",
+        "llm",
+        "pilotage"
+      ],
       "impactedProjects": [],
       "fingerprint": "19aca1edf5f54052",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
-      "id": "ebed89c376dc2dc6",
-      "title": "vscode-typescript/v1.0.1",
-      "summary": "",
-      "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/vscode-typescript%2Fv1.0.1",
-      "sourceName": "TypeScript Releases",
-      "publishedAt": "2026-09-29T19:31:28.000Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
+      "id": "f4b333ddf552aaba",
+      "title": "SCLATE: A Substrate for Continual-Learning Agent Training and Evaluation",
+      "summary": "Apple présente SCLATE, un substrat d'exécution destiné à entraîner et évaluer des agents en apprentissage continu sur de longues séries de sessions. Bancs d'essai et agents non modifiés y déposent leurs événements, arrêts et reprises de session, tâches planifiées ou consolidation de mémoire, dans un ordonnanceur commun via un adaptateur.",
+      "sourceUrl": "https://machinelearning.apple.com/research/sclate-agent-training-evaluation",
+      "sourceName": "Apple Machine Learning Research",
+      "publishedAt": "2026-09-30T00:00:00.000Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
       "criticality": "background",
-      "trustLevel": "reported",
+      "trustLevel": "unverified",
       "categories": [
-        "typescript"
+        "ai"
       ],
-      "tags": [],
+      "tags": [
+        "recherche",
+        "agents",
+        "evaluation"
+      ],
       "impactedProjects": [],
-      "fingerprint": "4acf8b9451ab27ca",
-      "verificationNote": "non classé : no proposals file was produced"
+      "fingerprint": "2ab3c654325c86a0",
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "c28018707d6b8411",
       "title": "Final Cut Camera now supports variable aperture on iPhone 18 Pro",
-      "summary": "",
+      "summary": "Final Cut Camera reçoit une refonte de son interface et prend en charge l'ouverture variable de l'iPhone 18 Pro. La mise à jour ajoute d'autres réglages professionnels liés à iOS 27.",
       "sourceUrl": "https://www.apple.com/newsroom/2026/09/final-cut-camera-now-supports-variable-aperture-on-iphone-18-pro",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-09-29T17:00:57.163Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "hardware",
-        "ios"
+        "ios",
+        "hardware"
       ],
-      "tags": [],
+      "tags": [
+        "final-cut-camera",
+        "iphone-18-pro",
+        "video"
+      ],
       "impactedProjects": [],
       "fingerprint": "6ea53b2426856463",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "e3dab7949a86f69c",
       "title": "New updates coming to Apple Creator Studio",
-      "summary": "",
+      "summary": "Apple annonce des évolutions d'Apple Creator Studio, sa collection d'applications de création et de productivité. L'extrait ne précise pas quelles fonctionnalités sont concernées.",
       "sourceUrl": "https://www.apple.com/newsroom/2026/09/new-updates-coming-to-apple-creator-studio",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-09-29T17:00:02.643Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "hardware",
         "ios"
       ],
-      "tags": [],
+      "tags": [
+        "apple",
+        "creator-studio",
+        "applications"
+      ],
       "impactedProjects": [],
       "fingerprint": "a9aee5eb4ec07673",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "0e0b8cf9a158d3df",
       "title": "Apple releases new guide to help families build healthy digital habits",
-      "summary": "",
+      "summary": "Apple publie, avec l'American Academy of Pediatrics, un guide destiné aux familles pour installer des usages numériques plus sains. L'annonce ne comporte aucun élément technique destiné aux développeurs.",
       "sourceUrl": "https://www.apple.com/newsroom/2026/09/apple-releases-new-guide-to-help-families-build-healthy-digital-habits",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-09-29T16:59:08.275Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "hardware",
         "ios"
       ],
-      "tags": [],
+      "tags": [
+        "apple",
+        "familles",
+        "guide"
+      ],
       "impactedProjects": [],
       "fingerprint": "2624a2c8253515e1",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "444fb1cecc1ba1d4",
       "title": "Driving growth on Google Play: The next era of subscriptions",
-      "summary": "",
+      "summary": "Google Play étoffe sa plateforme d'abonnements avec des modèles de tarification plus souples, dont l'achat d'abonnement en quantité multiple : un utilisateur règle plusieurs abonnements en une transaction puis les attribue comme sièges à une équipe ou à des étudiants. D'autres capacités sont annoncées en test ou en déploiement pour soutenir la conversion et la rétention.",
       "sourceUrl": "https://android-developers.googleblog.com/2026/09/unlocking-Google-play-subscription-growth.html",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-09-29T16:00:00.000Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
-      "criticality": "background",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
+      "criticality": "impacting",
       "trustLevel": "reported",
       "categories": [
-        "android",
-        "policy"
+        "android"
       ],
-      "tags": [],
+      "tags": [
+        "play-billing",
+        "abonnements",
+        "monetisation"
+      ],
       "impactedProjects": [],
       "fingerprint": "2cc164689f5ffd5d",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "e1da41ea41831abe",
       "title": "The Communication Bottleneck: A Round-Trip Study of Tree-Structured Expression Serialization in Language Models",
-      "summary": "",
+      "summary": "Des chercheurs d'Apple mesurent ce qui subsiste d'une expression arithmétique arborescente lorsqu'un modèle la transforme en énoncé rédigé, puis qu'un second modèle tente de la reconstituer à partir de ce seul texte. Le protocole aller-retour, appliqué à toutes les paires de seize modèles, utilise l'équivalence symbolique comme oracle exact.",
       "sourceUrl": "https://machinelearning.apple.com/research/communication-bottleneck-serialization",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-09-29T00:00:00.000Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
         "ai"
       ],
-      "tags": [],
+      "tags": [
+        "recherche",
+        "llm",
+        "raisonnement"
+      ],
       "impactedProjects": [],
       "fingerprint": "d4073c5af6beedf9",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "fad3e5ad8aef4880",
       "title": "vscode-typescript/v1.0.0",
-      "summary": "",
+      "summary": "L'extension vscode-typescript atteint la version 1.0.0. L'extrait n'en décrit pas le contenu.",
       "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/vscode-typescript%2Fv1.0.0",
       "sourceName": "TypeScript Releases",
       "publishedAt": "2026-09-28T23:22:40.000Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
-        "typescript"
+        "typescript",
+        "tooling"
       ],
-      "tags": [],
+      "tags": [
+        "typescript",
+        "vscode",
+        "release"
+      ],
       "impactedProjects": [],
       "fingerprint": "c8a74e8e6f6976fa",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "779375f4d823fe4a",
       "title": "TestFlight Update",
-      "summary": "",
+      "summary": "Apple signale une mise à jour de TestFlight dans ses annonces de publication. L'extrait se limite à un renvoi vers les notes de version.",
       "sourceUrl": "https://developer.apple.com/news/releases?id=09282026h",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-09-28T21:00:00.000Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
         "ios",
-        "os-release",
         "tooling"
       ],
-      "tags": [],
+      "tags": [
+        "testflight",
+        "beta",
+        "release"
+      ],
       "impactedProjects": [],
       "fingerprint": "93ebba0d85595f9b",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "eeeed29e168f83f3",
@@ -307,156 +352,185 @@
     {
       "id": "20f3d44e4ffceef0",
       "title": "iOS 27.0.1 (24A446)",
-      "summary": "",
+      "summary": "iOS 27.0.1, build 24A446, est mis à disposition des développeurs au téléchargement. L'extrait n'indique aucun changement apporté par cette version.",
       "sourceUrl": "https://developer.apple.com/news/releases?id=09282026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-09-28T17:00:00.000Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
         "ios",
-        "os-release",
-        "tooling"
+        "os-release"
       ],
-      "tags": [],
+      "tags": [
+        "ios-27",
+        "correctif",
+        "telechargement"
+      ],
       "impactedProjects": [],
       "fingerprint": "8281989b13c78e73",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "3487adc1536c080b",
       "title": "iPadOS 27.0.1 (24A446)",
-      "summary": "",
+      "summary": "iPadOS 27.0.1, build 24A446, est mis à disposition des développeurs au téléchargement. L'extrait n'indique aucun changement apporté par cette version.",
       "sourceUrl": "https://developer.apple.com/news/releases?id=09282026b",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-09-28T17:00:00.000Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
         "ios",
-        "os-release",
-        "tooling"
+        "os-release"
       ],
-      "tags": [],
+      "tags": [
+        "ipados-27",
+        "correctif",
+        "telechargement"
+      ],
       "impactedProjects": [],
       "fingerprint": "b8266e0fd847d2c4",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "8267e431d478b6d3",
       "title": "Xcode 27.2 beta 2 (27B5028f)",
-      "summary": "",
+      "summary": "Xcode 27.2 bêta 2, build 27B5028f, est proposé au téléchargement accompagné de ses notes de version. L'extrait n'en détaille pas le contenu.",
       "sourceUrl": "https://developer.apple.com/news/releases?id=09282026g",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-09-28T17:00:00.000Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
         "ios",
-        "os-release",
         "tooling"
       ],
-      "tags": [],
+      "tags": [
+        "xcode",
+        "beta",
+        "release"
+      ],
       "impactedProjects": [],
       "fingerprint": "3a8307f5875be441",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "f45efebb657c4438",
       "title": "iPadOS 26.7.1 (23H30)",
-      "summary": "",
+      "summary": "iPadOS 26.7.1, build 23H30, est mis à disposition des développeurs au téléchargement. L'extrait n'indique aucun changement apporté par cette version.",
       "sourceUrl": "https://developer.apple.com/news/releases?id=09282026f",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-09-28T17:00:00.000Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
         "ios",
-        "os-release",
-        "tooling"
+        "os-release"
       ],
-      "tags": [],
+      "tags": [
+        "ipados-26",
+        "correctif",
+        "telechargement"
+      ],
       "impactedProjects": [],
       "fingerprint": "b0a4fa2c07a66cb4",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "fe8917305f143d06",
       "title": "Build intelligent Android apps: In-app agentic workflows",
-      "summary": "",
+      "summary": "Google poursuit sa série sur les applications Android intelligentes en montrant comment déporter un enchaînement agentique long vers un backend auto-hébergé plutôt que de l'exécuter sur l'appareil. L'application se connecte à la session pour afficher la progression et ne sollicite l'utilisateur qu'au besoin, ce qui évite de perdre l'avancement si elle passe en arrière-plan ou perd la connexion.",
       "sourceUrl": "https://android-developers.googleblog.com/2026/09/android-agentic-workflows.html",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-09-28T16:00:00.000Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
         "android",
-        "policy"
+        "ai"
       ],
-      "tags": [],
+      "tags": [
+        "agents",
+        "appfunctions",
+        "backend"
+      ],
       "impactedProjects": [],
       "fingerprint": "90e1f0e1a31e9696",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "2f6b30f7f19f0fb2",
       "title": "v0.10.4",
-      "summary": "",
+      "summary": "React Native ExecuTorch 0.10.4 est un correctif qui aligne les langues prises en charge par la chaîne de synthèse vocale Supertonic sur celles du projet amont.",
       "sourceUrl": "https://github.com/software-mansion/react-native-executorch/releases/tag/v0.10.4",
       "sourceName": "React Native ExecuTorch Releases",
       "publishedAt": "2026-09-28T15:55:28.000Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
         "react-native",
         "ai"
       ],
-      "tags": [],
+      "tags": [
+        "executorch",
+        "tts",
+        "correctif"
+      ],
       "impactedProjects": [],
       "fingerprint": "e6385cb1ab8a61ad",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "84c11d5de3c6ae43",
       "title": "0.88.0-rc.3",
-      "summary": "",
+      "summary": "La troisième release candidate de React Native 0.88 relève Hermes pour éviter une réservation quadratique lors de la compilation paresseuse et corrige un avertissement Metro lié aux exports de paquet. Côté natif, elle répare la perte d'entrées du registre de vues sur Android et un comportement de SwiftPM qui cassait les builds Xcode des applications utilisant des bibliothèques livrant leur propre",
       "sourceUrl": "https://github.com/react/react-native/releases/tag/v0.88.0-rc.3",
       "sourceName": "React Native Releases",
       "publishedAt": "2026-09-28T13:34:05.000Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
         "react-native"
       ],
-      "tags": [],
+      "tags": [
+        "react-native",
+        "hermes",
+        "swiftpm",
+        "release-candidate"
+      ],
       "impactedProjects": [],
       "fingerprint": "a0e78287550b7cfc",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "bbf506f2762571d0",
       "title": "Faster Rates for Federated Variational Inequalities",
-      "summary": "",
+      "summary": "Des chercheurs d'Apple améliorent les bornes de convergence de l'optimisation fédérée appliquée aux inégalités variationnelles stochastiques, dont l'écart avec l'optimisation convexe fédérée restait important. Ils montrent notamment que l'algorithme Local Extra SGD offre des garanties plus fines sous une analyse affinée.",
       "sourceUrl": "https://machinelearning.apple.com/research/federated-variational-inequalities",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-09-28T00:00:00.000Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
         "ai"
       ],
-      "tags": [],
+      "tags": [
+        "recherche",
+        "optimisation",
+        "apprentissage-federe"
+      ],
       "impactedProjects": [],
       "fingerprint": "91374df85d525ecb",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "11192683e1d164e9",
@@ -480,60 +554,73 @@
     {
       "id": "209d988374e74573",
       "title": "v0.10.3",
-      "summary": "",
+      "summary": "React Native ExecuTorch 0.10.3 bascule sur les bibliothèques natives 0.10.4, dont le backend XNNPACK corrige les modèles PReLU renvoyant NaN et l'arrêt de la synthèse vocale Kokoro sur iPhone, avec en prime des correctifs sur le LLM et l'installation. Changement incompatible : la méthode generate de LLMRunner n'accepte plus le paramètre echo et l'invite n'est jamais répétée dans la réponse.",
       "sourceUrl": "https://github.com/software-mansion/react-native-executorch/releases/tag/v0.10.3",
       "sourceName": "React Native ExecuTorch Releases",
       "publishedAt": "2026-09-25T17:49:59.000Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
-      "criticality": "background",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
+      "criticality": "impacting",
       "trustLevel": "reported",
       "categories": [
         "react-native",
         "ai"
       ],
-      "tags": [],
+      "tags": [
+        "executorch",
+        "llm",
+        "rupture-api",
+        "xnnpack"
+      ],
       "impactedProjects": [],
       "fingerprint": "df2ab0d836064611",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "8caa9461fd2a06d8",
       "title": "TestFlight 4.4.0",
-      "summary": "",
+      "summary": "TestFlight 4.4.0 est publié. L'annonce renvoie au téléchargement de l'application et à ses notes de version sans en détailler le contenu.",
       "sourceUrl": "https://developer.apple.com/news/releases?id=09224026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-09-24T21:30:00.000Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
         "ios",
-        "os-release",
         "tooling"
       ],
-      "tags": [],
+      "tags": [
+        "testflight",
+        "beta",
+        "release"
+      ],
       "impactedProjects": [],
       "fingerprint": "4a5fca6762eedad5",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "348919c03d831171",
       "title": "Build your way: Use any AI agent of your choice in Android Studio",
-      "summary": "",
+      "summary": "Android Studio s'ouvre aux agents de code tiers avec la fonction « Bring Your Own Agent », qui accepte notamment Claude Agent d'Anthropic, Codex d'OpenAI et Antigravity de Google. L'IDE transmet à l'agent le graphe complet du projet, la configuration de build et les détails de plateforme via le protocole Agent Client Protocol ; la fonction est disponible dans le canal Canary.",
       "sourceUrl": "https://android-developers.googleblog.com/2026/09/build-your-way-use-any-ai-agent-in-android-studio.html",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-09-24T15:59:00.000Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
-      "criticality": "background",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
+      "criticality": "impacting",
       "trustLevel": "reported",
       "categories": [
         "android",
-        "policy"
+        "tooling"
       ],
-      "tags": [],
+      "tags": [
+        "android-studio",
+        "agents",
+        "byoa",
+        "canary"
+      ],
       "impactedProjects": [],
       "fingerprint": "ffc3a0e89ca06b1b",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "1e157350b5f2cb4d",
@@ -1083,38 +1170,46 @@
     {
       "id": "415e037d984fa04b",
       "title": "Compressing Streaming Neural Audio Encoders via Latent-Space Distillation",
-      "summary": "",
+      "summary": "Apple étudie la compression par distillation du tokeniseur audio qui alimente la dictée système, exécutée entièrement sur l'appareil. L'enjeu est la consommation et la latence : cet encodeur toujours actif se dispute la mémoire avec les experts du modèle de fondation, activés de façon parcimonieuse.",
       "sourceUrl": "https://machinelearning.apple.com/research/latent-space-distillation",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-09-24T00:00:00.000Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
         "ai"
       ],
-      "tags": [],
+      "tags": [
+        "recherche",
+        "dictee",
+        "sur-appareil"
+      ],
       "impactedProjects": [],
       "fingerprint": "81b5beaaa1012728",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "6bd938505802ab3f",
       "title": "A Practical Recipe for Semi-Supervised Federated ASR: Online Pseudo-Labels with Server Update Stabilization",
-      "summary": "",
+      "summary": "Des chercheurs d'Apple proposent une méthode d'apprentissage fédéré semi-supervisé pour la reconnaissance vocale, où un modèle enseignant produit des pseudo-étiquettes sur les données non annotées des clients. Ils identifient deux leviers couplés pour éviter la divergence due à l'accumulation d'erreurs : le choix de l'enseignant et la stabilisation des mises à jour serveur sur un petit jeu annoté.",
       "sourceUrl": "https://machinelearning.apple.com/research/practical-recipe-federated-asr",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-09-24T00:00:00.000Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
         "ai"
       ],
-      "tags": [],
+      "tags": [
+        "recherche",
+        "reconnaissance-vocale",
+        "apprentissage-federe"
+      ],
       "impactedProjects": [],
       "fingerprint": "c5b418b321096397",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "17b7bbd157b00889",
@@ -1139,22 +1234,24 @@
     {
       "id": "4a4e1c2b08df4ef9",
       "title": "App Store Connect 3.3",
-      "summary": "",
+      "summary": "App Store Connect 3.3 est disponible. L'annonce pointe vers le téléchargement de l'application et ses notes de version, sans en préciser le contenu.",
       "sourceUrl": "https://developer.apple.com/news/releases?id=09223026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-09-23T17:00:00.000Z",
-      "collectedAt": "2026-09-30T18:00:04.603Z",
+      "collectedAt": "2026-10-01T14:19:08.929Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
         "ios",
-        "os-release",
         "tooling"
       ],
-      "tags": [],
+      "tags": [
+        "app-store-connect",
+        "release"
+      ],
       "impactedProjects": [],
       "fingerprint": "7cb3ee4eda26d9bc",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "7ecf428bd7f65d68",
