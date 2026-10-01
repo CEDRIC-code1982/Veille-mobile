@@ -1,7 +1,46 @@
 {
   "month": "2026-10",
-  "updatedAt": "2026-10-01T14:24:53.340Z",
+  "updatedAt": "2026-10-01T18:25:44.521Z",
   "items": [
+    {
+      "id": "8d831725ed94ee4f",
+      "title": "Behavior changes: all apps — 17",
+      "summary": "",
+      "sourceUrl": "https://developer.android.com/about/versions/17/behavior-changes-all",
+      "sourceName": "Android Behavior Changes",
+      "publishedAt": "2026-10-01T18:25:40.935Z",
+      "collectedAt": "2026-10-01T18:25:40.935Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "os-release",
+        "background"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "bfad1a93734fa325",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "c33edadf972caccf",
+      "title": "Upcoming expiration of Developer ID Certification Authority (Sub-CA)",
+      "summary": "",
+      "sourceUrl": "https://developer.apple.com/news?id=w4atic4c",
+      "sourceName": "Apple Developer News",
+      "publishedAt": "2026-10-01T17:00:11.000Z",
+      "collectedAt": "2026-10-01T18:25:40.935Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "policy"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "dc78a37f43a1c62d",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
     {
       "id": "40b0bbb29273bef4",
       "title": "Release Notes",
@@ -122,6 +161,24 @@
       "impactedProjects": [],
       "fingerprint": "c280273035b36434",
       "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "28b251faa5b0082e",
+      "title": "RLTL;DR: Self-Improvement by Internalizing Self-Generated Feedback",
+      "summary": "",
+      "sourceUrl": "https://machinelearning.apple.com/research/rltl-dr-self-improvement",
+      "sourceName": "Apple Machine Learning Research",
+      "publishedAt": "2026-10-01T00:00:00.000Z",
+      "collectedAt": "2026-10-01T18:25:40.935Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "6c348fc412b1e8cc",
+      "verificationNote": "non classé : no proposals file was produced"
     },
     {
       "id": "d64d271c1ab9f5d8",
