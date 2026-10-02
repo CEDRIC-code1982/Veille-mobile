@@ -61,7 +61,8 @@
       "categories": [
         "android",
         "ai",
-        "tooling"
+        "tooling",
+        "on-device-ai"
       ],
       "tags": [],
       "impactedProjects": [],
@@ -140,7 +141,8 @@
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "ai"
+        "ai",
+        "ai-models"
       ],
       "tags": [
         "recherche",
@@ -162,7 +164,8 @@
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "ai"
+        "ai",
+        "ai-models"
       ],
       "tags": [
         "recherche",
@@ -273,7 +276,8 @@
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "ai"
+        "ai",
+        "ai-models"
       ],
       "tags": [
         "recherche",
@@ -476,7 +480,8 @@
       "trustLevel": "reported",
       "categories": [
         "react-native",
-        "ai"
+        "ai",
+        "on-device-ai"
       ],
       "tags": [
         "executorch",
@@ -521,7 +526,8 @@
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "ai"
+        "ai",
+        "ai-models"
       ],
       "tags": [
         "recherche",
@@ -563,7 +569,8 @@
       "trustLevel": "reported",
       "categories": [
         "react-native",
-        "ai"
+        "ai",
+        "on-device-ai"
       ],
       "tags": [
         "executorch",
@@ -634,7 +641,8 @@
       "trustLevel": "reported",
       "categories": [
         "ios",
-        "ai"
+        "ai",
+        "on-device-ai"
       ],
       "tags": [
         "apple-intelligence",
@@ -658,7 +666,8 @@
       "trustLevel": "reported",
       "categories": [
         "ios",
-        "ai"
+        "ai",
+        "on-device-ai"
       ],
       "tags": [
         "foundation-models",
@@ -684,7 +693,8 @@
         "android",
         "ios",
         "ai",
-        "tooling"
+        "tooling",
+        "on-device-ai"
       ],
       "tags": [
         "ml-kit",
@@ -708,7 +718,8 @@
       "trustLevel": "reported",
       "categories": [
         "android",
-        "ai"
+        "ai",
+        "on-device-ai"
       ],
       "tags": [
         "gemini-nano",
@@ -732,7 +743,8 @@
       "trustLevel": "reported",
       "categories": [
         "android",
-        "ai"
+        "ai",
+        "on-device-ai"
       ],
       "tags": [
         "appfunctions",
@@ -757,7 +769,8 @@
       "categories": [
         "react-native",
         "ai",
-        "hardware"
+        "hardware",
+        "on-device-ai"
       ],
       "tags": [
         "executorch",
@@ -781,7 +794,8 @@
       "trustLevel": "reported",
       "categories": [
         "react-native",
-        "ai"
+        "ai",
+        "on-device-ai"
       ],
       "tags": [
         "executorch",
@@ -1178,7 +1192,8 @@
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "ai"
+        "ai",
+        "ai-models"
       ],
       "tags": [
         "recherche",
@@ -1200,7 +1215,8 @@
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "ai"
+        "ai",
+        "ai-models"
       ],
       "tags": [
         "recherche",
@@ -1285,7 +1301,8 @@
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "ai"
+        "ai",
+        "ai-models"
       ],
       "tags": [
         "research",
@@ -1610,7 +1627,8 @@
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "ai"
+        "ai",
+        "ai-models"
       ],
       "tags": [
         "research",
@@ -1696,7 +1714,8 @@
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "ai"
+        "ai",
+        "ai-models"
       ],
       "tags": [
         "research",
@@ -1869,7 +1888,8 @@
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "ai"
+        "ai",
+        "ai-models"
       ],
       "tags": [
         "research",
@@ -1914,7 +1934,8 @@
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "ai"
+        "ai",
+        "ai-models"
       ],
       "tags": [
         "research",
@@ -1937,7 +1958,8 @@
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "ai"
+        "ai",
+        "ai-models"
       ],
       "tags": [
         "research",
@@ -1960,7 +1982,8 @@
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "ai"
+        "ai",
+        "ai-models"
       ],
       "tags": [
         "research",
@@ -1983,7 +2006,8 @@
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "ai"
+        "ai",
+        "ai-models"
       ],
       "tags": [
         "research",
@@ -2310,7 +2334,8 @@
       "trustLevel": "reported",
       "categories": [
         "react-native",
-        "ai"
+        "ai",
+        "on-device-ai"
       ],
       "tags": [
         "executorch",
@@ -2334,7 +2359,8 @@
       "trustLevel": "reported",
       "categories": [
         "react-native",
-        "ai"
+        "ai",
+        "on-device-ai"
       ],
       "tags": [
         "executorch",
@@ -2382,7 +2408,8 @@
       "categories": [
         "react-native",
         "ai",
-        "android"
+        "android",
+        "on-device-ai"
       ],
       "tags": [
         "executorch",
@@ -2406,7 +2433,8 @@
       "trustLevel": "reported",
       "categories": [
         "react-native",
-        "ai"
+        "ai",
+        "on-device-ai"
       ],
       "tags": [
         "executorch",
@@ -2429,7 +2457,8 @@
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "ai"
+        "ai",
+        "ai-models"
       ],
       "tags": [
         "research",
@@ -2452,7 +2481,8 @@
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "ai"
+        "ai",
+        "ai-models"
       ],
       "tags": [
         "research",
@@ -2587,7 +2617,8 @@
       "trustLevel": "reported",
       "categories": [
         "react-native",
-        "ai"
+        "ai",
+        "on-device-ai"
       ],
       "tags": [
         "executorch",
@@ -3111,7 +3142,8 @@
       "trustLevel": "reported",
       "categories": [
         "react-native",
-        "ai"
+        "ai",
+        "on-device-ai"
       ],
       "tags": [
         "executorch",
@@ -3219,7 +3251,8 @@
       "trustLevel": "reported",
       "categories": [
         "react-native",
-        "ai"
+        "ai",
+        "on-device-ai"
       ],
       "tags": [
         "executorch",

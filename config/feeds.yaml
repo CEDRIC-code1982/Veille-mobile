@@ -297,7 +297,7 @@ feeds:
     url: https://developer.apple.com/documentation/foundationmodels.md
     type: scrape
     domain: developer.apple.com
-    categories: [ios, ai]
+    categories: [ios, ai, on-device-ai]
     official: true
     maxAgeDays: 120
 
@@ -305,7 +305,7 @@ feeds:
     url: https://developer.apple.com/apple-intelligence/
     type: scrape
     domain: developer.apple.com
-    categories: [ios, ai]
+    categories: [ios, ai, on-device-ai]
     official: true
     maxAgeDays: 90
 
@@ -315,7 +315,7 @@ feeds:
     url: https://machinelearning.apple.com/rss.xml
     type: rss
     domain: machinelearning.apple.com
-    categories: [ai]
+    categories: [ai, ai-models]
     official: true
     maxAgeDays: 90
 
@@ -323,7 +323,7 @@ feeds:
     url: https://developer.android.com/ai
     type: scrape
     domain: developer.android.com
-    categories: [android, ai]
+    categories: [android, ai, on-device-ai]
     official: true
     maxAgeDays: 90
 
@@ -331,7 +331,7 @@ feeds:
     url: https://developer.android.com/ai/gemini-nano
     type: scrape
     domain: developer.android.com
-    categories: [android, ai]
+    categories: [android, ai, on-device-ai]
     official: true
     maxAgeDays: 120
 
@@ -339,7 +339,7 @@ feeds:
     url: https://developers.google.com/ml-kit/release-notes
     type: scrape
     domain: developers.google.com
-    categories: [android, ai, tooling]
+    categories: [android, ai, on-device-ai, tooling]
     official: true
     maxAgeDays: 90
 
@@ -348,6 +348,131 @@ feeds:
     url: https://github.com/software-mansion/react-native-executorch/releases.atom
     type: atom
     domain: github.com
-    categories: [react-native, ai]
+    categories: [react-native, ai, on-device-ai]
     official: true
     maxAgeDays: 120
+
+  # Écosystème des modèles et des assistants. Ce qui sort, ce qui disparaît, et
+  # comment s'en servir. Les pages de dépréciation sont les seules de ce lot à
+  # pouvoir porter un bloquant : elles énoncent des dates de retrait fermes, ce
+  # qui est exactement la définition d'une contrainte externe datée.
+  - name: Anthropic News
+    url: https://www.anthropic.com/news
+    type: scrape
+    domain: anthropic.com
+    categories: [ai, ai-models]
+    official: true
+    maxAgeDays: 30
+
+  # Les pratiques, pas les annonces : agents, outils, évaluation, contexte.
+  - name: Anthropic Engineering
+    url: https://www.anthropic.com/engineering
+    type: scrape
+    domain: anthropic.com
+    categories: [ai, ai-models]
+    official: true
+    maxAgeDays: 60
+
+  - name: Claude Platform Release Notes
+    url: https://docs.claude.com/en/release-notes/overview
+    type: scrape
+    domain: docs.claude.com
+    categories: [ai, ai-models]
+    official: true
+    maxAgeDays: 30
+
+  - name: Claude Model Deprecations
+    url: https://docs.claude.com/en/docs/about-claude/model-deprecations
+    type: scrape
+    domain: docs.claude.com
+    categories: [ai, ai-models]
+    official: true
+    maxAgeDays: 120
+
+  - name: Claude Code Releases
+    url: https://github.com/anthropics/claude-code/releases.atom
+    type: atom
+    domain: github.com
+    categories: [ai, ai-models, tooling]
+    official: true
+    maxAgeDays: 14
+
+  # openai.com/news/rss.xml a été écarté après lecture : 1 243 entrées, dont 71
+  # sur les trente derniers jours, en majorité de la communication d'entreprise.
+  # Le changelog de la plateforme dit la même chose côté développeur, sans le
+  # bruit.
+  - name: OpenAI Platform Changelog
+    url: https://platform.openai.com/docs/changelog
+    type: scrape
+    domain: platform.openai.com
+    categories: [ai, ai-models]
+    official: true
+    maxAgeDays: 30
+
+  - name: OpenAI Deprecations
+    url: https://platform.openai.com/docs/deprecations
+    type: scrape
+    domain: platform.openai.com
+    categories: [ai, ai-models]
+    official: true
+    maxAgeDays: 120
+
+  - name: Gemini API Release Notes
+    url: https://ai.google.dev/gemini-api/docs/changelog
+    type: scrape
+    domain: ai.google.dev
+    categories: [ai, ai-models]
+    official: true
+    maxAgeDays: 30
+
+  - name: Gemini Blog
+    url: https://blog.google/products/gemini/rss/
+    type: rss
+    domain: blog.google
+    categories: [ai, ai-models]
+    official: true
+    maxAgeDays: 21
+
+  - name: GitHub Copilot Changelog
+    url: https://github.blog/changelog/label/copilot/feed/
+    type: rss
+    domain: github.blog
+    categories: [ai, ai-models, tooling]
+    official: true
+    maxAgeDays: 30
+
+  # L'éditeur où arrivent la plupart des fonctions Copilot, au rythme mensuel.
+  - name: Visual Studio Code Releases
+    url: https://code.visualstudio.com/feed.xml
+    type: rss
+    domain: code.visualstudio.com
+    categories: [ai, ai-models, tooling]
+    official: true
+    maxAgeDays: 60
+
+  - name: Mistral News
+    url: https://mistral.ai/news
+    type: scrape
+    domain: mistral.ai
+    categories: [ai, ai-models]
+    official: true
+    maxAgeDays: 60
+
+  - name: Meta AI Blog
+    url: https://ai.meta.com/blog/
+    type: scrape
+    domain: ai.meta.com
+    categories: [ai, ai-models]
+    official: true
+    maxAgeDays: 60
+
+  # Seule source non officielle du lot, et assumée : c'est là que se lisent les
+  # astuces et les contournements avant qu'ils n'arrivent dans une documentation.
+  # Flux des billets seulement, pas celui des liens et citations, trop bavard.
+  - name: Simon Willison
+    url: https://simonwillison.net/atom/entries/
+    type: atom
+    domain: simonwillison.net
+    categories: [ai, ai-models]
+    official: false
+    maxAgeDays: 21

@@ -89,6 +89,12 @@
     { key: 'all', label: 'Tout', categories: null, icon: 'all' }
   ];
 
+  const AI_FACETS = [
+    { key: 'models', label: 'Modèles & assistants', categories: ['ai-models'], icon: 'ai' },
+    { key: 'on-device', label: 'Sur l\'appareil', categories: ['on-device-ai'], icon: 'os' },
+    { key: 'all', label: 'Tout', categories: null, icon: 'all' }
+  ];
+
   const SCOPES = [
     { key: 'ios', label: 'iOS', categories: ['ios'], facets: PLATFORM_FACETS, icon: 'ios' },
     {
@@ -119,7 +125,7 @@
       facets: null,
       icon: 'typescript'
     },
-    { key: 'ai', label: 'IA', categories: ['ai'], facets: null, icon: 'ai' },
+    { key: 'ai', label: 'IA', categories: ['ai'], facets: AI_FACETS, icon: 'ai' },
     { key: 'all', label: 'Tout', categories: null, facets: null, icon: 'all' }
   ];
 
@@ -147,7 +153,9 @@
     policy: 'Règles de store',
     'os-release': 'Systèmes',
     nfc: 'NFC',
-    ai: 'IA'
+    ai: 'IA',
+    'ai-models': 'Modèles & assistants',
+    'on-device-ai': 'IA embarquée'
   };
 
   const DENSITY_KEY = 'veille-density';

@@ -191,7 +191,8 @@ Précisions sur les champs :
 
 - `categories` doit utiliser les valeurs de `src/domain/entities/Category.ts` :
   `react-native`, `typescript`, `ios`, `android`, `background`, `ble`,
-  `hardware`, `tooling`, `policy`, `os-release`, `nfc`, `ai`.
+  `hardware`, `tooling`, `policy`, `os-release`, `nfc`, `ai`, `ai-models`,
+  `on-device-ai`.
 - `maxAgeDays` s'applique à **l'entrée la plus récente** pour `rss`/`atom`, et
   à **la dernière lecture réussie** pour `scrape` : une page de documentation
   qui ne change pas est normale, un flux figé ne l'est pas.
@@ -245,27 +246,36 @@ l'extrait l'énonce : jamais de comparaison reconstruite.
 
 ## Intelligence artificielle
 
-La carte « IA » regroupe les items portant la catégorie `ai`. Le périmètre est
-volontairement étroit : **ce qu'un développeur peut appeler depuis une
-application**. Les interfaces génératives que les plateformes exposent, les
-moteurs qui font tourner un modèle sur l'appareil, et ce qui relie les deux à
-React Native. Une annonce produit qui parle d'IA sans rien offrir au
-développeur n'entre pas dans la catégorie, et le prompt de classification le dit
-au modèle explicitement.
+La carte « IA » regroupe les items portant la catégorie `ai`, et pose une
+deuxième question comme les cartes Apple et Android, parce que deux veilles très
+différentes cohabitent sous le même mot.
 
-Les sources se répartissent en trois familles :
+**Modèles & assistants** (`ai-models`) : l'écosystème lui-même. Les modèles qui
+sortent, ceux qui sont retirés et à quelle date, les assistants de code bâtis
+dessus, et la façon de s'en servir — invites, agents, outils, évaluation.
+Anthropic, OpenAI, Google, Mistral, Meta, GitHub Copilot et Visual Studio Code
+y sont suivis chez l'éditeur, plus une seule source non officielle assumée.
 
-- **Ce qui est appelable aujourd'hui** : le framework Foundation Models d'Apple,
-  Gemini Nano et ML Kit côté Android, avec leurs notes de version.
-- **Ce qui arrive** : la page Apple Intelligence destinée aux développeurs, la
-  page de présentation de l'IA sur Android.
-- **Ce qui arrivera plus tard** : le blog de recherche d'Apple. Aucune contrainte
-  de livraison n'en sortira jamais — c'est de la culture, au même titre que le
-  BLE.
+**Sur l'appareil** (`on-device-ai`) : faire tourner un modèle dans une
+application mobile. Le framework Foundation Models d'Apple, Gemini Nano et ML
+Kit côté Android, et `react-native-executorch` qui relie les deux à React
+Native.
 
-Le pont côté React Native est suivi par les releases de
-`react-native-executorch`, qui fait tourner un modèle local dans une application
-RN.
+Les pages de dépréciation de modèles sont les seules du premier lot à pouvoir
+porter un `blocking`, et c'est voulu : elles énoncent des dates de retrait
+fermes, ce qui correspond exactement à la définition d'une contrainte externe
+datée. Leurs domaines sont donc dans `config/official-domains.json`, et la règle
+de preuve s'applique comme partout ailleurs — la citation doit être retrouvée
+dans la page refetchée.
+
+Deux sources ont été écartées après lecture, pour que personne ne les rajoute
+par réflexe :
+
+- `openai.com/news/rss.xml` : 1 243 entrées, 71 sur trente jours, en majorité de
+  la communication d'entreprise. Le changelog de la plateforme dit la même chose
+  côté développeur.
+- `huggingface.co/blog/feed.xml` : même problème de volume, sans le filtre de
+  l'officiel.
 
 ## Détection de panne silencieuse
 

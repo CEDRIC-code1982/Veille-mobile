@@ -11,6 +11,9 @@
     { "domain": "devblogs.microsoft.com" },
     { "domain": "expo.dev" },
     { "domain": "bluetooth.com" },
+    { "domain": "docs.claude.com" },
+    { "domain": "platform.openai.com" },
+    { "domain": "ai.google.dev" },
     {
       "domain": "github.com",
       "pathPrefixes": [

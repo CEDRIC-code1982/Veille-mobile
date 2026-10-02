@@ -79,7 +79,8 @@
         "android",
         "ios",
         "ai",
-        "tooling"
+        "tooling",
+        "on-device-ai"
       ],
       "tags": [
         "mlkit",
@@ -173,7 +174,8 @@
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "ai"
+        "ai",
+        "ai-models"
       ],
       "tags": [],
       "impactedProjects": [],
@@ -191,7 +193,8 @@
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "ai"
+        "ai",
+        "ai-models"
       ],
       "tags": [
         "recherche",
