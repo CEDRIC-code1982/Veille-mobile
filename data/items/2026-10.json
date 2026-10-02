@@ -1,7 +1,83 @@
 {
   "month": "2026-10",
-  "updatedAt": "2026-10-02T11:27:29.208Z",
+  "updatedAt": "2026-10-02T17:52:46.599Z",
   "items": [
+    {
+      "id": "27650675ea030e5a",
+      "title": "Newsroom",
+      "summary": "",
+      "sourceUrl": "https://www.anthropic.com/news",
+      "sourceName": "Anthropic News",
+      "publishedAt": "2026-10-02T17:52:42.405Z",
+      "collectedAt": "2026-10-02T17:52:42.405Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "254a07a892dc9d7f",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "2c1927b7238f7621",
+      "title": "Claude Platform release notes",
+      "summary": "",
+      "sourceUrl": "https://docs.claude.com/en/release-notes/overview",
+      "sourceName": "Claude Platform Release Notes",
+      "publishedAt": "2026-10-02T17:52:42.405Z",
+      "collectedAt": "2026-10-02T17:52:42.405Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "9f51646a4d5e9099",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "ea23256b544647b1",
+      "title": "Updates to Full Disk Access in macOS",
+      "summary": "",
+      "sourceUrl": "https://developer.apple.com/news?id=p6zjojqw",
+      "sourceName": "Apple Developer News",
+      "publishedAt": "2026-10-02T16:00:19.000Z",
+      "collectedAt": "2026-10-02T17:52:42.405Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "policy"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "f588f07570c640af",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "ee989b2407ae159e",
+      "title": "Device Streaming and Android skills - available in Android CLI",
+      "summary": "",
+      "sourceUrl": "https://android-developers.googleblog.com/2026/10/android-cli-device-streaming-and-skills.html",
+      "sourceName": "Android Developers Blog",
+      "publishedAt": "2026-10-02T16:00:00.000Z",
+      "collectedAt": "2026-10-02T17:52:42.405Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "policy"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "7f5eebf6afaf7cd4",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
     {
       "id": "19bc676636e40c23",
       "title": "Claude Platform release notes",
@@ -1148,6 +1224,25 @@
       "impactedProjects": [],
       "fingerprint": "4804e7799ad440a3",
       "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "bd7fa85e5bd0311f",
+      "title": "Language Discrimination Improves Linguistic Learning in Multilingual Speech Models",
+      "summary": "",
+      "sourceUrl": "https://machinelearning.apple.com/research/language-discrimination-multilingual-learning",
+      "sourceName": "Apple Machine Learning Research",
+      "publishedAt": "2026-10-02T00:00:00.000Z",
+      "collectedAt": "2026-10-02T17:52:42.405Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "0c739af6e9011e58",
+      "verificationNote": "non classé : no proposals file was produced"
     },
     {
       "id": "e11a5d7f0be16c7a",
