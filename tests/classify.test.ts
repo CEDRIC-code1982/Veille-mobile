@@ -12,7 +12,13 @@ import type {
 import { extractJsonObject } from '../src/data/llm/AnthropicLlmClassifier';
 import { buildSystemPrompt } from '../src/data/llm/systemPrompt';
 import { toClassificationProposal } from '../src/data/mappers/toClassificationProposal';
-import { prioritizeItems, runClassify, toBatches } from '../src/scripts/classify';
+import {
+  capItemsPerSource,
+  prioritizeItems,
+  runClassify,
+  selectForRun,
+  toBatches,
+} from '../src/scripts/classify';
 import { buildCollectedItem } from './helpers/factories';
 
 const NOW = new Date('2026-08-31T06:00:00.000Z');
@@ -122,6 +128,45 @@ describe('prioritizeItems', () => {
   });
 });
 
+describe('capItemsPerSource', () => {
+  const fromSources = (...names: readonly string[]): ReturnType<typeof buildCollectedItem>[] => {
+    return names.map((name, index) => {
+      return buildCollectedItem({ id: `${name}-${String(index)}`, sourceName: name });
+    });
+  };
+
+  it('pushes what exceeds the cap behind the other sources', () => {
+    const queued = capItemsPerSource(fromSources('loud', 'loud', 'loud', 'quiet'), 2);
+
+    expect(queued.map((item) => item.sourceName)).toEqual(['loud', 'loud', 'quiet', 'loud']);
+  });
+
+  it('drops nothing: the overflow is only moved', () => {
+    const items = fromSources('loud', 'loud', 'loud', 'quiet');
+
+    expect(capItemsPerSource(items, 1)).toHaveLength(items.length);
+  });
+
+  it('keeps the order untouched when no cap applies', () => {
+    const items = fromSources('a', 'b', 'c');
+
+    expect(capItemsPerSource(items, 0).map((item) => item.id)).toEqual(
+      items.map((item) => item.id),
+    );
+  });
+
+  it('lets a quiet source reach a budget a loud one would have eaten', () => {
+    const items = [
+      ...fromSources('loud', 'loud', 'loud'),
+      buildCollectedItem({ id: 'policy', sourceName: 'quiet' }),
+    ];
+
+    const selected = selectForRun(items, 3, 2);
+
+    expect(selected.map((item) => item.id)).toContain('policy');
+  });
+});
+
 describe('runClassify', () => {
   it('never publishes a verified item, whatever the model proposed', async () => {
     const result = await runClassify({
@@ -133,6 +178,7 @@ describe('runClassify', () => {
       clock: CLOCK,
       model: 'test-model',
       maxItemsPerRun: 60,
+      maxItemsPerSource: 0,
       batchSize: 10,
     });
 
@@ -152,6 +198,7 @@ describe('runClassify', () => {
       clock: CLOCK,
       model: 'test-model',
       maxItemsPerRun: 60,
+      maxItemsPerSource: 0,
       batchSize: 3,
     });
 
@@ -167,6 +214,7 @@ describe('runClassify', () => {
       clock: CLOCK,
       model: 'test-model',
       maxItemsPerRun: 10,
+      maxItemsPerSource: 0,
       batchSize: 10,
     });
 
@@ -183,6 +231,7 @@ describe('runClassify', () => {
       clock: CLOCK,
       model: 'test-model',
       maxItemsPerRun: 60,
+      maxItemsPerSource: 0,
       batchSize: 2,
     });
 
@@ -199,6 +248,7 @@ describe('runClassify', () => {
       clock: CLOCK,
       model: 'test-model',
       maxItemsPerRun: 60,
+      maxItemsPerSource: 0,
       batchSize: 10,
     });
 
@@ -220,6 +270,7 @@ describe('runClassify', () => {
       clock: CLOCK,
       model: 'test-model',
       maxItemsPerRun: 60,
+      maxItemsPerSource: 0,
       batchSize: 2,
     });
 
@@ -236,6 +287,7 @@ describe('runClassify', () => {
       clock: CLOCK,
       model: 'pinned-model-id',
       maxItemsPerRun: 60,
+      maxItemsPerSource: 0,
       batchSize: 10,
     });
 
@@ -251,6 +303,7 @@ describe('runClassify', () => {
       clock: CLOCK,
       model: 'test-model',
       maxItemsPerRun: 60,
+      maxItemsPerSource: 0,
       batchSize: 10,
     });
 
@@ -266,6 +319,7 @@ describe('runClassify', () => {
       clock: CLOCK,
       model: 'test-model',
       maxItemsPerRun: 60,
+      maxItemsPerSource: 0,
       batchSize: 10,
     });
 

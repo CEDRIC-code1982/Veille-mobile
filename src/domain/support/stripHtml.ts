@@ -18,9 +18,17 @@ const LINE_BREAK_PATTERN = /<br\s*\/?>/gi;
  * style, site chrome goes too: navigation, sidebars and footers are the same on
  * every page, so they pollute the excerpt handed to the classifier and, worse,
  * would let a boilerplate sentence pass as evidence.
+ *
+ * `button` was in this list and had to come out. Documentation sites wrap real
+ * content in copy-to-clipboard buttons: on the Claude deprecation page every
+ * model identifier sits inside one, so removing them left rows reading
+ * "Active N/A Not sooner than September 1, 2027" with nothing to say which
+ * model that was. The button is now unwrapped like any other tag, which lets a
+ * "Copy page" label through; that is the cheaper loss, and the 12-character
+ * floor on an evidence quote still keeps such a label from proving anything.
  */
 const REMOVED_BLOCKS_PATTERN =
-  /<(script|style|noscript|svg|template|nav|aside|footer|form|button|select|dialog|iframe)\b[^>]*>[\s\S]*?<\/\1\s*>/gi;
+  /<(script|style|noscript|svg|template|nav|aside|footer|form|select|dialog|iframe)\b[^>]*>[\s\S]*?<\/\1\s*>/gi;
 const COMMENT_PATTERN = /<!--[\s\S]*?-->/g;
 const TAG_PATTERN = /<[^>]+>/g;
 

@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
+import { anchorText } from '../src/domain/support/anchorText';
 import { canonicalizeUrl } from '../src/domain/support/canonicalizeUrl';
 import { findQuoteInText, QuoteLookupResult } from '../src/domain/support/findQuoteInText';
 import {
@@ -83,6 +84,30 @@ describe('stripHtml', () => {
 
   it('decodes entities in the extracted text', () => {
     expect(stripHtml('<p>apps &amp; games</p>')).toBe('apps & games');
+  });
+});
+
+describe('anchorText', () => {
+  const PAGE = 'Overview. The policy prose nobody needs. Model status claude-x retires on a date.';
+
+  it('starts the text at the anchor, dropping the preamble', () => {
+    expect(anchorText(PAGE, 'Model status')).toBe('Model status claude-x retires on a date.');
+  });
+
+  it('matches the anchor whatever its case', () => {
+    expect(anchorText(PAGE, 'model STATUS')).toContain('claude-x');
+  });
+
+  it('keeps the whole text when there is no anchor', () => {
+    expect(anchorText(PAGE, undefined)).toBe(PAGE);
+    expect(anchorText(PAGE, '   ')).toBe(PAGE);
+  });
+
+  it('keeps the whole text rather than emptying the source', () => {
+    // A pattern that no longer matches, and one that cannot compile: either way
+    // the page still comes through, degraded but never silently lost.
+    expect(anchorText(PAGE, 'a heading that moved')).toBe(PAGE);
+    expect(anchorText(PAGE, '([unclosed')).toBe(PAGE);
   });
 });
 

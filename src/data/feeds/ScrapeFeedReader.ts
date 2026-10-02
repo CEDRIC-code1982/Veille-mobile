@@ -3,6 +3,7 @@ import { FeedType } from '../../domain/entities/Feed';
 import type { FeedReader } from '../../domain/ports/FeedReader';
 import { SourceFetchStatus } from '../../domain/ports/SourceFetcher';
 import type { SourceFetcher } from '../../domain/ports/SourceFetcher';
+import { anchorText } from '../../domain/support/anchorText';
 import { normalizeText, truncateText } from '../../domain/support/normalizeText';
 import { stripHtml } from '../../domain/support/stripHtml';
 import { computeStableHash } from '../../shared/hash';
@@ -123,13 +124,22 @@ const discoverKeys = (html: string, linkPattern: string, limit: number): string[
 };
 
 /** Builds one entry from an already fetched page. */
-const toEntry = (html: string, url: string, fallbackTitle: string, suffix?: string): FeedEntry => {
-  const mainText = stripHtml(extractMainRegion(html));
+const toEntry = (
+  html: string,
+  url: string,
+  fallbackTitle: string,
+  excerptAnchor?: string,
+  suffix?: string,
+): FeedEntry => {
+  const fullText = stripHtml(extractMainRegion(html));
 
-  if (mainText.length === 0) {
+  if (fullText.length === 0) {
     throw new Error(`no readable content found at ${url}`);
   }
 
+  // The title still comes from the whole document: anchoring says where the
+  // payload starts, not what the page is called.
+  const mainText = anchorText(fullText, excerptAnchor);
   const flattened = mainText.replace(/\s+/g, ' ').trim();
   const title = extractTitle(html, fallbackTitle);
 
@@ -157,7 +167,7 @@ const createScrapeFeedReader = (fetcher: SourceFetcher): FeedReader => {
 
       if (feed.follow === undefined) {
         try {
-          return [toEntry(result.text, feed.url, feed.name)];
+          return [toEntry(result.text, feed.url, feed.name, feed.excerptAnchor)];
         } catch (error) {
           throw new Error(
             `cannot scrape ${feed.name}: ${error instanceof Error ? error.message : 'unreadable'}`,
@@ -188,7 +198,7 @@ const createScrapeFeedReader = (fetcher: SourceFetcher): FeedReader => {
         }
 
         try {
-          entries.push(toEntry(followed.text, followedUrl, feed.name, key));
+          entries.push(toEntry(followed.text, followedUrl, feed.name, feed.excerptAnchor, key));
         } catch (error) {
           logger.warn(
             `${feed.name}: ${error instanceof Error ? error.message : 'unreadable page'}`,

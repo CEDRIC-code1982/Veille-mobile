@@ -66,7 +66,12 @@ const buildSystemPrompt = (): string => {
     '   A product announcement that mentions artificial intelligence without any',
     '   developer-facing interface and without naming a model belongs to neither.',
     '',
-    '9. Answer with one entry per input item, keeping the id unchanged. Output raw JSON only:',
+    `9. "${Category.PRACTICES}" marks an item that teaches how to work rather than announcing`,
+    '   something: a method, a pattern, a pitfall, a way of testing or measuring. It is added',
+    '   alongside the other categories, never instead of them. A release note is not a',
+    '   practice, even when it explains what it changed.',
+    '',
+    '10. Answer with one entry per input item, keeping the id unchanged. Output raw JSON only:',
     '   no markdown fence, no comment, no text before or after the JSON.',
   ].join('\n');
 };

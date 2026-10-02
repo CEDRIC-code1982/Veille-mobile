@@ -40,6 +40,7 @@ interface Feed {
   maxAgeDays: number;
   follow?: FeedFollow;
   titlePattern?: string;
+  excerptAnchor?: string;
 }
 
 /**

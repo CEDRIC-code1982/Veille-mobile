@@ -32,6 +32,7 @@ const feedSchema = z.strictObject({
   maxAgeDays: z.number().int().positive(),
   follow: feedFollowSchema.optional(),
   titlePattern: nonEmptyStringSchema.optional(),
+  excerptAnchor: nonEmptyStringSchema.optional(),
 });
 
 const feedsConfigSchema = z.strictObject({

@@ -381,6 +381,9 @@ feeds:
     official: true
     maxAgeDays: 30
 
+  # Sans ancre, l'extrait s'arrête sur la politique de cycle de vie, juste avant
+  # le tableau : les dates de retrait, seule chose qui puisse produire un
+  # bloquant, n'étaient jamais lues.
   - name: Claude Model Deprecations
     url: https://docs.claude.com/en/docs/about-claude/model-deprecations
     type: scrape
@@ -388,6 +391,7 @@ feeds:
     categories: [ai, ai-models]
     official: true
     maxAgeDays: 120
+    excerptAnchor: 'Model status'
 
   - name: Claude Code Releases
     url: https://github.com/anthropics/claude-code/releases.atom
@@ -416,6 +420,7 @@ feeds:
     categories: [ai, ai-models]
     official: true
     maxAgeDays: 120
+    excerptAnchor: 'Upcoming deprecations'
 
   - name: Gemini API Release Notes
     url: https://ai.google.dev/gemini-api/docs/changelog

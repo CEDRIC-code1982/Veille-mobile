@@ -47,6 +47,7 @@ const logger = createLogger(import.meta.url);
  */
 const DEFAULT_MODEL = 'claude-haiku-4-5-20251001';
 const DEFAULT_MAX_ITEMS_PER_RUN = 60;
+const DEFAULT_MAX_ITEMS_PER_SOURCE = 12;
 const DEFAULT_BATCH_SIZE = 10;
 
 const EMIT_REQUEST_FLAG = '--emit-request';
@@ -65,6 +66,7 @@ interface ClassifyDependencies {
   clock: Clock;
   model: string;
   maxItemsPerRun: number;
+  maxItemsPerSource: number;
   batchSize: number;
 }
 
@@ -91,6 +93,53 @@ const prioritizeItems = (items: readonly CollectedItem[]): CollectedItem[] => {
 
     return byPublication !== 0 ? byPublication : left.id.localeCompare(right.id);
   });
+};
+
+/**
+ * Reorders the queue so one talkative source cannot take the whole budget.
+ *
+ * The cap is not a drop: what exceeds it is pushed behind everything else and
+ * still gets classified when there is room. A source that publishes patch notes
+ * every day therefore stops crowding out the store policy change collected the
+ * same morning.
+ */
+const capItemsPerSource = (
+  items: readonly CollectedItem[],
+  maxItemsPerSource: number,
+): CollectedItem[] => {
+  if (maxItemsPerSource <= 0) {
+    return [...items];
+  }
+
+  const seen = new Map<string, number>();
+  const kept: CollectedItem[] = [];
+  const overflow: CollectedItem[] = [];
+
+  for (const item of items) {
+    const count = seen.get(item.sourceName) ?? 0;
+
+    seen.set(item.sourceName, count + 1);
+    (count < maxItemsPerSource ? kept : overflow).push(item);
+  }
+
+  return [...kept, ...overflow];
+};
+
+/**
+ * The queue a run actually classifies.
+ *
+ * The request emission and the classification both go through here, because
+ * the two must select exactly the same items: anything else silently degrades
+ * the items one of them saw and the other did not.
+ */
+const selectForRun = (
+  items: readonly CollectedItem[],
+  maxItemsPerRun: number,
+  maxItemsPerSource: number,
+): CollectedItem[] => {
+  const queued = capItemsPerSource(prioritizeItems(items), maxItemsPerSource);
+
+  return queued.slice(0, Math.max(0, maxItemsPerRun));
 };
 
 const toBatches = <T>(items: readonly T[], batchSize: number): T[][] => {
@@ -130,10 +179,10 @@ const toDegradedItem = (
 const runClassify = async (
   dependencies: ClassifyDependencies,
 ): Promise<ClassificationResult> => {
-  const { classifier, profiles, clock, model, maxItemsPerRun, batchSize } = dependencies;
-  const prioritized = prioritizeItems(dependencies.items);
-  const selected = prioritized.slice(0, Math.max(0, maxItemsPerRun));
-  const skippedForBudget = prioritized.length - selected.length;
+  const { classifier, profiles, clock, model, maxItemsPerRun, maxItemsPerSource, batchSize } =
+    dependencies;
+  const selected = selectForRun(dependencies.items, maxItemsPerRun, maxItemsPerSource);
+  const skippedForBudget = dependencies.items.length - selected.length;
   const itemsById = new Map(selected.map((item) => [item.id, item]));
 
   if (skippedForBudget > 0) {
@@ -257,10 +306,11 @@ const main = async (): Promise<void> => {
 
   const collection = readRequiredJsonFile(buildRawCollectionPath(dayLabel), rawCollectionSchema);
   const maxItemsPerRun = readIntegerEnv('MAX_ITEMS_PER_RUN', DEFAULT_MAX_ITEMS_PER_RUN);
+  const maxItemsPerSource = readIntegerEnv('MAX_ITEMS_PER_SOURCE', DEFAULT_MAX_ITEMS_PER_SOURCE);
 
   // The routine asks for its instructions first, classifies, then comes back.
   if (process.argv.includes(EMIT_REQUEST_FLAG)) {
-    const selected = prioritizeItems(collection.items).slice(0, Math.max(0, maxItemsPerRun));
+    const selected = selectForRun(collection.items, maxItemsPerRun, maxItemsPerSource);
     const proposalsPath = buildProposalsPath(dayLabel);
     const requestPath = buildClassificationRequestPath(dayLabel);
 
@@ -305,6 +355,7 @@ const main = async (): Promise<void> => {
     clock: systemClock,
     model,
     maxItemsPerRun,
+    maxItemsPerSource,
     // One batch when reading a file: there is nothing to spread over calls.
     batchSize: usesProposalsFile
       ? Math.max(1, collection.items.length)
@@ -332,5 +383,13 @@ if (isDirectRun) {
   await main();
 }
 
-export { DEFAULT_MAX_ITEMS_PER_RUN, prioritizeItems, runClassify, toBatches };
+export {
+  capItemsPerSource,
+  DEFAULT_MAX_ITEMS_PER_RUN,
+  DEFAULT_MAX_ITEMS_PER_SOURCE,
+  prioritizeItems,
+  runClassify,
+  selectForRun,
+  toBatches,
+};
 export type { ClassificationResult, ClassifyDependencies };

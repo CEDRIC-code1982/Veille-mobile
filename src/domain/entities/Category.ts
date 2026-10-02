@@ -18,6 +18,7 @@ const Category = {
   AI: 'ai',
   AI_MODELS: 'ai-models',
   ON_DEVICE_AI: 'on-device-ai',
+  PRACTICES: 'practices',
 } as const;
 type Category = typeof Category[keyof typeof Category];
 

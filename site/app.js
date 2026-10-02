@@ -41,6 +41,11 @@
       'M11 3.8c.7 4.6 1.6 5.5 6.2 6.2-4.6.7-5.5 1.6-6.2 6.2-.7-4.6-1.6-5.5-6.2-6.2 4.6-.7 5.5-1.6 6.2-6.2z',
       'M17.6 14.6c.35 2.3.75 2.7 3.05 3.05-2.3.35-2.7.75-3.05 3.05-.35-2.3-.75-2.7-3.05-3.05 2.3-.35 2.7-.75 3.05-3.05z'
     ],
+    practices: [
+      'M12 3.5a5.5 5.5 0 0 1 3.1 10.04c-.56.38-.9 1.01-.9 1.69V16h-4.4v-.77c0-.68-.34-1.31-.9-1.69A5.5 5.5 0 0 1 12 3.5z',
+      'M10 18.5h4',
+      'M10.8 20.8h2.4'
+    ],
     nfc: [
       'M4.5 5.5h6A1.5 1.5 0 0 1 12 7v10a1.5 1.5 0 0 1-1.5 1.5h-6A1.5 1.5 0 0 1 3 17V7a1.5 1.5 0 0 1 1.5-1.5z',
       'M15.5 9a4.5 4.5 0 0 1 0 6',
@@ -91,6 +96,7 @@
 
   const AI_FACETS = [
     { key: 'models', label: 'Modèles & assistants', categories: ['ai-models'], icon: 'ai' },
+    { key: 'practices', label: 'Pratiques', categories: ['practices'], icon: 'practices' },
     { key: 'on-device', label: 'Sur l\'appareil', categories: ['on-device-ai'], icon: 'os' },
     { key: 'all', label: 'Tout', categories: null, icon: 'all' }
   ];
@@ -155,7 +161,8 @@
     nfc: 'NFC',
     ai: 'IA',
     'ai-models': 'Modèles & assistants',
-    'on-device-ai': 'IA embarquée'
+    'on-device-ai': 'IA embarquée',
+    practices: 'Pratiques'
   };
 
   const DENSITY_KEY = 'veille-density';

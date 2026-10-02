@@ -51,7 +51,8 @@ n'ait besoin que d'une seule permission au lieu d'une par commande.
 
 ## Règles impératives
 
-- **Ne définis pas `MAX_ITEMS_PER_RUN`.** Les deux scripts doivent voir la même
+- **Ne définis ni `MAX_ITEMS_PER_RUN` ni `MAX_ITEMS_PER_SOURCE`.** Les deux
+  scripts doivent voir la même
   valeur pour sélectionner exactement les mêmes items ; en laissant le défaut,
   c'est garanti. Sinon les items non couverts sont dégradés en `background` /
   `unverified`.

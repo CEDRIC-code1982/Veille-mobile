@@ -171,6 +171,7 @@ describe('createFileProposalsClassifier', () => {
       clock: CLOCK,
       model: 'scheduled-routine',
       maxItemsPerRun: 60,
+      maxItemsPerSource: 0,
       batchSize: 10,
     });
 
@@ -201,6 +202,7 @@ describe('createFileProposalsClassifier', () => {
       clock: CLOCK,
       model: 'scheduled-routine',
       maxItemsPerRun: 60,
+      maxItemsPerSource: 0,
       batchSize: 10,
     });
 

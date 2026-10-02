@@ -192,13 +192,27 @@ Précisions sur les champs :
 - `categories` doit utiliser les valeurs de `src/domain/entities/Category.ts` :
   `react-native`, `typescript`, `ios`, `android`, `background`, `ble`,
   `hardware`, `tooling`, `policy`, `os-release`, `nfc`, `ai`, `ai-models`,
-  `on-device-ai`.
+  `on-device-ai`, `practices`.
 - `maxAgeDays` s'applique à **l'entrée la plus récente** pour `rss`/`atom`, et
   à **la dernière lecture réussie** pour `scrape` : une page de documentation
   qui ne change pas est normale, un flux figé ne l'est pas.
 - `type: scrape` est destiné aux pages sans flux. Leur identité est le hash de
   leur zone principale : un nouvel item apparaît quand, et seulement quand, le
   contenu change réellement.
+- `excerptAnchor` (optionnel, sur un `scrape`) fait démarrer le texte retenu au
+  premier endroit où le motif correspond, au lieu du début de la page :
+
+  ```yaml
+    excerptAnchor: 'Model status'   # le tableau, pas la prose qui le précède
+  ```
+
+  Une page de documentation enterre souvent sa charge utile sous un long
+  préambule. Les tableaux de dépréciation, qui portent les dates de retrait,
+  arrivaient après le plafond de l'extrait : le classifieur ne les lisait
+  jamais. L'ancre réduit aussi le hash d'identité, donc un nouvel item
+  n'apparaît que quand la section ancrée change, pas quand une phrase du
+  préambule est reformulée. Un motif illisible ou introuvable garde la page
+  entière : une ancre cassée ne doit pas vider une source.
 - `titlePattern` (optionnel) ne garde que les entrées dont le titre correspond.
   Certains flux officiels annoncent toutes les plateformes de l'éditeur ; sans
   ce filtre elles noient le signal et consomment le budget de classification.
@@ -255,6 +269,11 @@ sortent, ceux qui sont retirés et à quelle date, les assistants de code bâtis
 dessus, et la façon de s'en servir — invites, agents, outils, évaluation.
 Anthropic, OpenAI, Google, Mistral, Meta, GitHub Copilot et Visual Studio Code
 y sont suivis chez l'éditeur, plus une seule source non officielle assumée.
+
+**Pratiques** (`practices`) : les articles de méthode plutôt que les annonces —
+un schéma, un piège, une façon de tester ou de mesurer. La catégorie s'ajoute
+aux autres, elle ne les remplace pas, et une note de version n'en fait jamais
+partie même quand elle explique ce qu'elle change.
 
 **Sur l'appareil** (`on-device-ai`) : faire tourner un modèle dans une
 application mobile. Le framework Foundation Models d'Apple, Gemini Nano et ML
@@ -388,6 +407,7 @@ Le dépôt est public. Aucun contexte professionnel n'y apparaît.
 |---|---|---|
 | `ANTHROPIC_MODEL` | `claude-haiku-4-5-20251001` | modèle de classification, identifiant épinglé |
 | `MAX_ITEMS_PER_RUN` | `60` | plafond de coût par run |
+| `MAX_ITEMS_PER_SOURCE` | `12` | plafond par source dans un même run |
 | `VEILLE_LLM_BATCH_SIZE` | `10` | items par appel API |
 | `VEILLE_MAX_ITEM_AGE_DAYS` | `30` | fenêtre de fraîcheur à la collecte |
 | `VEILLE_VERIFY_CONCURRENCY` | `4` | refetchs simultanés |
@@ -397,6 +417,11 @@ Le dépôt est public. Aucun contexte professionnel n'y apparaît.
 | `VEILLE_USER_AGENT` | `veille-mobile-bot` | `User-Agent` des requêtes |
 | `VEILLE_PREVIEW_PORT` | `8099` | port de `npm run site:serve` |
 | `LOG_LEVEL` | `INFO` | `DEBUG` \| `INFO` \| `WARN` \| `ERROR` |
+
+`MAX_ITEMS_PER_SOURCE` n'écarte rien : ce qui dépasse le plafond passe derrière
+toutes les autres sources et sera classé s'il reste du budget. C'est ce qui
+empêche une source qui publie tous les jours — les versions d'un outil, par
+exemple — d'avaler le budget d'une matinée où une règle de store a changé.
 
 Les items écartés par `MAX_ITEMS_PER_RUN` sont simplement recollectés le
 lendemain : le retard se résorbe seul.
