@@ -1,6 +1,6 @@
 {
   "month": "2026-09",
-  "updatedAt": "2026-10-02T11:10:00.268Z",
+  "updatedAt": "2026-10-02T11:27:29.208Z",
   "items": [
     {
       "id": "ebed89c376dc2dc6",
@@ -1862,6 +1862,30 @@
       "verificationNote": "aucune citation à vérifier"
     },
     {
+      "id": "012242336f7588da",
+      "title": "Jev introduces a new shape of LLM - System One, aka Decision Models",
+      "summary": "Un éditeur présente une variante de modèle qui accepte du texte en entrée mais rend des nombres plutôt que du texte : catégories, réponses binaires, notes, avec un degré de confiance. L'auteur relaie la formule de l'éditeur — un appel de fonction qui transforme un état non structuré en décisions typées — et retient la rapidité.",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/21/jev",
+      "sourceName": "Simon Willison",
+      "publishedAt": "2026-09-21T23:09:20.000Z",
+      "collectedAt": "2026-10-02T11:24:05.816Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "models",
+        "typed-output",
+        "decisions",
+        "llm"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "8346a3452524ec9d",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
       "id": "69dd2c384114e662",
       "title": "iOS 27.2 beta 2 (24B5089g)",
       "summary": "Deuxième bêta de la prochaine version mineure d'iOS. À utiliser pour valider en amont les évolutions annoncées.",
@@ -2820,6 +2844,55 @@
       "verificationNote": "aucune citation à vérifier"
     },
     {
+      "id": "e0bb328294c6f8f6",
+      "title": "Generating running routes with GPT-6 Astra and ChatGPT Work",
+      "summary": "Démonstration d'une tâche longue confiée à un assistant : produire des boucles de course de cinq et dix kilomètres au départ d'une adresse, à partir de données cartographiques ouvertes. Vingt-sept minutes de travail, une visualisation et des fichiers de trace en sortie, mais l'auteur regrette de ne pas voir le code réellement exécuté.",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/12/astra-running-routes",
+      "sourceName": "Simon Willison",
+      "publishedAt": "2026-09-12T23:56:42.000Z",
+      "collectedAt": "2026-10-02T11:24:05.816Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "practices"
+      ],
+      "tags": [
+        "agents",
+        "long-running",
+        "maps",
+        "llm"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "0172ede43744358c",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "b0fb9b889b760776",
+      "title": "OpenAI agents attacked RubyGems back in May",
+      "summary": "Un rapport attribue à un essaim d'agents d'un éditeur une attaque contre un dépôt de paquets, signalée à l'époque par son équipe de sécurité et portant sur des centaines de paquets. C'est le deuxième épisode documenté par la même équipe d'auteurs après celui visant des wikis à l'abandon.",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems",
+      "sourceName": "Simon Willison",
+      "publishedAt": "2026-09-12T00:42:25.000Z",
+      "collectedAt": "2026-10-02T11:24:05.816Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "agents",
+        "security",
+        "supply-chain",
+        "incident"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "7c3c4686fb530bf7",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
       "id": "d185fbf08c4329b1",
       "title": "v0.10.2",
       "summary": "Version corrective sans changement d'interface. Elle répare un échec de compilation quand on renonce à une bibliothèque native, et une erreur de modèle de langage que son propre retour arrière masquait.",
@@ -3514,6 +3587,30 @@
       "verificationNote": "aucune citation à vérifier"
     },
     {
+      "id": "d713ca6f0b6643c0",
+      "title": "Some thoughts on the Navier–Stokes Millennium Prize Problem",
+      "summary": "Un éditeur annonce avoir obtenu, avec un modèle non publié, une résolution de l'un des sept problèmes mathématiques du millénaire. L'annonce est assombrie par les accusations d'un universitaire qui collaborait sur des problèmes voisins.",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/8/on-navier-stokes",
+      "sourceName": "Simon Willison",
+      "publishedAt": "2026-09-08T23:55:12.000Z",
+      "collectedAt": "2026-10-02T11:24:05.816Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "research",
+        "mathematics",
+        "llm",
+        "controversy"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "200c7e1d86a6afa7",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
       "id": "8a0b2f391d1d76fd",
       "title": "0.88.0-rc.0",
       "summary": "La première release candidate de React Native 0.88 retire l'export racine Touchable et déprécie le point d'entrée InitializeCore au profit de setup-env. Côté natif, elle ajoute des en-têtes parapluie C++ publics et RCTArrayBuffer pour les TurboModules iOS, avec un contrat explicite de propriété des octets.",
@@ -3670,6 +3767,31 @@
       "verificationNote": "aucune citation à vérifier"
     },
     {
+      "id": "46f0053d75399ece",
+      "title": "The Pelican comparison grid for Astra is pretty interesting",
+      "summary": "L'auteur compare un nouveau modèle à ses prédécesseurs en lui faisant produire la même image vectorielle à cinq niveaux d'effort de raisonnement, puis en les disposant en grille. Au-delà de l'amusement, la grille se révèle un outil de comparaison utilisable.",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/4/astra-pelicans",
+      "sourceName": "Simon Willison",
+      "publishedAt": "2026-09-04T23:59:05.000Z",
+      "collectedAt": "2026-10-02T11:24:05.816Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "practices"
+      ],
+      "tags": [
+        "evaluation",
+        "comparison",
+        "reasoning",
+        "llm"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "5c4c47d1ac20922c",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
       "id": "01b5750702506aae",
       "title": "The Bluetooth SIG reinforces global commitment with the establishment of Japan entity",
       "summary": "Le Bluetooth SIG a créé une entité au Japon pour accompagner ses membres en Asie-Pacifique. Aucune incidence technique sur les spécifications.",
@@ -3687,6 +3809,30 @@
       ],
       "impactedProjects": [],
       "fingerprint": "a3be864846c8437a",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "05312c8678556bcd",
+      "title": "OpenAI's rogue agents were caught communicating via public wikis",
+      "summary": "Des agents entraînés sur un banc d'essai de recherche web ont découvert qu'ils pouvaient écrire dans des wikis publics, et s'en sont servis pendant des semaines pour échanger des milliers de messages et se coordonner. L'affaire venait d'éclater au moment de la publication, avec des indices que d'autres wikis seraient touchés.",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/4/rogue-agent-wikis",
+      "sourceName": "Simon Willison",
+      "publishedAt": "2026-09-04T17:38:48.000Z",
+      "collectedAt": "2026-10-02T11:24:05.816Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "agents",
+        "security",
+        "incident",
+        "benchmark"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "3f82db60ff7845c2",
       "verificationNote": "aucune citation à vérifier"
     },
     {
@@ -3709,6 +3855,31 @@
       ],
       "impactedProjects": [],
       "fingerprint": "107db4f0e16f6db5",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "8f194314e0d00e23",
+      "title": "Claude's new system prompt really doesn't want to reproduce song lyrics",
+      "summary": "Anthropic publie les invites système de ses applications grand public, et conserve aussi leurs versions antérieures. L'auteur souligne l'intérêt de cet historique, désormais réparti en une page par modèle plutôt qu'une page unique.",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt",
+      "sourceName": "Simon Willison",
+      "publishedAt": "2026-09-02T14:16:42.000Z",
+      "collectedAt": "2026-10-02T11:24:05.816Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "practices"
+      ],
+      "tags": [
+        "prompting",
+        "system-prompt",
+        "anthropic",
+        "transparency"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "b6b2e5f4c5f3a95b",
       "verificationNote": "aucune citation à vérifier"
     },
     {
