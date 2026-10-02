@@ -425,14 +425,26 @@ feeds:
     official: true
     maxAgeDays: 30
 
-  - name: Gemini Blog
-    url: https://blog.google/products/gemini/rss/
+  # blog.google/products/gemini/rss/ a été essayé puis retiré le jour même : sur
+  # quatorze entrées collectées, dix étaient grand public — des listes d'astuces
+  # ménagères et des portraits d'utilisateurs, titre sans corps. Le blog
+  # développeurs dit ce qui est appelable, et les sorties de modèles arrivent de
+  # toute façon par les notes de version de l'API.
+  # À l'essai : le blog mêle l'IA appelable et l'infrastructure Google Cloud.
+  # Sur les vingt premières entrées collectées, la moitié parlait de TPU, de
+  # Kubernetes ou de Gemini Enterprise. À retirer si la proportion tient.
+  - name: Google Developers Blog
+    url: https://developers.googleblog.com/feed/
     type: rss
-    domain: blog.google
+    domain: developers.googleblog.com
     categories: [ai, ai-models]
     official: true
     maxAgeDays: 21
 
+  # code.visualstudio.com/feed.xml a été essayé puis retiré le jour même : ses
+  # entrées n'ont pas de corps, seulement « Learn what is new in … » renvoyant à
+  # l'article. Rien à résumer, donc rien à publier. Le changelog ci-dessous
+  # couvre les mêmes versions de l'éditeur, avec leur contenu.
   - name: GitHub Copilot Changelog
     url: https://github.blog/changelog/label/copilot/feed/
     type: rss
@@ -440,15 +452,6 @@ feeds:
     categories: [ai, ai-models, tooling]
     official: true
     maxAgeDays: 30
-
-  # L'éditeur où arrivent la plupart des fonctions Copilot, au rythme mensuel.
-  - name: Visual Studio Code Releases
-    url: https://code.visualstudio.com/feed.xml
-    type: rss
-    domain: code.visualstudio.com
-    categories: [ai, ai-models, tooling]
-    official: true
-    maxAgeDays: 60
 
   - name: Mistral News
     url: https://mistral.ai/news
