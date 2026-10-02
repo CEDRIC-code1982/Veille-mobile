@@ -1,6 +1,6 @@
 {
   "month": "2026-09",
-  "updatedAt": "2026-10-01T14:24:53.340Z",
+  "updatedAt": "2026-10-02T11:10:00.268Z",
   "items": [
     {
       "id": "ebed89c376dc2dc6",
@@ -23,6 +23,31 @@
       ],
       "impactedProjects": [],
       "fingerprint": "e1a69f4860a96a2a",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "80da4486dbf0594b",
+      "title": "v2.1.286",
+      "summary": "Version surtout corrective : plusieurs processus ouvraient chacun un navigateur de connexion à l'expiration des identifiants infonuagiques, et une reprise de session pouvait perdre tous les tours après une salve d'appels d'outils parallèles. Elle corrige aussi des erreurs d'API déclenchées par un outil renvoyant autre chose que du texte.",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.286",
+      "sourceName": "Claude Code Releases",
+      "publishedAt": "2026-09-30T19:10:13.000Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [
+        "claude-code",
+        "fixes",
+        "sessions",
+        "auth"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "98cb8ae41d5311b9",
       "verificationNote": "aucune citation à vérifier"
     },
     {
@@ -108,6 +133,31 @@
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
+      "id": "cad13c49eff0df4a",
+      "title": "HydraFusion in VS Code and the GitHub Copilot app",
+      "summary": "Le sélecteur de modèles de Copilot accueille une entrée qui n'est pas un modèle mais un orchestrateur : il choisit le mode d'exécution à partir de signaux de capacité en raisonnement, génération, débogage et usage des outils. Trois schémas sont possibles — un seul modèle, une cascade avec portillon de qualité, ou une critique par un modèle d'une autre famille.",
+      "sourceUrl": "https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app",
+      "sourceName": "GitHub Copilot Changelog",
+      "publishedAt": "2026-09-30T14:31:19.000Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [
+        "copilot",
+        "orchestration",
+        "models",
+        "preview"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "bf030ea91f04392e",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
       "id": "140bf1c147121e40",
       "title": "This Week In React #299: Panda, Vinext, Next.js, Preact, Design Systems, RTK | Variable font, Activity Result, Lynx, Lucent, macOS, Plain Text, Navigation, Angular Native, Re.Pack | TC39, Composites, WebSkills, MSW, upm, pnpm",
       "summary": "La lettre hebdomadaire React revient sur deux sorties majeures de l'écosystème, Panda CSS 2.0 et Vinext 1, ainsi que sur Lynx 4 et Lucent, une nouvelle manière d'écrire des modules natifs. Côté mobile, React Native gagne la prise en charge des polices variables et de l'Activity Result Android, et la proposition Composites est passée en phase 2 lors de la réunion TC39 en cours.",
@@ -174,6 +224,56 @@
       ],
       "impactedProjects": [],
       "fingerprint": "2ab3c654325c86a0",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "ff1ca072bf39e471",
+      "title": "v2.1.285",
+      "summary": "Cette version ajoute de quoi restreindre l'outil de récupération web et limiter par réglage administré les fournisseurs d'API autorisés sur une machine. Elle permet aussi de configurer un greffon et les réglages de son serveur MCP dès l'installation.",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.285",
+      "sourceName": "Claude Code Releases",
+      "publishedAt": "2026-09-29T19:27:30.000Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [
+        "claude-code",
+        "settings",
+        "plugins",
+        "mcp"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "6e37e252a8bdfaba",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "27fa41ed5cc26a14",
+      "title": "GPT-6.1 Sol in GitHub Copilot",
+      "summary": "Un nouveau modèle de codage d'OpenAI devient disponible dans Copilot pour le travail agentique et le terminal. L'éditeur rapporte lors de ses essais un nombre d'étapes et de jetons sensiblement inférieur à celui des générations précédentes, la facturation suivant le tarif du fournisseur.",
+      "sourceUrl": "https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot",
+      "sourceName": "GitHub Copilot Changelog",
+      "publishedAt": "2026-09-29T17:02:27.000Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [
+        "copilot",
+        "openai",
+        "models",
+        "availability"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "a63fc69392053b9a",
       "verificationNote": "aucune citation à vérifier"
     },
     {
@@ -266,6 +366,30 @@
       "verificationNote": "aucune citation à vérifier"
     },
     {
+      "id": "0dc9ce3083b6cf68",
+      "title": "OpenAI DevDay 2026 live blog",
+      "summary": "Compte rendu en direct d'une conférence développeurs d'OpenAI, pris sur place pendant la présentation principale. L'auteur précise que son billet d'entrée lui a été offert par l'organisateur.",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog",
+      "sourceName": "Simon Willison",
+      "publishedAt": "2026-09-29T15:55:13.000Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "openai",
+        "devday",
+        "conference",
+        "llm"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "b813204b5ee65b75",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
       "id": "e1da41ea41831abe",
       "title": "The Communication Bottleneck: A Round-Trip Study of Tree-Structured Expression Serialization in Language Models",
       "summary": "Des chercheurs d'Apple mesurent ce qui subsiste d'une expression arithmétique arborescente lorsqu'un modèle la transforme en énoncé rédigé, puis qu'un second modèle tente de la reconstituer à partir de ce seul texte. Le protocole aller-retour, appliqué à toutes les paires de seize modèles, utilise l'équivalence symbolique comme oracle exact.",
@@ -352,6 +476,56 @@
       "impactedProjects": [],
       "fingerprint": "243c1d078a4bdff3",
       "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "469712811c22e040",
+      "title": "Claude Sonnet 5.5 in GitHub Copilot",
+      "summary": "Le dernier modèle Sonnet d'Anthropic devient disponible dans Copilot, destiné au travail quotidien bien cadré comme l'ajout de fonctionnalités et la correction de bogues. L'éditeur le décrit comme aussi bon que la version précédente sur le code, avec moins d'étapes, de jetons et d'appels d'outils.",
+      "sourceUrl": "https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot",
+      "sourceName": "GitHub Copilot Changelog",
+      "publishedAt": "2026-09-28T18:03:57.000Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [
+        "copilot",
+        "claude",
+        "sonnet",
+        "availability"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "58dcb14c24003dd5",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "cdf0d63217ad659b",
+      "title": "v2.1.284",
+      "summary": "Le modèle Sonnet par défaut passe à la nouvelle version, avec une fenêtre de contexte d'un million de jetons. La version ajoute aussi une réponse intermédiaire au mode automatique pour autoriser une lecture hors répertoire sans valider les suivantes, et affiche la dépense en euros face au plafond mensuel.",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.284",
+      "sourceName": "Claude Code Releases",
+      "publishedAt": "2026-09-28T18:02:03.000Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "impacting",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [
+        "claude-code",
+        "sonnet",
+        "auto-mode",
+        "usage"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "e28465912937dee8",
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "20f3d44e4ffceef0",
@@ -539,6 +713,30 @@
       "verificationNote": "aucune citation à vérifier"
     },
     {
+      "id": "a068c50324a9ff73",
+      "title": "2026 in LLMs (so far)",
+      "summary": "Rétrospective des tendances des modèles de langage sur l'année écoulée, présentée comme une traversée chronologique annotée. L'auteur situe le point de départ quelques mois plus tôt, quand deux sorties ont franchi un seuil de qualité au-delà de la simple amélioration incrémentale.",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far",
+      "sourceName": "Simon Willison",
+      "publishedAt": "2026-09-27T23:54:15.000Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "llm",
+        "retrospective",
+        "models",
+        "talk"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "1611521cdf02e9cd",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
       "id": "11192683e1d164e9",
       "title": "Android Studio Quail 4",
       "summary": "",
@@ -556,6 +754,81 @@
       "impactedProjects": [],
       "fingerprint": "3284e53c04f58e9d",
       "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "07dade88210664e3",
+      "title": "Enterprise managed settings in-product validator",
+      "summary": "Un validateur intégré vérifie les réglages d'entreprise de Copilot et signale le JSON mal formé, les configurations non prises en charge et les correspondances d'équipes invalides. Chaque anomalie indique le fichier et le chemin concernés.",
+      "sourceUrl": "https://github.blog/changelog/2026-09-25-enterprise-managed-settings-in-product-validator",
+      "sourceName": "GitHub Copilot Changelog",
+      "publishedAt": "2026-09-25T23:24:57.000Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [
+        "copilot",
+        "enterprise",
+        "settings",
+        "validation"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "1bb116456fdf387c",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "35ab415a8fa4d23e",
+      "title": "v2.1.283",
+      "summary": "Cette version renforce les réglages administrés : une correspondance exacte des modèles autorisés, qui bloque les nouvelles versions tant qu'elles ne sont pas listées, et une liste de modèles explicitement interdits. Elle ajoute un audit des fichiers d'instructions, compétences et commandes à la recherche de tournures écrites pour des modèles plus anciens.",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.283",
+      "sourceName": "Claude Code Releases",
+      "publishedAt": "2026-09-25T21:50:12.000Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [
+        "claude-code",
+        "managed-settings",
+        "audit",
+        "otel"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "96837baaf9f66756",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "0a10d0252c63a3f9",
+      "title": "Usage metrics API adds pull request review stages",
+      "summary": "Les rapports d'usage de Copilot détaillent désormais le temps passé par une demande de tirage à chaque étape de revue. Chaque entrée donne une médiane et un quantile à quatre-vingt-dix pour cent, de la mise en revue à la première relecture, puis jusqu'à la fusion.",
+      "sourceUrl": "https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages",
+      "sourceName": "GitHub Copilot Changelog",
+      "publishedAt": "2026-09-25T21:09:40.000Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [
+        "copilot",
+        "metrics",
+        "api",
+        "reviews"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "ed5fd17cecd834fb",
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "209d988374e74573",
@@ -583,6 +856,56 @@
       "verificationNote": "aucune citation à vérifier"
     },
     {
+      "id": "2653f5794fb9985f",
+      "title": "Agentic autofix now uses Copilot Memory",
+      "summary": "La correction automatique des alertes de sécurité s'appuie désormais sur la mémoire de l'assistant : elle consulte les souvenirs existants avant de proposer un correctif, puis enregistre le schéma retenu. Les autres fonctions de l'assistant peuvent ensuite réutiliser ces schémas propres au dépôt.",
+      "sourceUrl": "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory",
+      "sourceName": "GitHub Copilot Changelog",
+      "publishedAt": "2026-09-25T17:25:50.000Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [
+        "copilot",
+        "autofix",
+        "memory",
+        "security"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "7412d1fd7d1a3a37",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "48eaa8bbafaa8bc4",
+      "title": "GitHub Copilot weekly releases — September 21",
+      "summary": "Le récapitulatif hebdomadaire de Copilot ajoute plusieurs modèles de fournisseurs différents selon les formules d'abonnement. Il introduit aussi un bac à sable local limitant l'accès des agents aux fichiers, au réseau et aux secrets, et le suivi de leur activité par télémétrie ouverte.",
+      "sourceUrl": "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21",
+      "sourceName": "GitHub Copilot Changelog",
+      "publishedAt": "2026-09-25T16:42:48.000Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [
+        "copilot",
+        "models",
+        "sandbox",
+        "telemetry"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "c3fc45a12f100d49",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
       "id": "8caa9461fd2a06d8",
       "title": "TestFlight 4.4.0",
       "summary": "TestFlight 4.4.0 est publié. L'annonce renvoie au téléchargement de l'application et à ses notes de version sans en détailler le contenu.",
@@ -603,6 +926,31 @@
       ],
       "impactedProjects": [],
       "fingerprint": "4a5fca6762eedad5",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "0b14b0c43ad6eee5",
+      "title": "v2.1.282",
+      "summary": "Cette version plafonne la largeur du texte dans les terminaux larges en laissant tableaux et blocs de code pleine largeur. Elle signale au démarrage les variables de télémétrie ignorées ou désactivantes présentes dans les réglages d'un projet.",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.282",
+      "sourceName": "Claude Code Releases",
+      "publishedAt": "2026-09-24T18:38:05.000Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [
+        "claude-code",
+        "settings",
+        "telemetry",
+        "fixes"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "ccf50a0b366ef03b",
       "verificationNote": "aucune citation à vérifier"
     },
     {
@@ -1248,6 +1596,31 @@
       "verificationNote": "aucune citation à vérifier"
     },
     {
+      "id": "6eff16a1336643fb",
+      "title": "v2.1.281",
+      "summary": "Version centrée sur la passerelle d'entreprise : endossement de rôle pour appeler un fournisseur infonuagique, application d'un garde-fou à chaque requête, et étiquettes fixes sur la télémétrie. Elle ajoute aussi un réglage pour masquer toute mention d'attribution dans les commits et les demandes de tirage.",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.281",
+      "sourceName": "Claude Code Releases",
+      "publishedAt": "2026-09-23T19:19:15.000Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [
+        "claude-code",
+        "gateway",
+        "bedrock",
+        "telemetry"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "8e7624d1a63b9c35",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
       "id": "4a4e1c2b08df4ef9",
       "title": "App Store Connect 3.3",
       "summary": "App Store Connect 3.3 est disponible. L'annonce pointe vers le téléchargement de l'application et ses notes de version, sans en préciser le contenu.",
@@ -1315,6 +1688,30 @@
       "verificationNote": "aucune citation à vérifier"
     },
     {
+      "id": "5b206843ef211175",
+      "title": "Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war",
+      "summary": "Plusieurs modèles de tête sont sortis à quelques heures d'intervalle chez des éditeurs concurrents, et l'auteur compare ses premières impressions. Le point saillant est tarifaire : les nouvelles générations arrivent à la moitié du prix de celles qu'elles remplacent, ce qui redessine la grille des coûts.",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna",
+      "sourceName": "Simon Willison",
+      "publishedAt": "2026-09-22T23:46:41.000Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "impacting",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "pricing",
+        "models",
+        "comparison",
+        "llm"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "67ebfeac0aceeb82",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
       "id": "2ddfe7300da48d4c",
       "title": "App Store Connect API 4.5",
       "summary": "Nouvelle version de l'API App Store Connect. Concerne l'automatisation des livraisons et la publication.",
@@ -1356,6 +1753,31 @@
       ],
       "impactedProjects": [],
       "fingerprint": "27b88a1b0bb2cf4b",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "23966244d47d35ba",
+      "title": "v2.1.280",
+      "summary": "Le modèle Opus par défaut passe à la nouvelle version, avec une fenêtre de contexte d'un million de jetons. Correction notable : une écriture passant par un lien symbolique était jugée sur son chemin apparent, si bien que les règles d'autorisation pouvaient approuver une écriture atterrissant hors de l'arborescence.",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.280",
+      "sourceName": "Claude Code Releases",
+      "publishedAt": "2026-09-22T16:38:14.000Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "impacting",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [
+        "claude-code",
+        "opus",
+        "symlinks",
+        "security"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "c6abc5778663e327",
       "verificationNote": "aucune citation à vérifier"
     },
     {
@@ -1528,6 +1950,31 @@
       "verificationNote": "aucune citation à vérifier"
     },
     {
+      "id": "369721da4af03abe",
+      "title": "v2.1.278",
+      "summary": "Le classifieur du mode automatique bascule par défaut côté serveur pour les comptes API et entreprise ainsi que sur les passerelles, ce qui supprime la facturation de son surcoût. Une ligne de statut indique désormais où ce classifieur s'exécute pour la session en cours.",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.278",
+      "sourceName": "Claude Code Releases",
+      "publishedAt": "2026-09-19T03:10:40.000Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "impacting",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [
+        "claude-code",
+        "auto-mode",
+        "billing",
+        "classifier"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "df5cc2492dde6471",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
       "id": "ada60c53d1953868",
       "title": "TestFlight Update",
       "summary": "Mise à jour de TestFlight. L'extrait renvoie aux notes de version sans en détailler le contenu.",
@@ -1546,6 +1993,31 @@
       ],
       "impactedProjects": [],
       "fingerprint": "92d393cc1d64773b",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "01cd6a498d377caf",
+      "title": "v2.1.277",
+      "summary": "Dans un projet dépourvu de fichier d'instructions propre à l'outil, celui-ci lit désormais le fichier d'instructions générique partagé avec les autres agents. La version corrige aussi des sessions non interactives qui pouvaient rester sans réponse après une erreur interne.",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.277",
+      "sourceName": "Claude Code Releases",
+      "publishedAt": "2026-09-18T18:06:32.000Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "impacting",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [
+        "claude-code",
+        "agents-md",
+        "sdk",
+        "fixes"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "c5e1804b137dddef",
       "verificationNote": "aucune citation à vérifier"
     },
     {

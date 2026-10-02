@@ -1,45 +1,979 @@
 {
   "month": "2026-10",
-  "updatedAt": "2026-10-01T18:25:44.521Z",
+  "updatedAt": "2026-10-02T11:10:00.268Z",
   "items": [
     {
-      "id": "8d831725ed94ee4f",
-      "title": "Behavior changes: all apps — 17",
-      "summary": "",
-      "sourceUrl": "https://developer.android.com/about/versions/17/behavior-changes-all",
-      "sourceName": "Android Behavior Changes",
-      "publishedAt": "2026-10-01T18:25:40.935Z",
-      "collectedAt": "2026-10-01T18:25:40.935Z",
+      "id": "0a71793e091b433f",
+      "title": "Engineering \\ Anthropic",
+      "summary": "L'index du blog d'ingénierie d'Anthropic liste les publications sur la construction de systèmes agentiques fiables : confinement des agents, conception de harnais pour les tâches longues, évaluations, usage avancé des outils. C'est la source des pratiques, par opposition aux annonces produit.",
+      "sourceUrl": "https://www.anthropic.com/engineering",
+      "sourceName": "Anthropic Engineering",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
       "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "anthropic",
+        "agents",
+        "evaluation",
+        "practices"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "c35d308accc49590",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "119fa221f1027941",
+      "title": "iPhone",
+      "summary": "La page commerciale de la gamme iPhone met en avant les modèles actuellement vendus et la location avec option de renouvellement. Elle détaille surtout le parcours de migration depuis Android via l'application Move to iOS.",
+      "sourceUrl": "https://www.apple.com/iphone",
+      "sourceName": "Apple iPhone Lineup",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ios",
+        "hardware"
+      ],
+      "tags": [
+        "iphone",
+        "lineup",
+        "migration",
+        "apple"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "f5a0713bcfd8cdb1",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "12a0c84c47505177",
+      "title": "Behavior changes: all apps — 16",
+      "summary": "La page des changements de comportement d'Android 16 décrit ce qui s'applique à toutes les applications, quelle que soit la version visée. Le quota d'exécution des tâches planifiées y est ajusté selon le panier de veille de l'application et selon qu'elle est visible au moment où la tâche démarre.",
+      "sourceUrl": "https://developer.android.com/about/versions/16/behavior-changes-all",
+      "sourceName": "Android Behavior Changes",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "impacting",
       "trustLevel": "reported",
       "categories": [
         "android",
         "os-release",
         "background"
       ],
-      "tags": [],
+      "tags": [
+        "android-16",
+        "jobscheduler",
+        "quotas",
+        "background"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "7cfbad5e75a5be6c",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "1ad5cc735c1c0c05",
+      "title": "Colab is now part of your Google AI plan",
+      "summary": "Le carnet de notes infonuagique de Google est rattaché à l'abonnement IA de l'éditeur. Les abonnés y gagnent un accès prioritaire aux accélérateurs, des processeurs graphiques haut de gamme et l'exécution en arrière-plan pour les entraînements longs.",
+      "sourceUrl": "https://developers.googleblog.com/colab-is-now-part-of-your-google-ai-plan",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "colab",
+        "gpu",
+        "google",
+        "subscription"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "eca81c25a625de13",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "32c01cdc527505e4",
+      "title": "Features and APIs — 17",
+      "summary": "La page récapitule les nouveautés et les interfaces offertes aux développeurs par Android 17. Elle cite notamment de nouveaux déclencheurs de profilage, dont un qui se déclenche au démarrage à froid de l'application.",
+      "sourceUrl": "https://developer.android.com/about/versions/17/features",
+      "sourceName": "Android Platform Features",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "os-release"
+      ],
+      "tags": [
+        "android-17",
+        "profiling",
+        "apis",
+        "performance"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "293018cdf84e824c",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "3449057ace7edd0d",
+      "title": "The Anatomy of Harness Engineering: How to Evaluate, Iterate, and Guard AI Coding Agents",
+      "summary": "Les bancs d'essai de bout en bout notent un agent sans dire où sa logique a dérapé, et coûtent cher en temps comme en argent. L'article plaide pour des évaluations comportementales légères, écrites comme des tests unitaires qui vérifient un appel d'outil ou une modification de fichier précise, afin d'itérer sur les invites sans craindre les régressions.",
+      "sourceUrl": "https://developers.googleblog.com/the-anatomy-of-harness-engineering-how-to-evaluate-iterate-and-guard-ai-coding-agents",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "agents",
+        "evaluation",
+        "testing",
+        "practices"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "d6edcbb99d076304",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "4a49b40709d3cccf",
+      "title": "HeyGen x Google Cloud: Bringing Avatar IV to TPUs",
+      "summary": "Retour d'expérience sur le portage d'un modèle de génération vidéo de dix-huit milliards de paramètres vers les accélérateurs de Google, avec parallélisme réparti sur une grappe de huit puces. Les optimisations de noyaux décrites n'ont été déployées qu'après des contrôles garantissant des sorties identiques ou mathématiquement équivalentes.",
+      "sourceUrl": "https://developers.googleblog.com/heygen-x-google-cloud-bringing-avatar-iv-to-tpus",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "tpu",
+        "inference",
+        "video",
+        "optimisation"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "174450d0cc4f3c3e",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "6823e5d486679a2b",
+      "title": "Changelog",
+      "summary": "Le changelog de la plateforme OpenAI annonce l'arrivée du contrôle d'ordinateur dans l'API Agents, où l'agent agit dans un navigateur hébergé avec validation des accès par l'application. Il annonce aussi un nouveau modèle de codage moins cher que le précédent haut de gamme, avec délégation à des sous-agents en bêta et un mode de génération accélérée.",
+      "sourceUrl": "https://platform.openai.com/docs/changelog",
+      "sourceName": "OpenAI Platform Changelog",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "openai",
+        "agents",
+        "computer-use",
+        "models"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "e2c5a4f6be3404f5",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "6ccb5002c63497dd",
+      "title": "Decoding cosmic signals with deep learning and Keras",
+      "summary": "Billet d'introduction à l'usage de l'apprentissage profond en physique des astroparticules, à l'intersection de l'astrophysique et de la physique des particules. L'extrait disponible est tronqué avant tout élément technique.",
+      "sourceUrl": "https://developers.googleblog.com/decoding-cosmic-signals-with-deep-learning-and-keras",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "research",
+        "keras",
+        "physics",
+        "deep-learning"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "4ad3c7a82e7e2e07",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "74ce40e660913bb3",
+      "title": "4 engineering patterns behind the strongest AI Agents Challenge submissions",
+      "summary": "Le retour d'expérience d'un concours d'agents conclut que les meilleures architectures reposent sur des schémas d'ingénierie classiques plutôt que sur la puissance brute du modèle. Sont cités la communication inter-agents par protocole ouvert, un bus d'événements asynchrone, une validation unifiée des replis et un routage par paliers pour éviter les appels coûteux.",
+      "sourceUrl": "https://developers.googleblog.com/4-engineering-patterns-behind-the-strongest-ai-agents-challenge-submissions",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "agents",
+        "mcp",
+        "architecture",
+        "practices"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "463e658c9e1b87ce",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "74ed7984251f41e1",
+      "title": "Enterprise-Grade Precision for Long-Context Multimodal Embedding Inference on Cloud TPU",
+      "summary": "Le moteur de service vLLM intègre nativement les accélérateurs de Google, ce qui permet d'étendre élastiquement des chaînes de vectorisation sur un orchestrateur de conteneurs. Les optimisations décrites visent les contextes très longs et atteignent une parité numérique quasi parfaite avec la référence sur processeurs graphiques.",
+      "sourceUrl": "https://developers.googleblog.com/enterprise-grade-precision-for-long-context-multimodal-embedding-inference-on-cloud-tpu",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "tpu",
+        "embeddings",
+        "vllm",
+        "serving"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "256195223de5523d",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "7a1ca9590f483591",
+      "title": "Driving Developer Excellence: Inside the Program Sprints",
+      "summary": "Un programme interne teste de bout en bout les parcours développeurs d'une offre IA d'entreprise, sans recourir aux raccourcis réservés aux équipes maison. Cette itération portait sur la gouvernance : prérequis d'installation, sécurisation des extensions et clarification de l'application des règles.",
+      "sourceUrl": "https://developers.googleblog.com/driving-developer-excellence-inside-the-program-sprints",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "governance",
+        "devex",
+        "enterprise",
+        "google"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "713f6acd19cca8e8",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "815b823e92d97f43",
+      "title": "Claude Platform release notes",
+      "summary": "Les notes de version annoncent la dépréciation de Claude Sonnet 4.5 avec une date de retrait de l'API, et recommandent de migrer vers Sonnet 5.5. Elles signalent aussi que du code écrit pour Sonnet 5 peut casser sur Sonnet 5.5, notamment sur la désactivation de la réflexion préalable et sur l'usage forcé des outils.",
+      "sourceUrl": "https://docs.claude.com/en/release-notes/overview",
+      "sourceName": "Claude Platform Release Notes",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "blocking",
+      "trustLevel": "verified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "claude",
+        "deprecation",
+        "sonnet",
+        "migration"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "70185991fa2de107",
+      "evidenceQuote": "We announced the deprecation of the Claude Sonnet 4.5 model ( claude-sonnet-4-5-20250929 ), with retirement on the Claude API scheduled for November 30, 2026.",
+      "deadline": "2026-11-30"
+    },
+    {
+      "id": "8c649bf7595e6ac2",
+      "title": "Build zero-trust AI agents that judge intent, not just syntax",
+      "summary": "L'article décrit le passage de contrôles de sécurité figés à la compilation vers une gouvernance appliquée à l'exécution. Trois défenses gérées par la plateforme sont présentées : filtrage des invites, évaluation de l'intention d'un appel d'outil face aux règles métier, et détection d'anomalies sur plusieurs tours.",
+      "sourceUrl": "https://developers.googleblog.com/build-zero-trust-ai-agents-that-judge-intent-not-just-syntax",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "agents",
+        "security",
+        "governance",
+        "runtime"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "7eacc01453c31be7",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "8d831725ed94ee4f",
+      "title": "Behavior changes: all apps — 17",
+      "summary": "Android 17 introduit une limite de mémoire par application, calculée d'après la quantité totale de mémoire de l'appareil, pour contenir les fuites avant qu'elles ne déstabilisent le système. La page annonce un effet minime sur la grande majorité des sessions, et s'applique à toutes les applications indépendamment de la version visée.",
+      "sourceUrl": "https://developer.android.com/about/versions/17/behavior-changes-all",
+      "sourceName": "Android Behavior Changes",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "os-release",
+        "background"
+      ],
+      "tags": [
+        "android-17",
+        "memory",
+        "limits",
+        "behavior"
+      ],
       "impactedProjects": [],
       "fingerprint": "bfad1a93734fa325",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "908ce91a0f7c999e",
+      "title": "Features and APIs — 16",
+      "summary": "La page récapitule les nouveautés et les interfaces offertes aux développeurs par Android 16, et renvoie au rapport de différences d'API pour le détail. Elle rappelle de passer en revue les changements de comportement, ceux liés à la version visée comme ceux qui s'appliquent à tous.",
+      "sourceUrl": "https://developer.android.com/about/versions/16/features",
+      "sourceName": "Android Platform Features",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "os-release"
+      ],
+      "tags": [
+        "android-16",
+        "apis",
+        "features",
+        "platform"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "6b81100d7eb8c907",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "93ef07b7ceec70a8",
+      "title": "Agent Anomaly Detection, now in Private Preview on the Gemini Enterprise Agent Platform",
+      "summary": "Une couche de surveillance hors bande analyse les traces et les appels d'outils d'un agent sans ajouter de latence aux requêtes en cours. Elle combine un balayage statistique léger et un raisonnement par modèle pour repérer anomalies logiques et violations de règles, avec possibilité de bloquer les appels suivants par programme.",
+      "sourceUrl": "https://developers.googleblog.com/agent-anomaly-detection-now-in-private-preview-on-the-gemini-enterprise-agent-platform",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "agents",
+        "security",
+        "telemetry",
+        "detection"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "1a79aec006e19e4a",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "9db05248f6011526",
+      "title": "Why client SDK generation belongs in the open",
+      "summary": "Google ouvre le code de sa suite de génération de bibliothèques clientes à partir de spécifications, après l'arrêt brutal de son fournisseur propriétaire. Les générateurs produisent du code typé pour plusieurs langages et savent aussi fabriquer des interfaces en ligne de commande et des serveurs de documentation pour agents.",
+      "sourceUrl": "https://developers.googleblog.com/why-client-sdk-generation-belongs-in-the-open",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [
+        "openapi",
+        "sdk",
+        "open-source",
+        "generation"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "9fd1ec74d0be13ef",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "a9be3d47ebcfa241",
+      "title": "Model deprecations",
+      "summary": "La page des dépréciations de Claude décrit le cycle de vie d'un modèle, d'actif à retiré, et précise qu'un appel à un modèle retiré échoue. Les dates annoncées ne valent que pour les plateformes opérées par Anthropic : Bedrock et Google Cloud suivent leurs propres calendriers.",
+      "sourceUrl": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "sourceName": "Claude Model Deprecations",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "claude",
+        "deprecation",
+        "lifecycle",
+        "api"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "fa436662a5446487",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "aa917c63a914b6e8",
+      "title": "Why Go is an Ideal Language for AI-Assisted Software Engineering",
+      "summary": "L'article défend l'idée que le choix du langage compte davantage quand le développeur passe de l'écriture à la relecture de code généré. Un compilateur strict, une chaîne d'outils intégrée et une compatibilité ascendante tenue fournissent les garde-fous déterministes qui permettent au modèle de se corriger.",
+      "sourceUrl": "https://developers.googleblog.com/why-go-is-an-ideal-language-for-ai-assisted-software-engineering",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "practices",
+        "ai-assisted",
+        "review",
+        "tooling"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "616e9494a9676b51",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "b061af837196aa31",
+      "title": "Introducing Credentio: Open Source C++ Library for C2PA Content Credentials from Google",
+      "summary": "Une bibliothèque C++ ouverte permet de valider localement les preuves d'origine d'un média, sans appel distant. Le traitement entièrement local donne un verdict immédiat sur des fichiers de plusieurs gigaoctets, sans coût de bande passante ni exposition des données.",
+      "sourceUrl": "https://developers.googleblog.com/introducing-credentio-open-source-c-library-for-c2pa-content-credentials-from-google",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "c2pa",
+        "provenance",
+        "open-source",
+        "media"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "4ac8411313d2e92f",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "b1a8c8fad3ddc8e5",
+      "title": "Latest updates from Mistral.",
+      "summary": "La page d'actualités de Mistral est dominée par les annonces d'entreprise : levée de fonds, ouverture d'un site en Allemagne, partenariats avec un navigateur et un éditeur de plateforme de données. L'angle revendiqué est celui d'une IA souveraine à poids ouverts.",
+      "sourceUrl": "https://mistral.ai/news",
+      "sourceName": "Mistral News",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "mistral",
+        "funding",
+        "open-weight",
+        "europe"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "c7c92b60c1f6cfe0",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "b6bf431d3c27ae9a",
+      "title": "Build zero-trust AI agents with Google's Agent Development Kit",
+      "summary": "Sécuriser un agent qui modifie des données de production demande des frontières dures plutôt que des consignes dans l'invite. L'article recommande signatures cryptographiques pour les écritures, bac à sable au niveau du noyau pour le code dynamique et passerelle de validation des entrées et sorties.",
+      "sourceUrl": "https://developers.googleblog.com/build-zero-trust-ai-agents-with-googles-agent-development-kit",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "agents",
+        "security",
+        "sandbox",
+        "practices"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "3eeb1e69f1139a18",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "bace0acf9c0b451a",
+      "title": "Newsroom",
+      "summary": "La salle de presse d'Anthropic récapitule les annonces récentes de modèles, dont deux nouvelles versions présentées comme plus rapides et moins coûteuses que celles qu'elles remplacent. Elle mêle annonces produit et publications sur la détection des usages malveillants.",
+      "sourceUrl": "https://www.anthropic.com/news",
+      "sourceName": "Anthropic News",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "impacting",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "anthropic",
+        "claude",
+        "models",
+        "releases"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "816b3251b4985817",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "c4232643b9d4c4f4",
+      "title": "How to Evaluate Live & Voice Agents in ADK",
+      "summary": "Faire passer un agent vocal de la démonstration à la production demande des essais automatisés capables d'absorber l'imprévu d'une vraie conversation. La trousse de développement d'agents évalue désormais les flux conversationnels face à des utilisateurs simulés générant de l'audio, avec notation par grilles en langage naturel et exécution possible en intégration continue.",
+      "sourceUrl": "https://developers.googleblog.com/how-to-evaluate-live-voice-agents-in-adk",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "agents",
+        "evaluation",
+        "voice",
+        "adk"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "30627edcca6cd42f",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "c6e24d86fd68b267",
+      "title": "Introducing Support for Local AI Models in the Antigravity SDK",
+      "summary": "La trousse de développement d'agents de Google accepte désormais des modèles exécutés localement, ce qui ouvre une orchestration hybride : un modèle distant planifie, un modèle local traite les tâches gourmandes en jetons sans sortir les données. Elle accepte aussi les serveurs d'inférence compatibles avec l'interface d'OpenAI.",
+      "sourceUrl": "https://developers.googleblog.com/introducing-support-for-local-ai-models-in-the-antigravity-sdk",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "local-models",
+        "agents",
+        "hybrid",
+        "privacy"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "12290660de8e46d0",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "cb70cb599efaae03",
+      "title": "Meet Google Play's target API level requirement",
+      "summary": "Le niveau d'API minimal exigé par Google Play a changé : une nouvelle application ou une mise à jour doit viser Android 16 pour être déposée, les montres et l'automobile restant un cran en dessous. Une application qui vise plus bas ne reste accessible qu'aux appareils dont la version est inférieure ou égale à sa cible.",
+      "sourceUrl": "https://developer.android.com/google/play/requirements/target-sdk",
+      "sourceName": "Android Target API Level Requirements",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "blocking",
+      "trustLevel": "verified",
+      "categories": [
+        "android",
+        "policy",
+        "background"
+      ],
+      "tags": [
+        "play",
+        "target-sdk",
+        "android-16",
+        "store"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "3a2a56742f0b7756",
+      "evidenceQuote": "New apps and app updates must target Android 16 (API level 36) or higher to be submitted to Google Play",
+      "deadline": "2026-08-31"
+    },
+    {
+      "id": "cea8f33fc210d7c8",
+      "title": "Accelerating Spatio-Temporal Attention for Video Diffusion on TPUs",
+      "summary": "L'attention des modèles de diffusion vidéo coûte quadratiquement en latence quand la résolution monte. Les auteurs routent dynamiquement les têtes d'attention vers des masques creux structurés, puis alignent ces masques sur le découpage réel du matériel pour que la rareté algorithmique se traduise en gain effectif.",
+      "sourceUrl": "https://developers.googleblog.com/accelerating-spatio-temporal-attention-for-video-diffusion-on-tpus",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "tpu",
+        "attention",
+        "video",
+        "inference"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "de3627b0fc65cdd2",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "d399a25d955d4231",
+      "title": "Release notes",
+      "summary": "Les notes de version de l'API Gemini annoncent le passage en disponibilité générale de deux modèles de synthèse vocale et d'un point d'entrée dédié aux voix. S'y ajoutent la création de voix persistantes par description, la réplication de voix avec vérification du consentement et une bibliothèque de voix étendue.",
+      "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
+      "sourceName": "Gemini API Release Notes",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "gemini",
+        "tts",
+        "api",
+        "voices"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "091f774f4a913992",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "d632c81a18065b3a",
+      "title": "Autonomous LLM post-training with Tunix on TPUs",
+      "summary": "Un projet automatise entièrement le post-entraînement d'un modèle de langage, du réglage supervisé à l'apprentissage par renforcement. À partir d'une spécification unique décrivant bornes et métriques, un agent modifie les scripts, lance les expériences et verse au dépôt les réglages validés.",
+      "sourceUrl": "https://developers.googleblog.com/autonomous-llm-post-training-with-tunix-on-tpus",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "fine-tuning",
+        "automation",
+        "agents",
+        "training"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "bdce79bd5971dd89",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "e7b85f9f481661b7",
+      "title": "Announcing ADK for Kotlin 1.0: Building Production-Ready AI Agents in Kotlin, Android, and Beyond",
+      "summary": "La trousse de développement d'agents de Google sort en version 1.0 pour Kotlin, à parité avec ses déclinaisons Python et Java, avec appel de fonctions typé sans réflexion. Elle apporte des extensions pensées pour Android : modèles locaux, raisonnement distant, persistance des sessions et mémoire sémantique.",
+      "sourceUrl": "https://developers.googleblog.com/announcing-adk-for-kotlin-10-building-production-ready-ai-agents-in-kotlin-android-and-beyond",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "impacting",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "android"
+      ],
+      "tags": [
+        "adk",
+        "kotlin",
+        "android",
+        "agents"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "7919d448e14e1f6d",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "ec3cda622f474943",
+      "title": "Reproducing Olmo 3 7B Pre-training in MaxText: case study of large scale training on TPUs",
+      "summary": "Une équipe a reproduit de zéro un modèle ouvert de sept milliards de paramètres sur une autre pile matérielle, en retrouvant les résultats de la référence sur toutes les évaluations réservées. L'exercice a surtout révélé un défaut silencieux de mémorisation dans le chargeur de données, qui abaissait artificiellement la perte et aurait simulé un gain.",
+      "sourceUrl": "https://developers.googleblog.com/reproducing-olmo-3-7b-pre-training-in-maxtext-case-study-of-large-scale-training-on-tpus",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "training",
+        "reproduction",
+        "validation",
+        "research"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "be29066b03f396aa",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "f67921b9de44ef35",
+      "title": "Turn your REST APIs into MCP tools with Google Cloud API Gateway",
+      "summary": "Une passerelle d'API de Google peut désormais exposer des interfaces REST existantes comme outils pour agents, sans écrire d'intermédiaire. Il suffit d'annoter la spécification, la passerelle traduisant les appels du protocole d'agents vers REST en conservant authentification, quotas et journalisation.",
+      "sourceUrl": "https://developers.googleblog.com/turn-your-rest-apis-into-mcp-tools-with-google-cloud-api-gateway",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "mcp",
+        "api-gateway",
+        "agents",
+        "rest"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "2ab0bb8689f4cdd9",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "fcaa1ee99c66b1dc",
+      "title": "Deprecations",
+      "summary": "La page des dépréciations d'OpenAI expose la politique de préavis avant retrait d'un modèle : plusieurs mois pour les modèles généralement disponibles, moins pour leurs variantes spécialisées, et très peu pour les modèles en avant-première. L'extrait ne contient aucune date de retrait précise.",
+      "sourceUrl": "https://platform.openai.com/docs/deprecations",
+      "sourceName": "OpenAI Deprecations",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "openai",
+        "deprecation",
+        "lifecycle",
+        "api"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "c3f35f318263026f",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "ff40a4ef0ae53419",
+      "title": "Blog Posts",
+      "summary": "L'index du blog IA de Meta mélange annonces de modèles et travaux de recherche, de la génération d'images et de vidéos à la robotique d'assistance. Les publications listées relèvent majoritairement de la recherche et de l'open source.",
+      "sourceUrl": "https://ai.meta.com/blog",
+      "sourceName": "Meta AI Blog",
+      "publishedAt": "2026-10-02T11:05:54.558Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "meta",
+        "research",
+        "open-source",
+        "models"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "4804e7799ad440a3",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "e11a5d7f0be16c7a",
+      "title": "GitHub Copilot can now interact with desktop apps with computer use",
+      "summary": "Copilot peut désormais piloter des applications de bureau en avant-première publique : lire le contenu accessible à l'écran, cliquer, saisir du texte et enchaîner des étapes entre plusieurs logiciels. L'intérêt visé est l'automatisation des outils qui n'offrent ni interface de programmation ni ligne de commande, l'utilisateur gardant la main par une validation préalable.",
+      "sourceUrl": "https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps",
+      "sourceName": "GitHub Copilot Changelog",
+      "publishedAt": "2026-10-01T19:11:26.000Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "impacting",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [
+        "copilot",
+        "computer-use",
+        "cli",
+        "preview"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "a571b8090fac3150",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "d8efb6ae3f1c14fd",
+      "title": "GitHub Copilot in VS Code, September 2026 releases",
+      "summary": "Le récapitulatif de septembre pour Copilot dans l'éditeur couvre cinq versions et tourne autour du travail agentique, de l'écriture du code jusqu'à la fusion de la demande de tirage. Il introduit des tâches planifiées de façon récurrente, une meilleure gestion des sessions et un sélecteur qui choisit automatiquement modèle et flux de travail.",
+      "sourceUrl": "https://github.blog/changelog/2026-10-01-github-copilot-in-vs-code-september-2026-releases",
+      "sourceName": "GitHub Copilot Changelog",
+      "publishedAt": "2026-10-01T19:09:10.000Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "impacting",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [
+        "copilot",
+        "vscode",
+        "agents",
+        "automations"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "acc209763d915bc9",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "d320458473217aca",
+      "title": "v2.1.287",
+      "summary": "Cette version ouvre aux greffons la possibilité de modifier des comportements plus profonds, et livre un agent latéral qui signale ce qui a pu échapper à l'utilisateur comme au modèle. Point d'attention : un serveur MCP qui ne se connecte plus après la mise à jour demande l'ajout d'une option de capacité dans sa configuration.",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.287",
+      "sourceName": "Claude Code Releases",
+      "publishedAt": "2026-10-01T18:43:19.000Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "impacting",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [
+        "claude-code",
+        "plugins",
+        "mcp",
+        "otel"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "dc4676a17ebf19d6",
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "c33edadf972caccf",
       "title": "Upcoming expiration of Developer ID Certification Authority (Sub-CA)",
-      "summary": "",
+      "summary": "L'autorité de certification Developer ID d'origine arrive à expiration, et les certificats qu'elle a émis cesseront de fonctionner à cette date. Apple demande de repérer les certificats concernés, d'en générer un depuis l'autorité actuelle, puis de resigner selon ce que l'on distribue.",
       "sourceUrl": "https://developer.apple.com/news?id=w4atic4c",
       "sourceName": "Apple Developer News",
       "publishedAt": "2026-10-01T17:00:11.000Z",
-      "collectedAt": "2026-10-01T18:25:40.935Z",
-      "criticality": "background",
-      "trustLevel": "reported",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "blocking",
+      "trustLevel": "verified",
       "categories": [
         "ios",
-        "policy"
+        "policy",
+        "tooling"
       ],
-      "tags": [],
+      "tags": [
+        "developer-id",
+        "certificates",
+        "signing",
+        "apple"
+      ],
       "impactedProjects": [],
       "fingerprint": "dc78a37f43a1c62d",
-      "verificationNote": "non classé : no proposals file was produced"
+      "evidenceQuote": "The original Developer ID Certification Authority (Sub-CA) expires on February 1, 2027.",
+      "deadline": "2027-02-01"
+    },
+    {
+      "id": "20f94898ac7397b2",
+      "title": "Dynamic workflows in Copilot CLI and the Copilot app",
+      "summary": "Les flux de travail dynamiques permettent de décrire en code l'orchestration d'une tâche, en combinant des étapes automatiques et l'intervention d'agents, en série ou en parallèle. Le programme vit dans une extension, ce qui lui donne accès aux interfaces d'extensibilité de l'assistant.",
+      "sourceUrl": "https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app",
+      "sourceName": "GitHub Copilot Changelog",
+      "publishedAt": "2026-10-01T16:30:10.000Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [
+        "copilot",
+        "workflows",
+        "agents",
+        "sdk"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "d8a73a18d1108d55",
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "40b0bbb29273bef4",
@@ -166,21 +1100,26 @@
     {
       "id": "28b251faa5b0082e",
       "title": "RLTL;DR: Self-Improvement by Internalizing Self-Generated Feedback",
-      "summary": "",
+      "summary": "L'apprentissage par renforcement à récompense vérifiable suppose que l'agent réussisse parfois, ce qui bloque sur les tâches trop difficiles et sans modèle enseignant. Les auteurs font écrire à la politique son propre retour après chaque échec, sous forme d'une courte leçon qui conditionne la tentative suivante.",
       "sourceUrl": "https://machinelearning.apple.com/research/rltl-dr-self-improvement",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-10-01T00:00:00.000Z",
-      "collectedAt": "2026-10-01T18:25:40.935Z",
+      "collectedAt": "2026-10-02T11:05:54.558Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
         "ai",
         "ai-models"
       ],
-      "tags": [],
+      "tags": [
+        "research",
+        "rl",
+        "self-improvement",
+        "llm"
+      ],
       "impactedProjects": [],
       "fingerprint": "6c348fc412b1e8cc",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "d64d271c1ab9f5d8",
