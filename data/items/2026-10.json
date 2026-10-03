@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "updatedAt": "2026-10-02T17:52:46.599Z",
+  "updatedAt": "2026-10-03T16:18:10.231Z",
   "items": [
     {
       "id": "27650675ea030e5a",
@@ -8,8 +8,8 @@
       "summary": "",
       "sourceUrl": "https://www.anthropic.com/news",
       "sourceName": "Anthropic News",
-      "publishedAt": "2026-10-02T17:52:42.405Z",
-      "collectedAt": "2026-10-02T17:52:42.405Z",
+      "publishedAt": "2026-10-03T16:18:05.429Z",
+      "collectedAt": "2026-10-03T16:18:05.429Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -27,8 +27,8 @@
       "summary": "",
       "sourceUrl": "https://docs.claude.com/en/release-notes/overview",
       "sourceName": "Claude Platform Release Notes",
-      "publishedAt": "2026-10-02T17:52:42.405Z",
-      "collectedAt": "2026-10-02T17:52:42.405Z",
+      "publishedAt": "2026-10-03T16:18:05.429Z",
+      "collectedAt": "2026-10-03T16:18:05.429Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -41,13 +41,73 @@
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
+      "id": "da2d811b9d25331f",
+      "title": "v2.1.288",
+      "summary": "",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.288",
+      "sourceName": "Claude Code Releases",
+      "publishedAt": "2026-10-02T20:19:57.000Z",
+      "collectedAt": "2026-10-03T16:18:05.429Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "88dc294638609185",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "be3b1d3410799125",
+      "title": "Copilot code review: API support and new default effort level",
+      "summary": "",
+      "sourceUrl": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level",
+      "sourceName": "GitHub Copilot Changelog",
+      "publishedAt": "2026-10-02T19:13:50.000Z",
+      "collectedAt": "2026-10-03T16:18:05.429Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "ac793fd0fabc17cb",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "705956e4f1fcd62c",
+      "title": "Selected models in GitHub Copilot deprecated",
+      "summary": "",
+      "sourceUrl": "https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated",
+      "sourceName": "GitHub Copilot Changelog",
+      "publishedAt": "2026-10-02T18:24:19.000Z",
+      "collectedAt": "2026-10-03T16:18:05.429Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "d1bb9bd4840e4322",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
       "id": "ea23256b544647b1",
       "title": "Updates to Full Disk Access in macOS",
       "summary": "",
       "sourceUrl": "https://developer.apple.com/news?id=p6zjojqw",
       "sourceName": "Apple Developer News",
       "publishedAt": "2026-10-02T16:00:19.000Z",
-      "collectedAt": "2026-10-02T17:52:42.405Z",
+      "collectedAt": "2026-10-03T16:18:05.429Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -66,7 +126,7 @@
       "sourceUrl": "https://android-developers.googleblog.com/2026/10/android-cli-device-streaming-and-skills.html",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-10-02T16:00:00.000Z",
-      "collectedAt": "2026-10-02T17:52:42.405Z",
+      "collectedAt": "2026-10-03T16:18:05.429Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -1232,7 +1292,7 @@
       "sourceUrl": "https://machinelearning.apple.com/research/language-discrimination-multilingual-learning",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-10-02T00:00:00.000Z",
-      "collectedAt": "2026-10-02T17:52:42.405Z",
+      "collectedAt": "2026-10-03T16:18:05.429Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -1242,6 +1302,25 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "0c739af6e9011e58",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "cc3d0ac48231448c",
+      "title": "Limits of Confidence in Diffusion",
+      "summary": "",
+      "sourceUrl": "https://machinelearning.apple.com/research/limits-confidence-diffusion",
+      "sourceName": "Apple Machine Learning Research",
+      "publishedAt": "2026-10-02T00:00:00.000Z",
+      "collectedAt": "2026-10-03T16:18:05.429Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "60bc30a503db20b7",
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
