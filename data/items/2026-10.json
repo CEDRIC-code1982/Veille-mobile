@@ -1,7 +1,394 @@
 {
   "month": "2026-10",
-  "updatedAt": "2026-10-05T09:36:04.136Z",
+  "updatedAt": "2026-10-06T18:22:39.164Z",
   "items": [
+    {
+      "id": "0d65ce40a82f01a3",
+      "title": "Claude Platform release notes",
+      "summary": "",
+      "sourceUrl": "https://docs.claude.com/en/release-notes/overview",
+      "sourceName": "Claude Platform Release Notes",
+      "publishedAt": "2026-10-06T18:22:35.198Z",
+      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "4de79405c5869130",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "242422c3bc1f670d",
+      "title": "Bring multimodal semantic search to the edge with EmbeddingGemma 2",
+      "summary": "",
+      "sourceUrl": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-06T18:22:35.198Z",
+      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "9cfa97df25cf004b",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "28f7e577fbe296c8",
+      "title": "iPhone",
+      "summary": "",
+      "sourceUrl": "https://www.apple.com/iphone",
+      "sourceName": "Apple iPhone Lineup",
+      "publishedAt": "2026-10-06T18:22:35.198Z",
+      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ios",
+        "hardware"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "cd19898666cfcd6d",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "341eb03f5bd08ecc",
+      "title": "Android Studio Rabbit 1",
+      "summary": "",
+      "sourceUrl": "https://developer.android.com/studio/releases",
+      "sourceName": "Android Studio Releases",
+      "publishedAt": "2026-10-06T18:22:35.198Z",
+      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "bb6fe803569d627a",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "75447e2c3e22af80",
+      "title": "Latest updates from Mistral.",
+      "summary": "",
+      "sourceUrl": "https://mistral.ai/news",
+      "sourceName": "Mistral News",
+      "publishedAt": "2026-10-06T18:22:35.198Z",
+      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "0cfaa9d7eec5e0a2",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "8d8716631c86d0f5",
+      "title": "Changelog",
+      "summary": "",
+      "sourceUrl": "https://platform.openai.com/docs/changelog",
+      "sourceName": "OpenAI Platform Changelog",
+      "publishedAt": "2026-10-06T18:22:35.198Z",
+      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "03c2e177ce4b9c0d",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "a81c8502ece80dc2",
+      "title": "EmbeddingGemma 2: The Developer Guide",
+      "summary": "",
+      "sourceUrl": "https://developers.googleblog.com/embeddinggemma-2-the-developer-guide",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-06T18:22:35.198Z",
+      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "46e6e99ffb5779ed",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "d7bf3877782f6384",
+      "title": "Release notes",
+      "summary": "",
+      "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
+      "sourceName": "Gemini API Release Notes",
+      "publishedAt": "2026-10-06T18:22:35.198Z",
+      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "5ce1087c6820689e",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "bcecc8e362acddd8",
+      "title": "App Store Connect API 4.5.1",
+      "summary": "",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=10062026a",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-10-06T17:00:00.000Z",
+      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "os-release",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "57b2b2bd01068bbf",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "438c693dde586b12",
+      "title": "Hello Developer: October 2026",
+      "summary": "",
+      "sourceUrl": "https://developer.apple.com/news?id=gv788oj6",
+      "sourceName": "Apple Developer News",
+      "publishedAt": "2026-10-06T15:00:23.000Z",
+      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "policy"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "35e6c1005d976d88",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "252c220c9a3ad782",
+      "title": "v0.10.5",
+      "summary": "",
+      "sourceUrl": "https://github.com/software-mansion/react-native-executorch/releases/tag/v0.10.5",
+      "sourceName": "React Native ExecuTorch Releases",
+      "publishedAt": "2026-10-06T11:17:54.000Z",
+      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "react-native",
+        "ai",
+        "on-device-ai"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "ce0bae630bc69c3e",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "bb63a15b856259f7",
+      "title": "v2.1.291",
+      "summary": "",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.291",
+      "sourceName": "Claude Code Releases",
+      "publishedAt": "2026-10-06T03:55:19.000Z",
+      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "665330943435a1ea",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "f12c625ed1d0b80a",
+      "title": "App Store Connect Update",
+      "summary": "",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=10052026h",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-10-06T01:00:00.000Z",
+      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "os-release",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "878d93b57319c6a8",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "87f383b41d667f16",
+      "title": "Prepare and submit your apps for iPhone Duo",
+      "summary": "",
+      "sourceUrl": "https://developer.apple.com/news?id=kkphp5qo",
+      "sourceName": "Apple Developer News",
+      "publishedAt": "2026-10-06T00:05:33.000Z",
+      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "policy"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "0f838c05cae7cc91",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "d9b88297cf0d952f",
+      "title": "v2.1.290",
+      "summary": "",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.290",
+      "sourceName": "Claude Code Releases",
+      "publishedAt": "2026-10-05T23:33:17.000Z",
+      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "4a39943bd1c46cb3",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "512dfd6601723355",
+      "title": "Showcase your apps with new assets on the App Store",
+      "summary": "",
+      "sourceUrl": "https://developer.apple.com/news?id=ljpl7kyn",
+      "sourceName": "Apple Developer News",
+      "publishedAt": "2026-10-05T20:00:27.000Z",
+      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "policy"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "d0f2d9c87ffe4f94",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "2f890af8ab8e8f68",
+      "title": "iOS 27.2 beta 3 (24B5099f)",
+      "summary": "",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=10052026a",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-10-05T18:00:00.000Z",
+      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "os-release",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "49e4c403e7da3fba",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "4fbe86b84002a280",
+      "title": "iPadOS 27.2 beta 3 (24B5099f)",
+      "summary": "",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=10052026b",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-10-05T18:00:00.000Z",
+      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "os-release",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "bfdf3da4ca358f6f",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "f4de13ce9de0c833",
+      "title": "v0.88.0-rc.4",
+      "summary": "",
+      "sourceUrl": "https://github.com/react/react-native/releases/tag/v0.88.0-rc.4",
+      "sourceName": "React Native Releases",
+      "publishedAt": "2026-10-05T17:21:13.000Z",
+      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "react-native"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "ddf4d1ae86ca7718",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "cb0eac9c89473c83",
+      "title": "Xcode 27.1 RC (27A9275)",
+      "summary": "",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=10052026g",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-10-05T17:00:00.000Z",
+      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "os-release",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "a5d909c157489c05",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
     {
       "id": "27650675ea030e5a",
       "title": "Newsroom",
@@ -49,6 +436,25 @@
       "fingerprint": "9f51646a4d5e9099",
       "evidenceQuote": "We announced the deprecation of the Claude Sonnet 4.5 model ... with retirement on the Claude API scheduled for November 30, 2026.",
       "deadline": "2026-11-30"
+    },
+    {
+      "id": "031c3906bd6f632e",
+      "title": "Negotiating Ontological Boundaries in User-Authored Personal Sensing Systems",
+      "summary": "",
+      "sourceUrl": "https://machinelearning.apple.com/research/ontological-boundary-negotiation",
+      "sourceName": "Apple Machine Learning Research",
+      "publishedAt": "2026-10-05T00:00:00.000Z",
+      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "2f03138b9679cf09",
+      "verificationNote": "non classé : no proposals file was produced"
     },
     {
       "id": "47be91cd52d348eb",
