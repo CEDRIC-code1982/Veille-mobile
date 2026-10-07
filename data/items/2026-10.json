@@ -1,7 +1,451 @@
 {
   "month": "2026-10",
-  "updatedAt": "2026-10-06T18:22:39.164Z",
+  "updatedAt": "2026-10-07T18:57:45.898Z",
   "items": [
+    {
+      "id": "242422c3bc1f670d",
+      "title": "Bring multimodal semantic search to the edge with EmbeddingGemma 2",
+      "summary": "",
+      "sourceUrl": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-07T18:57:30.602Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "475c351818310c42",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "28f7e577fbe296c8",
+      "title": "iPhone",
+      "summary": "",
+      "sourceUrl": "https://www.apple.com/iphone",
+      "sourceName": "Apple iPhone Lineup",
+      "publishedAt": "2026-10-07T18:57:30.602Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ios",
+        "hardware"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "cd19898666cfcd6d",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "2ab00bfa68b2fd77",
+      "title": "Model deprecations",
+      "summary": "",
+      "sourceUrl": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "sourceName": "Claude Model Deprecations",
+      "publishedAt": "2026-10-07T18:57:30.602Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "192443d5ca229469",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "341eb03f5bd08ecc",
+      "title": "Android Studio Rabbit 1",
+      "summary": "",
+      "sourceUrl": "https://developer.android.com/studio/releases",
+      "sourceName": "Android Studio Releases",
+      "publishedAt": "2026-10-07T18:57:30.602Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "bb6fe803569d627a",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "4a0a34f3f516f1d0",
+      "title": "Deprecations",
+      "summary": "",
+      "sourceUrl": "https://platform.openai.com/docs/deprecations",
+      "sourceName": "OpenAI Deprecations",
+      "publishedAt": "2026-10-07T18:57:30.602Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "49d9bdc2ab49e8b2",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "75447e2c3e22af80",
+      "title": "Latest updates from Mistral.",
+      "summary": "",
+      "sourceUrl": "https://mistral.ai/news",
+      "sourceName": "Mistral News",
+      "publishedAt": "2026-10-07T18:57:30.602Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "0cfaa9d7eec5e0a2",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "85a99ebbfc2b32b2",
+      "title": "Changelog",
+      "summary": "",
+      "sourceUrl": "https://expo.dev/changelog",
+      "sourceName": "Expo Changelog",
+      "publishedAt": "2026-10-07T18:57:30.602Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "react-native",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "6ca56204873f90ec",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "997b1792f9be018a",
+      "title": "Changelog",
+      "summary": "",
+      "sourceUrl": "https://platform.openai.com/docs/changelog",
+      "sourceName": "OpenAI Platform Changelog",
+      "publishedAt": "2026-10-07T18:57:30.602Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "aea78f2eab598af1",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "a2fa3c9ffdfbcea5",
+      "title": "Release Notes",
+      "summary": "",
+      "sourceUrl": "https://developers.google.com/android/guides/releases",
+      "sourceName": "Play Services Releases",
+      "publishedAt": "2026-10-07T18:57:30.602Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "9100f399b288df02",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "a81c8502ece80dc2",
+      "title": "EmbeddingGemma 2: The Developer Guide",
+      "summary": "",
+      "sourceUrl": "https://developers.googleblog.com/embeddinggemma-2-the-developer-guide",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-07T18:57:30.602Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "43c9b43d6c04effb",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "b6cdde3534fd52f2",
+      "title": "Release notes",
+      "summary": "",
+      "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
+      "sourceName": "Gemini API Release Notes",
+      "publishedAt": "2026-10-07T18:57:30.602Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "96218da97ce7519a",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "bd388ec2ba5cad1d",
+      "title": "Play Console Policy Updates",
+      "summary": "",
+      "sourceUrl": "https://support.google.com/googleplay/android-developer/answer/9934569",
+      "sourceName": "Play Console Policy Updates",
+      "publishedAt": "2026-10-07T18:57:30.602Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "policy"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "c57bd106f8c7cf2e",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "e3dde9c6c1e8eec3",
+      "title": "Claude Platform release notes",
+      "summary": "",
+      "sourceUrl": "https://docs.claude.com/en/release-notes/overview",
+      "sourceName": "Claude Platform Release Notes",
+      "publishedAt": "2026-10-07T18:57:30.602Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "d4559a76e3382a47",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "eabff243db1456e3",
+      "title": "Release notes",
+      "summary": "",
+      "sourceUrl": "https://developers.google.com/ml-kit/release-notes",
+      "sourceName": "ML Kit Release Notes",
+      "publishedAt": "2026-10-07T18:57:30.602Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "ai",
+        "on-device-ai",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "e6464bf711aca327",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "fc1b61c1202b89c9",
+      "title": "Newsroom",
+      "summary": "",
+      "sourceUrl": "https://www.anthropic.com/news",
+      "sourceName": "Anthropic News",
+      "publishedAt": "2026-10-07T18:57:30.602Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "7951e8dca6b8b238",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "0ba886b07133e21d",
+      "title": "v2.1.293",
+      "summary": "",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.293",
+      "sourceName": "Claude Code Releases",
+      "publishedAt": "2026-10-07T18:10:20.000Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "b45067e90605f236",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "d6b735286b3739ea",
+      "title": "Purpose-built model for leaked secret detection",
+      "summary": "",
+      "sourceUrl": "https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection",
+      "sourceName": "GitHub Copilot Changelog",
+      "publishedAt": "2026-10-07T16:13:56.000Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "3241ee8a87983c79",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "1e174328109aea32",
+      "title": "Local sandboxing for GitHub Copilot now generally available",
+      "summary": "",
+      "sourceUrl": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+      "sourceName": "GitHub Copilot Changelog",
+      "publishedAt": "2026-10-07T15:46:17.000Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "a43d77028200b7b9",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "8241d56116d90ff3",
+      "title": "Discover local models in GitHub Copilot CLI",
+      "summary": "",
+      "sourceUrl": "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli",
+      "sourceName": "GitHub Copilot Changelog",
+      "publishedAt": "2026-10-07T15:46:13.000Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "b8a5837b46b60f6e",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "f4de13ce9de0c833",
+      "title": "0.88.0-rc.4",
+      "summary": "",
+      "sourceUrl": "https://github.com/react/react-native/releases/tag/v0.88.0-rc.4",
+      "sourceName": "React Native Releases",
+      "publishedAt": "2026-10-07T08:09:50.000Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "react-native"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "9c508d83eaac9ddf",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "5b45547a3e6f21da",
+      "title": "This Week In React #300: Next.js, TanStack, React Foundation, Compiler, Ink, Streamdown, Shaders | Skia, Live Activities, Lucent, Voltra, Apex, Coinbase, Stim Desktop, Unistyles | TC39, e2e, Effect, Remix, h3, SvelteKit, TypeScript",
+      "summary": "",
+      "sourceUrl": "https://thisweekinreact.com/newsletter/300",
+      "sourceName": "This Week in React",
+      "publishedAt": "2026-10-07T00:00:00.000Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "react-native",
+        "typescript"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "1a93cb164df0d1a8",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "f833eccb65deeb7d",
+      "title": "Update your IDE to restore agent activity in Copilot usage metrics",
+      "summary": "",
+      "sourceUrl": "https://github.blog/changelog/2026-10-06-update-your-ide-to-restore-agent-activity-in-copilot-usage-metrics",
+      "sourceName": "GitHub Copilot Changelog",
+      "publishedAt": "2026-10-06T23:43:00.000Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "1f3b543ad58c5f07",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "0c734930a759f57a",
+      "title": "v2.1.292",
+      "summary": "",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.292",
+      "sourceName": "Claude Code Releases",
+      "publishedAt": "2026-10-06T18:59:30.000Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "b251fa5f041a7c2b",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
     {
       "id": "0d65ce40a82f01a3",
       "title": "Claude Platform release notes",
@@ -22,82 +466,6 @@
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
-      "id": "242422c3bc1f670d",
-      "title": "Bring multimodal semantic search to the edge with EmbeddingGemma 2",
-      "summary": "",
-      "sourceUrl": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2",
-      "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-10-06T18:22:35.198Z",
-      "collectedAt": "2026-10-06T18:22:35.198Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "9cfa97df25cf004b",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "28f7e577fbe296c8",
-      "title": "iPhone",
-      "summary": "",
-      "sourceUrl": "https://www.apple.com/iphone",
-      "sourceName": "Apple iPhone Lineup",
-      "publishedAt": "2026-10-06T18:22:35.198Z",
-      "collectedAt": "2026-10-06T18:22:35.198Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ios",
-        "hardware"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "cd19898666cfcd6d",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "341eb03f5bd08ecc",
-      "title": "Android Studio Rabbit 1",
-      "summary": "",
-      "sourceUrl": "https://developer.android.com/studio/releases",
-      "sourceName": "Android Studio Releases",
-      "publishedAt": "2026-10-06T18:22:35.198Z",
-      "collectedAt": "2026-10-06T18:22:35.198Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "android",
-        "tooling"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "bb6fe803569d627a",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "75447e2c3e22af80",
-      "title": "Latest updates from Mistral.",
-      "summary": "",
-      "sourceUrl": "https://mistral.ai/news",
-      "sourceName": "Mistral News",
-      "publishedAt": "2026-10-06T18:22:35.198Z",
-      "collectedAt": "2026-10-06T18:22:35.198Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "0cfaa9d7eec5e0a2",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
       "id": "8d8716631c86d0f5",
       "title": "Changelog",
       "summary": "",
@@ -114,25 +482,6 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "03c2e177ce4b9c0d",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "a81c8502ece80dc2",
-      "title": "EmbeddingGemma 2: The Developer Guide",
-      "summary": "",
-      "sourceUrl": "https://developers.googleblog.com/embeddinggemma-2-the-developer-guide",
-      "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-10-06T18:22:35.198Z",
-      "collectedAt": "2026-10-06T18:22:35.198Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "46e6e99ffb5779ed",
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
@@ -161,7 +510,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=10062026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-06T17:00:00.000Z",
-      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -181,7 +530,7 @@
       "sourceUrl": "https://developer.apple.com/news?id=gv788oj6",
       "sourceName": "Apple Developer News",
       "publishedAt": "2026-10-06T15:00:23.000Z",
-      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -200,7 +549,7 @@
       "sourceUrl": "https://github.com/software-mansion/react-native-executorch/releases/tag/v0.10.5",
       "sourceName": "React Native ExecuTorch Releases",
       "publishedAt": "2026-10-06T11:17:54.000Z",
-      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -220,7 +569,7 @@
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.291",
       "sourceName": "Claude Code Releases",
       "publishedAt": "2026-10-06T03:55:19.000Z",
-      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -240,7 +589,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=10052026h",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-06T01:00:00.000Z",
-      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -260,7 +609,7 @@
       "sourceUrl": "https://developer.apple.com/news?id=kkphp5qo",
       "sourceName": "Apple Developer News",
       "publishedAt": "2026-10-06T00:05:33.000Z",
-      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -273,13 +622,32 @@
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
+      "id": "9855b0d96c10185b",
+      "title": "RISED: Rubrics for Agentic Multi-Environment Selection and Self-Distillation",
+      "summary": "",
+      "sourceUrl": "https://machinelearning.apple.com/research/rised-multi-environment-selection",
+      "sourceName": "Apple Machine Learning Research",
+      "publishedAt": "2026-10-06T00:00:00.000Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "7034709a79319fa3",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
       "id": "d9b88297cf0d952f",
       "title": "v2.1.290",
       "summary": "",
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.290",
       "sourceName": "Claude Code Releases",
       "publishedAt": "2026-10-05T23:33:17.000Z",
-      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -299,7 +667,7 @@
       "sourceUrl": "https://developer.apple.com/news?id=ljpl7kyn",
       "sourceName": "Apple Developer News",
       "publishedAt": "2026-10-05T20:00:27.000Z",
-      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -318,7 +686,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=10052026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-05T18:00:00.000Z",
-      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -338,7 +706,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=10052026b",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-05T18:00:00.000Z",
-      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -352,31 +720,13 @@
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
-      "id": "f4de13ce9de0c833",
-      "title": "v0.88.0-rc.4",
-      "summary": "",
-      "sourceUrl": "https://github.com/react/react-native/releases/tag/v0.88.0-rc.4",
-      "sourceName": "React Native Releases",
-      "publishedAt": "2026-10-05T17:21:13.000Z",
-      "collectedAt": "2026-10-06T18:22:35.198Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "react-native"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "ddf4d1ae86ca7718",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
       "id": "cb0eac9c89473c83",
       "title": "Xcode 27.1 RC (27A9275)",
       "summary": "",
       "sourceUrl": "https://developer.apple.com/news/releases?id=10052026g",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-05T17:00:00.000Z",
-      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -444,7 +794,7 @@
       "sourceUrl": "https://machinelearning.apple.com/research/ontological-boundary-negotiation",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-10-05T00:00:00.000Z",
-      "collectedAt": "2026-10-06T18:22:35.198Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -625,6 +975,26 @@
       "impactedProjects": [],
       "fingerprint": "7f5eebf6afaf7cd4",
       "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "582da02053b0c8e2",
+      "title": "GitHub Copilot weekly releases — September 28",
+      "summary": "",
+      "sourceUrl": "https://github.blog/changelog/2026-10-02-github-copilot-weekly-releases-september-28",
+      "sourceName": "GitHub Copilot Changelog",
+      "publishedAt": "2026-10-02T14:00:30.000Z",
+      "collectedAt": "2026-10-07T18:57:30.602Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "8b5ae2483e11af96",
+      "verificationNote": "non classé : no proposals file was produced"
     },
     {
       "id": "19bc676636e40c23",
