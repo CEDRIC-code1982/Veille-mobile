@@ -1,7 +1,120 @@
 {
   "month": "2026-10",
-  "updatedAt": "2026-10-12T06:35:55.505Z",
+  "updatedAt": "2026-10-12T21:16:31.821Z",
   "items": [
+    {
+      "id": "8080abb79bf3c732",
+      "title": "Release notes",
+      "summary": "",
+      "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
+      "sourceName": "Gemini API Release Notes",
+      "publishedAt": "2026-10-12T21:16:28.227Z",
+      "collectedAt": "2026-10-12T21:16:28.227Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "86fcf38817edd1c7",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "8d44701eea7f7454",
+      "title": "Latest updates from Mistral.",
+      "summary": "",
+      "sourceUrl": "https://mistral.ai/news",
+      "sourceName": "Mistral News",
+      "publishedAt": "2026-10-12T21:16:28.227Z",
+      "collectedAt": "2026-10-12T21:16:28.227Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "b8d541ed16f98c46",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "8b83a2b302a0c02e",
+      "title": "v0.88.0-rc.5",
+      "summary": "",
+      "sourceUrl": "https://github.com/react/react-native/releases/tag/v0.88.0-rc.5",
+      "sourceName": "React Native Releases",
+      "publishedAt": "2026-10-12T20:22:35.000Z",
+      "collectedAt": "2026-10-12T21:16:28.227Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "react-native"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "d5f97634ae2c793a",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "e8d8f43511a9291f",
+      "title": "Hello Python 3.15, goodbye 3.10, and now I can use 3.11",
+      "summary": "",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/12/python-3-15",
+      "sourceName": "Simon Willison",
+      "publishedAt": "2026-10-12T18:15:38.000Z",
+      "collectedAt": "2026-10-12T21:16:28.227Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "237ebffa6c4a8c27",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "56f6306d5eb76809",
+      "title": "Introducing the Googlebook Linux Terminal Preview: A VM-Backed Environment for AI and Development",
+      "summary": "",
+      "sourceUrl": "https://android-developers.googleblog.com/2026/10/googlebook-linux-terminal-preview-vm.html",
+      "sourceName": "Android Developers Blog",
+      "publishedAt": "2026-10-12T18:00:00.000Z",
+      "collectedAt": "2026-10-12T21:16:28.227Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "policy"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "8a57994e174c4cf8",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "a551ad569ce8c2a9",
+      "title": "App Store Indie Games Week kicks off today",
+      "summary": "",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/10/app-store-indie-games-week-kicks-off-today",
+      "sourceName": "Apple Newsroom",
+      "publishedAt": "2026-10-12T13:59:49.734Z",
+      "collectedAt": "2026-10-12T21:16:28.227Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "hardware",
+        "ios"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "c70d7b408e66dfbb",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
     {
       "id": "10138df39ad00e75",
       "title": "Newsroom",
@@ -841,7 +954,7 @@
       "sourceUrl": "https://www.apple.com/newsroom/2026/10/apple-the-kings-trust-launch-initiative-to-empower-young-creatives",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-10-07T21:01:58.215Z",
-      "collectedAt": "2026-10-12T06:34:04.322Z",
+      "collectedAt": "2026-10-12T21:16:28.227Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -851,7 +964,7 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "93dba6917343aaae",
-      "verificationNote": "non classé : the proposals file says nothing about this item"
+      "verificationNote": "non classé : no proposals file was produced"
     },
     {
       "id": "fdc864340b44ea6e",
@@ -1248,7 +1361,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=10062026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-06T17:00:00.000Z",
-      "collectedAt": "2026-10-12T06:34:04.322Z",
+      "collectedAt": "2026-10-12T21:16:28.227Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -1259,7 +1372,7 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "57b2b2bd01068bbf",
-      "verificationNote": "non classé : the proposals file says nothing about this item"
+      "verificationNote": "non classé : no proposals file was produced"
     },
     {
       "id": "438c693dde586b12",
@@ -1339,7 +1452,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=10052026h",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-06T01:00:00.000Z",
-      "collectedAt": "2026-10-12T06:34:04.322Z",
+      "collectedAt": "2026-10-12T21:16:28.227Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -1350,7 +1463,7 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "878d93b57319c6a8",
-      "verificationNote": "non classé : the proposals file says nothing about this item"
+      "verificationNote": "non classé : no proposals file was produced"
     },
     {
       "id": "87f383b41d667f16",
@@ -1454,7 +1567,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=10052026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-05T18:00:00.000Z",
-      "collectedAt": "2026-10-12T06:34:04.322Z",
+      "collectedAt": "2026-10-12T21:16:28.227Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -1465,7 +1578,7 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "49e4c403e7da3fba",
-      "verificationNote": "non classé : the proposals file says nothing about this item"
+      "verificationNote": "non classé : no proposals file was produced"
     },
     {
       "id": "4fbe86b84002a280",
@@ -1474,7 +1587,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=10052026b",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-05T18:00:00.000Z",
-      "collectedAt": "2026-10-12T06:34:04.322Z",
+      "collectedAt": "2026-10-12T21:16:28.227Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -1485,7 +1598,7 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "bfdf3da4ca358f6f",
-      "verificationNote": "non classé : the proposals file says nothing about this item"
+      "verificationNote": "non classé : no proposals file was produced"
     },
     {
       "id": "cb0eac9c89473c83",
@@ -1494,7 +1607,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=10052026g",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-05T17:00:00.000Z",
-      "collectedAt": "2026-10-12T06:34:04.322Z",
+      "collectedAt": "2026-10-12T21:16:28.227Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -1505,7 +1618,7 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "a5d909c157489c05",
-      "verificationNote": "non classé : the proposals file says nothing about this item"
+      "verificationNote": "non classé : no proposals file was produced"
     },
     {
       "id": "27650675ea030e5a",
