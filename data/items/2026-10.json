@@ -1,7 +1,389 @@
 {
   "month": "2026-10",
-  "updatedAt": "2026-10-12T21:16:31.821Z",
+  "updatedAt": "2026-10-13T19:18:12.565Z",
   "items": [
+    {
+      "id": "20c731d2eb11e356",
+      "title": "This Week In React #301: TanStack Start, React Aria, Base UI, Satori, Next.js, Vitest RSC, MobX | RN Web, Tamagui, One, Skia, Observe, Screens, Hot Updater, Nano Icons | Deno, Bun, TS, JPEG XL, AsyncContext, Playwright, pnpm, Partytown",
+      "summary": "",
+      "sourceUrl": "https://thisweekinreact.com/newsletter/301",
+      "sourceName": "This Week in React",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "react-native",
+        "typescript"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "f99e81d72c06f264",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "49997c9385f73eab",
+      "title": "Optimizing a 200,000-line Python codebase overnight with Gemini 4 Argon",
+      "summary": "",
+      "sourceUrl": "https://developers.googleblog.com/optimizing-a-200000-line-python-codebase-overnight-with-gemini-4-argon",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-13T19:18:07.866Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "a88961711c145bdd",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "5620f8f52a82d13c",
+      "title": "Engineering \\ Anthropic",
+      "summary": "",
+      "sourceUrl": "https://www.anthropic.com/engineering",
+      "sourceName": "Anthropic Engineering",
+      "publishedAt": "2026-10-13T19:18:07.866Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "93efa567e9ff3ccf",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "88bebe9674d46295",
+      "title": "Gemini 4 Argon for Robotics",
+      "summary": "",
+      "sourceUrl": "https://developers.googleblog.com/gemini-4-argon-for-robotics",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-13T19:18:07.866Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "655c52ef3c3f414d",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "8d44701eea7f7454",
+      "title": "Latest updates from Mistral.",
+      "summary": "",
+      "sourceUrl": "https://mistral.ai/news",
+      "sourceName": "Mistral News",
+      "publishedAt": "2026-10-13T19:18:07.866Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "b8d541ed16f98c46",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "94392dab88363907",
+      "title": "Release notes",
+      "summary": "",
+      "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
+      "sourceName": "Gemini API Release Notes",
+      "publishedAt": "2026-10-13T19:18:07.866Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "5fb51c26b2d32993",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "b3f2e36564407fad",
+      "title": "Deprecations",
+      "summary": "",
+      "sourceUrl": "https://platform.openai.com/docs/deprecations",
+      "sourceName": "OpenAI Deprecations",
+      "publishedAt": "2026-10-13T19:18:07.866Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "dd6da0330d42e371",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "f3b3c23ae8f73ff0",
+      "title": "iPhone",
+      "summary": "",
+      "sourceUrl": "https://www.apple.com/iphone",
+      "sourceName": "Apple iPhone Lineup",
+      "publishedAt": "2026-10-13T19:18:07.866Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ios",
+        "hardware"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "570e83da74b69787",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "23347420601cd4d2",
+      "title": "Gemini 4 Argon in GitHub Copilot",
+      "summary": "",
+      "sourceUrl": "https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot",
+      "sourceName": "GitHub Copilot Changelog",
+      "publishedAt": "2026-10-13T18:39:56.000Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "76800887bb294a5c",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "103c883a3b0f43cd",
+      "title": "New ways to drive smarter discovery, deeper engagement, and business growth on Google Play",
+      "summary": "",
+      "sourceUrl": "https://android-developers.googleblog.com/2026/10/new-tools-for-discovery-and-engagement.html",
+      "sourceName": "Android Developers Blog",
+      "publishedAt": "2026-10-13T17:00:00.000Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "policy"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "b8309df0dcfb547d",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "d7bc0215828fd061",
+      "title": "A new app experience is coming to cars with Google built-in",
+      "summary": "",
+      "sourceUrl": "https://blog.google/products-and-platforms/platforms/android/cars-with-google-built-in-google-play-updates",
+      "sourceName": "Android and Pixel Blog",
+      "publishedAt": "2026-10-13T17:00:00.000Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "android",
+        "hardware"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "e8de9cbc8590a8f1",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "1e929802bf0cf2b7",
+      "title": "Bringing our latest frontier model to Android Developers",
+      "summary": "",
+      "sourceUrl": "https://android-developers.googleblog.com/2026/10/bringing-gemini-4-argon-to-android-agentic-engineering-antigravity-cli.html",
+      "sourceName": "Android Developers Blog",
+      "publishedAt": "2026-10-13T16:00:00.000Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "policy"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "03577c27eb5baa74",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "bca5e0416551d912",
+      "title": "Enterprise managed settings enforcement updates",
+      "summary": "",
+      "sourceUrl": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
+      "sourceName": "GitHub Copilot Changelog",
+      "publishedAt": "2026-10-13T15:20:10.000Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "119bc268ec4741b2",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "15a804e8b9adc5a9",
+      "title": "Meet Apple HomeView, a new way to enjoy entertainment and manage the home",
+      "summary": "",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home",
+      "sourceName": "Apple Newsroom",
+      "publishedAt": "2026-10-13T12:59:16.617Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "hardware",
+        "ios"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "2bde3361af415f73",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "f8e39e1c754834c2",
+      "title": "Apple unveils the new Apple TV 4K, supercharged by Siri AI",
+      "summary": "",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/10/apple-unveils-the-new-apple-tv-4k",
+      "sourceName": "Apple Newsroom",
+      "publishedAt": "2026-10-13T12:58:10.680Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "hardware",
+        "ios"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "fd2fe51af32f208f",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "17be123998944159",
+      "title": "Apple announces the next generation of HomePod mini",
+      "summary": "",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/10/apple-announces-the-next-generation-of-homepod-mini",
+      "sourceName": "Apple Newsroom",
+      "publishedAt": "2026-10-13T12:57:08.267Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "hardware",
+        "ios"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "73d3884ebb5f8e1d",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "a8c8efa580d036d4",
+      "title": "Introducing Apple Home Collection, a new lineup of smart home accessories",
+      "summary": "",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/10/introducing-apple-home-collection-a-new-lineup-of-smart-home-accessories",
+      "sourceName": "Apple Newsroom",
+      "publishedAt": "2026-10-13T12:56:12.276Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "hardware",
+        "ios"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "ec5ad58d12c644e6",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "3a474d73c07650bc",
+      "title": "Mix, Don't Tune: Bilingual Pre-Training Outperforms Hyperparameter Search in Data-Constrained Settings",
+      "summary": "",
+      "sourceUrl": "https://machinelearning.apple.com/research/mix-dont-tune",
+      "sourceName": "Apple Machine Learning Research",
+      "publishedAt": "2026-10-13T00:00:00.000Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "895c6ca4a180bcbc",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "8b83a2b302a0c02e",
+      "title": "0.88.0-rc.5",
+      "summary": "",
+      "sourceUrl": "https://github.com/react/react-native/releases/tag/v0.88.0-rc.5",
+      "sourceName": "React Native Releases",
+      "publishedAt": "2026-10-12T23:42:40.000Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "react-native"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "8b1d6d36e7c00997",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "9d90bbd97b855683",
+      "title": "Client telemetry user attribution and configurable capture",
+      "summary": "",
+      "sourceUrl": "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture",
+      "sourceName": "GitHub Copilot Changelog",
+      "publishedAt": "2026-10-12T22:38:00.000Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "9f0289388ef1bac0",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
     {
       "id": "8080abb79bf3c732",
       "title": "Release notes",
@@ -22,50 +404,13 @@
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
-      "id": "8d44701eea7f7454",
-      "title": "Latest updates from Mistral.",
-      "summary": "",
-      "sourceUrl": "https://mistral.ai/news",
-      "sourceName": "Mistral News",
-      "publishedAt": "2026-10-12T21:16:28.227Z",
-      "collectedAt": "2026-10-12T21:16:28.227Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "b8d541ed16f98c46",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "8b83a2b302a0c02e",
-      "title": "v0.88.0-rc.5",
-      "summary": "",
-      "sourceUrl": "https://github.com/react/react-native/releases/tag/v0.88.0-rc.5",
-      "sourceName": "React Native Releases",
-      "publishedAt": "2026-10-12T20:22:35.000Z",
-      "collectedAt": "2026-10-12T21:16:28.227Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "react-native"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "d5f97634ae2c793a",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
       "id": "e8d8f43511a9291f",
       "title": "Hello Python 3.15, goodbye 3.10, and now I can use 3.11",
       "summary": "",
       "sourceUrl": "https://simonwillison.net/2026/Oct/12/python-3-15",
       "sourceName": "Simon Willison",
       "publishedAt": "2026-10-12T18:15:38.000Z",
-      "collectedAt": "2026-10-12T21:16:28.227Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -84,7 +429,7 @@
       "sourceUrl": "https://android-developers.googleblog.com/2026/10/googlebook-linux-terminal-preview-vm.html",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-10-12T18:00:00.000Z",
-      "collectedAt": "2026-10-12T21:16:28.227Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -103,7 +448,7 @@
       "sourceUrl": "https://www.apple.com/newsroom/2026/10/app-store-indie-games-week-kicks-off-today",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-10-12T13:59:49.734Z",
-      "collectedAt": "2026-10-12T21:16:28.227Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -560,6 +905,63 @@
       "verificationNote": "aucune citation à vérifier"
     },
     {
+      "id": "409a53721904b654",
+      "title": "Self-Compacting Language Model Agents",
+      "summary": "",
+      "sourceUrl": "https://machinelearning.apple.com/research/self-compacting-language-agents",
+      "sourceName": "Apple Machine Learning Research",
+      "publishedAt": "2026-10-12T00:00:00.000Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "c9084616a618ebe0",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "49ea926c111e41bb",
+      "title": "Minions: A Dynamic and Distributed Virtual GPU Cloud Built on Idle Apple Silicon Devices",
+      "summary": "",
+      "sourceUrl": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+      "sourceName": "Apple Machine Learning Research",
+      "publishedAt": "2026-10-12T00:00:00.000Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "425ed5e80222590f",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "8fc32d90ac575043",
+      "title": "Large Language Models for Machine Translation Quality Annotation: Humans and Models Are Both Challenged",
+      "summary": "",
+      "sourceUrl": "https://machinelearning.apple.com/research/llm-translation-quality-annotation",
+      "sourceName": "Apple Machine Learning Research",
+      "publishedAt": "2026-10-12T00:00:00.000Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "107ad66aa374b53b",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
       "id": "a91405951b83e939",
       "title": "New controls and chat improvements in Copilot for JetBrains",
       "summary": "Copilot pour JetBrains permet aux administrateurs d'imposer un modèle par défaut et ajoute une action de correction directement depuis les diagnostics. Un nouveau réglage permet aussi de désactiver le démarrage automatique des serveurs MCP.",
@@ -954,7 +1356,7 @@
       "sourceUrl": "https://www.apple.com/newsroom/2026/10/apple-the-kings-trust-launch-initiative-to-empower-young-creatives",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-10-07T21:01:58.215Z",
-      "collectedAt": "2026-10-12T21:16:28.227Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -1361,7 +1763,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=10062026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-06T17:00:00.000Z",
-      "collectedAt": "2026-10-12T21:16:28.227Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -1452,7 +1854,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=10052026h",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-06T01:00:00.000Z",
-      "collectedAt": "2026-10-12T21:16:28.227Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -1567,7 +1969,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=10052026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-05T18:00:00.000Z",
-      "collectedAt": "2026-10-12T21:16:28.227Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -1587,7 +1989,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=10052026b",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-05T18:00:00.000Z",
-      "collectedAt": "2026-10-12T21:16:28.227Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -1607,7 +2009,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=10052026g",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-05T17:00:00.000Z",
-      "collectedAt": "2026-10-12T21:16:28.227Z",
+      "collectedAt": "2026-10-13T19:18:07.866Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
