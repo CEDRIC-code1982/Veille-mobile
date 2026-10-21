@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T17:06:14.887Z",
+  "generatedAt": "2026-10-21T17:13:01.823Z",
   "months": [
     {
       "month": "2026-08",
@@ -13,17 +13,17 @@
     },
     {
       "month": "2026-10",
-      "itemCount": 255,
+      "itemCount": 270,
       "blockingCount": 11
     }
   ],
   "counts": {
-    "total": 471,
+    "total": 486,
     "blocking": 17,
     "impacting": 78,
-    "background": 376,
-    "unverified": 241
+    "background": 391,
+    "unverified": 247
   },
   "feedCount": 50,
-  "lastCollectedAt": "2026-10-20T17:06:10.986Z"
+  "lastCollectedAt": "2026-10-21T17:12:54.130Z"
 }
