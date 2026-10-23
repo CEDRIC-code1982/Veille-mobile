@@ -1,7 +1,908 @@
 {
   "month": "2026-10",
-  "updatedAt": "2026-10-22T17:11:08.452Z",
+  "updatedAt": "2026-10-23T11:07:04.392Z",
   "items": [
+    {
+      "id": "0490afc86481e7ff",
+      "title": "Unifying Edge AI: How Coral NPU’s open standard brings portable, energy-viable intelligence from model to silicon",
+      "summary": "Google Research finalise l'architecture RISC-V ouverte Coral NPU avec une unité matricielle visant l'inférence embarquée à très basse consommation. Un compilateur IREE/MLIR en v1.0 permet d'y déployer des modèles JAX, PyTorch ou TensorFlow, et des kits matériels sont disponibles.",
+      "sourceUrl": "https://developers.googleblog.com/unifying-edge-ai-how-coral-npus-open-standard-brings-portable-energy-viable-intelligence-from-model-to-silicon",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "on-device-ai",
+        "hardware"
+      ],
+      "tags": [
+        "coral",
+        "npu",
+        "risc-v",
+        "edge"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "c9d31c1a2412fbbf",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "0e8ed59985c239b0",
+      "title": "Bringing Visual Graph Debugging to Custom Edge Compilers with Model Explorer",
+      "summary": "Model Explorer de Google AI Edge sait désormais afficher les représentations intermédiaires de compilateurs personnalisés via des adaptateurs comme TOSA ou PTE. L'outil aide à repérer les régressions d'export, vérifier la délégation matérielle et localiser les goulets de latence.",
+      "sourceUrl": "https://developers.googleblog.com/bringing-visual-graph-debugging-to-custom-edge-compilers-with-model-explorer",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "on-device-ai",
+        "tooling"
+      ],
+      "tags": [
+        "model-explorer",
+        "ai-edge",
+        "debugging"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "2eb19b67d3d48c2e",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "177ce4d05d2e629f",
+      "title": "iPhone",
+      "summary": "La page iPhone d'Apple met en avant les précommandes de l'iPhone Duo et de l'iPhone 18 Pro. Le reste du contenu est commercial et ne concerne pas les développeurs.",
+      "sourceUrl": "https://www.apple.com/iphone",
+      "sourceName": "Apple iPhone Lineup",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ios",
+        "hardware"
+      ],
+      "tags": [
+        "iphone-duo",
+        "iphone-18-pro"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "82a7130b0d4eef35",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "2065108d20dc969a",
+      "title": "Release Notes",
+      "summary": "Les notes de version de Google Play services signalent une bêta de play-services-dtdi alignée sur Kotlin 2.4.0. Une préversion de play-services-cloud-messaging ajoute des classes pour traiter les notifications distantes et les synchronisations en arrière-plan.",
+      "sourceUrl": "https://developers.google.com/android/guides/releases",
+      "sourceName": "Play Services Releases",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "tooling"
+      ],
+      "tags": [
+        "play-services",
+        "fcm",
+        "kotlin"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "2ba53f4a147dc877",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "29c722f885a35840",
+      "title": "Claude Platform release notes",
+      "summary": "Anthropic publie la version d'API 2026-10-21 et de nouvelles versions majeures de ses SDK, qui l'utilisent par défaut et comportent des changements incompatibles ainsi qu'un passage sous licence Apache 2.0. Claude est aussi proposé sur Google Cloud en offre gérée par Anthropic.",
+      "sourceUrl": "https://docs.claude.com/en/release-notes/overview",
+      "sourceName": "Claude Platform Release Notes",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "claude-api",
+        "sdk",
+        "breaking-change",
+        "licence"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "8468944f15937551",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "29d54da5d4f65404",
+      "title": "Three layers, one repo: a tour of google/adk-recipes",
+      "summary": "Le dépôt google/adk-recipes réorganise les ressources de l'Agent Development Kit en trois couches : cœur, plugins et contributions. Il fournit des modèles de référence et des compétences installables dans les assistants de code.",
+      "sourceUrl": "https://developers.googleblog.com/three-layers-one-repo-a-tour-of-googleadk-recipes",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "adk",
+        "agents",
+        "google"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "30ec9c171ec2b89a",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "30a2fcec2eb2eb26",
+      "title": "Evaluating AI agents: moving past the vibe check",
+      "summary": "Google propose un guide et une architecture de référence pour évaluer en continu des agents conversationnels multi-tours. L'approche s'appuie sur ADK, Gemini Enterprise Agent Platform et les standards OpenInference.",
+      "sourceUrl": "https://developers.googleblog.com/evaluating-ai-agents-moving-past-the-vibe-check",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "practices"
+      ],
+      "tags": [
+        "evaluation",
+        "agents",
+        "adk"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "f11dfa6582bb90c0",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "431e29443f282f05",
+      "title": "Features and APIs — 17",
+      "summary": "Android 17 (API 37) apporte de nouvelles API, dont des déclencheurs ProfilingManager pour le démarrage à froid, les dépassements mémoire, les arrêts pour surconsommation CPU et les anomalies de performance. Ces déclencheurs renvoient traces et échantillons de pile pour le diagnostic.",
+      "sourceUrl": "https://developer.android.com/about/versions/17/features",
+      "sourceName": "Android Platform Features",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "os-release"
+      ],
+      "tags": [
+        "android-17",
+        "profiling",
+        "performance"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "2dc3727a238ad391",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "49997c9385f73eab",
+      "title": "Optimizing a 200,000-line Python codebase overnight with Gemini 4 Argon",
+      "summary": "L'équipe ADK de Google raconte avoir laissé Gemini 4 Argon optimiser seul, pendant une nuit, un projet Python de grande taille à l'aide de compétences d'agent et d'un mode objectif. Les gains annoncés portent sur la préparation des sessions et le temps d'import à froid.",
+      "sourceUrl": "https://developers.googleblog.com/optimizing-a-200000-line-python-codebase-overnight-with-gemini-4-argon",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "practices"
+      ],
+      "tags": [
+        "gemini",
+        "agents",
+        "optimisation"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "ffbd0ebf1de7824c",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "578a5572ebb5c3b9",
+      "title": "News",
+      "summary": "La page d'actualités d'Anthropic récapitule les lancements récents de Claude Opus 5.5, Sonnet 5.5 et Haiku 5.5. Elle mentionne aussi l'élargissement du programme de vérification cyber et un fonds d'intérêt public.",
+      "sourceUrl": "https://www.anthropic.com/news",
+      "sourceName": "Anthropic News",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "anthropic",
+        "claude",
+        "modeles"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "8ce57febfe4b75d6",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "5830e22e2517bea2",
+      "title": "Android Studio Rabbit 1",
+      "summary": "Android Studio Rabbit 1 (2026.2.1) est la nouvelle version stable de l'IDE. L'extrait ne contient que les modalités de téléchargement et la licence du SDK, sans détail des nouveautés.",
+      "sourceUrl": "https://developer.android.com/studio/releases",
+      "sourceName": "Android Studio Releases",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "tooling"
+      ],
+      "tags": [
+        "android-studio",
+        "ide"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "5dbb96f26da68f3a",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "588df73365827401",
+      "title": "App Review Guidelines",
+      "summary": "",
+      "sourceUrl": "https://developer.apple.com/app-store/review/guidelines",
+      "sourceName": "App Store Review Guidelines",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "policy"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "8aee35893ee7e7a0",
+      "verificationNote": "non classé : the proposals file says nothing about this item"
+    },
+    {
+      "id": "588e263c52d3f93d",
+      "title": "Latest updates from Mistral.",
+      "summary": "Le blog de Mistral liste ses annonces récentes, dont Mistral Large 4, Voxtral 3 pour les agents vocaux et le modèle de prévision Timestral. Il évoque aussi une levée de fonds et plusieurs partenariats industriels.",
+      "sourceUrl": "https://mistral.ai/news",
+      "sourceName": "Mistral News",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "mistral",
+        "modeles"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "942d0382d0958910",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "71c8faf7773c4772",
+      "title": "Announcing New vLLM and SGLang Inference Engines on TPU",
+      "summary": "Google annonce des backends PyTorch natifs pour les moteurs de service vLLM et SGLang sur TPU, reposant sur TorchTPU. Ils incluent des noyaux optimisés et le service désagrégé pour les charges à long contexte.",
+      "sourceUrl": "https://developers.googleblog.com/announcing-new-vllm-and-sglang-inference-engines-on-tpu",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "vllm",
+        "tpu",
+        "inference"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "7c1781a7c68697e8",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "82f0a406007c9404",
+      "title": "Features and APIs — 16",
+      "summary": "La page des fonctionnalités d'Android 16 présente les nouvelles API de cette version. Elle rappelle que Google prévoyait deux publications d'API en 2025, la version majeure étant avancée au deuxième trimestre, ce qui avance d'autant les tests de compatibilité.",
+      "sourceUrl": "https://developer.android.com/about/versions/16/features",
+      "sourceName": "Android Platform Features",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "os-release"
+      ],
+      "tags": [
+        "android-16",
+        "api-36"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "d51c7aa39869478c",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "82f90c094016e37d",
+      "title": "Behavior changes: all apps — 16",
+      "summary": "Sous Android 16 (API 36), quel que soit le niveau ciblé, les quotas d'exécution de JobScheduler dépendent du bucket de veille de l'application, y compris pour les jobs lancés au premier plan ou en parallèle d'un service de premier plan. Google conseille les jobs de transfert initiés par l'utilisateur pour ce cas d'usage.",
+      "sourceUrl": "https://developer.android.com/about/versions/16/behavior-changes-all",
+      "sourceName": "Android Behavior Changes",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "os-release",
+        "background"
+      ],
+      "tags": [
+        "android-16",
+        "jobscheduler",
+        "quotas"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "21ee5e1b9fd51b73",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "85cc4648870eda89",
+      "title": "Model deprecations",
+      "summary": "La table des modèles Claude indique pour chacun son statut et sa date de retrait prévue. claude-sonnet-4-5-20250929 y figure comme déprécié avec un retrait au 30 novembre 2026.",
+      "sourceUrl": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "sourceName": "Claude Model Deprecations",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "claude",
+        "deprecation",
+        "retrait"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "3c1815f69611231e",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "8872806b91b1ecca",
+      "title": "Apple security releases",
+      "summary": "Apple liste ses mises à jour de sécurité : la dernière version d'iOS et d'iPadOS est 27.0.1, avec une 27.1 réservée à l'iPhone Duo. macOS, watchOS et visionOS sont en 27.0.1.",
+      "sourceUrl": "https://support.apple.com/en-us/100100",
+      "sourceName": "Apple Security Releases",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "os-release"
+      ],
+      "tags": [
+        "securite",
+        "ios-27"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "be8f816a54454de5",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "887ac67d181b8d97",
+      "title": "Native Model Authoring for Edge with LiteRT Tensor API",
+      "summary": "Google présente la LiteRT Tensor API, qui donne un contrôle natif en C++ sur le graphe du modèle. Elle vise à unifier les calculs d'apprentissage automatique de bout en bout sur du matériel embarqué hétérogène.",
+      "sourceUrl": "https://developers.googleblog.com/native-model-authoring-for-edge-with-litert-tensor-api",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "on-device-ai"
+      ],
+      "tags": [
+        "litert",
+        "tensor-api",
+        "edge"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "dfc540a3b94d3dd9",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "88bebe9674d46295",
+      "title": "Gemini 4 Argon for Robotics",
+      "summary": "Gemini 4 Argon est mis en avant comme modèle de raisonnement physique pour la robotique, accessible via AI Studio, l'API Gemini et Antigravity. La simulation avec MuJoCo permet de valider le contrôle des robots.",
+      "sourceUrl": "https://developers.googleblog.com/gemini-4-argon-for-robotics",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "gemini",
+        "robotique"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "f4a781831e03f43b",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "8dc2ba6ddca375ea",
+      "title": "The Engineering team builds the infrastructure that makes Claude reliable and trustworthy. They translate our research into production systems, and share what",
+      "summary": "Le blog Engineering d'Anthropic recense ses articles sur la construction et l'évaluation d'agents, dont le plus récent porte sur la migration vers un système de contrôle de version interne. D'autres traitent du harnais de Claude Code et du mode auto.",
+      "sourceUrl": "https://www.anthropic.com/engineering",
+      "sourceName": "Anthropic Engineering",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "anthropic",
+        "agents",
+        "engineering"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "05ededa140756967",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "8f6d788e14946711",
+      "title": "Announcing DPoP Support for Google OAuth: Securing Refresh Tokens",
+      "summary": "Google OAuth prend en charge DPoP pour lier cryptographiquement les jetons de rafraîchissement à leur détenteur, ce qui limite leur vol. Pour les chaînes d'agents ou les charges MCP, Google Cloud STS gère la délégation sécurisée des jetons.",
+      "sourceUrl": "https://developers.googleblog.com/announcing-dpop-support-for-google-oauth-securing-refresh-tokens",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "tooling",
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "oauth",
+        "dpop",
+        "securite"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "2464bd06f535dc97",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "9906f4f1cf5fa78b",
+      "title": "Behavior changes: all apps — 17",
+      "summary": "Android 17 (API 37) impose à toutes les applications des limites mémoire calculées selon la RAM de l'appareil, pour contenir fuites et cas extrêmes. Une application touchée le voit dans ApplicationExitInfo avec le motif REASON_OTHER et une description mentionnant MemoryLimiter.",
+      "sourceUrl": "https://developer.android.com/about/versions/17/behavior-changes-all",
+      "sourceName": "Android Behavior Changes",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "os-release"
+      ],
+      "tags": [
+        "android-17",
+        "memoire",
+        "exit-info"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "c67dd8301a5c1cef",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "9ae640307e4c2532",
+      "title": "Architecting Governed, Self-Evolving AI Agents on Google Cloud",
+      "summary": "Google décrit une architecture d'agents gouvernés capables de corriger des incidents de production, combinant sa plateforme d'agents, ADK et BigQuery. La sécurité repose sur quatre barrières successives, dont Model Armor et Binary Authorization.",
+      "sourceUrl": "https://developers.googleblog.com/architecting-governed-self-evolving-ai-agents-on-gemini-agent-platform",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "agents",
+        "gouvernance",
+        "google-cloud"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "1f545a52d4d0368d",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "9c8b347586b94522",
+      "title": "Release notes",
+      "summary": "Gemini 4 Argon passe en disponibilité générale, tandis que plusieurs modèles Flash sont dépréciés et redirigés automatiquement vers leurs successeurs. L'agent deep-research-pro-preview-12-2025 est arrêté le 23 octobre 2026 et doit être remplacé par une version plus récente.",
+      "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
+      "sourceName": "Gemini API Release Notes",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "blocking",
+      "trustLevel": "verified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "gemini",
+        "deprecation",
+        "deep-research"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "a8801e93ad9ecb4d",
+      "evidenceQuote": "The deep-research-pro-preview-12-2025 agent is deprecated and will be shut down on October 23, 2026",
+      "deadline": "2026-10-23"
+    },
+    {
+      "id": "b2d99849703e7818",
+      "title": "Deprecations",
+      "summary": "OpenAI retirera plusieurs modèles de la série GPT-4, dont GPT-4o et GPT-4.1, au profit de gpt-6-luna, le 14 janvier 2027. D'autres retraits sont programmés pour des modèles GPT-5 et de synthèse vocale.",
+      "sourceUrl": "https://platform.openai.com/docs/deprecations",
+      "sourceName": "OpenAI Deprecations",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "blocking",
+      "trustLevel": "verified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "openai",
+        "deprecation",
+        "gpt-4o"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "508294f9003594b0",
+      "evidenceQuote": "On October 14, 2026, we notified developers using certain GPT-4 series models of their deprecation and removal from the API on January 14, 2027.",
+      "deadline": "2027-01-14"
+    },
+    {
+      "id": "b5fca4a15265a581",
+      "title": "Changelog",
+      "summary": "Le changelog d'Expo annonce la sortie du SDK 58. L'extrait ne détaille pas son contenu.",
+      "sourceUrl": "https://expo.dev/changelog",
+      "sourceName": "Expo Changelog",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "react-native",
+        "tooling"
+      ],
+      "tags": [
+        "expo",
+        "sdk-58"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "015d4e4830144f97",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "b8d1c074402fe7c1",
+      "title": "Meet Google Play's target API level requirement",
+      "summary": "Google Play exige que les nouvelles applications et mises à jour ciblent Android 16 (API 36), les applications existantes devant cibler au moins Android 15 pour rester visibles des nouveaux utilisateurs. Une prolongation peut être demandée jusqu'au 1er novembre 2026.",
+      "sourceUrl": "https://developer.android.com/google/play/requirements/target-sdk",
+      "sourceName": "Android Target API Level Requirements",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "blocking",
+      "trustLevel": "verified",
+      "categories": [
+        "android",
+        "policy"
+      ],
+      "tags": [
+        "target-sdk",
+        "google-play",
+        "api-36"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "59a2008db9e8b96c",
+      "evidenceQuote": "Starting August 31 2026: New apps and app updates must target Android 16 (API level 36) or higher to be submitted to Google Play; except for Wear OS and Android Automotive OS apps, which must target Android 15 (API level 35) or higher, and Android TV and Android XR apps, which must target Android",
+      "deadline": "2026-08-31"
+    },
+    {
+      "id": "be3b26f0ed9c1a57",
+      "title": "Step by Step guide: Build a Voice Agent That Never Goes Silent using ADK",
+      "summary": "Ce tutoriel montre comment construire avec ADK et gemini-3.8-live un agent vocal qui reste réactif grâce à des outils non bloquants. Il explique aussi comment régler le moment où les résultats d'outils sont injectés dans la conversation.",
+      "sourceUrl": "https://developers.googleblog.com/step-by-step-guide-build-a-voice-agent-that-never-goes-silent-using-adk",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "practices"
+      ],
+      "tags": [
+        "adk",
+        "voix",
+        "agents"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "e59d6f3a1417b266",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "d009dada333dea4e",
+      "title": "Integrating TorchTPU into TorchTitan and Optimizing Models for TPU",
+      "summary": "TorchTPU ajoute à PyTorch un périphérique tpu natif pour entraîner de grands modèles sans réécriture en JAX. Un fork de TorchTitan fournit des primitives de mise à l'échelle et des recettes d'optimisation.",
+      "sourceUrl": "https://developers.googleblog.com/integrating-torchtpu-into-torchtitan-and-optimizing-models-for-tpu",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "pytorch",
+        "tpu",
+        "entrainement"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "af45c0c984b41b29",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "db2c143154261bc1",
+      "title": "Changelog",
+      "summary": "OpenAI rend l'API Decisions disponible en version générale et ajoute un cache de prompt de 12 heures sur l'API Responses. La création de voix personnalisées à partir d'une description textuelle est ouverte à tous les clients de l'API.",
+      "sourceUrl": "https://platform.openai.com/docs/changelog",
+      "sourceName": "OpenAI Platform Changelog",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [
+        "openai",
+        "prompt-caching",
+        "voix"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "43e4cc715061a71c",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "f44e1bdef7106145",
+      "title": "Release notes",
+      "summary": "Les notes de version de ML Kit recensent les versions des API Android et iOS, avec la prise en charge des pages mémoire de 16 Ko sur Android et un relèvement des versions minimales de Xcode et d'iOS. Les fonctions couvrent notamment le scan de codes-barres et la reconnaissance de texte.",
+      "sourceUrl": "https://developers.google.com/ml-kit/release-notes",
+      "sourceName": "ML Kit Release Notes",
+      "publishedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "ios",
+        "ai",
+        "on-device-ai"
+      ],
+      "tags": [
+        "ml-kit",
+        "16kb-pages"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "cf09c1a0c53466af",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "a45f5dfbc3465c86",
+      "title": "GitHub Copilot in Visual Studio — September update",
+      "summary": "Copilot dans Visual Studio permet d'explorer une pull request depuis le chat et d'utiliser ses propres modèles (BYOM) en préversion. BYOM n'est plus compatible qu'avec le nouveau mode Agent, et les modèles Ollama doivent être reconfigurés après la mise à jour.",
+      "sourceUrl": "https://github.blog/changelog/2026-10-22-github-copilot-in-visual-studio-september-update-2",
+      "sourceName": "GitHub Copilot Changelog",
+      "publishedAt": "2026-10-23T00:17:51.000Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [
+        "copilot",
+        "visual-studio",
+        "byom"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "3121641a0d97f0a9",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "dea8ba729eb28582",
+      "title": "Custom skills, agents, and MCP servers in usage metrics API",
+      "summary": "L'API de métriques d'usage Copilot affiche désormais le nom des compétences, agents personnalisés, serveurs MCP et plugins créés par l'organisation. Chaque liste peut contenir jusqu'à 25 entrées au lieu de cinq.",
+      "sourceUrl": "https://github.blog/changelog/2026-10-22-custom-skills-agents-and-mcp-servers-in-usage-metrics-api",
+      "sourceName": "GitHub Copilot Changelog",
+      "publishedAt": "2026-10-22T22:19:17.000Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [
+        "copilot",
+        "metriques",
+        "mcp"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "2a2f22f8aebb511e",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "0307ec1244417a61",
+      "title": "v2.1.309",
+      "summary": "Claude Code 2.1.309 corrige une série de failles de confinement du bac à sable et des vérifications de permissions Bash. Un CLAUDE.md imbriqué trop volumineux n'est plus chargé qu'en partie, ce qui évite des compactages répétés.",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.309",
+      "sourceName": "Claude Code Releases",
+      "publishedAt": "2026-10-22T22:18:57.000Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [
+        "claude-code",
+        "sandbox",
+        "permissions"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "168cf68c9247cd38",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "deb561649482c2bd",
+      "title": "TestFlight 4.4.1",
+      "summary": "",
+      "sourceUrl": "https://developer.apple.com/news/releases?id=10222026a",
+      "sourceName": "Apple Developer Releases",
+      "publishedAt": "2026-10-22T21:00:00.000Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "os-release",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "64d1e4e1f315d2e9",
+      "verificationNote": "non classé : the proposals file says nothing about this item"
+    },
+    {
+      "id": "767a7f383549ba64",
+      "title": "Global default for Copilot features generally available",
+      "summary": "GitHub applique progressivement une politique par défaut aux fonctionnalités Copilot non configurées des offres Business et Enterprise. Les choix explicites des administrateurs sont conservés et les préversions restent sur adhésion.",
+      "sourceUrl": "https://github.blog/changelog/2026-10-22-global-default-for-copilot-features-generally-available",
+      "sourceName": "GitHub Copilot Changelog",
+      "publishedAt": "2026-10-22T20:44:28.000Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models",
+        "tooling"
+      ],
+      "tags": [
+        "copilot",
+        "politique",
+        "administration"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "9a072633bdf40913",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "d1715806360e9350",
+      "title": "v0.10.7-libs",
+      "summary": "Les bibliothèques natives de React Native ExecuTorch sont reconstruites avec des correctifs sur le décodage du tokenizer, XNNPACK, Vulkan et le délégué QNN. Les en-têtes sont régénérés pour inclure des API Vulkan manquantes.",
+      "sourceUrl": "https://github.com/software-mansion/react-native-executorch/releases/tag/v0.10.7-libs",
+      "sourceName": "React Native ExecuTorch Releases",
+      "publishedAt": "2026-10-22T18:20:47.000Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "react-native",
+        "ai",
+        "on-device-ai"
+      ],
+      "tags": [
+        "executorch",
+        "xnnpack",
+        "vulkan"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "ff599c29f00b0359",
+      "verificationNote": "aucune citation à vérifier"
+    },
+    {
+      "id": "ff0353be66f0d39a",
+      "title": "Offer your subscriptions to businesses and schools",
+      "summary": "Les organisations et établissements scolaires peuvent acheter des abonnements d'apps en volume, option activée par défaut dans App Store Connect sauf réglage contraire. Les achats de groupe pourront être testés en sandbox avant leur arrivée sur l'App Store cet hiver.",
+      "sourceUrl": "https://developer.apple.com/news?id=yfo21auu",
+      "sourceName": "Apple Developer News",
+      "publishedAt": "2026-10-22T18:00:08.000Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "impacting",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "policy"
+      ],
+      "tags": [
+        "abonnements",
+        "app-store-connect",
+        "multiseat"
+      ],
+      "impactedProjects": [],
+      "fingerprint": "a8d02c181cc10dd0",
+      "verificationNote": "aucune citation à vérifier"
+    },
     {
       "id": "015c4343e3e2eeeb",
       "title": "The Engineering team builds the infrastructure that makes Claude reliable and trustworthy. They translate our research into production systems, and share what",
@@ -19,158 +920,6 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "b411245868a88b4f",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "0490afc86481e7ff",
-      "title": "Unifying Edge AI: How Coral NPU’s open standard brings portable, energy-viable intelligence from model to silicon",
-      "summary": "",
-      "sourceUrl": "https://developers.googleblog.com/unifying-edge-ai-how-coral-npus-open-standard-brings-portable-energy-viable-intelligence-from-model-to-silicon",
-      "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "339dfb683e575285",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "0e8ed59985c239b0",
-      "title": "Bringing Visual Graph Debugging to Custom Edge Compilers with Model Explorer",
-      "summary": "",
-      "sourceUrl": "https://developers.googleblog.com/bringing-visual-graph-debugging-to-custom-edge-compilers-with-model-explorer",
-      "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "fd34c09d5452f0bb",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "177ce4d05d2e629f",
-      "title": "iPhone",
-      "summary": "",
-      "sourceUrl": "https://www.apple.com/iphone",
-      "sourceName": "Apple iPhone Lineup",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ios",
-        "hardware"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "82a7130b0d4eef35",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "2065108d20dc969a",
-      "title": "Release Notes",
-      "summary": "",
-      "sourceUrl": "https://developers.google.com/android/guides/releases",
-      "sourceName": "Play Services Releases",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "android",
-        "tooling"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "2ba53f4a147dc877",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "29d54da5d4f65404",
-      "title": "Three layers, one repo: a tour of google/adk-recipes",
-      "summary": "",
-      "sourceUrl": "https://developers.googleblog.com/three-layers-one-repo-a-tour-of-googleadk-recipes",
-      "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "56b2fe7524ae7239",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "30a2fcec2eb2eb26",
-      "title": "Evaluating AI agents: moving past the vibe check",
-      "summary": "",
-      "sourceUrl": "https://developers.googleblog.com/evaluating-ai-agents-moving-past-the-vibe-check",
-      "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "27193369930ccd98",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "431e29443f282f05",
-      "title": "Features and APIs — 17",
-      "summary": "",
-      "sourceUrl": "https://developer.android.com/about/versions/17/features",
-      "sourceName": "Android Platform Features",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "android",
-        "os-release"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "2dc3727a238ad391",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "49997c9385f73eab",
-      "title": "Optimizing a 200,000-line Python codebase overnight with Gemini 4 Argon",
-      "summary": "",
-      "sourceUrl": "https://developers.googleblog.com/optimizing-a-200000-line-python-codebase-overnight-with-gemini-4-argon",
-      "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "38939ee525c70677",
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
@@ -193,63 +942,6 @@
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
-      "id": "5830e22e2517bea2",
-      "title": "Android Studio Rabbit 1",
-      "summary": "",
-      "sourceUrl": "https://developer.android.com/studio/releases",
-      "sourceName": "Android Studio Releases",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "android",
-        "tooling"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "5dbb96f26da68f3a",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "588df73365827401",
-      "title": "App Review Guidelines",
-      "summary": "",
-      "sourceUrl": "https://developer.apple.com/app-store/review/guidelines",
-      "sourceName": "App Store Review Guidelines",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "ios",
-        "policy"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "8aee35893ee7e7a0",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "588e263c52d3f93d",
-      "title": "Latest updates from Mistral.",
-      "summary": "",
-      "sourceUrl": "https://mistral.ai/news",
-      "sourceName": "Mistral News",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "942d0382d0958910",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
       "id": "714d7874f4f98ba3",
       "title": "Claude Platform release notes",
       "summary": "",
@@ -266,198 +958,6 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "359f537d29032b93",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "71c8faf7773c4772",
-      "title": "Announcing New vLLM and SGLang Inference Engines on TPU",
-      "summary": "",
-      "sourceUrl": "https://developers.googleblog.com/announcing-new-vllm-and-sglang-inference-engines-on-tpu",
-      "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "9885c444abb38020",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "82f0a406007c9404",
-      "title": "Features and APIs — 16",
-      "summary": "",
-      "sourceUrl": "https://developer.android.com/about/versions/16/features",
-      "sourceName": "Android Platform Features",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "android",
-        "os-release"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "d51c7aa39869478c",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "82f90c094016e37d",
-      "title": "Behavior changes: all apps — 16",
-      "summary": "",
-      "sourceUrl": "https://developer.android.com/about/versions/16/behavior-changes-all",
-      "sourceName": "Android Behavior Changes",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "android",
-        "os-release",
-        "background"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "21ee5e1b9fd51b73",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "85cc4648870eda89",
-      "title": "Model deprecations",
-      "summary": "",
-      "sourceUrl": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
-      "sourceName": "Claude Model Deprecations",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "3c1815f69611231e",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "887ac67d181b8d97",
-      "title": "Native Model Authoring for Edge with LiteRT Tensor API",
-      "summary": "",
-      "sourceUrl": "https://developers.googleblog.com/native-model-authoring-for-edge-with-litert-tensor-api",
-      "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "ea4e04ab2f06c073",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "88bebe9674d46295",
-      "title": "Gemini 4 Argon for Robotics",
-      "summary": "",
-      "sourceUrl": "https://developers.googleblog.com/gemini-4-argon-for-robotics",
-      "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "fa0b0b34b888a275",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "8f6d788e14946711",
-      "title": "Announcing DPoP Support for Google OAuth: Securing Refresh Tokens",
-      "summary": "",
-      "sourceUrl": "https://developers.googleblog.com/announcing-dpop-support-for-google-oauth-securing-refresh-tokens",
-      "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "8b4b15061fabd4d3",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "9906f4f1cf5fa78b",
-      "title": "Behavior changes: all apps — 17",
-      "summary": "",
-      "sourceUrl": "https://developer.android.com/about/versions/17/behavior-changes-all",
-      "sourceName": "Android Behavior Changes",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "android",
-        "os-release",
-        "background"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "c67dd8301a5c1cef",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "9ae640307e4c2532",
-      "title": "Architecting Governed, Self-Evolving AI Agents on the Gemini platform",
-      "summary": "",
-      "sourceUrl": "https://developers.googleblog.com/architecting-governed-self-evolving-ai-agents-on-gemini-agent-platform",
-      "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "84fc1f893a0449df",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "9c8b347586b94522",
-      "title": "Release notes",
-      "summary": "",
-      "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
-      "sourceName": "Gemini API Release Notes",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "a8801e93ad9ecb4d",
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
@@ -480,130 +980,13 @@
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
-      "id": "b2d99849703e7818",
-      "title": "Deprecations",
-      "summary": "",
-      "sourceUrl": "https://platform.openai.com/docs/deprecations",
-      "sourceName": "OpenAI Deprecations",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "508294f9003594b0",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "b5fca4a15265a581",
-      "title": "Changelog",
-      "summary": "",
-      "sourceUrl": "https://expo.dev/changelog",
-      "sourceName": "Expo Changelog",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "react-native",
-        "tooling"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "015d4e4830144f97",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "b8d1c074402fe7c1",
-      "title": "Meet Google Play's target API level requirement",
-      "summary": "",
-      "sourceUrl": "https://developer.android.com/google/play/requirements/target-sdk",
-      "sourceName": "Android Target API Level Requirements",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "android",
-        "policy",
-        "background"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "59a2008db9e8b96c",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "be3b26f0ed9c1a57",
-      "title": "Step by Step guide: Build a Voice Agent That Never Goes Silent using ADK",
-      "summary": "",
-      "sourceUrl": "https://developers.googleblog.com/step-by-step-guide-build-a-voice-agent-that-never-goes-silent-using-adk",
-      "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "6b54b0d8e0b42574",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "d009dada333dea4e",
-      "title": "Integrating TorchTPU into TorchTitan and Optimizing Models for TPU",
-      "summary": "",
-      "sourceUrl": "https://developers.googleblog.com/integrating-torchtpu-into-torchtitan-and-optimizing-models-for-tpu",
-      "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "085e559af5345755",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "f44e1bdef7106145",
-      "title": "Release notes",
-      "summary": "",
-      "sourceUrl": "https://developers.google.com/ml-kit/release-notes",
-      "sourceName": "ML Kit Release Notes",
-      "publishedAt": "2026-10-22T17:11:04.363Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "android",
-        "ai",
-        "on-device-ai",
-        "tooling"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "cf09c1a0c53466af",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
       "id": "7bf4630bf25d5352",
       "title": "Industry comparisons in the Copilot impact dashboard",
-      "summary": "",
+      "summary": "Le tableau de bord d'impact Copilot propose une comparaison sectorielle de l'adoption des agents avec des entreprises similaires. La participation est facultative et désactivée par défaut.",
       "sourceUrl": "https://github.blog/changelog/2026-10-22-industry-comparisons-in-the-copilot-impact-dashboard",
       "sourceName": "GitHub Copilot Changelog",
       "publishedAt": "2026-10-22T16:28:24.000Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -611,10 +994,13 @@
         "ai-models",
         "tooling"
       ],
-      "tags": [],
+      "tags": [
+        "copilot",
+        "metriques"
+      ],
       "impactedProjects": [],
       "fingerprint": "2da7950ee4b3f147",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "0de628b9172dc6c2",
@@ -623,7 +1009,7 @@
       "sourceUrl": "https://www.apple.com/newsroom/2026/10/formula-1-united-states-grand-prix-streams-live-on-apple-tv-this-weekend",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-10-22T12:59:11.281Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -633,35 +1019,38 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "bb94f0f1d75f90c4",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "non classé : the proposals file says nothing about this item"
     },
     {
       "id": "32ba8c8e96f74271",
       "title": "Developers bring incredible new app experiences to iPhone Duo",
-      "summary": "",
+      "summary": "Apple annonce que des applications et jeux optimisés pour l'iPhone Duo, son premier iPhone pliable, seront disponibles dès sa sortie.",
       "sourceUrl": "https://www.apple.com/newsroom/2026/10/developers-bring-incredible-new-app-experiences-to-iphone-duo",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-10-22T11:59:15.686Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
-        "hardware",
-        "ios"
+        "ios",
+        "hardware"
       ],
-      "tags": [],
+      "tags": [
+        "iphone-duo",
+        "pliable"
+      ],
       "impactedProjects": [],
       "fingerprint": "76a312a05d421ed6",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "b5445ed720b1d92d",
       "title": "v2.1.308",
-      "summary": "",
+      "summary": "Claude Code 2.1.308 se limite à des corrections de bugs et des améliorations de fiabilité.",
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.308",
       "sourceName": "Claude Code Releases",
       "publishedAt": "2026-10-22T04:34:55.000Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -669,19 +1058,21 @@
         "ai-models",
         "tooling"
       ],
-      "tags": [],
+      "tags": [
+        "claude-code"
+      ],
       "impactedProjects": [],
       "fingerprint": "8064c6b956236fc4",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "1f4559e41bf13b35",
       "title": "v2.1.307",
-      "summary": "",
+      "summary": "Claude Code 2.1.307 ajoute une commande pour migrer le code vers la version d'API 2026-10-21 et un événement OpenTelemetry pour chaque appel d'outil bloqué ou soumis à validation. Il corrige plusieurs problèmes de connexion des serveurs MCP et de compactage automatique.",
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.307",
       "sourceName": "Claude Code Releases",
       "publishedAt": "2026-10-21T22:17:02.000Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -689,10 +1080,14 @@
         "ai-models",
         "tooling"
       ],
-      "tags": [],
+      "tags": [
+        "claude-code",
+        "mcp",
+        "opentelemetry"
+      ],
       "impactedProjects": [],
       "fingerprint": "aaaf7f5ae5aab322",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "18b8caf10eae3a82",
@@ -832,11 +1227,11 @@
     {
       "id": "22a9f3a2fa74f9a0",
       "title": "v0.10.7",
-      "summary": "",
+      "summary": "React Native ExecuTorch 0.10.7 met à jour phonemis pour que la synthèse vocale lise les longs nombres chiffre par chiffre au lieu de les ignorer.",
       "sourceUrl": "https://github.com/software-mansion/react-native-executorch/releases/tag/v0.10.7",
       "sourceName": "React Native ExecuTorch Releases",
       "publishedAt": "2026-10-21T12:26:24.000Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -844,19 +1239,22 @@
         "ai",
         "on-device-ai"
       ],
-      "tags": [],
+      "tags": [
+        "executorch",
+        "tts"
+      ],
       "impactedProjects": [],
       "fingerprint": "670d5bb2417ba3af",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "b624a9cbfe8c4465",
       "title": "v2.1.306",
-      "summary": "",
+      "summary": "Claude Code 2.1.306 corrige une erreur d'authentification en session cloud et une erreur d'API masquée à tort par un message de prompt trop long.",
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.306",
       "sourceName": "Claude Code Releases",
       "publishedAt": "2026-10-21T03:16:31.000Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -864,29 +1262,35 @@
         "ai-models",
         "tooling"
       ],
-      "tags": [],
+      "tags": [
+        "claude-code"
+      ],
       "impactedProjects": [],
       "fingerprint": "b306c56712dfe743",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "00e55c99b31a2f0f",
       "title": "A more reliable way to add and edit contacts on Android",
-      "summary": "",
+      "summary": "Les applications qui cibleront la prochaine version d'Android ne pourront plus écrire directement dans les contacts avec la permission WRITE_CONTACTS. Google présente un mécanisme plus fiable pour ajouter et modifier des contacts.",
       "sourceUrl": "https://developer.android.com/blog/posts/reliable-way-to-add-and-edit-contacts-android",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-10-21T00:00:00.000Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "impacting",
       "trustLevel": "reported",
       "categories": [
         "android",
         "policy"
       ],
-      "tags": [],
+      "tags": [
+        "contacts",
+        "permissions",
+        "write-contacts"
+      ],
       "impactedProjects": [],
       "fingerprint": "c2e33eb70c881a0a",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "c0c1f67d3943fff7",
@@ -895,7 +1299,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=10202026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-20T23:00:00.000Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -906,16 +1310,16 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "3009a77f378f858d",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "non classé : the proposals file says nothing about this item"
     },
     {
       "id": "11a9e9aebb65d4c7",
       "title": "v2.1.305",
-      "summary": "",
+      "summary": "Claude Code 2.1.305 ajoute une option de bac à sable Linux pour autoriser les espaces de noms utilisateur imbriqués, au prix d'un affaiblissement des protections. Il corrige une régression qui faisait échouer les requêtes sur Vertex, Bedrock et derrière certaines passerelles.",
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.305",
       "sourceName": "Claude Code Releases",
       "publishedAt": "2026-10-20T20:46:50.000Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -923,10 +1327,14 @@
         "ai-models",
         "tooling"
       ],
-      "tags": [],
+      "tags": [
+        "claude-code",
+        "sandbox",
+        "vertex"
+      ],
       "impactedProjects": [],
       "fingerprint": "de8080b923f6bb66",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "f6b8feb6e1afd668",
@@ -935,7 +1343,7 @@
       "sourceUrl": "https://blog.google/products-and-platforms/platforms/android/android-auto-cars-with-google-built-in-gemini-personal-intelligence",
       "sourceName": "Android and Pixel Blog",
       "publishedAt": "2026-10-20T20:00:00.000Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -945,43 +1353,49 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "a3a73de7b17c27b7",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "non classé : the proposals file says nothing about this item"
     },
     {
       "id": "9e50e48d43dfa880",
       "title": "TypeScript 7.1 Beta",
-      "summary": "",
+      "summary": "La bêta de TypeScript 7.1 est publiée sur npm. L'extrait renvoie vers l'annonce officielle sans en détailler le contenu.",
       "sourceUrl": "https://github.com/microsoft/TypeScript/releases/tag/v7.1-beta",
       "sourceName": "TypeScript Releases",
       "publishedAt": "2026-10-20T18:00:18.000Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
         "typescript"
       ],
-      "tags": [],
+      "tags": [
+        "typescript-7.1",
+        "beta"
+      ],
       "impactedProjects": [],
       "fingerprint": "2f826646b650e2e2",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "e216502887f61444",
       "title": "Announcing TypeScript 7.1 Beta",
-      "summary": "",
+      "summary": "TypeScript 7.1 bêta prend en charge les attributs d'import dans les modules ambiants. Cela permet de typer des imports de fichiers texte, binaires ou CSS déclarés via des attributs comme type.",
       "sourceUrl": "https://devblogs.microsoft.com/typescript/announcing-typescript-7-1-beta",
       "sourceName": "TypeScript Dev Blog",
       "publishedAt": "2026-10-20T17:53:06.000Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
         "typescript"
       ],
-      "tags": [],
+      "tags": [
+        "typescript-7.1",
+        "import-attributes"
+      ],
       "impactedProjects": [],
       "fingerprint": "0d6878f77846959c",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "229d9e1085e380f9",
@@ -1144,7 +1558,7 @@
       "sourceUrl": "https://www.apple.com/newsroom/2026/10/apple-unveils-the-2026-designers-of-tomorrow",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-10-20T14:59:22.784Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -1154,7 +1568,7 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "a5a9a83ae2f832a6",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "non classé : the proposals file says nothing about this item"
     },
     {
       "id": "04da7059074284bf",
@@ -1163,7 +1577,7 @@
       "sourceUrl": "https://www.apple.com/newsroom/2026/10/apple-announces-american-manufacturing-program-partners-for-latest-iphone-lineup",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-10-20T12:00:22.992Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -1173,35 +1587,40 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "1eb74774609a8435",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "non classé : the proposals file says nothing about this item"
     },
     {
       "id": "d836677d3a406602",
       "title": "v.12.6.0",
-      "summary": "",
+      "summary": "react-native-ble-manager 12.6.0 corrige sur iOS le suivi des caractéristiques par instance de service. retrieveServices renvoie désormais une erreur au lieu de planter lorsque le cache GATT est obsolète.",
       "sourceUrl": "https://github.com/innoveit/react-native-ble-manager/releases/tag/v.12.6.0",
       "sourceName": "BLE Manager Releases",
       "publishedAt": "2026-10-20T10:24:42.000Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
-      "criticality": "background",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "criticality": "impacting",
       "trustLevel": "reported",
       "categories": [
         "react-native",
-        "ble"
+        "ble",
+        "ios"
       ],
-      "tags": [],
+      "tags": [
+        "ble-manager",
+        "gatt",
+        "crash"
+      ],
       "impactedProjects": [],
       "fingerprint": "f7355ab7a5d10eca",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "637ddeb38167e8ce",
       "title": "v2.1.304",
-      "summary": "",
+      "summary": "Claude Code 2.1.304 enrichit l'API des mods et ajoute une configuration guidée du mode auto ainsi qu'un audit de sécurité des Managed Agents. Il avertit aussi lorsqu'une reprise de conversation inactive consommerait une part notable du quota.",
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.304",
       "sourceName": "Claude Code Releases",
       "publishedAt": "2026-10-19T21:34:39.000Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -1209,19 +1628,23 @@
         "ai-models",
         "tooling"
       ],
-      "tags": [],
+      "tags": [
+        "claude-code",
+        "auto-mode",
+        "mods"
+      ],
       "impactedProjects": [],
       "fingerprint": "48b087ad5de1b655",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "ed64890568349a4e",
       "title": "Copilot model policy API for enterprise, orgs, and teams",
-      "summary": "",
+      "summary": "Des endpoints REST permettent désormais de lire et modifier les politiques de modèles Copilot au niveau entreprise, équipe, application d'agent et organisation.",
       "sourceUrl": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
       "sourceName": "GitHub Copilot Changelog",
       "publishedAt": "2026-10-19T21:32:18.000Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -1229,19 +1652,23 @@
         "ai-models",
         "tooling"
       ],
-      "tags": [],
+      "tags": [
+        "copilot",
+        "api-rest",
+        "modeles"
+      ],
       "impactedProjects": [],
       "fingerprint": "2b037335e332586c",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "c4d5caa9ca539eec",
       "title": "GitHub Copilot models deprecated on October 19, 2026",
-      "summary": "",
+      "summary": "GitHub a déprécié plusieurs modèles dans Copilot, dont GPT-5.5, GPT-5.4 et Gemini 3.7 Flash, en proposant des remplaçants. Les administrateurs Enterprise peuvent devoir autoriser ces modèles de remplacement dans leurs politiques.",
       "sourceUrl": "https://github.blog/changelog/2026-10-19-github-copilot-models-deprecated-on-october-19-2026",
       "sourceName": "GitHub Copilot Changelog",
       "publishedAt": "2026-10-19T21:27:10.000Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -1249,10 +1676,14 @@
         "ai-models",
         "tooling"
       ],
-      "tags": [],
+      "tags": [
+        "copilot",
+        "deprecation",
+        "modeles"
+      ],
       "impactedProjects": [],
       "fingerprint": "b1fe34a28e4c1e3f",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "140a8401a16d795b",
@@ -1333,42 +1764,46 @@
     {
       "id": "458fdeded5d442a1",
       "title": "iOS 27.2 RC (24B115)",
-      "summary": "",
+      "summary": "Apple publie la version candidate d'iOS 27.2 (build 24B115). L'extrait ne détaille pas son contenu.",
       "sourceUrl": "https://developer.apple.com/news/releases?id=10192026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-19T17:00:00.000Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
         "ios",
-        "os-release",
-        "tooling"
+        "os-release"
       ],
-      "tags": [],
+      "tags": [
+        "ios-27.2",
+        "rc"
+      ],
       "impactedProjects": [],
       "fingerprint": "f971163c55fdd67a",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "8d15dbb6e60d6177",
       "title": "iPadOS 27.2 RC (24B115)",
-      "summary": "",
+      "summary": "Apple publie la version candidate d'iPadOS 27.2 (build 24B115). L'extrait ne détaille pas son contenu.",
       "sourceUrl": "https://developer.apple.com/news/releases?id=10192026b",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-19T17:00:00.000Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T11:04:25.427Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
         "ios",
-        "os-release",
-        "tooling"
+        "os-release"
       ],
-      "tags": [],
+      "tags": [
+        "ipados-27.2",
+        "rc"
+      ],
       "impactedProjects": [],
       "fingerprint": "519700a970a9b8ef",
-      "verificationNote": "non classé : no proposals file was produced"
+      "verificationNote": "aucune citation à vérifier"
     },
     {
       "id": "b06ae0466eb32ae7",
