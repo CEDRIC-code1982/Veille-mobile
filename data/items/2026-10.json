@@ -1,7 +1,121 @@
 {
   "month": "2026-10",
-  "updatedAt": "2026-10-23T11:07:04.392Z",
+  "updatedAt": "2026-10-23T17:07:52.840Z",
   "items": [
+    {
+      "id": "588df73365827401",
+      "title": "App Review Guidelines",
+      "summary": "",
+      "sourceUrl": "https://developer.apple.com/app-store/review/guidelines",
+      "sourceName": "App Store Review Guidelines",
+      "publishedAt": "2026-10-23T17:07:48.438Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "policy"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "8aee35893ee7e7a0",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "d90842d508e045fd",
+      "title": "iPhone",
+      "summary": "",
+      "sourceUrl": "https://www.apple.com/iphone",
+      "sourceName": "Apple iPhone Lineup",
+      "publishedAt": "2026-10-23T17:07:48.438Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ios",
+        "hardware"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "3cfc351d73899fd7",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "d9772c24a9a05177",
+      "title": "Powering the Agent Development Lifecycle with any framework, from ADK to LangChain and beyond",
+      "summary": "",
+      "sourceUrl": "https://developers.googleblog.com/powering-the-agent-development-lifecycle-with-any-framework-from-adk-to-langchain-and-beyond",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-23T17:07:48.438Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "85a5ebdda0074297",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "dc1c2bd41b84d39a",
+      "title": "Streaming comes to API Gateway: real-time and AI-ready APIs, without changing your spec",
+      "summary": "",
+      "sourceUrl": "https://developers.googleblog.com/streaming-comes-to-api-gateway-real-time-and-ai-ready-apis-without-changing-your-spec",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-23T17:07:48.438Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "2e5277bffe39f7c1",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "f87b2116712729fe",
+      "title": "The Engineering team builds the infrastructure that makes Claude reliable and trustworthy. They translate our research into production systems, and share what",
+      "summary": "",
+      "sourceUrl": "https://www.anthropic.com/engineering",
+      "sourceName": "Anthropic Engineering",
+      "publishedAt": "2026-10-23T17:07:48.438Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "fc13c3fbbb76b6d6",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "fa3cbaf698965e40",
+      "title": "Announcing MCP support in Apigee hybrid: agentic tools that run in your own cluster",
+      "summary": "",
+      "sourceUrl": "https://developers.googleblog.com/announcing-mcp-support-in-apigee-hybrid-agentic-tools-that-run-in-your-own-cluster",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-10-23T17:07:48.438Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "5eb2ee29d4b17ebc",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
     {
       "id": "0490afc86481e7ff",
       "title": "Unifying Edge AI: How Coral NPU’s open standard brings portable, energy-viable intelligence from model to silicon",
@@ -258,25 +372,6 @@
       "impactedProjects": [],
       "fingerprint": "5dbb96f26da68f3a",
       "verificationNote": "aucune citation à vérifier"
-    },
-    {
-      "id": "588df73365827401",
-      "title": "App Review Guidelines",
-      "summary": "",
-      "sourceUrl": "https://developer.apple.com/app-store/review/guidelines",
-      "sourceName": "App Store Review Guidelines",
-      "publishedAt": "2026-10-23T11:04:25.427Z",
-      "collectedAt": "2026-10-23T11:04:25.427Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "ios",
-        "policy"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "8aee35893ee7e7a0",
-      "verificationNote": "non classé : the proposals file says nothing about this item"
     },
     {
       "id": "588e263c52d3f93d",
@@ -741,6 +836,25 @@
       "verificationNote": "aucune citation à vérifier"
     },
     {
+      "id": "d918905eddc868c1",
+      "title": "iPhone Duo arrives at Apple Store locations worldwide",
+      "summary": "",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/10/iphone-duo-arrives-at-apple-store-locations-worldwide",
+      "sourceName": "Apple Newsroom",
+      "publishedAt": "2026-10-23T06:10:35.677Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "hardware",
+        "ios"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "7741edd44fe9e54e",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
       "id": "a45f5dfbc3465c86",
       "title": "GitHub Copilot in Visual Studio — September update",
       "summary": "Copilot dans Visual Studio permet d'explorer une pull request depuis le chat et d'utiliser ses propres modèles (BYOM) en préversion. BYOM n'est plus compatible qu'avec le nouveau mode Agent, et les modèles Ollama doivent être reconfigurés après la mise à jour.",
@@ -819,7 +933,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=10222026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-22T21:00:00.000Z",
-      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -830,7 +944,7 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "64d1e4e1f315d2e9",
-      "verificationNote": "non classé : the proposals file says nothing about this item"
+      "verificationNote": "non classé : no proposals file was produced"
     },
     {
       "id": "767a7f383549ba64",
@@ -1009,7 +1123,7 @@
       "sourceUrl": "https://www.apple.com/newsroom/2026/10/formula-1-united-states-grand-prix-streams-live-on-apple-tv-this-weekend",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-10-22T12:59:11.281Z",
-      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -1019,7 +1133,7 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "bb94f0f1d75f90c4",
-      "verificationNote": "non classé : the proposals file says nothing about this item"
+      "verificationNote": "non classé : no proposals file was produced"
     },
     {
       "id": "32ba8c8e96f74271",
@@ -1206,25 +1320,6 @@
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
-      "id": "fa3cbaf698965e40",
-      "title": "Announcing MCP support in Apigee hybrid: agentic tools that run in your own cluster",
-      "summary": "",
-      "sourceUrl": "https://developers.googleblog.com/announcing-mcp-support-in-apigee-hybrid-agentic-tools-that-run-in-your-own-cluster",
-      "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-10-21T17:12:54.130Z",
-      "collectedAt": "2026-10-21T17:12:54.130Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "72c260e13cba90a2",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
       "id": "22a9f3a2fa74f9a0",
       "title": "v0.10.7",
       "summary": "React Native ExecuTorch 0.10.7 met à jour phonemis pour que la synthèse vocale lise les longs nombres chiffre par chiffre au lieu de les ignorer.",
@@ -1293,13 +1388,32 @@
       "verificationNote": "aucune citation à vérifier"
     },
     {
+      "id": "fd93538de37800a9",
+      "title": "This Week In React #302: Next.js, React Router, DevTools, Security, shadcn, Hydrogen, Vinext, Mutative, R3F | RN 0.88, Expo 58, Navigation, FastImage, Screens, Device Hub, Edge to Edge | TypeScript, PHP, CrUX, Rsdoctor, Astro",
+      "summary": "",
+      "sourceUrl": "https://thisweekinreact.com/newsletter/302",
+      "sourceName": "This Week in React",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "react-native",
+        "typescript"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "ecbaab9d59f95bc9",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
       "id": "c0c1f67d3943fff7",
       "title": "App Store Connect Update",
       "summary": "",
       "sourceUrl": "https://developer.apple.com/news/releases?id=10202026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-20T23:00:00.000Z",
-      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -1310,7 +1424,7 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "3009a77f378f858d",
-      "verificationNote": "non classé : the proposals file says nothing about this item"
+      "verificationNote": "non classé : no proposals file was produced"
     },
     {
       "id": "11a9e9aebb65d4c7",
@@ -1343,7 +1457,7 @@
       "sourceUrl": "https://blog.google/products-and-platforms/platforms/android/android-auto-cars-with-google-built-in-gemini-personal-intelligence",
       "sourceName": "Android and Pixel Blog",
       "publishedAt": "2026-10-20T20:00:00.000Z",
-      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -1353,7 +1467,26 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "a3a73de7b17c27b7",
-      "verificationNote": "non classé : the proposals file says nothing about this item"
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "d0f0045fb40f11c2",
+      "title": "Battle Drones - a vibe coded RTS with audio-based multiplayer",
+      "summary": "",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/20/battledrones",
+      "sourceName": "Simon Willison",
+      "publishedAt": "2026-10-20T19:34:19.000Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "d0ec44f239f5b3e5",
+      "verificationNote": "non classé : no proposals file was produced"
     },
     {
       "id": "9e50e48d43dfa880",
@@ -1558,7 +1691,7 @@
       "sourceUrl": "https://www.apple.com/newsroom/2026/10/apple-unveils-the-2026-designers-of-tomorrow",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-10-20T14:59:22.784Z",
-      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -1568,7 +1701,7 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "a5a9a83ae2f832a6",
-      "verificationNote": "non classé : the proposals file says nothing about this item"
+      "verificationNote": "non classé : no proposals file was produced"
     },
     {
       "id": "04da7059074284bf",
@@ -1577,7 +1710,7 @@
       "sourceUrl": "https://www.apple.com/newsroom/2026/10/apple-announces-american-manufacturing-program-partners-for-latest-iphone-lineup",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-10-20T12:00:22.992Z",
-      "collectedAt": "2026-10-23T11:04:25.427Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -1587,7 +1720,7 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "1eb74774609a8435",
-      "verificationNote": "non classé : the proposals file says nothing about this item"
+      "verificationNote": "non classé : no proposals file was produced"
     },
     {
       "id": "d836677d3a406602",
@@ -1812,7 +1945,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=10192026g",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-19T17:00:00.000Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -1832,7 +1965,7 @@
       "sourceUrl": "https://github.com/software-mansion/react-native-executorch/releases/tag/v0.10.6",
       "sourceName": "React Native ExecuTorch Releases",
       "publishedAt": "2026-10-19T14:30:24.000Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -1852,7 +1985,7 @@
       "sourceUrl": "https://developer.android.com/blog/posts/grab-r8-profile-guided-optimization-anr-startup-time",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-10-19T00:00:00.000Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -1871,7 +2004,7 @@
       "sourceUrl": "https://reactnative.dev/blog/2026/10/19/react-native-0.88",
       "sourceName": "React Native Blog",
       "publishedAt": "2026-10-19T00:00:00.000Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -1889,7 +2022,7 @@
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.303",
       "sourceName": "Claude Code Releases",
       "publishedAt": "2026-10-18T22:26:54.000Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -1987,7 +2120,7 @@
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.302",
       "sourceName": "Claude Code Releases",
       "publishedAt": "2026-10-16T20:53:06.000Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -2007,7 +2140,7 @@
       "sourceUrl": "https://developer.apple.com/news?id=92th7e5i",
       "sourceName": "Apple Developer News",
       "publishedAt": "2026-10-16T20:05:42.000Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -2026,7 +2159,7 @@
       "sourceUrl": "https://developer.apple.com/news?id=vvzx6cul",
       "sourceName": "Apple Developer News",
       "publishedAt": "2026-10-16T20:00:56.000Z",
-      "collectedAt": "2026-10-22T17:11:04.363Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -2083,7 +2216,7 @@
       "sourceUrl": "https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates",
       "sourceName": "GitHub Copilot Changelog",
       "publishedAt": "2026-10-16T02:16:35.000Z",
-      "collectedAt": "2026-10-21T17:12:54.130Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -2103,7 +2236,7 @@
       "sourceUrl": "https://github.com/react/react-native/releases/tag/v0.88.0",
       "sourceName": "React Native Releases",
       "publishedAt": "2026-10-15T22:37:17.000Z",
-      "collectedAt": "2026-10-21T17:12:54.130Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -2121,7 +2254,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=10152026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-15T20:00:00.000Z",
-      "collectedAt": "2026-10-21T17:12:54.130Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -2141,7 +2274,7 @@
       "sourceUrl": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november",
       "sourceName": "GitHub Copilot Changelog",
       "publishedAt": "2026-10-15T19:35:13.000Z",
-      "collectedAt": "2026-10-21T17:12:54.130Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -2161,7 +2294,7 @@
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.301",
       "sourceName": "Claude Code Releases",
       "publishedAt": "2026-10-15T19:22:06.000Z",
-      "collectedAt": "2026-10-21T17:12:54.130Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -2316,7 +2449,7 @@
       "sourceUrl": "https://blog.google/products-and-platforms/platforms/android/android-earthquake-alerts-expansion-2026",
       "sourceName": "Android and Pixel Blog",
       "publishedAt": "2026-10-15T16:00:00.000Z",
-      "collectedAt": "2026-10-21T17:12:54.130Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -2335,7 +2468,7 @@
       "sourceUrl": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
       "sourceName": "GitHub Copilot Changelog",
       "publishedAt": "2026-10-15T13:49:20.000Z",
-      "collectedAt": "2026-10-21T17:12:54.130Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -2355,7 +2488,7 @@
       "sourceUrl": "https://www.apple.com/newsroom/2026/10/open-up-to-new-possibilities-with-iphone-duo",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-10-15T12:59:28.566Z",
-      "collectedAt": "2026-10-20T17:06:10.986Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -2374,7 +2507,7 @@
       "sourceUrl": "https://github.com/react/react-native/releases/tag/latest",
       "sourceName": "React Native Releases",
       "publishedAt": "2026-10-15T11:38:21.000Z",
-      "collectedAt": "2026-10-20T17:06:10.986Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -2392,7 +2525,7 @@
       "sourceUrl": "https://machinelearning.apple.com/research/selection-structured-reasoning",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-10-15T00:00:00.000Z",
-      "collectedAt": "2026-10-20T17:06:10.986Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -2411,7 +2544,7 @@
       "sourceUrl": "https://machinelearning.apple.com/research/plan-retrieve-tool-discovery",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-10-15T00:00:00.000Z",
-      "collectedAt": "2026-10-20T17:06:10.986Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -2430,7 +2563,7 @@
       "sourceUrl": "https://machinelearning.apple.com/research/mlx-distributed-inference",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-10-15T00:00:00.000Z",
-      "collectedAt": "2026-10-20T17:06:10.986Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -2449,7 +2582,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=10142026c",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-14T21:00:00.000Z",
-      "collectedAt": "2026-10-20T17:06:10.986Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -2469,7 +2602,7 @@
       "sourceUrl": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
       "sourceName": "GitHub Copilot Changelog",
       "publishedAt": "2026-10-14T20:01:35.000Z",
-      "collectedAt": "2026-10-20T17:06:10.986Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -2489,7 +2622,7 @@
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.300",
       "sourceName": "Claude Code Releases",
       "publishedAt": "2026-10-14T18:24:25.000Z",
-      "collectedAt": "2026-10-19T18:43:29.693Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -2509,7 +2642,7 @@
       "sourceUrl": "https://www.apple.com/newsroom/2026/10/bunyamin-aydins-new-collection-from-earth-to-sky-soars-with-ipad-pro",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-10-14T17:39:29.065Z",
-      "collectedAt": "2026-10-19T18:43:29.693Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -2624,7 +2757,7 @@
       "sourceUrl": "https://github.com/react/react-native/releases/tag/v0.88.0-rc.6",
       "sourceName": "React Native Releases",
       "publishedAt": "2026-10-14T14:54:05.000Z",
-      "collectedAt": "2026-10-19T18:43:29.693Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -2662,7 +2795,7 @@
       "sourceUrl": "https://thisweekinreact.com/newsletter/301",
       "sourceName": "This Week in React",
       "publishedAt": "2026-10-14T00:00:00.000Z",
-      "collectedAt": "2026-10-15T17:01:40.044Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -2681,7 +2814,7 @@
       "sourceUrl": "https://machinelearning.apple.com/research/code-switching-detection",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-10-14T00:00:00.000Z",
-      "collectedAt": "2026-10-19T18:43:29.693Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -2700,7 +2833,7 @@
       "sourceUrl": "https://machinelearning.apple.com/research/tri-modal-masked-diffusion",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-10-14T00:00:00.000Z",
-      "collectedAt": "2026-10-19T18:43:29.693Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -2719,7 +2852,7 @@
       "sourceUrl": "https://developer.apple.com/news?id=17mwd36z",
       "sourceName": "Apple Developer News",
       "publishedAt": "2026-10-13T22:00:09.000Z",
-      "collectedAt": "2026-10-19T18:43:29.693Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -2836,7 +2969,7 @@
       "sourceUrl": "https://blog.google/products-and-platforms/platforms/android/cars-with-google-built-in-google-play-updates",
       "sourceName": "Android and Pixel Blog",
       "publishedAt": "2026-10-13T17:00:00.000Z",
-      "collectedAt": "2026-10-19T18:43:29.693Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -2894,7 +3027,7 @@
       "sourceUrl": "https://www.apple.com/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-10-13T12:59:16.617Z",
-      "collectedAt": "2026-10-19T18:43:29.693Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -2913,7 +3046,7 @@
       "sourceUrl": "https://www.apple.com/newsroom/2026/10/apple-unveils-the-new-apple-tv-4k",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-10-13T12:58:10.680Z",
-      "collectedAt": "2026-10-18T15:52:20.232Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -2932,7 +3065,7 @@
       "sourceUrl": "https://www.apple.com/newsroom/2026/10/apple-announces-the-next-generation-of-homepod-mini",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-10-13T12:57:08.267Z",
-      "collectedAt": "2026-10-18T15:52:20.232Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -2951,7 +3084,7 @@
       "sourceUrl": "https://www.apple.com/newsroom/2026/10/introducing-apple-home-collection-a-new-lineup-of-smart-home-accessories",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-10-13T12:56:12.276Z",
-      "collectedAt": "2026-10-18T15:52:20.232Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -2970,7 +3103,7 @@
       "sourceUrl": "https://developer.android.com/blog/posts/google-play-discovery-engagement-growth",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-10-13T00:00:00.000Z",
-      "collectedAt": "2026-10-18T15:52:20.232Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -2989,7 +3122,7 @@
       "sourceUrl": "https://machinelearning.apple.com/research/mix-dont-tune",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-10-13T00:00:00.000Z",
-      "collectedAt": "2026-10-16T16:40:07.673Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -3008,7 +3141,7 @@
       "sourceUrl": "https://developer.android.com/blog/posts/bringing-gemini-4-argon-to-android-agentic-engineering-antigravity-cli",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-10-13T00:00:00.000Z",
-      "collectedAt": "2026-10-16T16:40:07.673Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -3027,7 +3160,7 @@
       "sourceUrl": "https://github.com/react/react-native/releases/tag/v0.88.0-rc.5",
       "sourceName": "React Native Releases",
       "publishedAt": "2026-10-12T23:42:40.000Z",
-      "collectedAt": "2026-10-16T16:40:07.673Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -3122,7 +3255,7 @@
       "sourceUrl": "https://www.apple.com/newsroom/2026/10/app-store-indie-games-week-kicks-off-today",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-10-12T13:59:49.734Z",
-      "collectedAt": "2026-10-16T16:40:07.673Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -3585,7 +3718,7 @@
       "sourceUrl": "https://developer.android.com/blog/posts/googlebook-linux-terminal-preview-vm",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-10-12T00:00:00.000Z",
-      "collectedAt": "2026-10-16T16:40:07.673Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -3604,7 +3737,7 @@
       "sourceUrl": "https://machinelearning.apple.com/research/self-compacting-language-agents",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-10-12T00:00:00.000Z",
-      "collectedAt": "2026-10-16T16:40:07.673Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -3623,7 +3756,7 @@
       "sourceUrl": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-10-12T00:00:00.000Z",
-      "collectedAt": "2026-10-16T16:40:07.673Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -3642,7 +3775,7 @@
       "sourceUrl": "https://machinelearning.apple.com/research/llm-translation-quality-annotation",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-10-12T00:00:00.000Z",
-      "collectedAt": "2026-10-16T16:40:07.673Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -4049,7 +4182,7 @@
       "sourceUrl": "https://www.apple.com/newsroom/2026/10/apple-the-kings-trust-launch-initiative-to-empower-young-creatives",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-10-07T21:01:58.215Z",
-      "collectedAt": "2026-10-15T17:01:40.044Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -4456,7 +4589,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=10062026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-06T17:00:00.000Z",
-      "collectedAt": "2026-10-15T17:01:40.044Z",
+      "collectedAt": "2026-10-23T17:07:48.438Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
