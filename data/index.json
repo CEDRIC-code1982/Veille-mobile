@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T17:15:25.371Z",
+  "generatedAt": "2026-11-01T17:56:43.770Z",
   "months": [
     {
       "month": "2026-08",
@@ -13,17 +13,22 @@
     },
     {
       "month": "2026-10",
-      "itemCount": 408,
+      "itemCount": 374,
       "blockingCount": 14
+    },
+    {
+      "month": "2026-11",
+      "itemCount": 35,
+      "blockingCount": 0
     }
   ],
   "counts": {
-    "total": 624,
+    "total": 625,
     "blocking": 20,
     "impacting": 85,
-    "background": 519,
-    "unverified": 314
+    "background": 520,
+    "unverified": 315
   },
   "feedCount": 50,
-  "lastCollectedAt": "2026-10-31T17:15:21.306Z"
+  "lastCollectedAt": "2026-11-01T17:56:39.838Z"
 }
