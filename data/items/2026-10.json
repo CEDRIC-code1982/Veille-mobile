@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "updatedAt": "2026-11-02T21:43:33.528Z",
+  "updatedAt": "2026-11-03T19:30:06.318Z",
   "items": [
     {
       "id": "7ccc16a02704b392",
@@ -28,7 +28,7 @@
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.316",
       "sourceName": "Claude Code Releases",
       "publishedAt": "2026-10-31T01:01:35.000Z",
-      "collectedAt": "2026-11-02T21:43:29.356Z",
+      "collectedAt": "2026-11-03T19:30:01.789Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -105,7 +105,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=10302026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-30T17:00:00.000Z",
-      "collectedAt": "2026-11-02T21:43:29.356Z",
+      "collectedAt": "2026-11-03T19:30:01.789Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -125,7 +125,7 @@
       "sourceUrl": "https://github.com/innoveit/react-native-ble-manager/releases/tag/v.12.6.1",
       "sourceName": "BLE Manager Releases",
       "publishedAt": "2026-10-30T07:21:01.000Z",
-      "collectedAt": "2026-11-02T21:43:29.356Z",
+      "collectedAt": "2026-11-03T19:30:01.789Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -144,7 +144,7 @@
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.314",
       "sourceName": "Claude Code Releases",
       "publishedAt": "2026-10-30T01:06:26.000Z",
-      "collectedAt": "2026-11-02T21:43:29.356Z",
+      "collectedAt": "2026-11-03T19:30:01.789Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -318,7 +318,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=10292026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-29T17:00:00.000Z",
-      "collectedAt": "2026-11-02T21:43:29.356Z",
+      "collectedAt": "2026-11-03T19:30:01.789Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -338,7 +338,7 @@
       "sourceUrl": "https://developer.apple.com/news?id=w9mxlhek",
       "sourceName": "Apple Developer News",
       "publishedAt": "2026-10-29T15:00:56.000Z",
-      "collectedAt": "2026-11-02T21:43:29.356Z",
+      "collectedAt": "2026-11-03T19:30:01.789Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -433,7 +433,7 @@
       "sourceUrl": "https://www.apple.com/newsroom/2026/10/apple-unveils-groundbreaking-macbook-pro-with-proled-xdr-display",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-10-28T17:09:28.430Z",
-      "collectedAt": "2026-11-02T21:43:29.356Z",
+      "collectedAt": "2026-11-03T19:30:01.789Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -452,7 +452,7 @@
       "sourceUrl": "https://developer.apple.com/news?id=i9boeiqc",
       "sourceName": "Apple Developer News",
       "publishedAt": "2026-10-28T17:00:55.000Z",
-      "collectedAt": "2026-11-02T21:43:29.356Z",
+      "collectedAt": "2026-11-03T19:30:01.789Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -471,7 +471,7 @@
       "sourceUrl": "https://blog.google/products-and-platforms/platforms/android/xreal-aura",
       "sourceName": "Android and Pixel Blog",
       "publishedAt": "2026-10-28T17:00:00.000Z",
-      "collectedAt": "2026-11-02T21:43:29.356Z",
+      "collectedAt": "2026-11-03T19:30:01.789Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -490,7 +490,7 @@
       "sourceUrl": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
       "sourceName": "GitHub Copilot Changelog",
       "publishedAt": "2026-10-28T16:00:00.000Z",
-      "collectedAt": "2026-11-02T21:43:29.356Z",
+      "collectedAt": "2026-11-03T19:30:01.789Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -510,7 +510,7 @@
       "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-app-universe-releases",
       "sourceName": "GitHub Copilot Changelog",
       "publishedAt": "2026-10-28T15:55:00.000Z",
-      "collectedAt": "2026-11-02T21:43:29.356Z",
+      "collectedAt": "2026-11-03T19:30:01.789Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -530,7 +530,7 @@
       "sourceUrl": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
       "sourceName": "GitHub Copilot Changelog",
       "publishedAt": "2026-10-28T15:50:00.000Z",
-      "collectedAt": "2026-11-02T21:43:29.356Z",
+      "collectedAt": "2026-11-03T19:30:01.789Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -550,7 +550,7 @@
       "sourceUrl": "https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app",
       "sourceName": "GitHub Copilot Changelog",
       "publishedAt": "2026-10-28T15:45:00.000Z",
-      "collectedAt": "2026-11-02T21:43:29.356Z",
+      "collectedAt": "2026-11-03T19:30:01.789Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -570,7 +570,7 @@
       "sourceUrl": "https://github.blog/changelog/2026-10-28-github-intelligence-puts-your-code-context-and-history-to-work",
       "sourceName": "GitHub Copilot Changelog",
       "publishedAt": "2026-10-28T15:40:00.000Z",
-      "collectedAt": "2026-11-02T21:43:29.356Z",
+      "collectedAt": "2026-11-03T19:30:01.789Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -590,7 +590,7 @@
       "sourceUrl": "https://github.blog/changelog/2026-10-28-build-shared-workflows-for-your-team-with-copilot-automations",
       "sourceName": "GitHub Copilot Changelog",
       "publishedAt": "2026-10-28T15:35:00.000Z",
-      "collectedAt": "2026-11-02T21:43:29.356Z",
+      "collectedAt": "2026-11-03T19:30:01.789Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
