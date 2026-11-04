@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "updatedAt": "2026-11-03T19:30:06.318Z",
+  "updatedAt": "2026-11-04T19:46:47.462Z",
   "items": [
     {
       "id": "7ccc16a02704b392",
@@ -28,7 +28,7 @@
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.316",
       "sourceName": "Claude Code Releases",
       "publishedAt": "2026-10-31T01:01:35.000Z",
-      "collectedAt": "2026-11-03T19:30:01.789Z",
+      "collectedAt": "2026-11-04T19:46:41.760Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -105,7 +105,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=10302026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-30T17:00:00.000Z",
-      "collectedAt": "2026-11-03T19:30:01.789Z",
+      "collectedAt": "2026-11-04T19:46:41.760Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -125,7 +125,7 @@
       "sourceUrl": "https://github.com/innoveit/react-native-ble-manager/releases/tag/v.12.6.1",
       "sourceName": "BLE Manager Releases",
       "publishedAt": "2026-10-30T07:21:01.000Z",
-      "collectedAt": "2026-11-03T19:30:01.789Z",
+      "collectedAt": "2026-11-04T19:46:41.760Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -144,7 +144,7 @@
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.314",
       "sourceName": "Claude Code Releases",
       "publishedAt": "2026-10-30T01:06:26.000Z",
-      "collectedAt": "2026-11-03T19:30:01.789Z",
+      "collectedAt": "2026-11-04T19:46:41.760Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -318,7 +318,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=10292026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-10-29T17:00:00.000Z",
-      "collectedAt": "2026-11-03T19:30:01.789Z",
+      "collectedAt": "2026-11-04T19:46:41.760Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
