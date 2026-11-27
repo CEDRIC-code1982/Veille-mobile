@@ -1,6 +1,6 @@
 {
   "month": "2026-11",
-  "updatedAt": "2026-11-26T21:32:54.651Z",
+  "updatedAt": "2026-11-27T21:18:27.076Z",
   "items": [
     {
       "id": "01b59db5643473c6",
@@ -8,8 +8,8 @@
       "summary": "",
       "sourceUrl": "https://developer.android.com/about/versions/16/behavior-changes-all",
       "sourceName": "Android Behavior Changes",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -28,8 +28,8 @@
       "summary": "",
       "sourceUrl": "https://www.anthropic.com/engineering",
       "sourceName": "Anthropic Engineering",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -47,8 +47,8 @@
       "summary": "",
       "sourceUrl": "https://platform.openai.com/docs/changelog",
       "sourceName": "OpenAI Platform Changelog",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -61,13 +61,32 @@
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
+      "id": "096d197cc7153450",
+      "title": "Core Specification 6.3 Adopted",
+      "summary": "",
+      "sourceUrl": "https://www.bluetooth.com/specifications/bluetooth-core-specification",
+      "sourceName": "Bluetooth Core Specification",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ble",
+        "hardware"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "f275393e88b63c75",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
       "id": "18462794d5c94486",
       "title": "Agent Anomaly Detection: Safeguarding agents across other clouds",
       "summary": "",
       "sourceUrl": "https://developers.googleblog.com/agent-anomaly-detection-safeguarding-agents-across-other-clouds",
       "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -76,7 +95,7 @@
       ],
       "tags": [],
       "impactedProjects": [],
-      "fingerprint": "753dc975d9822a93",
+      "fingerprint": "245245bd9a2fcba1",
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
@@ -85,8 +104,8 @@
       "summary": "",
       "sourceUrl": "https://developer.apple.com/documentation/foundationmodels.md",
       "sourceName": "Apple Foundation Models",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -105,8 +124,8 @@
       "summary": "",
       "sourceUrl": "https://developers.googleblog.com/how-to-handle-user-connector-and-agent-auth-in-gemini-enterprise-with-a-custom-ui",
       "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -115,7 +134,7 @@
       ],
       "tags": [],
       "impactedProjects": [],
-      "fingerprint": "19fad17acd8b4982",
+      "fingerprint": "3376376a03e235c5",
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
@@ -124,8 +143,8 @@
       "summary": "",
       "sourceUrl": "https://developers.googleblog.com/tpu-model-design-considerations-and-optimization-guide",
       "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -134,7 +153,7 @@
       ],
       "tags": [],
       "impactedProjects": [],
-      "fingerprint": "e9beec293638b69d",
+      "fingerprint": "30cffb60f07e2158",
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
@@ -143,8 +162,8 @@
       "summary": "",
       "sourceUrl": "https://developers.googleblog.com/catch-go-bugs-that-fuzzing-misses-with-gemini-and-a-constraint-solver",
       "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -153,7 +172,7 @@
       ],
       "tags": [],
       "impactedProjects": [],
-      "fingerprint": "09d062817670aca6",
+      "fingerprint": "c097507c264ddf86",
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
@@ -162,8 +181,8 @@
       "summary": "",
       "sourceUrl": "https://developer.android.com/develop/connectivity/nfc",
       "sourceName": "Android NFC Overview",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -181,8 +200,8 @@
       "summary": "",
       "sourceUrl": "https://developers.googleblog.com/from-files-to-cited-answers-in-one-api-call-managed-ingestion-and-searchdocuments-in-agent-retrieval",
       "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -191,7 +210,7 @@
       ],
       "tags": [],
       "impactedProjects": [],
-      "fingerprint": "b939d94f42968c6e",
+      "fingerprint": "16b142ff2714fc67",
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
@@ -200,8 +219,8 @@
       "summary": "",
       "sourceUrl": "https://developers.googleblog.com/unlocking-stable-on-policy-rl-on-tpu-with-bitwise-zero-traininference-mismatch",
       "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -210,7 +229,7 @@
       ],
       "tags": [],
       "impactedProjects": [],
-      "fingerprint": "463be7124799bd15",
+      "fingerprint": "f80f0d5af82e7b60",
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
@@ -219,8 +238,8 @@
       "summary": "",
       "sourceUrl": "https://developers.googleblog.com/build-full-stack-android-apps-with-gemini-in-google-ai-studio",
       "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -229,7 +248,7 @@
       ],
       "tags": [],
       "impactedProjects": [],
-      "fingerprint": "951f87c5444fcba4",
+      "fingerprint": "299ab57e56e7adde",
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
@@ -238,8 +257,8 @@
       "summary": "",
       "sourceUrl": "https://developer.android.com/ai/gemini-nano",
       "sourceName": "Gemini Nano on Android",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -258,8 +277,8 @@
       "summary": "",
       "sourceUrl": "https://developer.android.com/google/play/requirements/target-sdk",
       "sourceName": "Android Target API Level Requirements",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -278,8 +297,8 @@
       "summary": "",
       "sourceUrl": "https://developer.android.com/about/versions/17/behavior-changes-all",
       "sourceName": "Android Behavior Changes",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -298,8 +317,8 @@
       "summary": "",
       "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
       "sourceName": "Gemini API Release Notes",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -317,8 +336,8 @@
       "summary": "",
       "sourceUrl": "https://developer.android.com/about/versions/17/features",
       "sourceName": "Android Platform Features",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -336,8 +355,8 @@
       "summary": "",
       "sourceUrl": "https://developer.apple.com/app-store/review/guidelines",
       "sourceName": "App Store Review Guidelines",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -350,13 +369,32 @@
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
+      "id": "5f0c36e182505b8e",
+      "title": "Apple security releases",
+      "summary": "",
+      "sourceUrl": "https://support.apple.com/en-us/100100",
+      "sourceName": "Apple Security Releases",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ios",
+        "os-release"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "ca7e6e27dc86b345",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
       "id": "6519e8b2dcdab8a6",
       "title": "AI on Android",
       "summary": "",
       "sourceUrl": "https://developer.android.com/ai",
       "sourceName": "Android AI Overview",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -375,8 +413,8 @@
       "summary": "",
       "sourceUrl": "https://ai.meta.com/blog",
       "sourceName": "Meta AI Blog",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -386,6 +424,428 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "a94244eeb5b7292f",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "6ed560d83c432507",
+      "title": "Features and APIs — 16",
+      "summary": "",
+      "sourceUrl": "https://developer.android.com/about/versions/16/features",
+      "sourceName": "Android Platform Features",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "os-release"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "6b4b28bf483cfa94",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "72c3ebbcffd57277",
+      "title": "Latest updates from Mistral.",
+      "summary": "",
+      "sourceUrl": "https://mistral.ai/news",
+      "sourceName": "Mistral News",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "9b53d2fb348cf04f",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "740de2548ad8f468",
+      "title": "A2UI 1.0: Build delightful, fast, reliable, agentic experiences",
+      "summary": "",
+      "sourceUrl": "https://developers.googleblog.com/a2ui-10-build-delightful-fast-reliable-agentic-experiences",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "49abb695c4f7451c",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "7953fb9b56dddbf4",
+      "title": "On-Device Speech Recognition and Text-to-Speech in Google AI Edge Gallery",
+      "summary": "",
+      "sourceUrl": "https://developers.googleblog.com/on-device-speech-recognition-and-text-to-speech-in-google-ai-edge-gallery",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "e6b3977efaaf14f0",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "79c1dcfc421beb7a",
+      "title": "Android Studio Rabbit 2",
+      "summary": "",
+      "sourceUrl": "https://developer.android.com/studio/releases",
+      "sourceName": "Android Studio Releases",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "57516a5a438ed2d7",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "7c3a077a80825638",
+      "title": "Gemini 4 Hydrogen: a faster model for general purpose robotics",
+      "summary": "",
+      "sourceUrl": "https://developers.googleblog.com/gemini-hydrogen-for-robotics",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "52ce72589f04fc2b",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "7e9d51a7eabb69b2",
+      "title": "News",
+      "summary": "",
+      "sourceUrl": "https://www.anthropic.com/news",
+      "sourceName": "Anthropic News",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "acce056056b95551",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "80e8b5820b989ee5",
+      "title": "Claude Platform release notes",
+      "summary": "",
+      "sourceUrl": "https://docs.claude.com/en/release-notes/overview",
+      "sourceName": "Claude Platform Release Notes",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "5a6290e0149136de",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "8b718dabaac7aeb3",
+      "title": "Securing Your Agents: A Hands-On Guide to Agent Anomaly Detection",
+      "summary": "",
+      "sourceUrl": "https://developers.googleblog.com/securing-your-agents-a-hands-on-guide-to-agent-anomaly-detection",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "2f1562e22ae180fe",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "8d1d4cbe2296b7f7",
+      "title": "Model deprecations",
+      "summary": "",
+      "sourceUrl": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
+      "sourceName": "Claude Model Deprecations",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "6e34ab6f6c70c090",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "8d9559bfafa69532",
+      "title": "Bluetooth Low Energy",
+      "summary": "",
+      "sourceUrl": "https://developer.android.com/develop/connectivity/bluetooth/ble/ble-overview",
+      "sourceName": "Android Bluetooth Low Energy",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "ble"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "247e36399da319d2",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "9056996215722bb5",
+      "title": "Release notes",
+      "summary": "",
+      "sourceUrl": "https://developers.google.com/ml-kit/release-notes",
+      "sourceName": "ML Kit Release Notes",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "ai",
+        "on-device-ai",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "7616bba24dc4617c",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "993b7b43e1a94b07",
+      "title": "iOS 27",
+      "summary": "",
+      "sourceUrl": "https://www.apple.com/ios",
+      "sourceName": "Apple iOS Features",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ios",
+        "os-release"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "40948e46c6ce44d1",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "a18a4159a45549a5",
+      "title": "Changelog",
+      "summary": "",
+      "sourceUrl": "https://expo.dev/changelog",
+      "sourceName": "Expo Changelog",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "react-native",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "00695ef087fc15e3",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "ac0ddabd61ebf59d",
+      "title": "Release Notes",
+      "summary": "",
+      "sourceUrl": "https://developers.google.com/android/guides/releases",
+      "sourceName": "Play Services Releases",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "tooling"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "daf775f101cd7ad2",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "bc55ae1ae5897f87",
+      "title": "How to securely connect internal Cloud Run MCP servers to Gemini Enterprise",
+      "summary": "",
+      "sourceUrl": "https://developers.googleblog.com/how-to-securely-connect-internal-cloud-run-mcp-servers-to-gemini-enterprise",
+      "sourceName": "Google Developers Blog",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "27bdcb97649671cd",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "ce51b20930040255",
+      "title": "iPhone",
+      "summary": "",
+      "sourceUrl": "https://www.apple.com/iphone",
+      "sourceName": "Apple iPhone Lineup",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
+      "criticality": "background",
+      "trustLevel": "unverified",
+      "categories": [
+        "ios",
+        "hardware"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "8224de5d1e40960c",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "ed18ce1977f30d7a",
+      "title": "Deprecations",
+      "summary": "",
+      "sourceUrl": "https://platform.openai.com/docs/deprecations",
+      "sourceName": "OpenAI Deprecations",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "ai",
+        "ai-models"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "3daa3ea32692445f",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "f2332c93b2adb3db",
+      "title": "Policy Deadlines",
+      "summary": "",
+      "sourceUrl": "https://support.google.com/googleplay/android-developer/answer/9934569",
+      "sourceName": "Play Console Policy Updates",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "policy"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "408bffae965ad474",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "f7998dd54089d53c",
+      "title": "Host-based card emulation overview",
+      "summary": "",
+      "sourceUrl": "https://developer.android.com/develop/connectivity/nfc/hce",
+      "sourceName": "Android Host Card Emulation",
+      "publishedAt": "2026-11-27T21:18:03.644Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "android",
+        "nfc"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "4d6fb5fc14edf2ad",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "a49f14e4276501b0",
+      "title": "v0.11.4-libs",
+      "summary": "",
+      "sourceUrl": "https://github.com/software-mansion/react-native-executorch/releases/tag/v0.11.4-libs",
+      "sourceName": "React Native ExecuTorch Releases",
+      "publishedAt": "2026-11-27T20:43:36.000Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "react-native",
+        "ai",
+        "on-device-ai"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "4bc73f91b6e6ea07",
+      "verificationNote": "non classé : no proposals file was produced"
+    },
+    {
+      "id": "d80ea1d1e778ef80",
+      "title": "v0.11.3-libs",
+      "summary": "",
+      "sourceUrl": "https://github.com/software-mansion/react-native-executorch/releases/tag/v0.11.3-libs",
+      "sourceName": "React Native ExecuTorch Releases",
+      "publishedAt": "2026-11-27T14:08:05.000Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
+      "criticality": "background",
+      "trustLevel": "reported",
+      "categories": [
+        "react-native",
+        "ai",
+        "on-device-ai"
+      ],
+      "tags": [],
+      "impactedProjects": [],
+      "fingerprint": "f9fb655c3edb3901",
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
@@ -408,177 +868,6 @@
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
-      "id": "6ed560d83c432507",
-      "title": "Features and APIs — 16",
-      "summary": "",
-      "sourceUrl": "https://developer.android.com/about/versions/16/features",
-      "sourceName": "Android Platform Features",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "android",
-        "os-release"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "6b4b28bf483cfa94",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "72c3ebbcffd57277",
-      "title": "Latest updates from Mistral.",
-      "summary": "",
-      "sourceUrl": "https://mistral.ai/news",
-      "sourceName": "Mistral News",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "9b53d2fb348cf04f",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "740de2548ad8f468",
-      "title": "A2UI 1.0: Build delightful, fast, reliable, agentic experiences",
-      "summary": "",
-      "sourceUrl": "https://developers.googleblog.com/a2ui-10-build-delightful-fast-reliable-agentic-experiences",
-      "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "2cb4e1f3f9026391",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "7953fb9b56dddbf4",
-      "title": "On-Device Speech Recognition and Text-to-Speech in Google AI Edge Gallery",
-      "summary": "",
-      "sourceUrl": "https://developers.googleblog.com/on-device-speech-recognition-and-text-to-speech-in-google-ai-edge-gallery",
-      "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "157d7c9f983648f3",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "7c3a077a80825638",
-      "title": "Gemini 4 Hydrogen: a faster model for general purpose robotics",
-      "summary": "",
-      "sourceUrl": "https://developers.googleblog.com/gemini-hydrogen-for-robotics",
-      "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "37b67f33c0a696e5",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "80e8b5820b989ee5",
-      "title": "Claude Platform release notes",
-      "summary": "",
-      "sourceUrl": "https://docs.claude.com/en/release-notes/overview",
-      "sourceName": "Claude Platform Release Notes",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "5a6290e0149136de",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "8b718dabaac7aeb3",
-      "title": "Securing Your Agents: A Hands-On Guide to Agent Anomaly Detection",
-      "summary": "",
-      "sourceUrl": "https://developers.googleblog.com/securing-your-agents-a-hands-on-guide-to-agent-anomaly-detection",
-      "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "62a124973dc09636",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "8d1d4cbe2296b7f7",
-      "title": "Model deprecations",
-      "summary": "",
-      "sourceUrl": "https://docs.claude.com/en/docs/about-claude/model-deprecations",
-      "sourceName": "Claude Model Deprecations",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "6e34ab6f6c70c090",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "8d9559bfafa69532",
-      "title": "Bluetooth Low Energy",
-      "summary": "",
-      "sourceUrl": "https://developer.android.com/develop/connectivity/bluetooth/ble/ble-overview",
-      "sourceName": "Android Bluetooth Low Energy",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "android",
-        "ble"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "247e36399da319d2",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
       "id": "901acfd663efceb3",
       "title": "News",
       "summary": "",
@@ -595,103 +884,6 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "769bba8dfb5b08de",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "9056996215722bb5",
-      "title": "Release notes",
-      "summary": "",
-      "sourceUrl": "https://developers.google.com/ml-kit/release-notes",
-      "sourceName": "ML Kit Release Notes",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "android",
-        "ai",
-        "on-device-ai",
-        "tooling"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "7616bba24dc4617c",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "993b7b43e1a94b07",
-      "title": "iOS 27",
-      "summary": "",
-      "sourceUrl": "https://www.apple.com/ios",
-      "sourceName": "Apple iOS Features",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ios",
-        "os-release"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "40948e46c6ce44d1",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "a18a4159a45549a5",
-      "title": "Changelog",
-      "summary": "",
-      "sourceUrl": "https://expo.dev/changelog",
-      "sourceName": "Expo Changelog",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "react-native",
-        "tooling"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "00695ef087fc15e3",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "ac0ddabd61ebf59d",
-      "title": "Release Notes",
-      "summary": "",
-      "sourceUrl": "https://developers.google.com/android/guides/releases",
-      "sourceName": "Play Services Releases",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "android",
-        "tooling"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "daf775f101cd7ad2",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "bc55ae1ae5897f87",
-      "title": "How to securely connect internal Cloud Run MCP servers to Gemini Enterprise",
-      "summary": "",
-      "sourceUrl": "https://developers.googleblog.com/how-to-securely-connect-internal-cloud-run-mcp-servers-to-gemini-enterprise",
-      "sourceName": "Google Developers Blog",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
-      "criticality": "background",
-      "trustLevel": "unverified",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "35c3b1945e8da162",
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
@@ -714,70 +906,13 @@
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
-      "id": "ed18ce1977f30d7a",
-      "title": "Deprecations",
-      "summary": "",
-      "sourceUrl": "https://platform.openai.com/docs/deprecations",
-      "sourceName": "OpenAI Deprecations",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "ai",
-        "ai-models"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "3daa3ea32692445f",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "f2332c93b2adb3db",
-      "title": "Policy Deadlines",
-      "summary": "",
-      "sourceUrl": "https://support.google.com/googleplay/android-developer/answer/9934569",
-      "sourceName": "Play Console Policy Updates",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "android",
-        "policy"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "408bffae965ad474",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "f7998dd54089d53c",
-      "title": "Host-based card emulation overview",
-      "summary": "",
-      "sourceUrl": "https://developer.android.com/develop/connectivity/nfc/hce",
-      "sourceName": "Android Host Card Emulation",
-      "publishedAt": "2026-11-26T21:32:50.874Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "android",
-        "nfc"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "4d6fb5fc14edf2ad",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
       "id": "69c0601d70f93f1e",
       "title": "Copilot code review billing will default to the organization",
       "summary": "",
       "sourceUrl": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization",
       "sourceName": "GitHub Copilot Changelog",
       "publishedAt": "2026-11-25T22:18:03.000Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -816,7 +951,7 @@
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
       "sourceName": "Claude Code Releases",
       "publishedAt": "2026-11-25T01:32:14.000Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -827,25 +962,6 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "e90e4f32f6e05908",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "096d197cc7153450",
-      "title": "Core Specification 6.3 Adopted",
-      "summary": "",
-      "sourceUrl": "https://www.bluetooth.com/specifications/bluetooth-core-specification",
-      "sourceName": "Bluetooth Core Specification",
-      "publishedAt": "2026-11-24T22:27:24.230Z",
-      "collectedAt": "2026-11-24T22:27:24.230Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "ble",
-        "hardware"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "f275393e88b63c75",
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
@@ -884,25 +1000,6 @@
       "tags": [],
       "impactedProjects": [],
       "fingerprint": "6333d3539ddbecae",
-      "verificationNote": "non classé : no proposals file was produced"
-    },
-    {
-      "id": "5f0c36e182505b8e",
-      "title": "Apple security releases",
-      "summary": "",
-      "sourceUrl": "https://support.apple.com/en-us/100100",
-      "sourceName": "Apple Security Releases",
-      "publishedAt": "2026-11-24T22:27:24.230Z",
-      "collectedAt": "2026-11-24T22:27:24.230Z",
-      "criticality": "background",
-      "trustLevel": "reported",
-      "categories": [
-        "ios",
-        "os-release"
-      ],
-      "tags": [],
-      "impactedProjects": [],
-      "fingerprint": "ca7e6e27dc86b345",
       "verificationNote": "non classé : no proposals file was produced"
     },
     {
@@ -988,7 +1085,7 @@
       "sourceUrl": "https://github.com/react/react-native/releases/tag/v0.89.0-rc.3",
       "sourceName": "React Native Releases",
       "publishedAt": "2026-11-24T13:51:42.000Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -1120,7 +1217,7 @@
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.331",
       "sourceName": "Claude Code Releases",
       "publishedAt": "2026-11-23T21:34:41.000Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -1140,7 +1237,7 @@
       "sourceUrl": "https://github.com/innoveit/react-native-ble-manager/releases/tag/v.13.0.2",
       "sourceName": "BLE Manager Releases",
       "publishedAt": "2026-11-23T07:17:02.000Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -1292,7 +1389,7 @@
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
       "sourceName": "Claude Code Releases",
       "publishedAt": "2026-11-20T22:32:56.000Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -1369,7 +1466,7 @@
       "sourceUrl": "https://machinelearning.apple.com/research/depth-pro-2-monocular",
       "sourceName": "Apple Machine Learning Research",
       "publishedAt": "2026-11-20T00:00:00.000Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -1388,7 +1485,7 @@
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.329",
       "sourceName": "Claude Code Releases",
       "publishedAt": "2026-11-19T22:14:41.000Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -1408,7 +1505,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=11192026a",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-11-19T21:00:00.000Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -1428,7 +1525,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=11192026b",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-11-19T21:00:00.000Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -1524,7 +1621,7 @@
       "sourceUrl": "https://www.apple.com/newsroom/2026/11/apple-tv-becomes-the-new-us-home-of-f1-academy-the-all-female-racing-series",
       "sourceName": "Apple Newsroom",
       "publishedAt": "2026-11-19T15:59:07.903Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -1543,7 +1640,7 @@
       "sourceUrl": "https://github.com/software-mansion/react-native-executorch/releases/tag/v0.11.1",
       "sourceName": "React Native ExecuTorch Releases",
       "publishedAt": "2026-11-19T15:53:13.000Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -1563,7 +1660,7 @@
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.328",
       "sourceName": "Claude Code Releases",
       "publishedAt": "2026-11-19T01:14:04.000Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
@@ -1583,7 +1680,7 @@
       "sourceUrl": "https://developer.apple.com/news/releases?id=11182026b",
       "sourceName": "Apple Developer Releases",
       "publishedAt": "2026-11-19T00:00:00.000Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -1603,7 +1700,7 @@
       "sourceUrl": "https://developer.android.com/blog/posts/android-developer-verification-2027",
       "sourceName": "Android Developers Blog",
       "publishedAt": "2026-11-19T00:00:00.000Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "reported",
       "categories": [
@@ -1622,7 +1719,7 @@
       "sourceUrl": "https://github.blog/changelog/2026-11-18-connect-supabase-box-calendly-and-more-to-copilot",
       "sourceName": "GitHub Copilot Changelog",
       "publishedAt": "2026-11-18T22:04:50.000Z",
-      "collectedAt": "2026-11-26T21:32:50.874Z",
+      "collectedAt": "2026-11-27T21:18:03.644Z",
       "criticality": "background",
       "trustLevel": "unverified",
       "categories": [
